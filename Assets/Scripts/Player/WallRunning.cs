@@ -1,16 +1,111 @@
+using System;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class WallRunning : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [Header("Layer Masks")]
+    [SerializeField] private LayerMask wallLayer;
+    [SerializeField] private LayerMask groundLayer;
+    [Header("References")]
+    [SerializeField] private Transform orientation;
+    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private Transform camTransform;
+    [Header("Wall Running Settings")]
+    [SerializeField] private float wallRunForce = 10f;
+    [SerializeField] private float maxWallRunTime = 2f;
+    [SerializeField] private float wallRunTimer;
+    [SerializeField] private CinemachineCamera MainCamera;
+    [Header("Wall Check Settings")]
+    [SerializeField] private float wallCheckDistance = 1f;
+    [SerializeField] private float minJumpHeight = 1.5f;
+    private RaycastHit leftWallHit;
+    private RaycastHit rightWallHit;
+    private bool leftWall;
+    private bool rightWall;
+    private bool isWallRunning;
+    private void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
+        playerMovement = GetComponent<PlayerMovement>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log("Is Wall Running: " + isWallRunning);
+        Debug.Log("Left Wall: " + leftWall + " Right Wall: " + rightWall);
+        CheckForWall();
     }
+    void FixedUpdate()
+    {
+        if ((leftWall || rightWall))
+        {
+            if (!isWallRunning)
+            {
+                StartWallRun();
+            }
+            WallRunningMovement();
+        }
+        else
+        {
+            if (isWallRunning)
+            {
+                StopWallRun();
+            }
+        }
+    }
+
+    private void StopWallRun()
+    {
+        isWallRunning = false;
+        rb.useGravity = true;
+    }
+
+    private void WallRunningMovement()
+    {
+        if (leftWall)
+        {
+            MainCamera.transform.localRotation = Quaternion.Euler(0f, 0f, 50f);
+        }
+        else if (rightWall)
+        {
+            MainCamera.transform.localRotation = Quaternion.Euler(0f, 0f, -50f);
+        }
+        Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
+        Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up - wallNormal.y * Vector3.up);
+
+        if ((orientation.forward - wallForward).magnitude > (orientation.forward - -wallForward).magnitude)
+        {
+            wallForward = -wallForward;
+        }
+
+        rb.AddForce(wallForward * wallRunForce, ForceMode.Force);
+
+        // Optional: Add a slight upward force to counteract gravity
+        rb.AddForce(Vector3.forward * (wallRunForce / 10), ForceMode.Force);
+    }
+
+    private void StartWallRun()
+    {
+        isWallRunning = true;
+        wallRunTimer = maxWallRunTime;
+        rb.useGravity = false;
+    }
+
+    private bool AboveGround()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, minJumpHeight, groundLayer))
+        {
+            return true;
+        }
+        return false;
+    }
+    private void CheckForWall()
+    {
+        leftWall = Physics.Raycast(transform.position, -orientation.right, out leftWallHit, wallCheckDistance, wallLayer);
+        rightWall = Physics.Raycast(transform.position, orientation.right, out rightWallHit, wallCheckDistance, wallLayer);
+    }
+
+
 }

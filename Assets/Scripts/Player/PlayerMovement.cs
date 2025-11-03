@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     private CapsuleCollider capsule;
     private Vector2 moveInput;
-    private bool isGrounded;
+    private bool isGrounded= true;
     private bool isSprinting;
     private bool isCrouching;
 
@@ -48,8 +48,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        Vector3 rayOrigin = transform.position + Vector3.up * rayStartOffset;
-        isGrounded = Physics.Raycast(rayOrigin, Vector3.down, groundDistanceCheck, groundLayer, QueryTriggerInteraction.Ignore);
+        Debug.Log("Is Grounded: " + isGrounded);
+        //Vector3 rayOrigin = transform.position + Vector3.up * rayStartOffset;
+        //isGrounded = Physics.Raycast(rayOrigin, Vector3.down, groundDistanceCheck, groundLayer, QueryTriggerInteraction.Ignore);
     }
 
     private void HandleMovement()
@@ -94,6 +95,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (ctx.performed && isGrounded)
         {
+            Debug.Log("Jumped");
             Vector3 cur = rb.linearVelocity;
             if (cur.y < 0f) cur.y = 0f;
             rb.linearVelocity = cur;

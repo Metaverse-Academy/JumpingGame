@@ -26,7 +26,7 @@ public class CameraRotate : MonoBehaviour
         Cursor.visible = false;
     }
 
-    private void FixedUpdate()
+    private void LateUpdate()
     {
         if (!cameraTransform) return;
 
