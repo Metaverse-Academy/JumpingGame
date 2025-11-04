@@ -2,6 +2,8 @@ using System;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;
+using System.Collections.Generic;
 
 public class WallRunning : MonoBehaviour
 {
@@ -17,8 +19,10 @@ public class WallRunning : MonoBehaviour
     [Header("Wall Running Settings")]
     [SerializeField] private float wallRunForce = 10f;
     [SerializeField] private float maxWallRunTime = 2f;
-    [SerializeField] private float wallRunTimer;
+     private float wallRunTimer;
     [SerializeField] private float wallJumpForce = 40f;
+    [SerializeField] private float wallRunningCooldown = 0.4f;
+    private float wallRunningCooldownTimer;
     [SerializeField] private CinemachineCamera MainCamera;
     [Header("Wall Check Settings")]
     [SerializeField] private float wallCheckDistance = 1f;
@@ -41,6 +45,11 @@ public class WallRunning : MonoBehaviour
         // Debug.Log("Left Wall: " + leftWall + " Right Wall: " + rightWall);
         CheckForWall();
     }
+    private IEnumerator CameraDutchReset()
+    {
+        yield return new WaitForSeconds(0.2f);
+        MainCamera.Lens.Dutch = 0f;
+    }
     void FixedUpdate()
     {
         if ((leftWall || rightWall))
@@ -49,32 +58,46 @@ public class WallRunning : MonoBehaviour
             {
                 StartWallRun();
             }
+
             WallRunningMovement();
         }
         else
         {
-            if (isWallRunning)
+            if (isWallRunning )
             {
+
                 StopWallRun();
+                
+                
             }
         }
     }
+
 
     private void StopWallRun()
     {
         isWallRunning = false;
         rb.useGravity = true;
+        StartCoroutine(CameraDutchReset());
     }
+    // private IEnumerator WallRunningCooldown()
+    // {
+    //     while (wallRunTimer > 0)
+    //     {
+    //         wallRunTimer -= Time.deltaTime;
+    //         yield return null;
+    //     }
+    // }
 
     private void WallRunningMovement()
     {
         if (leftWall)
         {
-            MainCamera.transform.localRotation = Quaternion.Euler(0f, 0f, 50f);
+            MainCamera.Lens.Dutch = -7f;
         }
         else if (rightWall)
         {
-            MainCamera.transform.localRotation = Quaternion.Euler(0f, 0f, -50f);
+            MainCamera.Lens.Dutch = 7f; 
         }
         Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
         Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up - wallNormal.y * Vector3.up);
@@ -88,6 +111,7 @@ public class WallRunning : MonoBehaviour
 
         // Optional: Add a slight upward force to counteract gravity
         rb.AddForce(Vector3.forward * (wallRunForce / 10), ForceMode.Force);
+        rb.AddForce(-wallNormal * (wallRunForce/4), ForceMode.Force);
     }
 
     private void StartWallRun()
@@ -95,6 +119,9 @@ public class WallRunning : MonoBehaviour
         isWallRunning = true;
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
+
+          
+
     }
 
     private bool AboveGround()
@@ -116,7 +143,12 @@ public class WallRunning : MonoBehaviour
         if (context.performed && isWallRunning)
         {
             Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
-            Vector3 jumpDirection = Vector3.up + wallNormal;
+            Vector3 jumpDirection;
+            if(rightWall)
+                jumpDirection = Vector3.left + wallNormal;
+            else
+                jumpDirection = Vector3.right + wallNormal;
+
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
             rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
             StopWallRun();

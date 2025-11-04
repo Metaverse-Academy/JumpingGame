@@ -383,6 +383,7 @@ Transform:
   m_Children:
   - {fileID: 3446191231124172073}
   - {fileID: 7016592678769815784}
+  - {fileID: 3327397288464675591}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &6709130831054494622
@@ -394,7 +395,7 @@ Rigidbody:
   m_GameObject: {fileID: 6949511775169908635}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 0
+  m_LinearDamping: 1.7
   m_AngularDamping: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
@@ -411,7 +412,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 3
+  m_CollisionDetection: 2
 --- !u!114 &4566780603082994757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -439,9 +440,9 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6949511775169908635}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 7309196094113874610}
+        m_TargetAssemblyTypeName: PlayerMovementTutorial, Assembly-CSharp
+        m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -455,8 +456,8 @@ MonoBehaviour:
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+      - m_Target: {fileID: 7309196094113874610}
+        m_TargetAssemblyTypeName: PlayerMovementTutorial, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
         m_Arguments:
@@ -471,8 +472,8 @@ MonoBehaviour:
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+      - m_Target: {fileID: 7309196094113874610}
+        m_TargetAssemblyTypeName: PlayerMovementTutorial, Assembly-CSharp
         m_MethodName: OnSprint
         m_Mode: 0
         m_Arguments:
@@ -487,9 +488,9 @@ MonoBehaviour:
     m_ActionName: 'Player/Sprint[/Keyboard/leftShift]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: OnCrouch
+      - m_Target: {fileID: 7309196094113874610}
+        m_TargetAssemblyTypeName: PlayerMovementTutorial, Assembly-CSharp
+        m_MethodName: onSlide
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -521,6 +522,38 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c725e9b5-32ea-486f-97fe-121309bd4347
     m_ActionName: 'Player/Interact[/Keyboard/e]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6031240778297505859}
+        m_TargetAssemblyTypeName: WallRunning, Assembly-CSharp
+        m_MethodName: OnWallJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 66c29b13-13ed-405a-b350-a621f84ab305
+    m_ActionName: 'Player/WallJump[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7309196094113874610}
+        m_TargetAssemblyTypeName: PlayerMovementTutorial, Assembly-CSharp
+        m_MethodName: OnDash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 9200f627-39a1-4dd9-ae3f-43e04b3c94c4
+    m_ActionName: 'Player/Dash[/Keyboard/shift]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: Keyboard&Mouse
   m_DefaultActionMap: Player
@@ -605,13 +638,15 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  playerInput: {fileID: 4566780603082994757}
   orientation: {fileID: 319595024176533610}
   playerMovement: {fileID: 0}
   rb: {fileID: 6709130831054494622}
   camTransform: {fileID: 4550748784399702790}
-  wallRunForce: 36.5
-  maxWallRunTime: 2
-  wallRunTimer: 0
+  wallRunForce: 189.8
+  maxWallRunTime: 1.24
+  wallJumpForce: 11.3
+  wallRunningCooldown: 0.4
   MainCamera: {fileID: 7590193105606184526}
   wallCheckDistance: 1
   minJumpHeight: 1.5
@@ -627,17 +662,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91ffdb66396fc6b48b42ba3aa490477c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementTutorial
-  moveSpeed: 3.96
-  groundDrag: 1.62
-  jumpForce: 3.08
-  jumpCooldown: 1.02
+  MainCamera: {fileID: 7590193105606184526}
+  walkSpeed: 5
+  sprintSpeed: 9
   airMultiplier: 1.44
-  walkSpeed: 0
-  sprintSpeed: 0
-  moveAction: {fileID: 1742371239642062374, guid: 20d7f63b1fa2f3948a553dc4c39d79a0, type: 3}
-  jumpAction: {fileID: -4062823401203787536, guid: 20d7f63b1fa2f3948a553dc4c39d79a0, type: 3}
+  jumpForce: 10.36
+  jumpCooldown: 0.69
   playerHeight: 0.36
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
+  groundCheck: {fileID: 7089980704864855178}
+  groundDrag: 1.62
+  dashForce: 20.65
+  dashDuration: 0.2
+  dashUpwardForce: 1.17
+  dashCooldown: 1
+  normalFOV: 70
+  slideFOV: 90
+  fovDuration: 0.25
+  fovEase: 15
+  normalDutch: 0
+  slideDutch: 6
+  dutchDuration: 0.25
+  dutchEase: 15
   orientation: {fileID: 3446191231124172073}
+--- !u!1 &7089980704864855178
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3327397288464675591}
+  m_Layer: 0
+  m_Name: CheckGround
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3327397288464675591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7089980704864855178}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: 0.016, z: -0.027}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 319595024176533610}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
