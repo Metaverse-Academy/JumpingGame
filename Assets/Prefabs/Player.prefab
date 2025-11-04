@@ -240,7 +240,7 @@ MonoBehaviour:
   Lens:
     FieldOfView: 60.000004
     OrthographicSize: 5
-    NearClipPlane: 0.3
+    NearClipPlane: 0.11
     FarClipPlane: 1000
     Dutch: 0
     ModeOverride: 0
@@ -358,8 +358,9 @@ GameObject:
   - component: {fileID: 4566780603082994757}
   - component: {fileID: 4362309215712671290}
   - component: {fileID: 4475978562705969299}
-  - component: {fileID: 5797396056753542765}
   - component: {fileID: 4157075426801416062}
+  - component: {fileID: 6031240778297505859}
+  - component: {fileID: 7309196094113874610}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -438,9 +439,9 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5797396056753542765}
+      - m_Target: {fileID: 6949511775169908635}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
-        m_MethodName: OnMove
+        m_MethodName: 
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -454,7 +455,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5797396056753542765}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
@@ -470,7 +471,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Jump[/Keyboard/space]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5797396056753542765}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: OnSprint
         m_Mode: 0
@@ -486,7 +487,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Sprint[/Keyboard/leftShift]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5797396056753542765}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: OnCrouch
         m_Mode: 0
@@ -564,32 +565,6 @@ MonoBehaviour:
   smoothFollow: 1
   turnSpeed: 10
   yawOffset: 0
---- !u!114 &5797396056753542765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6949511775169908635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc5a024d155c8794fa4cef4b3791baf5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
-  cameraTransform: {fileID: 7016592678769815784}
-  walkSpeed: 5
-  acceleration: 12
-  sprintSpeed: 9
-  jumpForce: 5
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  groundDistanceCheck: 0.3
-  rayStartOffset: 0.06
-  useToggleCrouch: 1
-  crouchSpeed: 2.5
-  standingHeight: 1
-  crouchHeight: 0.25
 --- !u!114 &4157075426801416062
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,7 +583,61 @@ MonoBehaviour:
   interactDistance: 3
   interactableLayer:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   showDebugRay: 0
   fadeDuration: 0.2
   scalePop: 1.1
+--- !u!114 &6031240778297505859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6949511775169908635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ef1c432965a83409ec9d4945410cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WallRunning
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  orientation: {fileID: 319595024176533610}
+  playerMovement: {fileID: 0}
+  rb: {fileID: 6709130831054494622}
+  camTransform: {fileID: 4550748784399702790}
+  wallRunForce: 36.5
+  maxWallRunTime: 2
+  wallRunTimer: 0
+  MainCamera: {fileID: 7590193105606184526}
+  wallCheckDistance: 1
+  minJumpHeight: 1.5
+--- !u!114 &7309196094113874610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6949511775169908635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91ffdb66396fc6b48b42ba3aa490477c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementTutorial
+  moveSpeed: 3.96
+  groundDrag: 1.62
+  jumpForce: 3.08
+  jumpCooldown: 1.02
+  airMultiplier: 1.44
+  walkSpeed: 0
+  sprintSpeed: 0
+  moveAction: {fileID: 1742371239642062374, guid: 20d7f63b1fa2f3948a553dc4c39d79a0, type: 3}
+  jumpAction: {fileID: -4062823401203787536, guid: 20d7f63b1fa2f3948a553dc4c39d79a0, type: 3}
+  playerHeight: 0.36
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  orientation: {fileID: 3446191231124172073}

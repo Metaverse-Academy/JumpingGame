@@ -119,22 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!4 &55752220 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3446191231124172073, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-  m_PrefabInstance: {fileID: 1959696960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &63840445 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7590193105606184526, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-  m_PrefabInstance: {fileID: 1959696960}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,80 +416,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!1 &414892737 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6949511775169908635, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-  m_PrefabInstance: {fileID: 1959696960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &414892738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414892737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5ef1c432965a83409ec9d4945410cb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WallRunning
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  orientation: {fileID: 414892745}
-  playerMovement: {fileID: 0}
-  rb: {fileID: 414892744}
-  camTransform: {fileID: 651310309}
-  wallRunForce: 36.5
-  maxWallRunTime: 2
-  wallRunTimer: 0
-  MainCamera: {fileID: 63840445}
-  wallCheckDistance: 1
-  minJumpHeight: 1.5
---- !u!54 &414892744 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 6709130831054494622, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-  m_PrefabInstance: {fileID: 1959696960}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &414892745 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 319595024176533610, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-  m_PrefabInstance: {fileID: 1959696960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &414892746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414892737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91ffdb66396fc6b48b42ba3aa490477c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementTutorial
-  moveSpeed: 3.96
-  groundDrag: 1.62
-  jumpForce: 3.08
-  jumpCooldown: 1.02
-  airMultiplier: 1.44
-  walkSpeed: 0
-  sprintSpeed: 0
-  moveAction: {fileID: 1742371239642062374, guid: 20d7f63b1fa2f3948a553dc4c39d79a0, type: 3}
-  jumpAction: {fileID: -4062823401203787536, guid: 20d7f63b1fa2f3948a553dc4c39d79a0, type: 3}
-  playerHeight: 0.36
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 64
-  orientation: {fileID: 55752220}
---- !u!4 &651310309 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4550748784399702790, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-  m_PrefabInstance: {fileID: 1959696960}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,61 +849,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4157075426801416062, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: interactableLayer.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4566780603082994757, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 414892737}
-    - target: {fileID: 4566780603082994757, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4566780603082994757, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4566780603082994757, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4566780603082994757, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5797396056753542765, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: jumpForce
-      value: 4.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5797396056753542765, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: groundLayer.m_Bits
-      value: 64
-      objectReference: {fileID: 0}
-    - target: {fileID: 5797396056753542765, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: groundDistanceCheck
-      value: 1.86
-      objectReference: {fileID: 0}
     - target: {fileID: 6949511775169908635, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7590193105606184526, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      propertyPath: Lens.NearClipPlane
-      value: 0.11
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5797396056753542765, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6949511775169908635, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 414892738}
-    - targetCorrespondingSourceObject: {fileID: 6949511775169908635, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 414892746}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f35845eb9045a4345a7797b95cd4ae0d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

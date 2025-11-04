@@ -1,6 +1,7 @@
 using System;
 using Unity.Cinemachine;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class WallRunning : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private LayerMask groundLayer;
     [Header("References")]
+    [SerializeField] private PlayerInput playerInput;
     [SerializeField] private Transform orientation;
     [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private Rigidbody rb;
@@ -16,10 +18,12 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private float wallRunForce = 10f;
     [SerializeField] private float maxWallRunTime = 2f;
     [SerializeField] private float wallRunTimer;
+    [SerializeField] private float wallJumpForce = 40f;
     [SerializeField] private CinemachineCamera MainCamera;
     [Header("Wall Check Settings")]
     [SerializeField] private float wallCheckDistance = 1f;
     [SerializeField] private float minJumpHeight = 1.5f;
+
     private RaycastHit leftWallHit;
     private RaycastHit rightWallHit;
     private bool leftWall;
@@ -29,11 +33,12 @@ public class WallRunning : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         playerMovement = GetComponent<PlayerMovement>();
+        playerInput = GetComponent<PlayerInput>();
     }
     void Update()
     {
-        Debug.Log("Is Wall Running: " + isWallRunning);
-        Debug.Log("Left Wall: " + leftWall + " Right Wall: " + rightWall);
+        // Debug.Log("Is Wall Running: " + isWallRunning);
+        // Debug.Log("Left Wall: " + leftWall + " Right Wall: " + rightWall);
         CheckForWall();
     }
     void FixedUpdate()
@@ -105,6 +110,17 @@ public class WallRunning : MonoBehaviour
     {
         leftWall = Physics.Raycast(transform.position, -orientation.right, out leftWallHit, wallCheckDistance, wallLayer);
         rightWall = Physics.Raycast(transform.position, orientation.right, out rightWallHit, wallCheckDistance, wallLayer);
+    }
+    public void OnWallJump(InputAction.CallbackContext context)
+    {
+        if (context.performed && isWallRunning)
+        {
+            Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
+            Vector3 jumpDirection = Vector3.up + wallNormal;
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+            rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
+            StopWallRun();
+        }
     }
 
 

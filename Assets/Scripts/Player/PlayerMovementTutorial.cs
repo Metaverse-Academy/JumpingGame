@@ -2,133 +2,134 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using TMPro;
 
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(PlayerInput))]
 public class PlayerMovementTutorial : MonoBehaviour
 {
-    public float moveSpeed;
+    [Header("Movement")]
+    public float walkSpeed = 5f;
+    public float sprintSpeed = 9f;
+    public float airMultiplier = 0.6f;
 
-    public float groundDrag;
+    [Header("Jump")]
+    public float jumpForce = 5f;
+    public float jumpCooldown = 0.2f;
 
-    public float jumpForce;
-    public float jumpCooldown;
-    public float airMultiplier;
-    bool readyToJump;
-
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
-
-    [Header("Input Actions")]
-    public InputActionReference moveAction;
-    public InputActionReference jumpAction;
-
-    [Header("Ground Check")]
-    public float playerHeight;
+    [Header("Ground")]
+    public float playerHeight = 2f;
     public LayerMask whatIsGround;
-    bool grounded;
+    public GameObject groundCheck;
+    public float groundDrag = 4f;
 
-    public Transform orientation;
+    [Header("Orientation (player facing)")]
+    public Transform orientation; // player root (used for forward/right)
 
-    Vector3 moveDirection;
+    // runtime
+    private Rigidbody rb;
+    private bool grounded;
+    private bool readyToJump = true;
+    private bool isSprinting = false;
+    private Vector2 moveInput = Vector2.zero;
+    private float moveSpeed;
 
-    Rigidbody rb;
-    private float horizontalInput;
-    private float verticalInput;
-
-    private void OnEnable()
-    {
-        moveAction.action.Enable();
-        jumpAction.action.Enable();
-    }
-
-    private void OnDisable()
-    {
-        moveAction.action.Disable();
-        jumpAction.action.Disable();
-    }
-
-    private void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
-        readyToJump = true;
+        if (orientation == null) orientation = transform;
+        moveSpeed = walkSpeed;
     }
 
-    private void Update()
+    void Update()
     {
-        Debug.Log("Grounded: " + grounded); 
         // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
+        Vector3 origin = groundCheck != null ? groundCheck.transform.position : transform.position;
+        grounded = Physics.Raycast(origin, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
 
-        MyInput();
-        SpeedControl();
-
-        // handle drag
-        if (grounded)
-            rb.linearDamping = groundDrag;
-        else
-            rb.linearDamping = 0;
+        // drag
+            
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         MovePlayer();
+        SpeedControl();
     }
 
-    private void MyInput()
+   
+
+    public void OnMove(InputAction.CallbackContext ctx)
     {
-        Vector2 inputVector = moveAction.action.ReadValue<Vector2>();
-        horizontalInput = inputVector.x;
-        verticalInput = inputVector.y;
+        Debug.Log("Moving input: " + ctx.ReadValue<Vector2>());
+        moveInput = ctx.ReadValue<Vector2>();
+    }
 
-        // when to jump
-        if (jumpAction.action.WasPressedThisFrame() && readyToJump && grounded)
+    public void OnJump(InputAction.CallbackContext ctx)
+    {
+        if (!ctx.performed) return;
+        if (!readyToJump || !grounded) return;
+
+        readyToJump = false;
+        Jump();
+        Invoke(nameof(ResetJump), jumpCooldown);
+    }
+
+    public void OnSprint(InputAction.CallbackContext ctx)
+    {
+        if (ctx.started || ctx.performed)
         {
-            readyToJump = false;
-
-            Jump();
-
-            Invoke(nameof(ResetJump), jumpCooldown);
+            isSprinting = true;
         }
+        if (ctx.canceled)
+        {
+            isSprinting = false;
+        }
+
+        moveSpeed = isSprinting ? sprintSpeed : walkSpeed;
     }
 
     private void MovePlayer()
     {
-        // calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        Debug.Log("Moving player");
+        Vector3 dir = orientation.forward * moveInput.y + orientation.right * moveInput.x;
+        dir = dir.normalized;
 
-        // on ground
         if (grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
-
-        // in air
-        else if (!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(dir * moveSpeed * 10f, ForceMode.Force);
+        else
+            rb.AddForce(dir * moveSpeed * 10f * airMultiplier, ForceMode.Force);
     }
 
     private void SpeedControl()
     {
+        Debug.Log("Controlling speed");
         Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
-        // limit velocity if needed
         if (flatVel.magnitude > moveSpeed)
         {
-            Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
+            Vector3 limited = flatVel.normalized * moveSpeed;
+            rb.linearVelocity = new Vector3(limited.x, rb.linearVelocity.y, limited.z);
         }
     }
 
     private void Jump()
     {
-        // reset y velocity
+        // reset Y velocity then impulse up
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 
     private void ResetJump()
     {
         readyToJump = true;
+    }
+
+    void OnDrawGizmos()
+    {
+        Vector3 origin = groundCheck != null ? groundCheck.transform.position : transform.position;
+        Gizmos.color = Color.red;
+        Gizmos.DrawRay(origin, Vector3.down * (playerHeight * 0.5f + 0.3f));
     }
 }
