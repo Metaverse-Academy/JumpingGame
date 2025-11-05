@@ -11,6 +11,9 @@ public class Grappling : MonoBehaviour
     private float maxDistance = 100f;
     private SpringJoint joint;
     public PlayerInput playerInput;
+    [SerializeField] public float jointSpring = 4.5f;
+    [SerializeField] public float jointDamper = 7f;
+    [SerializeField] public float jointMassScale = 4.5f;
 
     void Awake()
     {
@@ -52,9 +55,9 @@ public class Grappling : MonoBehaviour
             joint.minDistance = distanceFromPoint * 0.25f;
 
             //Adjust these values to fit your game.
-            joint.spring = 4.5f;
-            joint.damper = 7f;
-            joint.massScale = 4.5f;
+            joint.spring = jointSpring;
+            joint.damper = jointDamper;
+            joint.massScale = jointMassScale;
 
             lr.positionCount = 2;
         }
