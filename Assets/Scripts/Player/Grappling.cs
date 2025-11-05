@@ -14,6 +14,8 @@ public class Grappling : MonoBehaviour
     [SerializeField] public float jointSpring = 4.5f;
     [SerializeField] public float jointDamper = 7f;
     [SerializeField] public float jointMassScale = 4.5f;
+    private bool isGrappling;
+    public AudioSource audioSource;
 
     void Awake()
     {
@@ -23,12 +25,13 @@ public class Grappling : MonoBehaviour
     
     public void OnGrapple(InputAction.CallbackContext context)
     {
-        if (context.performed)
+        if (context.performed && !isGrappling)
         {
             StartGrapple();
         }
         else if (context.canceled)
         {
+            isGrappling = false;
             StopGrapple();
         }
     }
@@ -43,6 +46,7 @@ public class Grappling : MonoBehaviour
     {
         if (Physics.Raycast(mainCamera.position, mainCamera.forward, out RaycastHit hit, maxDistance, whatIsGrappleable))
         {
+            Debug.Log("Grapple hit: " + hit.collider.name);
             grapplePoint = hit.point;
             joint = player.gameObject.AddComponent<SpringJoint>();
             joint.autoConfigureConnectedAnchor = false;
@@ -60,6 +64,8 @@ public class Grappling : MonoBehaviour
             joint.massScale = jointMassScale;
 
             lr.positionCount = 2;
+            isGrappling = true;
+            audioSource.Play();
         }
     }
     void LateUpdate()
