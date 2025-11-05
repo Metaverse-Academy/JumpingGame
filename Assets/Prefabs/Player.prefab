@@ -223,6 +223,7 @@ GameObject:
   - component: {fileID: 2488591750079470731}
   - component: {fileID: 3541461771453272099}
   - component: {fileID: 5904455865199778274}
+  - component: {fileID: 1096206354487070632}
   m_Layer: 0
   m_Name: FPCamera
   m_TagString: Untagged
@@ -377,6 +378,30 @@ MonoBehaviour:
         DecelTime: 0.2
   PlayerIndex: -1
   AutoEnableInputs: 1
+--- !u!114 &1096206354487070632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4467123803812136339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b2d199b96b516448144ab30fb26aed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineImpulseListener
+  ApplyAfter: 2
+  ChannelMask: 1
+  Gain: 1
+  Use2DDistance: 0
+  UseCameraSpace: 1
+  SignalCombinationMode: 0
+  ReactionSettings:
+    m_SecondaryNoise: {fileID: 0}
+    AmplitudeGain: 2.1
+    FrequencyGain: 2.25
+    Duration: 3.4
+    m_NoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &5158686983831100480
 GameObject:
   m_ObjectHideFlags: 0
@@ -425,6 +450,7 @@ GameObject:
   - component: {fileID: 4157075426801416062}
   - component: {fileID: 6031240778297505859}
   - component: {fileID: 7309196094113874610}
+  - component: {fileID: 8187033761505895344}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -724,13 +750,15 @@ MonoBehaviour:
   playerMovement: {fileID: 0}
   rb: {fileID: 6709130831054494622}
   camTransform: {fileID: 4550748784399702790}
-  wallRunForce: 75.3
+  wallRunForce: 8.9
   maxWallRunTime: 1.24
-  wallJumpForce: 11.3
+  wallJumpForce: 10.9
   wallRunningCooldown: 0.4
   MainCamera: {fileID: 7590193105606184526}
+  cameraImpulse: {fileID: 8187033761505895344}
   wallCheckDistance: 1
   minJumpHeight: 1.5
+  isWallRunning: 0
 --- !u!114 &7309196094113874610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,6 +772,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovementTutorial
   MainCamera: {fileID: 7590193105606184526}
+  WallRunning: {fileID: 6031240778297505859}
   walkSpeed: 5
   sprintSpeed: 9
   airMultiplier: 1.44
@@ -768,6 +797,59 @@ MonoBehaviour:
   dutchDuration: 0.25
   dutchEase: 15
   orientation: {fileID: 3446191231124172073}
+--- !u!114 &8187033761505895344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6949511775169908635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineImpulseSource
+  ImpulseDefinition:
+    ImpulseChannel: 1
+    ImpulseShape: 2
+    CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    ImpulseDuration: 0.2
+    ImpulseType: 0
+    DissipationRate: 0.25
+    RawSignal: {fileID: 0}
+    AmplitudeGain: 1
+    FrequencyGain: 1
+    RepeatMode: 0
+    Randomize: 1
+    TimeEnvelope:
+      AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      AttackTime: 0
+      SustainTime: 0.2
+      DecayTime: 0.7
+      ScaleWithImpact: 1
+      HoldForever: 0
+    ImpactRadius: 100
+    DirectionMode: 0
+    DissipationMode: 2
+    DissipationDistance: 100
+    PropagationSpeed: 343
+  DefaultVelocity: {x: 0, y: -1, z: 0}
 --- !u!1 &6990899574717734326
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,3 +1155,7 @@ MonoBehaviour:
   mainCamera: {fileID: 7016592678769815784}
   player: {fileID: 319595024176533610}
   playerInput: {fileID: 4566780603082994757}
+  jointSpring: 8.25
+  jointDamper: 3.63
+  jointMassScale: 3.62
+  audioSource: {fileID: 0}

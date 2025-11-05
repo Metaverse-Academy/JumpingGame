@@ -156,7 +156,7 @@ public class WallRunning : MonoBehaviour
                 jumpDirection = Vector3.up  *wallJumpForce + wallNormal * wallJumpForce;
 
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-            rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
+            rb.AddForce(jumpDirection.normalized     * wallJumpForce, ForceMode.Impulse);
             StopWallRun();
         }
     }
