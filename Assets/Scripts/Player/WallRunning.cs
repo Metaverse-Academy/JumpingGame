@@ -24,6 +24,7 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private float wallRunningCooldown = 0.4f;
     private float wallRunningCooldownTimer;
     [SerializeField] private CinemachineCamera MainCamera;
+    public CinemachineImpulseSource cameraImpulse;
     [Header("Wall Check Settings")]
     [SerializeField] private float wallCheckDistance = 1f;
     [SerializeField] private float minJumpHeight = 1.5f;
@@ -32,7 +33,7 @@ public class WallRunning : MonoBehaviour
     private RaycastHit rightWallHit;
     private bool leftWall;
     private bool rightWall;
-    private bool isWallRunning;
+    public bool isWallRunning;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -111,7 +112,11 @@ public class WallRunning : MonoBehaviour
 
         // Optional: Add a slight upward force to counteract gravity
         rb.AddForce(Vector3.forward * (wallRunForce / 10), ForceMode.Force);
-        rb.AddForce(-wallNormal * (wallRunForce/4), ForceMode.Force);
+        rb.AddForce(-wallNormal * (wallRunForce / 4), ForceMode.Force);
+        
+        
+            
+        
     }
 
     private void StartWallRun()
@@ -119,6 +124,7 @@ public class WallRunning : MonoBehaviour
         isWallRunning = true;
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
+       // cameraImpulse.GenerateImpulse();
 
           
 
@@ -145,12 +151,12 @@ public class WallRunning : MonoBehaviour
             Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
             Vector3 jumpDirection;
             if(rightWall)
-                jumpDirection = Vector3.left + wallNormal;
+                jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
             else
-                jumpDirection = Vector3.right + wallNormal;
+                jumpDirection = Vector3.up  *wallJumpForce + wallNormal * wallJumpForce;
 
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-            rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
+            rb.AddForce(jumpDirection.normalized     * wallJumpForce, ForceMode.Impulse);
             StopWallRun();
         }
     }

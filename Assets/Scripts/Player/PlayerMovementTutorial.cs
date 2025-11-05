@@ -14,6 +14,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private CinemachineCamera MainCamera;
+    public WallRunning WallRunning;
     [Header("Movement")]
     public float walkSpeed = 5f;
     public float sprintSpeed = 9f;
@@ -45,7 +46,7 @@ public class PlayerMovementTutorial : MonoBehaviour
     [Tooltip("Positive = clockwise roll in degrees")]
     public float normalDutch = 0f;
     public float slideDutch = 6f;
-    public float dutchDuration = 0.25f;
+    public float dutchDuration = 0.8f;
     public LeanTweenType dutchEase = LeanTweenType.easeOutSine;
 
     // Internal handles so we can cancel specific tweens if needed
@@ -87,6 +88,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(WallRunning.isWallRunning) return;
         MovePlayer();
         SpeedControl();
     }
@@ -95,7 +97,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Moving input: " + ctx.ReadValue<Vector2>());
+      //  Debug.Log("Moving input: " + ctx.ReadValue<Vector2>());
         moveInput = ctx.ReadValue<Vector2>();
     }
 
@@ -103,6 +105,7 @@ public class PlayerMovementTutorial : MonoBehaviour
     {
         if (!ctx.performed) return;
         if (!readyToJump || !grounded) return;
+        if(WallRunning.isWallRunning) return;
 
         readyToJump = false;
         Jump();
@@ -110,7 +113,7 @@ public class PlayerMovementTutorial : MonoBehaviour
     }
     public void OnDash(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (ctx.performed && !WallRunning.isWallRunning)
         {
             Debug.Log("Dashing");
             Vector3 Addforce = orientation.forward * dashForce + Vector3.up * dashUpwardForce;
@@ -132,6 +135,8 @@ public class PlayerMovementTutorial : MonoBehaviour
 
         // moveSpeed = isSprinting ? sprintSpeed : walkSpeed;
     }
+
+
     public void onSlide(InputAction.CallbackContext ctx)
     {
         if (ctx.performed)
@@ -143,7 +148,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
         void MovePlayer()
         {
-            Debug.Log("Moving player");
+           // Debug.Log("Moving player");
             Vector3 dir = orientation.forward * moveInput.y + orientation.right * moveInput.x;
             dir = dir.normalized;
 
@@ -155,7 +160,7 @@ public class PlayerMovementTutorial : MonoBehaviour
 
         void SpeedControl()
         {
-            Debug.Log("Controlling speed");
+           // Debug.Log("Controlling speed");
             Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
             if (flatVel.magnitude > moveSpeed)
