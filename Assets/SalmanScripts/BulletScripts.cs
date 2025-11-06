@@ -11,7 +11,7 @@ public class BulletScripts : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.Translate(Vector3.forward *  5f*Time.deltaTime);
+        transform.Translate(Vector3.forward *  19f*Time.deltaTime);
         // transform.forward += 1;
     }
 }

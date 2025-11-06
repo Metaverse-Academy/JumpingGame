@@ -1,3 +1,4 @@
+using System.Collections;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -13,11 +14,28 @@ public class Ai : MonoBehaviour
     [SerializeField] private bool[] HiddenPosIsPlayerIn = new bool[6];
     [SerializeField] private GameObject Player;
     RaycastHit Hit;
+    private string RecentTag;
+
+    [SerializeField] private Transform LeftPoint;
+    [SerializeField] private Transform rightPoint;
 
     float TimeForBullet = 0;
 
     
     bool StartThink=true;
+
+
+
+    //for states
+    bool RunOneTime = false;
+    bool LookOneTime = false;
+    bool OnOneTime = false;
+    bool AttackOneTime = false;
+    
+
+    //AI Thinking
+    bool DidYouWantToSeePlayer;
+    bool iWantToStopAttacking =true;
 
     void Start()
     {
@@ -28,24 +46,36 @@ public class Ai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Physics.Raycast(transform.position,transform.TransformDirection(Vector3.forward),out Hit,4);
-            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) *50, Color.red); 
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Hit, 50))
+        {
+            RecentTag = Hit.collider.gameObject.tag;
+        }
+        else
+        {
+            RecentTag = null;
+        }
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
 
+
+
+        if (DidYouWantToSeePlayer ==true)
+        {
+            
+            transform.LookAt(Player.transform);
+        }
 
         switch (States)
         {
 
             case EnemyStates.Run:
 
-                if (AiEnemy.velocity == Vector3.zero )
-                                    
-                        {
-                                
-                            AiEnemy.SetDestination(ChooseBestHiddenPos());
-                            States = EnemyStates.Hidden;
 
-                                        
-                        }
+                if (RunOneTime == false)
+                {
+                    RunOneTime = true;
+                    AiEnemy.SetDestination(ChooseBestHiddenPos());
+                    Invoke("GoToHiddenState", 2f);
+                }
 
 
 
@@ -54,17 +84,20 @@ public class Ai : MonoBehaviour
 
             case EnemyStates.attack:
 
-                // Debug.Log(TimeForBullet);
-                transform.LookAt(Player.transform);
 
-               TimeForBullet += Time.deltaTime;
-                if (TimeForBullet > 1)
+                if (AttackOneTime==false) { }
+                TimeForBullet += Time.deltaTime;
+                if (TimeForBullet > 0.3)
                 {
 
-                            TimeForBullet = 0;
-                            Instantiate(BulletPrefab, gameObject.transform.position,gameObject.transform.rotation);
-                        }
-
+                    TimeForBullet = 0;
+                    Instantiate(BulletPrefab, gameObject.transform.position, gameObject.transform.rotation);
+                }
+                if (iWantToStopAttacking==true)
+                {
+                    iWantToStopAttacking = false;
+                    StartCoroutine(StopFight());
+                }
 
                 break;
 
@@ -73,7 +106,7 @@ public class Ai : MonoBehaviour
 
                 if (AiEnemy.velocity == Vector3.zero)
                 {
-                    States = EnemyStates.attack;
+                    StartToLook();
                 }
 
 
@@ -84,6 +117,31 @@ public class Ai : MonoBehaviour
 
 
             case EnemyStates.Look:
+
+                DidYouWantToSeePlayer = true;
+
+                if (LookOneTime == false)
+                {
+                    LookOneTime = true;
+                    int RightOrLeft = Random.Range(0, 2);
+
+
+
+                    if (RightOrLeft == 0)
+                    {
+                        OnOneTime = true;
+
+                        StartCoroutine(TakeALook(1));
+
+                    }
+                    else if (RightOrLeft == 1)
+                    {
+                        OnOneTime = true;
+
+                        StartCoroutine(TakeALook(2));
+
+                    }
+                }
 
 
 
@@ -165,6 +223,78 @@ public class Ai : MonoBehaviour
         }
 
         HiddenPosIsPlayerIn[j] = true;
+
+
+    }
+    void GoToHiddenState()
+    {
+        States = EnemyStates.Hidden;
+        Debug.Log("it is work ");
+    }
+
+
+
+    IEnumerator TakeALook(int i)
+    {
+        Debug.Log("Hahaha.......");
+
+
+
+
+
+        yield return new WaitForSeconds(Random.Range(0, 6));
+
+
+        if (i == 1)
+        {
+            AiEnemy.SetDestination(LeftPoint.position);
+
+
+        }
+        else if (i == 2)
+        {
+            AiEnemy.SetDestination(rightPoint.position);
+
+
+        }
+
+        yield return new WaitForSeconds(Random.Range(1, 3));
+
+        if (RecentTag == "Player")
+        {
+            States = EnemyStates.attack;
+
+        }
+        else
+        {
+            StartToRun();
+        }
+
+    }
+    IEnumerator StopFight()
+    {
+
+
+        yield return new WaitForSeconds(Random.Range(1, 5));
+        StartToRun();
+        iWantToStopAttacking = true;
+
+    }
+    void StartToRun()
+    {
+        DidYouWantToSeePlayer = false;
+
+        RunOneTime = false;
+
+        States = EnemyStates.Run;
+
+
+    }
+     void StartToLook()
+    {
+                        LookOneTime= false;
+ 
+                  States = EnemyStates.Look;
 
 
     }
