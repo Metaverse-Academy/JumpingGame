@@ -46,4 +46,6 @@ public class CameraRotate : MonoBehaviour
         else
             rb.MoveRotation(targetRot);
     }
+
+    
 }

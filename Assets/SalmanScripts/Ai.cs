@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -37,6 +38,8 @@ public class Ai : MonoBehaviour
     bool DidYouWantToSeePlayer;
     bool iWantToStopAttacking =true;
 
+
+
     void Start()
     {
 
@@ -56,11 +59,11 @@ public class Ai : MonoBehaviour
         }
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
 
+        Debug.Log(RecentTag);
 
-
-        if (DidYouWantToSeePlayer ==true)
+        if (DidYouWantToSeePlayer == true)
         {
-            
+
             transform.LookAt(Player.transform);
         }
 
@@ -85,7 +88,7 @@ public class Ai : MonoBehaviour
             case EnemyStates.attack:
 
 
-                if (AttackOneTime==false) { }
+                if (AttackOneTime == false) { }
                 TimeForBullet += Time.deltaTime;
                 if (TimeForBullet > 0.3)
                 {
@@ -93,7 +96,7 @@ public class Ai : MonoBehaviour
                     TimeForBullet = 0;
                     Instantiate(BulletPrefab, gameObject.transform.position, gameObject.transform.rotation);
                 }
-                if (iWantToStopAttacking==true)
+                if (iWantToStopAttacking == true)
                 {
                     iWantToStopAttacking = false;
                     StartCoroutine(StopFight());
@@ -153,7 +156,7 @@ public class Ai : MonoBehaviour
         }
 
 
-        
+
     }
 
     Vector3 ChooseBestHiddenPos()
@@ -171,7 +174,7 @@ public class Ai : MonoBehaviour
         Transform PlayerPos = Player.transform;
         int shorterIndex = 8;
 
-        
+
 
         for (int i = 0; i < HiddenPos.Length; i++)
         {
@@ -181,9 +184,9 @@ public class Ai : MonoBehaviour
                 recentDis = Vector3.Distance(transform.position, HiddenPos[i].position);
                 recentDisFromPlayerToHiddenPos = Vector3.Distance(PlayerPos.position, HiddenPos[i].position);
 
-                if (recentDis < ShorterDis   )
+                if (   recentDis < ShorterDis
+)
                 {
-
                     if (recentDisFromPlayerToHiddenPos > LongestDisFromPlayerToPos) { 
                     LongestDisFromPlayerToPos = recentDisFromPlayerToHiddenPos;
                     ShorterDis = recentDis;
@@ -205,6 +208,20 @@ public class Ai : MonoBehaviour
 
 
     }
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
     void makeBoolTrue()
     {
         StartThink = true;
@@ -290,11 +307,26 @@ public class Ai : MonoBehaviour
 
 
     }
-     void StartToLook()
+    void StartToLook()
     {
-                        LookOneTime= false;
- 
-                  States = EnemyStates.Look;
+        LookOneTime = false;
+
+        States = EnemyStates.Look;
+
+
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+
+        if (other.CompareTag("Player"))
+        {
+
+            Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
+            rb.AddForce((transform.position-other.gameObject.transform.position)*100,ForceMode.Impulse);
+            Destroy(gameObject);
+
+        }
 
 
     }
