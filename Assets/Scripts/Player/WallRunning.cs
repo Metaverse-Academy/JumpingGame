@@ -94,11 +94,11 @@ public class WallRunning : MonoBehaviour
     {
         if (leftWall)
         {
-            MainCamera.Lens.Dutch = -7f;
+            MainCamera.Lens.Dutch = Mathf.Lerp(0, -15f, Time.deltaTime * 2);
         }
         else if (rightWall)
         {
-            MainCamera.Lens.Dutch = 7f; 
+            MainCamera.Lens.Dutch = Mathf.Lerp(0, 15f, Time.deltaTime * 2);
         }
         Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
         Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up - wallNormal.y * Vector3.up);

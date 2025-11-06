@@ -323,7 +323,7 @@ public class Ai : MonoBehaviour
         {
 
             Rigidbody rb = other.gameObject.GetComponent<Rigidbody>();
-            rb.AddForce((transform.position-other.gameObject.transform.position)*100,ForceMode.Impulse);
+            rb.AddForce((transform.position-other.gameObject.transform.position)*30,ForceMode.Impulse);
             Destroy(gameObject);
 
         }
