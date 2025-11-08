@@ -12,7 +12,6 @@ public class Ai : MonoBehaviour
    [SerializeField] EnemyStates States;
     private NavMeshAgent AiEnemy;
     [SerializeField] private Transform[] HiddenPos = new Transform[6];
-    [SerializeField] private bool[] HiddenPosIsPlayerIn = new bool[6];
     [SerializeField] private GameObject Player;
     RaycastHit Hit;
     private string RecentTag;
@@ -36,7 +35,8 @@ public class Ai : MonoBehaviour
 
     //AI Thinking
     bool DidYouWantToSeePlayer;
-    bool iWantToStopAttacking =true;
+    bool iWantToStopAttacking = true;
+    int MyRecentPos=-1;
 
 
 
@@ -49,6 +49,8 @@ public class Ai : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //   Debug.Log($"I am {gameObject.name} my pos is = {MyRecentPos}");
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out Hit, 50))
         {
             RecentTag = Hit.collider.gameObject.tag;
@@ -59,7 +61,6 @@ public class Ai : MonoBehaviour
         }
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 50, Color.red);
 
-        Debug.Log(RecentTag);
 
         if (DidYouWantToSeePlayer == true)
         {
@@ -74,10 +75,19 @@ public class Ai : MonoBehaviour
 
 
                 if (RunOneTime == false)
+
                 {
                     RunOneTime = true;
+
+                    
+                  
+                      
+
+                    
                     AiEnemy.SetDestination(ChooseBestHiddenPos());
                     Invoke("GoToHiddenState", 2f);
+                  
+                    
                 }
 
 
@@ -179,7 +189,7 @@ public class Ai : MonoBehaviour
         for (int i = 0; i < HiddenPos.Length; i++)
         {
 
-            if (HiddenPosIsPlayerIn[i] == false)
+            if (AiContactMNG.Instance.HiddenPosIsPlayerIn[i] == false)
             {
                 recentDis = Vector3.Distance(transform.position, HiddenPos[i].position);
                 recentDisFromPlayerToHiddenPos = Vector3.Distance(PlayerPos.position, HiddenPos[i].position);
@@ -190,7 +200,8 @@ public class Ai : MonoBehaviour
                     if (recentDisFromPlayerToHiddenPos > LongestDisFromPlayerToPos) { 
                     LongestDisFromPlayerToPos = recentDisFromPlayerToHiddenPos;
                     ShorterDis = recentDis;
-                    shorterIndex = i;
+                        shorterIndex = i;
+                        MyRecentPos = i;
                     }
                 }
             }
@@ -231,29 +242,19 @@ public class Ai : MonoBehaviour
 
     void resetTheIsAiHiddenBool(int j)
     {
-        for (int i = 0; i < HiddenPosIsPlayerIn.Length; i++)
-        {
-
-            HiddenPosIsPlayerIn[i] = false;
-
-
-        }
-
-        HiddenPosIsPlayerIn[j] = true;
+AiContactMNG.Instance.HiddenPosIsPlayerIn[j] = true;
 
 
     }
     void GoToHiddenState()
     {
         States = EnemyStates.Hidden;
-        Debug.Log("it is work ");
     }
 
 
 
     IEnumerator TakeALook(int i)
     {
-        Debug.Log("Hahaha.......");
 
 
 
@@ -303,6 +304,9 @@ public class Ai : MonoBehaviour
 
         RunOneTime = false;
 
+        AiContactMNG.Instance.HiddenPosIsPlayerIn[MyRecentPos] = false;
+  
+                        
         States = EnemyStates.Run;
 
 
