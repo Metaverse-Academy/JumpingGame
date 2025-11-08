@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.Feedbacks;
 
 public class WallRunning : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private float wallRunningCooldown = 0.4f;
     private float wallRunningCooldownTimer;
     [SerializeField] private CinemachineCamera MainCamera;
+    public MMF_Player wallRunStartFeedback;
     public CinemachineImpulseSource cameraImpulse;
     [Header("Wall Check Settings")]
     [SerializeField] private float wallCheckDistance = 1f;
@@ -57,6 +59,7 @@ public class WallRunning : MonoBehaviour
         {
             if (!isWallRunning)
             {
+                CameraSwitcher.instance.ActiveWallRun();
                 StartWallRun();
             }
 
@@ -66,7 +69,7 @@ public class WallRunning : MonoBehaviour
         {
             if (isWallRunning )
             {
-
+                 CameraSwitcher.instance.DeactiveWallRun();
                 StopWallRun();
                 
                 
@@ -80,6 +83,7 @@ public class WallRunning : MonoBehaviour
         isWallRunning = false;
         rb.useGravity = true;
         StartCoroutine(CameraDutchReset());
+        wallRunStartFeedback.StopFeedbacks();
     }
     // private IEnumerator WallRunningCooldown()
     // {
@@ -92,14 +96,9 @@ public class WallRunning : MonoBehaviour
 
     private void WallRunningMovement()
     {
-        if (leftWall)
-        {
-            MainCamera.Lens.Dutch = Mathf.Lerp(0, -15f, Time.deltaTime * 2);
-        }
-        else if (rightWall)
-        {
-            MainCamera.Lens.Dutch = Mathf.Lerp(0, 15f, Time.deltaTime * 2);
-        }
+        
+        
+        wallRunStartFeedback.PlayFeedbacks();
         Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
         Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up - wallNormal.y * Vector3.up);
 
