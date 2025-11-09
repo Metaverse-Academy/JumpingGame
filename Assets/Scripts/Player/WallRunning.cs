@@ -83,7 +83,7 @@ public class WallRunning : MonoBehaviour
         isWallRunning = false;
         rb.useGravity = true;
         StartCoroutine(CameraDutchReset());
-        wallRunStartFeedback.StopFeedbacks();
+//        wallRunStartFeedback.StopFeedbacks();
     }
     // private IEnumerator WallRunningCooldown()
     // {
@@ -98,7 +98,7 @@ public class WallRunning : MonoBehaviour
     {
         
         
-        wallRunStartFeedback.PlayFeedbacks();
+    //    wallRunStartFeedback.PlayFeedbacks();
         Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
         Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up - wallNormal.y * Vector3.up);
 

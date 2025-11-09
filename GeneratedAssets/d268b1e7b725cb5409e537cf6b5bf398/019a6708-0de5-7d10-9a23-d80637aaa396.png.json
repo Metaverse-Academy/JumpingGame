@@ -1,0 +1,20 @@
+{
+    "asset": "d268b1e7b725cb5409e537cf6b5bf398",
+    "fileName": "019a6708-0de5-7d10-9a23-d80637aaa396.png",
+    "prompt": "clouds Dusty ",
+    "negativePrompt": "",
+    "model": "5b5b2af1-6ea4-4266-b087-cc9f3bf4f450",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "17ef0effcbc6e240cc54e7426d87adc8",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
