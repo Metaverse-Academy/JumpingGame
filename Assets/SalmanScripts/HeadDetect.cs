@@ -10,8 +10,7 @@ public class HeadDetect : MonoBehaviour
         {                    Debug.Log("deathFromScripts");
 
             MokeyAi scripts = transform.GetComponentInParent<MokeyAi>();
-            scripts.Death();
-
+            StartCoroutine(scripts.Death());
 
         }
     }

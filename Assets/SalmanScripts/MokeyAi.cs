@@ -1,10 +1,13 @@
+using System.Collections;
 using System.Linq;
+using Unity.InferenceEngine.Tokenization;
 using UnityEngine;
 using UnityEngine.AI;
 public class MokeyAi : MonoBehaviour
 {
 
-    enum EnemyStates {Idle,attack};
+    private Animator animator;
+    enum EnemyStates { Idle, attack };
    [SerializeField] EnemyStates States;
     private NavMeshAgent AiEnemy;
     [SerializeField] private Transform newPosToGo;
@@ -37,10 +40,11 @@ public class MokeyAi : MonoBehaviour
 
     //test
     float recentTime;
+    bool Iswalking=false;
 
     void Start()
     {
-
+        animator = GetComponent<Animator>();
         AiEnemy = GetComponent<NavMeshAgent>();
         StartIdle();
     }
@@ -48,7 +52,8 @@ public class MokeyAi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
+        Debug.Log(Iswalking);
+        animator.SetBool("IsWalking", Iswalking);
 
 
 
@@ -85,12 +90,22 @@ public class MokeyAi : MonoBehaviour
 
                     recentTime += Time.deltaTime;
                      
-                                if (recentTime > 4)
-                                {
-                                            recentTime = 0;
-                                            AiEnemy.SetDestination(findPath());
-                                }
+                                if (recentTime > 6)
+                    {
 
+                        recentTime = 0;
+                        Iswalking=true;
+                        animator.SetTrigger("StartWalk");
+                        AiEnemy.SetDestination(findPath());
+                       
+                                            
+                                }
+ if (AiEnemy.isStopped)
+                        {
+                            
+                                                    Iswalking=false;
+
+                        }
 
                 }
 
@@ -104,6 +119,7 @@ public class MokeyAi : MonoBehaviour
 
                 if (attackOneTime)
                 {
+     Iswalking=true;
 
                     Vector3 targetPos = Player.transform.position;
                     targetPos.y = transform.position.y;
@@ -134,6 +150,8 @@ public class MokeyAi : MonoBehaviour
     {
         IdleOneTime = true;
         States = EnemyStates.Idle;
+             Iswalking=false;
+
         Debug.Log("start idle");
 
     }
@@ -142,10 +160,14 @@ public class MokeyAi : MonoBehaviour
     {
         attackOneTime = true;
         IdleOneTime = false;
+     Iswalking=true;
+        animator.SetTrigger("StartWalk");
+
+
+
 
         States = EnemyStates.attack;
         Debug.Log("start Attack");
-
 
     }
 
@@ -170,7 +192,7 @@ public class MokeyAi : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-
+            
             Rigidbody PlayerRB = other.gameObject.GetComponent<Rigidbody>();
             StartCoroutine(other.gameObject.GetComponent<PlayerMovement>().setPushed());
                         // PlayerRB.AddForce((Player.transform.position - transform.position) * ForceOfThePush, ForceMode.Impulse);
@@ -185,12 +207,17 @@ PlayerRB.AddForce(dir * ForceOfThePush, ForceMode.Impulse);
 
     }
 
-    public void Death()
+   public IEnumerator Death()
     {
+
+
                     Debug.Log("death");
 
         Rigidbody PlayerRB = Player.gameObject.GetComponent<Rigidbody>();
-        PlayerRB.AddForce((Player.transform.position-transform.position)*80 , ForceMode.Impulse);
+        PlayerRB.AddForce((Player.transform.position - transform.position) * 15, ForceMode.Impulse);
+        animator.SetTrigger("Death");
+        yield return new WaitForSeconds(2.10f);
+
         Destroy(gameObject);
 
     }
