@@ -3,6 +3,7 @@
 
 // This script handles basic Rigidbody-based movement and rotation for a 3D player using the new Unity Input System.
 
+using System.Collections;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
 using UnityEngine; // Import the UnityEngine namespace to access Unity-specific classes and functions.
@@ -28,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject groundCheck;
     public WallRunning wallRunning;
     public Transform cam;
+    public Animator animator;
+    private bool pushed = false;
 
     // Start is called before the first frame update.
     void Start()
@@ -45,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     {
         // Read the movement input from the Input System (e.g., WASD or arrow keys).
         movementInput = context.ReadValue<Vector2>();
+       // moveSpeed = Mathf.Lerp(0f, moveSpeed, 1f * Time.fixedDeltaTime); 
     }
 
     // This method is called by the Input System when the "Jump" action is triggered.
@@ -57,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
             // Apply an upward force to the Rigidbody for jumping.
             jumpFeedback.PlayFeedbacks();
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            animator.SetTrigger("Jump");
         }
     }
 
@@ -66,6 +71,9 @@ public class PlayerMovement : MonoBehaviour
         if (wallRunning.isWallRunning) return;
 
         // BUILD MOVEMENT RELATIVE TO CAMERA (minimal change)
+        //movement speed 
+
+        animator.SetFloat("Speed", movementInput.magnitude);
         // Get camera forward/right, flatten them so movement stays on XZ plane
         Vector3 camForward = Vector3.zero;
         Vector3 camRight = Vector3.zero;
@@ -89,6 +97,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 movement = camRight * movementInput.x + camForward * movementInput.y;
 
         // preserve vertical velocity (you're using linearVelocity in your original)
+        if (pushed == true) return;
         rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
 
         isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
@@ -117,4 +126,10 @@ public class PlayerMovement : MonoBehaviour
     //         rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f); // Smoothly rotate the player towards the target direction.
     //     }
     // }
+    public IEnumerator  setPushed()
+    {
+        pushed = true;
+        yield return new WaitForSeconds(1f);
+        pushed = false;
+    }
 }

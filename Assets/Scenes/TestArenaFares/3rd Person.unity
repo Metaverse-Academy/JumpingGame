@@ -2199,6 +2199,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &269530559 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3931139887851891185, guid: ad97230dae489224a811978f4583b477, type: 3}
+  m_PrefabInstance: {fileID: 953626496}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &272884990
 GameObject:
   m_ObjectHideFlags: 0
@@ -6160,7 +6165,7 @@ MonoBehaviour:
         Owner: {fileID: 907436154}
         DebugActive: 0
         TargetShaker: {fileID: 0}
-        Duration: 0.5
+        Duration: 0.11
         ResetShakerValuesAfterShake: 1
         ResetTargetValuesAfterShake: 1
         ShakeSpeed: 20
@@ -6430,6 +6435,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 188530362025218113, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 269530559}
+    - target: {fileID: 188530362025218113, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: jumpForce
       value: 10.25
       objectReference: {fileID: 0}
@@ -6441,6 +6450,10 @@ PrefabInstance:
       propertyPath: jumpFeedback
       value: 
       objectReference: {fileID: 907436154}
+    - target: {fileID: 3931139887851891185, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4042554045664443166, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: m_Name
       value: Player 1
