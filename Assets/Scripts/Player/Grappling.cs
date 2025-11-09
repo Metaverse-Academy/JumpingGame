@@ -1,19 +1,22 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using Unity.Cinemachine;
 
 public class Grappling : MonoBehaviour
 {
      private LineRenderer lr;
     private Vector3 grapplePoint;
     public LayerMask whatIsGrappleable;
-    public Transform gunTip, mainCamera, player;
-    private float maxDistance = 100f;
+    public Transform gunTip,  player;
+    private float maxDistance = 28f;
     private SpringJoint joint;
     public PlayerInput playerInput;
     [SerializeField] public float jointSpring = 4.5f;
     [SerializeField] public float jointDamper = 7f;
     [SerializeField] public float jointMassScale = 4.5f;
+    public CinemachineCamera defaultCamera;
+
     private bool isGrappling;
     public AudioSource audioSource;
 
@@ -38,36 +41,77 @@ public class Grappling : MonoBehaviour
 
     private void StopGrapple()
     {
+        // cleanly release
+        isGrappling = false;
         lr.positionCount = 0;
-        Destroy(joint);
+        defaultCamera.Lens.FieldOfView = 90f;
+        if (joint) Destroy(joint);
     }
 
     private void StartGrapple()
     {
-        if (Physics.Raycast(mainCamera.position, mainCamera.forward, out RaycastHit hit, maxDistance, whatIsGrappleable))
+        // find ANY collider on the layer within radius around the player
+        Collider[] hits = Physics.OverlapSphere(player.position, maxDistance, whatIsGrappleable, QueryTriggerInteraction.Ignore);
+        if (hits == null || hits.Length == 0)
         {
-            Debug.Log("Grapple hit: " + hit.collider.name);
-            grapplePoint = hit.point;
-            joint = player.gameObject.AddComponent<SpringJoint>();
-            joint.autoConfigureConnectedAnchor = false;
-            joint.connectedAnchor = grapplePoint;
-
-            float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
-
-            //The distance grapple will try to keep from grapple point. 
-            joint.maxDistance = distanceFromPoint * 0.8f;
-            joint.minDistance = distanceFromPoint * 0.25f;
-
-            //Adjust these values to fit your game.
-            joint.spring = jointSpring;
-            joint.damper = jointDamper;
-            joint.massScale = jointMassScale;
-
-            lr.positionCount = 2;
-            isGrappling = true;
-            audioSource.Play();
+            Debug.Log("No grapple target nearby on the selected layer.");
+            return;
         }
+
+        // just use the first one found (no closest logic)
+        Collider col = hits[0];
+
+        // anchor to the surface point closest to the player
+        grapplePoint = col.ClosestPoint(player.position);
+
+        // create swing joint
+        joint = player.gameObject.AddComponent<SpringJoint>();
+        joint.autoConfigureConnectedAnchor = false;
+        joint.connectedAnchor = grapplePoint;
+
+        float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
+        joint.maxDistance = distanceFromPoint * 0.8f;   // some slack
+        joint.minDistance = distanceFromPoint * 0.25f;  // min rope length
+
+        // spring settings (layer-only logic, no other checks)
+        joint.spring = jointSpring;
+        joint.damper = jointDamper;
+        joint.massScale = jointMassScale;
+
+        lr.positionCount = 2;
+        isGrappling = true;
+        if (isGrappling)
+        {
+            defaultCamera.Lens.FieldOfView = 110f;
+        }
+        if (audioSource) audioSource.Play();
     }
+    // private void StartGrapple()
+    // {
+    //     if (Physics.Raycast(mainCamera.position, mainCamera.forward, out RaycastHit hit, maxDistance, whatIsGrappleable))
+    //     {
+    //         Debug.Log("Grapple hit: " + hit.collider.name);
+    //         grapplePoint = hit.point;
+    //         joint = player.gameObject.AddComponent<SpringJoint>();
+    //         joint.autoConfigureConnectedAnchor = false;
+    //         joint.connectedAnchor = grapplePoint;
+
+    //         float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
+
+    //         //The distance grapple will try to keep from grapple point. 
+    //         joint.maxDistance = distanceFromPoint * 0.8f;
+    //         joint.minDistance = distanceFromPoint * 0.25f;
+
+    //         //Adjust these values to fit your game.
+    //         joint.spring = jointSpring;
+    //         joint.damper = jointDamper;
+    //         joint.massScale = jointMassScale;
+
+    //         lr.positionCount = 2;
+    //         isGrappling = true;
+    //         audioSource.Play();
+    //     }
+    // }
     void LateUpdate()
     {
         DrawRope();

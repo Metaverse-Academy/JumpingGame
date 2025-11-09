@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: a5e58fe346ae051468a661ac470aef00
+ModelImporter:
+  serializedVersion: 24200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface105_pCylinder2Mat
+    second: {fileID: 2100000, guid: 6a13f0e11d4a0b540b6c15831de4bc4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface43_pCylinder2Mat
+    second: {fileID: 2100000, guid: 99da578f80b370b40adb75b7493dfef9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface44_pCylinder2Mat
+    second: {fileID: 2100000, guid: 51ea8642352fa0c4496834670a13e74c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface45_pCylinder2Mat
+    second: {fileID: 2100000, guid: 1beb7a02e1929fc46b38032a36ed5971, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface46_pCylinder2Mat
+    second: {fileID: 2100000, guid: 46bbb44f51364f744a136fcafe463377, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface47_pCylinder2Mat
+    second: {fileID: 2100000, guid: d6bd6732db9268b46bcbc9131e5ea663, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface48_pCylinder2Mat
+    second: {fileID: 2100000, guid: 6b08679c683d8fe45afba7dba1091155, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface49_pCylinder2Mat
+    second: {fileID: 2100000, guid: 45a6f5ad67a397c45a23feabd4b797a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface50_pCylinder2Mat
+    second: {fileID: 2100000, guid: 9de15c5a53344b9449e71046c3a3aeec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface51_pCylinder2Mat
+    second: {fileID: 2100000, guid: 3ac3fd0fc172630439357571dc03b89a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface52_pCylinder2Mat
+    second: {fileID: 2100000, guid: 4f2e2a8a4750db549944008f985a4d09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface53_pCylinder2Mat
+    second: {fileID: 2100000, guid: fdbac28b24300bf4badcbebde2c37765, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface54_pCylinder2Mat
+    second: {fileID: 2100000, guid: 7597bbf37c5998443b2ea8607111f759, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface55_pCylinder2Mat
+    second: {fileID: 2100000, guid: d31737b24f63b524ca335c557777ed85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface56_pCylinder2Mat
+    second: {fileID: 2100000, guid: 2bd716ae5919bf148ab79ac3b5527636, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface57_pCylinder2Mat
+    second: {fileID: 2100000, guid: 270d4a00de7811c418df024b1e588213, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface58_pCylinder2Mat
+    second: {fileID: 2100000, guid: 04c682a77f69aaa4f8c2842d9daf2422, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface59_pCylinder2Mat
+    second: {fileID: 2100000, guid: 53c0ff6cab326ca4099d0d6bc685da60, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface60_pCylinder2Mat
+    second: {fileID: 2100000, guid: f4f440a8942b0164499dd1c558cc4707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface61_pCylinder2Mat
+    second: {fileID: 2100000, guid: 95efe844a698b544393685e93dca82e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface62_pCylinder2Mat
+    second: {fileID: 2100000, guid: 4d64e550d7543b74287c37af92ffd1e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP:polySurface10_SP:polySurface64_pCylinder2Mat
+    second: {fileID: 2100000, guid: d357f9f55fd74bc4a8a1ae53d633cdac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface105_pCylinder2Mat
+    second: {fileID: 2100000, guid: 86d2691235c87bf4db3e4555ded2af67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface43_pCylinder2Mat
+    second: {fileID: 2100000, guid: 78542110c3422104a86bf4e002787de6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface44_pCylinder2Mat
+    second: {fileID: 2100000, guid: 2f52514e57f33d047a1ff41827437c09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface45_pCylinder2Mat
+    second: {fileID: 2100000, guid: 47d11c684882b0b4e9fb003553297f8c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface46_pCylinder2Mat
+    second: {fileID: 2100000, guid: 5c308fa552102f542b5a0722448cd74f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface47_pCylinder2Mat
+    second: {fileID: 2100000, guid: 4e2b260da9aa738499a6e470b68153ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface48_pCylinder2Mat
+    second: {fileID: 2100000, guid: 046c65441501f85479ec590d2340d0d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface49_pCylinder2Mat
+    second: {fileID: 2100000, guid: bf03ec9f12721ff438f980887bf4ad31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface50_pCylinder2Mat
+    second: {fileID: 2100000, guid: b2f02f413681530438c83581ce5a7d85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface51_pCylinder2Mat
+    second: {fileID: 2100000, guid: a07c127b4448e2f4bb3b2bbe53c567d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface52_pCylinder2Mat
+    second: {fileID: 2100000, guid: 8ac0cdbde04464b4ba606f39f398b5b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface53_pCylinder2Mat
+    second: {fileID: 2100000, guid: b0b25c146f0c06e4f97efe23a098a310, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface54_pCylinder2Mat
+    second: {fileID: 2100000, guid: 313bc483784d7c74e9bbd4b873318cdb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface55_pCylinder2Mat
+    second: {fileID: 2100000, guid: 738f9ff01bf7f934bb4094343c5c3296, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface56_pCylinder2Mat
+    second: {fileID: 2100000, guid: ea05a46b29bb50e46a8bc74dfbab762b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface57_pCylinder2Mat
+    second: {fileID: 2100000, guid: 42f9ad7acee1d534686376c107525e16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface58_pCylinder2Mat
+    second: {fileID: 2100000, guid: c9e7dfebe2c681142b0e2b8869ec9936, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface59_pCylinder2Mat
+    second: {fileID: 2100000, guid: 1a6231294cb8c28468fb42c75d50b596, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface60_pCylinder2Mat
+    second: {fileID: 2100000, guid: 0d44122303048294b8a5ef4a7be3c030, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface61_pCylinder2Mat
+    second: {fileID: 2100000, guid: 0085063468830c44abe09e0c1b10de78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface62_pCylinder2Mat
+    second: {fileID: 2100000, guid: d87436dc7804fe543aed537429e15382, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_polySurface10_SP_polySurface64_pCylinder2Mat
+    second: {fileID: 2100000, guid: f983df1541c1d9e41842c0e952128596, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pCylinder2Mat
+    second: {fileID: 2100000, guid: e08ea0cb438867443b91fbafca437eec, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 1
+    materialSearch: 0
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    generateMeshLods: 0
+    meshLodGenerationFlags: 0
+    maximumMeshLod: -1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

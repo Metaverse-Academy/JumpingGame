@@ -8,9 +8,9 @@
             "actions": [
                 {
                     "name": "Look",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "68fe9a09-2640-4980-b7e3-5c4569d57ec2",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -289,11 +289,11 @@
                 },
                 {
                     "name": "",
-                    "id": "c34ed8a2-9d66-489e-b05c-a4baab0b2b98",
-                    "path": "<Pointer>/delta",
+                    "id": "d2f8fc52-ca67-4e6e-825a-6a6746441490",
+                    "path": "<Mouse>/middleButton",
                     "interactions": "",
-                    "processors": "DeltaTimeScale,ScaleVector2(x=0.1,y=0.1)",
-                    "groups": ";Keyboard&Mouse;Touch",
+                    "processors": "",
+                    "groups": "",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false

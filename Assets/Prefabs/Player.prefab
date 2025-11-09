@@ -775,18 +775,18 @@ MonoBehaviour:
   WallRunning: {fileID: 6031240778297505859}
   walkSpeed: 5
   sprintSpeed: 9
-  airMultiplier: 1.44
-  jumpForce: 10.36
-  jumpCooldown: 0.69
+  airMultiplier: 1
+  jumpForce: 12
+  jumpCooldown: 0.1
   playerHeight: 0.36
   whatIsGround:
     serializedVersion: 2
     m_Bits: 64
   groundCheck: {fileID: 6990899574717734326}
-  groundDrag: 1.62
-  dashForce: 20.65
-  dashDuration: 0.2
-  dashUpwardForce: 1.17
+  groundDrag: 10
+  dashForce: 30
+  dashDuration: -5
+  dashUpwardForce: 0.1
   dashCooldown: 1
   normalFOV: 70
   slideFOV: 90
