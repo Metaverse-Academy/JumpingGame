@@ -3896,6 +3896,17 @@ Transform:
   - {fileID: 619585734}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90.99, z: 0}
+--- !u!114 &508104645 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4744435783035569397, guid: ad97230dae489224a811978f4583b477, type: 3}
+  m_PrefabInstance: {fileID: 953626496}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
 --- !u!1 &529907108
 GameObject:
   m_ObjectHideFlags: 0
@@ -6450,6 +6461,22 @@ PrefabInstance:
       propertyPath: jumpFeedback
       value: 
       objectReference: {fileID: 907436154}
+    - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: wallRunForce
+      value: 39.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: WallRunCamera
+      value: 
+      objectReference: {fileID: 508104645}
+    - target: {fileID: 3678072691948991745, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3871492292552610306, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3931139887851891185, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -6500,6 +6527,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7840609478523976507, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8042294170469391770, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: Composition.ScreenPosition.x
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

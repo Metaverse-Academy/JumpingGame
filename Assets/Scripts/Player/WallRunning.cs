@@ -24,7 +24,7 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private float wallJumpForce = 40f;
     [SerializeField] private float wallRunningCooldown = 0.4f;
     private float wallRunningCooldownTimer;
-    [SerializeField] private CinemachineCamera MainCamera;
+    [SerializeField] private CinemachineCamera WallRunCamera;
     public MMF_Player wallRunStartFeedback;
     public CinemachineImpulseSource cameraImpulse;
     [Header("Wall Check Settings")]
@@ -51,7 +51,7 @@ public class WallRunning : MonoBehaviour
     private IEnumerator CameraDutchReset()
     {
         yield return new WaitForSeconds(0.2f);
-        MainCamera.Lens.Dutch = 0f;
+        WallRunCamera.Lens.Dutch = 0f;
     }
     void FixedUpdate()
     {
@@ -96,7 +96,10 @@ public class WallRunning : MonoBehaviour
 
     private void WallRunningMovement()
     {
-        
+        if (leftWall)
+            WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, -10f, Time.fixedDeltaTime * 5f);
+        else if (rightWall)
+            WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, 10f, Time.fixedDeltaTime * 5f);
         
     //    wallRunStartFeedback.PlayFeedbacks();
         Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
