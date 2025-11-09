@@ -38,6 +38,7 @@ public class WallRunning : MonoBehaviour
     private float mainCameraRightDutch  =10f;
     private bool leftWall;
     private bool rightWall;
+    public GameObject trailEffect;
     public bool isWallRunning;
     private void Start()
     {
@@ -86,7 +87,8 @@ public class WallRunning : MonoBehaviour
     {
         isWallRunning = false;
         rb.useGravity = true;
-        animator.SetBool("IsWallRunning", false);
+        trailEffect.SetActive(false);
+        //animator.SetBool("IsWallRunning", false);
         // WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, 0f, Time.fixedDeltaTime * 2f);
          StartCoroutine(CameraDutchReset());
 //        wallRunStartFeedback.StopFeedbacks();
@@ -105,14 +107,14 @@ public class WallRunning : MonoBehaviour
         if (leftWall)
         {
             WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, -mainCameraleftDutch, Time.fixedDeltaTime * 1f);
-            animator.SetBool("IsWallRunning", true);
+           // animator.SetBool("IsWallRunning", true);
             
         }
            
         else if (rightWall)
         {
             WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, mainCameraRightDutch, Time.fixedDeltaTime * 1f);
-            animator.SetBool("IsWallRunning", true);
+//            animator.SetBool("IsWallRunning", true);
         }
             
         
@@ -141,6 +143,7 @@ public class WallRunning : MonoBehaviour
         isWallRunning = true;
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
+        trailEffect.SetActive(true);
        // cameraImpulse.GenerateImpulse();
 
           
