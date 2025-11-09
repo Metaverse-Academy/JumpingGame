@@ -171,8 +171,12 @@ public class MokeyAi : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-        Rigidbody PlayerRB = other.gameObject.GetComponent<Rigidbody>();
-        PlayerRB.AddForce((Player.transform.position-transform.position)*ForceOfThePush , ForceMode.Impulse);
+            Rigidbody PlayerRB = other.gameObject.GetComponent<Rigidbody>();
+
+            // PlayerRB.AddForce((Player.transform.position - transform.position) * ForceOfThePush, ForceMode.Impulse);
+            Debug.Log("adding new force");
+Vector3 dir = (Player.transform.position - transform.position).normalized;
+PlayerRB.AddForce(dir * ForceOfThePush, ForceMode.Impulse);
 
 
         }

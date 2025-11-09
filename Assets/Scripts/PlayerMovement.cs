@@ -54,8 +54,10 @@ public class PlayerMovement : MonoBehaviour
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
-        if(wallRunning.isWallRunning) return;
+        if (wallRunning.isWallRunning) return;
+        
         // Apply movement based on the input received from OnMove.
+        
         Vector3 movement = new Vector3(movementInput.x, 0.0f, movementInput.y);
         rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
 
