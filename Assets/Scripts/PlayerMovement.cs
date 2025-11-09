@@ -4,7 +4,8 @@ using System.Collections;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
 using UnityEngine; // Import the UnityEngine namespace to access Unity-specific classes and functions.
-using UnityEngine.InputSystem; // Import the InputSystem namespace to use the new Input System.
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement; // Import the InputSystem namespace to use the new Input System.
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -128,10 +129,17 @@ public class PlayerMovement : MonoBehaviour
     //         rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f); // Smoothly rotate the player towards the target direction.
     //     }
     // }
-    public IEnumerator  setPushed()
+    public IEnumerator setPushed()
     {
         pushed = true;
         yield return new WaitForSeconds(1f);
         pushed = false;
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Goal"))
+        {
+            SceneManager.LoadScene("Prototype1");
+        }
     }
 }
