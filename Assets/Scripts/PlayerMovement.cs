@@ -1,13 +1,11 @@
-// 11/8/2025 AI-Tag
-// This was created with the help of Assistant, a Unity Artificial Intelligence product.
 
-// This script handles basic Rigidbody-based movement and rotation for a 3D player using the new Unity Input System.
 
 using System.Collections;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
 using UnityEngine; // Import the UnityEngine namespace to access Unity-specific classes and functions.
-using UnityEngine.InputSystem; // Import the InputSystem namespace to use the new Input System.
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement; // Import the InputSystem namespace to use the new Input System.
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -46,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
     // This method is called by the Input System when the "Move" action is triggered.
     public void OnMove(InputAction.CallbackContext context)
     {
+        if(context.started && isGrounded==true)AudioMNG.instance.Walking(1);
+            movementInput = context.ReadValue<Vector2>();
+            if(context.canceled&&isGrounded==true)AudioMNG.instance.Walking(0);
         // Read the movement input from the Input System (e.g., WASD or arrow keys).
             if(context.started && isGrounded==true)AudioMNG.instance.Walking(1);
             movementInput = context.ReadValue<Vector2>();
@@ -62,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
             AudioMNG.instance.PlaySounds(2);
 
             if (wallRunning.isWallRunning) return;
+            AudioMNG.instance.PlaySounds(2);
             // Apply an upward force to the Rigidbody for jumping.
             jumpFeedback.PlayFeedbacks();
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
@@ -73,6 +75,10 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         if (wallRunning.isWallRunning) return;
+        if (movementInput.y < 0)
+        {
+            
+        }
 
         // BUILD MOVEMENT RELATIVE TO CAMERA (minimal change)
         //movement speed 
@@ -102,6 +108,7 @@ public class PlayerMovement : MonoBehaviour
 
         // preserve vertical velocity (you're using linearVelocity in your original)
         if (pushed == true) return;
+        if(Grappling.instance.isGrappling==true) return;
         rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
 
         isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
@@ -130,10 +137,17 @@ public class PlayerMovement : MonoBehaviour
     //         rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f); // Smoothly rotate the player towards the target direction.
     //     }
     // }
-    public IEnumerator  setPushed()
+    public IEnumerator setPushed()
     {
         pushed = true;
         yield return new WaitForSeconds(1f);
         pushed = false;
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Goal"))
+        {
+            SceneManager.LoadScene("Prototype1");
+        }
     }
 }
