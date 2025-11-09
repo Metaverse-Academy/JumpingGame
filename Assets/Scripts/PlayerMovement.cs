@@ -1,7 +1,4 @@
-// 11/8/2025 AI-Tag
-// This was created with the help of Assistant, a Unity Artificial Intelligence product.
 
-// This script handles basic Rigidbody-based movement and rotation for a 3D player using the new Unity Input System.
 
 using System.Collections;
 using MoreMountains.Feedbacks;
@@ -69,6 +66,10 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         if (wallRunning.isWallRunning) return;
+        if (movementInput.y < 0)
+        {
+            
+        }
 
         // BUILD MOVEMENT RELATIVE TO CAMERA (minimal change)
         //movement speed 
@@ -98,6 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
         // preserve vertical velocity (you're using linearVelocity in your original)
         if (pushed == true) return;
+        if(Grappling.instance.isGrappling==true) return;
         rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
 
         isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);

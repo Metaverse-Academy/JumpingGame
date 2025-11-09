@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Linq;
+using MoreMountains.Feedbacks;
 using Unity.InferenceEngine.Tokenization;
 using UnityEngine;
 using UnityEngine.AI;
@@ -12,6 +13,7 @@ public class MokeyAi : MonoBehaviour
     private NavMeshAgent AiEnemy;
     [SerializeField] private Transform newPosToGo;
     [SerializeField] private GameObject Player;
+    [SerializeField] private MMF_Player hitFeedback;
     RaycastHit Hit;
     private string RecentTag;
 
@@ -215,6 +217,7 @@ PlayerRB.AddForce(dir * ForceOfThePush, ForceMode.Impulse);
 
         Rigidbody PlayerRB = Player.gameObject.GetComponent<Rigidbody>();
         PlayerRB.AddForce((Player.transform.position - transform.position) * 15, ForceMode.Impulse);
+        hitFeedback.PlayFeedbacks();
         animator.SetTrigger("Death");
         yield return new WaitForSeconds(2.10f);
 
