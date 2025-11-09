@@ -30,11 +30,15 @@ public class WallRunning : MonoBehaviour
     [Header("Wall Check Settings")]
     [SerializeField] private float wallCheckDistance = 1f;
     [SerializeField] private float minJumpHeight = 1.5f;
+    [SerializeField] private Animator animator;
 
     private RaycastHit leftWallHit;
     private RaycastHit rightWallHit;
+    private float mainCameraleftDutch=-10f;
+    private float mainCameraRightDutch  =10f;
     private bool leftWall;
     private bool rightWall;
+    public GameObject trailEffect;
     public bool isWallRunning;
     private void Start()
     {
@@ -59,7 +63,7 @@ public class WallRunning : MonoBehaviour
         {
             if (!isWallRunning)
             {
-                CameraSwitcher.instance.ActiveWallRun();
+               // CameraSwitcher.instance.ActiveWallRun();
                 StartWallRun();
             }
 
@@ -69,8 +73,9 @@ public class WallRunning : MonoBehaviour
         {
             if (isWallRunning )
             {
-                 CameraSwitcher.instance.DeactiveWallRun();
+                // CameraSwitcher.instance.DeactiveWallRun();
                 StopWallRun();
+                 // WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, 0f, Time.fixedDeltaTime * 2f);
                 
                 
             }
@@ -82,7 +87,10 @@ public class WallRunning : MonoBehaviour
     {
         isWallRunning = false;
         rb.useGravity = true;
-        StartCoroutine(CameraDutchReset());
+        trailEffect.SetActive(false);
+        //animator.SetBool("IsWallRunning", false);
+        // WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, 0f, Time.fixedDeltaTime * 2f);
+         StartCoroutine(CameraDutchReset());
 //        wallRunStartFeedback.StopFeedbacks();
     }
     // private IEnumerator WallRunningCooldown()
@@ -97,9 +105,18 @@ public class WallRunning : MonoBehaviour
     private void WallRunningMovement()
     {
         if (leftWall)
-            WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, -10f, Time.fixedDeltaTime * 5f);
+        {
+            WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, -mainCameraleftDutch, Time.fixedDeltaTime * 1f);
+           // animator.SetBool("IsWallRunning", true);
+            
+        }
+           
         else if (rightWall)
-            WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, 10f, Time.fixedDeltaTime * 5f);
+        {
+            WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, mainCameraRightDutch, Time.fixedDeltaTime * 1f);
+//            animator.SetBool("IsWallRunning", true);
+        }
+            
         
     //    wallRunStartFeedback.PlayFeedbacks();
         Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
@@ -126,6 +143,7 @@ public class WallRunning : MonoBehaviour
         isWallRunning = true;
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
+        trailEffect.SetActive(true);
        // cameraImpulse.GenerateImpulse();
 
           

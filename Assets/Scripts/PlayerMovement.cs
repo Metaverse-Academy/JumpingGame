@@ -101,7 +101,7 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
 
         isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
-
+        animator.SetBool("IsGrounded", isGrounded); 
         if (movement != Vector3.zero)
         {
             Quaternion targetRotation = Quaternion.LookRotation(movement);
