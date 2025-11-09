@@ -17,14 +17,18 @@ public class Grappling : MonoBehaviour
     [SerializeField] public float jointDamper = 7f;
     [SerializeField] public float jointMassScale = 4.5f;
     public CinemachineCamera defaultCamera;
-
-    private bool isGrappling;
+    public static Grappling instance;
+    public bool isGrappling;
     public AudioSource audioSource;
 
     void Awake()
     {
         lr = GetComponent<LineRenderer>();
         playerInput = GetComponent<PlayerInput>();
+    }
+    void Start()
+    {
+        instance = this;
     }
     
     public void OnGrapple(InputAction.CallbackContext context)
@@ -43,6 +47,7 @@ public class Grappling : MonoBehaviour
     private void StopGrapple()
     {
         // cleanly release
+        AudioMNG.instance.RopeSWing(0);
         isGrappling = false;
         lr.positionCount = 0;
         defaultCamera.Lens.FieldOfView = 90f;
@@ -52,6 +57,8 @@ public class Grappling : MonoBehaviour
     private void StartGrapple()
     {
         // find ANY collider on the layer within radius around the player
+        AudioMNG.instance.RopeSWing(1);
+        AudioMNG.instance.PlaySounds(1);
         Collider[] hits = Physics.OverlapSphere(player.position, maxDistance, whatIsGrappleable, QueryTriggerInteraction.Ignore);
         if (hits == null || hits.Length == 0)
         {
@@ -79,6 +86,7 @@ public class Grappling : MonoBehaviour
         joint.spring = jointSpring;
         joint.damper = jointDamper;
         joint.massScale = jointMassScale;
+        joint.enableCollision = true;
 
         lr.positionCount = 2;
         isGrappling = true;
