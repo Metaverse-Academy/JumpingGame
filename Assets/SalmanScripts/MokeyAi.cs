@@ -22,7 +22,7 @@ public class MokeyAi : MonoBehaviour
 
     GameObject myOP;
 
-
+    [SerializeField]int ForceOfThePush;
 
 
     //for states
@@ -172,7 +172,7 @@ public class MokeyAi : MonoBehaviour
         {
 
         Rigidbody PlayerRB = other.gameObject.GetComponent<Rigidbody>();
-        PlayerRB.AddForce((other.transform.position-transform.position)*40 , ForceMode.Impulse);
+        PlayerRB.AddForce((Player.transform.position-transform.position)*ForceOfThePush , ForceMode.Impulse);
 
 
         }
@@ -186,7 +186,7 @@ public class MokeyAi : MonoBehaviour
                     Debug.Log("death");
 
         Rigidbody PlayerRB = Player.gameObject.GetComponent<Rigidbody>();
-        PlayerRB.AddForce((Player.transform.position-transform.position)*40 , ForceMode.Impulse);
+        PlayerRB.AddForce((Player.transform.position-transform.position)*80 , ForceMode.Impulse);
         Destroy(gameObject);
 
     }
