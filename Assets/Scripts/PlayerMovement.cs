@@ -3,6 +3,8 @@
 
 // This script handles basic Rigidbody-based movement and rotation for a 3D player using the new Unity Input System.
 
+using MoreMountains.Feedbacks;
+using MoreMountains.Tools;
 using UnityEngine; // Import the UnityEngine namespace to access Unity-specific classes and functions.
 using UnityEngine.InputSystem; // Import the InputSystem namespace to use the new Input System.
 
@@ -12,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
 
     // Movement speed of the player.
+    [SerializeField] private MMF_Player jumpFeedback;
     public float moveSpeed = 5f;
 
     // Force applied for jumping.
@@ -24,12 +27,17 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 movementInput;
     public GameObject groundCheck;
     public WallRunning wallRunning;
+    public Transform cam;
 
     // Start is called before the first frame update.
     void Start()
     {
         // Get the Rigidbody component attached to this GameObject.
         rb = GetComponent<Rigidbody>();
+        if (cam == null && Camera.main != null)
+        {
+            cam = Camera.main.transform;
+        }
     }
 
     // This method is called by the Input System when the "Move" action is triggered.
@@ -45,8 +53,9 @@ public class PlayerMovement : MonoBehaviour
         // Check if the jump button is pressed and the player is grounded.
         if (context.performed && isGrounded)
         {
-            if(wallRunning.isWallRunning) return;
+            if (wallRunning.isWallRunning) return;
             // Apply an upward force to the Rigidbody for jumping.
+            jumpFeedback.PlayFeedbacks();
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }
@@ -54,19 +63,58 @@ public class PlayerMovement : MonoBehaviour
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
-        if(wallRunning.isWallRunning) return;
-        // Apply movement based on the input received from OnMove.
-        Vector3 movement = new Vector3(movementInput.x, 0.0f, movementInput.y);
+        if (wallRunning.isWallRunning) return;
+
+        // BUILD MOVEMENT RELATIVE TO CAMERA (minimal change)
+        // Get camera forward/right, flatten them so movement stays on XZ plane
+        Vector3 camForward = Vector3.zero;
+        Vector3 camRight = Vector3.zero;
+        if (cam != null)
+        {
+            camForward = cam.forward;
+            camForward.y = 0f;
+            camForward.Normalize();
+
+            camRight = cam.right;
+            camRight.y = 0f;
+            camRight.Normalize();
+        }
+        else
+        {
+            // fallback to world axes if no camera assigned
+            camForward = Vector3.forward;
+            camRight = Vector3.right;
+        }
+
+        Vector3 movement = camRight * movementInput.x + camForward * movementInput.y;
+
+        // preserve vertical velocity (you're using linearVelocity in your original)
         rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
 
-        // Check if the player is grounded by casting a ray downwards from the groundCheck object's position.
         isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
 
-        // Rotate the player to face the movement direction if there is movement.
-        if (movement != Vector3.zero) // Check if there is movement input.
+        if (movement != Vector3.zero)
         {
-            Quaternion targetRotation = Quaternion.LookRotation(movement); // Calculate the rotation needed to face the movement direction.
-            rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f); // Smoothly rotate the player towards the target direction.
+            Quaternion targetRotation = Quaternion.LookRotation(movement);
+            rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f);
         }
     }
+
+    // void FixedUpdate()
+    // {
+    //     if(wallRunning.isWallRunning) return;
+    //     // Apply movement based on the input received from OnMove.
+    //     Vector3 movement = new Vector3(movementInput.x, 0.0f, movementInput.y);
+    //     rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
+
+    //     // Check if the player is grounded by casting a ray downwards from the groundCheck object's position.
+    //     isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
+
+    //     // Rotate the player to face the movement direction if there is movement.
+    //     if (movement != Vector3.zero) // Check if there is movement input.
+    //     {
+    //         Quaternion targetRotation = Quaternion.LookRotation(movement); // Calculate the rotation needed to face the movement direction.
+    //         rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f); // Smoothly rotate the player towards the target direction.
+    //     }
+    // }
 }

@@ -38,6 +38,8 @@ public  class CameraSwitcher : MonoBehaviour
     }
     private void Start()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         instance = this;
     }
 
@@ -46,7 +48,7 @@ public  class CameraSwitcher : MonoBehaviour
     {
 
         wallRunCamera.enabled = true;
-        defaultCamera.enabled = false;
+        freeLookCamera.enabled = false;
 
 
     }
@@ -54,7 +56,7 @@ public  class CameraSwitcher : MonoBehaviour
     {
 
         wallRunCamera.enabled = false;
-        defaultCamera.enabled = true;
+        freeLookCamera.enabled = true;
     }
     public void IsFreeLookActiveMethod()
     {

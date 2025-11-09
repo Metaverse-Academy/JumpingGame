@@ -1,0 +1,20 @@
+{
+    "asset": "d268b1e7b725cb5409e537cf6b5bf398",
+    "fileName": "019a6707-ba21-7238-b365-10cc67c77658.png",
+    "prompt": "Smoky Dusty Partical",
+    "negativePrompt": "",
+    "model": "5b5b2af1-6ea4-4266-b087-cc9f3bf4f450",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "819c1057f5f837ea3d25db6ec1dd805c",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}

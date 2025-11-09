@@ -1,0 +1,20 @@
+{
+    "asset": "d268b1e7b725cb5409e537cf6b5bf398",
+    "fileName": "019a6707-66ac-7549-87a6-951b22c1cb46.png",
+    "prompt": "Smoky Dusty Partical when a player jump it appear ",
+    "negativePrompt": "",
+    "model": "5b5b2af1-6ea4-4266-b087-cc9f3bf4f450",
+    "modelName": "Flux.1 Dev",
+    "customSeed": -1,
+    "w3CTraceId": "76d126840750fa04342c066c06ddac3b",
+    "refinementMode": "Generation",
+    "pixelateTargetSize": 0,
+    "pixelateKeepImageSize": false,
+    "pixelatePixelBlockSize": 0,
+    "pixelateMode": 0,
+    "pixelateOutlineThickness": 0,
+    "doodles": {
+        "m_Items": []
+    },
+    "upscaleFactor": 0
+}
