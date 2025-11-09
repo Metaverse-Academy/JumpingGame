@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if(context.started && isGrounded==true)AudioMNG.instance.Walking(1);
             movementInput = context.ReadValue<Vector2>();
-            if(context.canceled&&isGrounded==true)AudioMNG.instance.Walking(0);
+            if(context.canceled||isGrounded==false)AudioMNG.instance.Walking(0);
         // Read the movement input from the Input System (e.g., WASD or arrow keys).
         movementInput = context.ReadValue<Vector2>();
        // moveSpeed = Mathf.Lerp(0f, moveSpeed, 1f * Time.fixedDeltaTime); 
