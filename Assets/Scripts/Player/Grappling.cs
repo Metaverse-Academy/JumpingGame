@@ -5,10 +5,11 @@ using Unity.Cinemachine;
 
 public class Grappling : MonoBehaviour
 {
-     private LineRenderer lr;
-    private Vector3 grapplePoint;
+    private LineRenderer lr;
+  
+         private Vector3 grapplePoint;
     public LayerMask whatIsGrappleable;
-    public Transform gunTip,  player;
+    public Transform gunTip, player;
     private float maxDistance = 28f;
     private SpringJoint joint;
     public PlayerInput playerInput;
@@ -59,10 +60,11 @@ public class Grappling : MonoBehaviour
         }
 
         // just use the first one found (no closest logic)
-        Collider col = hits[0];
+        Collider box = hits[0];
+        Debug.Log("Grapple target found: " + box.name);
 
         // anchor to the surface point closest to the player
-        grapplePoint = col.ClosestPoint(player.position);
+        grapplePoint = box.ClosestPoint(player.position);
 
         // create swing joint
         joint = player.gameObject.AddComponent<SpringJoint>();
@@ -80,10 +82,7 @@ public class Grappling : MonoBehaviour
 
         lr.positionCount = 2;
         isGrappling = true;
-        if (isGrappling)
-        {
-            defaultCamera.Lens.FieldOfView = 110f;
-        }
+       
         if (audioSource) audioSource.Play();
     }
     // private void StartGrapple()
