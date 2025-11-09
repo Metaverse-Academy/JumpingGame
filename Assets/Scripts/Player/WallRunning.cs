@@ -118,7 +118,7 @@ public class WallRunning : MonoBehaviour
         }
             
         
-    //    wallRunStartFeedback.PlayFeedbacks();
+           
         Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
         Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up - wallNormal.y * Vector3.up);
 
@@ -144,6 +144,7 @@ public class WallRunning : MonoBehaviour
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
         trailEffect.SetActive(true);
+        wallRunStartFeedback.PlayFeedbacks();       
        // cameraImpulse.GenerateImpulse();
 
           
