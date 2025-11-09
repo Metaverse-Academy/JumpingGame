@@ -44,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
     // This method is called by the Input System when the "Move" action is triggered.
     public void OnMove(InputAction.CallbackContext context)
     {
+        if(context.started && isGrounded==true)AudioMNG.instance.Walking(1);
+            movementInput = context.ReadValue<Vector2>();
+            if(context.canceled&&isGrounded==true)AudioMNG.instance.Walking(0);
         // Read the movement input from the Input System (e.g., WASD or arrow keys).
         movementInput = context.ReadValue<Vector2>();
        // moveSpeed = Mathf.Lerp(0f, moveSpeed, 1f * Time.fixedDeltaTime); 
@@ -56,6 +59,7 @@ public class PlayerMovement : MonoBehaviour
         if (context.performed && isGrounded)
         {
             if (wallRunning.isWallRunning) return;
+            AudioMNG.instance.PlaySounds(2);
             // Apply an upward force to the Rigidbody for jumping.
             jumpFeedback.PlayFeedbacks();
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);

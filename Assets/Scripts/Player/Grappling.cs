@@ -47,6 +47,7 @@ public class Grappling : MonoBehaviour
     private void StopGrapple()
     {
         // cleanly release
+        AudioMNG.instance.RopeSWing(0);
         isGrappling = false;
         lr.positionCount = 0;
         defaultCamera.Lens.FieldOfView = 90f;
@@ -56,6 +57,8 @@ public class Grappling : MonoBehaviour
     private void StartGrapple()
     {
         // find ANY collider on the layer within radius around the player
+        AudioMNG.instance.RopeSWing(1);
+        AudioMNG.instance.PlaySounds(1);
         Collider[] hits = Physics.OverlapSphere(player.position, maxDistance, whatIsGrappleable, QueryTriggerInteraction.Ignore);
         if (hits == null || hits.Length == 0)
         {
