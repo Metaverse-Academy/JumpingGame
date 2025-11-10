@@ -79,8 +79,7 @@ public class Grappling : MonoBehaviour
     private void StartGrapple()
     {
         // find ANY collider on the layer within radius around the player
-        AudioMNG.instance.RopeSWing(1);
-        AudioMNG.instance.PlaySounds(1);
+        
         Collider[] hits = Physics.OverlapSphere(player.position, maxDistance, whatIsGrappleable, QueryTriggerInteraction.Ignore);
         if (hits == null || hits.Length == 0)
         {
@@ -94,6 +93,8 @@ public class Grappling : MonoBehaviour
 
         // anchor to the surface point closest to the player
         grapplePoint = box.ClosestPoint(player.position);
+        AudioMNG.instance.RopeSWing(1);
+        AudioMNG.instance.PlaySounds(1);
 
         // create swing joint
         joint = player.gameObject.AddComponent<SpringJoint>();
