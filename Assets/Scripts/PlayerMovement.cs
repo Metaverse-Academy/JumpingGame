@@ -1,5 +1,3 @@
-
-
 using System.Collections;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
@@ -30,7 +28,12 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     private bool pushed = false;
 
-    // Start is called before the first frame update.
+    // --- Soft fall fields ---
+    [Header("Fall / Soft Landing")]
+    [Range(0f, 1f)]
+    public float fallGravityScale = 0.45f; // 1 = normal gravity, 0 = no gravity while falling
+    public float fallVelocityThreshold = -0.1f; // apply when downward velocity < this
+
     void Start()
     {
         // Get the Rigidbody component attached to this GameObject.
@@ -48,11 +51,10 @@ public class PlayerMovement : MonoBehaviour
 
         movementInput = context.ReadValue<Vector2>();
             
-            if(context.canceled||isGrounded==false)AudioMNG.instance.Walking(0);
-        // Read the movement input from the Input System (e.g., WASD or arrow keys).
-            if(context.started && isGrounded==true)AudioMNG.instance.Walking(1);
-            movementInput = context.ReadValue<Vector2>();
-            if(context.canceled||isGrounded==false)AudioMNG.instance.Walking(0);
+        if(context.canceled||isGrounded==false)AudioMNG.instance.Walking(0);
+        if(context.started && isGrounded==true)AudioMNG.instance.Walking(1);
+        movementInput = context.ReadValue<Vector2>();
+        if(context.canceled||isGrounded==false)AudioMNG.instance.Walking(0);
 
        // moveSpeed = Mathf.Lerp(0f, moveSpeed, 1f * Time.fixedDeltaTime); 
     }
@@ -76,6 +78,18 @@ public class PlayerMovement : MonoBehaviour
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
+        // -- Soft fall: reduce gravity while falling unless grappling or wallrunning or grounded --
+        bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
+        if (rb != null && !grapplingActive && !wallRunning.isWallRunning && !isGrounded)
+        {
+            if (rb.linearVelocity.y < fallVelocityThreshold)
+            {
+                // Compute anti-gravity so net gravity becomes `fallGravityScale * Physics.gravity`
+                Vector3 antiGravity = -Physics.gravity * (1f - fallGravityScale);
+                rb.AddForce(antiGravity, ForceMode.Acceleration);
+            }
+        }
+
         if (wallRunning.isWallRunning) return;
         if (movementInput.y < 0)
         {
@@ -110,7 +124,7 @@ public class PlayerMovement : MonoBehaviour
 
         // preserve vertical velocity (you're using linearVelocity in your original)
         if (pushed == true) return;
-        if(Grappling.instance.isGrappling==true) return;
+        if(Grappling.instance != null && Grappling.instance.isGrappling==true) return;
         rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
 
         isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
@@ -122,23 +136,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // void FixedUpdate()
-    // {
-    //     if(wallRunning.isWallRunning) return;
-    //     // Apply movement based on the input received from OnMove.
-    //     Vector3 movement = new Vector3(movementInput.x, 0.0f, movementInput.y);
-    //     rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
-
-    //     // Check if the player is grounded by casting a ray downwards from the groundCheck object's position.
-    //     isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
-
-    //     // Rotate the player to face the movement direction if there is movement.
-    //     if (movement != Vector3.zero) // Check if there is movement input.
-    //     {
-    //         Quaternion targetRotation = Quaternion.LookRotation(movement); // Calculate the rotation needed to face the movement direction.
-    //         rb.rotation = Quaternion.Slerp(rb.rotation, targetRotation, Time.fixedDeltaTime * 10f); // Smoothly rotate the player towards the target direction.
-    //     }
-    // }
     public IEnumerator setPushed()
     {
         pushed = true;
