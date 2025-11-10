@@ -107,14 +107,14 @@ public class WallRunning : MonoBehaviour
         if (leftWall)
         {
             WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, -mainCameraleftDutch, Time.fixedDeltaTime * 1f);
-           // animator.SetBool("IsWallRunning", true);
+        //    animator.SetBool("IsWallRunning", true);
             
         }
            
         else if (rightWall)
         {
             WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, mainCameraRightDutch, Time.fixedDeltaTime * 1f);
-//            animator.SetBool("IsWallRunning", true);
+           animator.SetTrigger("StartWallRun");
         }
             
         
