@@ -30,7 +30,7 @@ private bool Iswalking;
 
     // --- Soft fall fields ---
     [Header("Fall / Soft Landing")]
-    [Range(0f, 1f)]
+    [Range(0f, 3f)]
     public float fallGravityScale = 0.45f; // 1 = normal gravity, 0 = no gravity while falling
     public float fallVelocityThreshold = -0.1f; // apply when downward velocity < this
 
