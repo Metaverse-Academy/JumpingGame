@@ -85,6 +85,12 @@ public class WallRunning : MonoBehaviour
 
     private void StopWallRun()
     {
+        Debug.Log("stop running");
+        animator.SetBool("IsWallRunning", false);
+        animator.SetBool("IsWallRunningLeft", false);
+
+
+
         isWallRunning = false;
         rb.useGravity = true;
         trailEffect.SetActive(false);
@@ -107,14 +113,14 @@ public class WallRunning : MonoBehaviour
         if (leftWall)
         {
             WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, -mainCameraleftDutch, Time.fixedDeltaTime * 1f);
-        //    animator.SetBool("IsWallRunning", true);
+           animator.SetBool("IsWallRunningLeft", true);
             
         }
            
         else if (rightWall)
         {
             WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, mainCameraRightDutch, Time.fixedDeltaTime * 1f);
-           animator.SetTrigger("StartWallRun");
+           animator.SetBool("IsWallRunning", true);
         }
             
         
