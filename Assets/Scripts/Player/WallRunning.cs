@@ -85,9 +85,12 @@ public class WallRunning : MonoBehaviour
 
     private void StopWallRun()
     {
+            AudioMNG.instance.WallRun(0);
+
         Debug.Log("stop running");
         animator.SetBool("IsWallRunning", false);
         animator.SetBool("IsWallRunningLeft", false);
+            // AudioMNG.instance.WallRun(0);
 
 
 
@@ -109,18 +112,22 @@ public class WallRunning : MonoBehaviour
     // }
 
     private void WallRunningMovement()
-    {
+    {          
+
         if (leftWall)
         {
             WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, -mainCameraleftDutch, Time.fixedDeltaTime * 1f);
-           animator.SetBool("IsWallRunningLeft", true);
-            
+            animator.SetBool("IsWallRunningLeft", true);
+            AudioMNG.instance.WallRun(1);
+
         }
            
         else if (rightWall)
         {
             WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, mainCameraRightDutch, Time.fixedDeltaTime * 1f);
-           animator.SetBool("IsWallRunning", true);
+            animator.SetBool("IsWallRunning", true);
+            AudioMNG.instance.WallRun(1);
+
         }
             
         

@@ -7,12 +7,14 @@ public class AudioMNG : MonoBehaviour
 
 
     [SerializeField] private AudioSource RopeSwing;
-        [SerializeField] private AudioSource walk;
+    [SerializeField] private AudioSource walk;
+    [SerializeField] private AudioSource WallRunning;
 
     [SerializeField] private AudioSource ForSounds;
     [SerializeField] private AudioClip ThrowHook;
     [SerializeField] private AudioClip Jump;
     [SerializeField] private AudioClip MonkeyDeath;
+    [SerializeField] private AudioClip Push;
 
 
 
@@ -47,7 +49,25 @@ public class AudioMNG : MonoBehaviour
         }
 
     }
+public void WallRun(int x)
+    {
+        //1 to turn the sound , 0 to trun the sound
+        if (x == 1)
+        {
+            WallRunning.enabled = true;
 
+
+
+        }
+        else if (x == 0)
+        {
+            WallRunning.enabled = false;
+
+
+
+        }
+
+    }
 
 public void Walking(int x)
     {
@@ -71,7 +91,7 @@ public void Walking(int x)
 
     public void PlaySounds(int x)
     {
-        //1 = throwHook 2 - Jump 3 - MonkeyDeath
+        //1 = throwHook 2 - Jump 3 - MonkeyDeath 4 -Push
 
         if (x == 1)
         {
@@ -92,6 +112,11 @@ public void Walking(int x)
 
         }
 
+if (x == 4)
+        {
+            ForSounds.PlayOneShot(Push);
 
+
+        }
     } 
 }

@@ -42,7 +42,8 @@ public class MokeyAi : MonoBehaviour
 
     //test
     float recentTime;
-    bool Iswalking=false;
+    bool Iswalking = false;
+    bool IsDie = false;
 
     void Start()
     {
@@ -191,9 +192,10 @@ public class MokeyAi : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")&&IsDie==false)
         {
-            
+                    AudioMNG.instance.PlaySounds(4);
+
             Rigidbody PlayerRB = other.gameObject.GetComponent<Rigidbody>();
             StartCoroutine(other.gameObject.GetComponent<PlayerMovement>().setPushed());
                         // PlayerRB.AddForce((Player.transform.position - transform.position) * ForceOfThePush, ForceMode.Impulse);
@@ -218,6 +220,8 @@ PlayerRB.AddForce(dir * ForceOfThePush, ForceMode.Impulse);
         PlayerRB.AddForce((Player.transform.position - transform.position) * 15, ForceMode.Impulse);
         hitFeedback.PlayFeedbacks();
         animator.SetTrigger("Death");
+        AudioMNG.instance.PlaySounds(3);
+        IsDie = true;
         AudioMNG.instance.PlaySounds(3);
         yield return new WaitForSeconds(2.10f);
 
