@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Boolean to check if the player is grounded.
     private bool isGrounded;
-
+private bool Iswalking;
     // Variable to store movement input.
     private Vector2 movementInput;
     public GameObject groundCheck;
@@ -43,18 +43,35 @@ public class PlayerMovement : MonoBehaviour
             cam = Camera.main.transform;
         }
     }
+    void Update()
+    {
+        animator.SetBool("IsWalking",Iswalking);
+        if (isGrounded == true && Iswalking == true)
+        {
 
+            AudioMNG.instance.Walking(1);
+
+
+        }
+        else {            AudioMNG.instance.Walking(0); 
+ }
+
+    }
     // This method is called by the Input System when the "Move" action is triggered.
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (context.started && isGrounded == true) AudioMNG.instance.Walking(1);
+        if (context.performed ) {
+            Iswalking = true;
+        
+        }
 
         movementInput = context.ReadValue<Vector2>();
-            
-        if(context.canceled||isGrounded==false)AudioMNG.instance.Walking(0);
-        if(context.started && isGrounded==true)AudioMNG.instance.Walking(1);
-        movementInput = context.ReadValue<Vector2>();
-        if(context.canceled||isGrounded==false)AudioMNG.instance.Walking(0);
+
+        if (context.canceled ) {
+            Iswalking = false;
+            animator.SetTrigger("StopWalking");
+
+        }
 
        // moveSpeed = Mathf.Lerp(0f, moveSpeed, 1f * Time.fixedDeltaTime); 
     }
@@ -62,10 +79,16 @@ public class PlayerMovement : MonoBehaviour
     // This method is called by the Input System when the "Jump" action is triggered.
     public void OnJump(InputAction.CallbackContext context)
     {
+
+        if (context.started && Iswalking == true)
+        {
+            animator.SetTrigger("StopWalking");
+
+        }
+
         if (context.performed && isGrounded)
         {        
             AudioMNG.instance.PlaySounds(2);
-
             if (wallRunning.isWallRunning) return;
             AudioMNG.instance.PlaySounds(2);
             // Apply an upward force to the Rigidbody for jumping.

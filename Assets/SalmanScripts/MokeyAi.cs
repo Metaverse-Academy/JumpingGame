@@ -54,7 +54,6 @@ public class MokeyAi : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Iswalking);
         animator.SetBool("IsWalking", Iswalking);
 
 
