@@ -38,8 +38,8 @@ public  class CameraSwitcher : MonoBehaviour
     }
     private void Start()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         instance = this;
     }
 

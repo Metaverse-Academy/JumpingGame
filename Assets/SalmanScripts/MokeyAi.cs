@@ -219,9 +219,11 @@ PlayerRB.AddForce(dir * ForceOfThePush, ForceMode.Impulse);
         PlayerRB.AddForce((Player.transform.position - transform.position) * 15, ForceMode.Impulse);
         hitFeedback.PlayFeedbacks();
         animator.SetTrigger("Death");
+        AudioMNG.instance.PlaySounds(3);
         yield return new WaitForSeconds(2.10f);
 
         Destroy(gameObject);
+
 
     }
 }

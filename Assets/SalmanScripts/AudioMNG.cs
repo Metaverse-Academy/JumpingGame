@@ -11,7 +11,9 @@ public class AudioMNG : MonoBehaviour
 
     [SerializeField] private AudioSource ForSounds;
     [SerializeField] private AudioClip ThrowHook;
-        [SerializeField] private AudioClip Jump;
+    [SerializeField] private AudioClip Jump;
+    [SerializeField] private AudioClip MonkeyDeath;
+
 
 
 
@@ -69,7 +71,7 @@ public void Walking(int x)
 
     public void PlaySounds(int x)
     {
-        //1 = throwHook
+        //1 = throwHook 2 - Jump 3 - MonkeyDeath
 
         if (x == 1)
         {
@@ -83,7 +85,12 @@ public void Walking(int x)
 
 
         }
+ if (x == 3)
+        {
+            ForSounds.PlayOneShot(MonkeyDeath);
 
+
+        }
 
 
     } 

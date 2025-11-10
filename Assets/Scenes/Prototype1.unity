@@ -10909,6 +10909,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c619df53828ca024abce6255f94823ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeadDetect
+<<<<<<< Updated upstream
+=======
+--- !u!1 &567570417
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 567570419}
+  - component: {fileID: 567570418}
+  m_Layer: 0
+  m_Name: AudioMNG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &567570418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567570417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb829eed9292007469118740e29b4375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  RopeSwing: {fileID: 943303042}
+  walk: {fileID: 1207593764}
+  ForSounds: {fileID: 739143383}
+  ThrowHook: {fileID: 8300000, guid: 1b05dec090f937546b8291ef9e2e4560, type: 3}
+  Jump: {fileID: 8300000, guid: f49f6de882b801948b1ed0dbe5efb211, type: 3}
+  MonkeyDeath: {fileID: 8300000, guid: 291e56c5acc8bae4a8345478e40224a8, type: 3}
+--- !u!4 &567570419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567570417}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 52.44133, y: 10.20872, z: -28.12704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+>>>>>>> Stashed changes
 --- !u!43 &577270321
 Mesh:
   m_ObjectHideFlags: 0
@@ -19734,7 +19787,7 @@ MonoBehaviour:
   States: 0
   newPosToGo: {fileID: 0}
   Player: {fileID: 318261563}
-  hitFeedback: {fileID: 0}
+  hitFeedback: {fileID: 667088581}
   boxCollider: {fileID: 807092559}
   ForceOfThePush: 15
 --- !u!95 &956834337
