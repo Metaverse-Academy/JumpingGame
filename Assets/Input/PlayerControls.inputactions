@@ -8,9 +8,9 @@
             "actions": [
                 {
                     "name": "Look",
-                    "type": "Value",
+                    "type": "Button",
                     "id": "68fe9a09-2640-4980-b7e3-5c4569d57ec2",
-                    "expectedControlType": "Vector2",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -86,6 +86,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "GrappleMove",
+                    "type": "Value",
+                    "id": "76b74472-f2cb-4e4d-9bfd-c2e5072e9e1b",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -289,11 +298,11 @@
                 },
                 {
                     "name": "",
-                    "id": "c34ed8a2-9d66-489e-b05c-a4baab0b2b98",
-                    "path": "<Pointer>/delta",
+                    "id": "d2f8fc52-ca67-4e6e-825a-6a6746441490",
+                    "path": "<Mouse>/middleButton",
                     "interactions": "",
-                    "processors": "DeltaTimeScale,ScaleVector2(x=0.1,y=0.1)",
-                    "groups": ";Keyboard&Mouse;Touch",
+                    "processors": "",
+                    "groups": "",
                     "action": "Look",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -352,6 +361,61 @@
                     "action": "Grapple",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "2D Vector",
+                    "id": "43b78e2e-85ef-492b-a674-7e8287641f32",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrappleMove",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "3abebb5d-cd0a-4806-9e09-c2554a621c12",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrappleMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "d3277b90-0c6c-4264-9f7f-f6a595bc8847",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrappleMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "26beca91-2d26-42e6-857f-bb1fbca7b316",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrappleMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "8f206304-c8a4-4128-b711-38a8c1d65ed3",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "GrappleMove",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 }
             ]
         }
