@@ -31,7 +31,7 @@ private bool Iswalking;
     public Transform cam;
     public Animator animator;
     private bool pushed = false;
-    bool ISPlayerJumpFromWall = false;
+    public bool ISPlayerJumpFromWall = false;
 
     // --- Soft fall fields ---
     [Header("Fall / Soft Landing")]
@@ -53,9 +53,8 @@ private bool Iswalking;
     }
     void Update()
     {
-                isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
+                isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 2f);
 
-             ISPlayerJumpFromWall = wallRunning.isWallRunning;
 
       
        
@@ -118,7 +117,8 @@ private bool Iswalking;
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
-        if (ISPlayerJumpFromWall) return; 
+        if (ISPlayerJumpFromWall) return;
+
         // -- Soft fall: reduce gravity while falling unless grappling or wallrunning or grounded --
         bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
         if (rb != null && !grapplingActive && !wallRunning.isWallRunning && !isGrounded)
