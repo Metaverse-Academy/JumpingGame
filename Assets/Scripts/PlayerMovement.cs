@@ -101,7 +101,14 @@ private bool Iswalking;
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
-        
+        bool hookActive = HookingMechanic.instance != null &&
+                          HookingMechanic.instance.isHooking;
+        if (hookActive)
+        {
+            animator.SetFloat("Speed", 0f);
+            return;
+        }
+        Debug.Log("FixedUpdate called. Movement Input: " + movementInput);
         // -- Soft fall: reduce gravity while falling unless grappling or wallrunning or grounded --
         bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
         if (rb != null && !grapplingActive && !wallRunning.isWallRunning && !isGrounded)
