@@ -99,7 +99,11 @@ public class WallRunning : MonoBehaviour
     }
 
 
-    private void StopWallRun()
+
+
+
+
+   private void StopWallRun()
     {
             AudioMNG.instance.WallRun(0);
 
@@ -107,8 +111,9 @@ public class WallRunning : MonoBehaviour
         animator.SetBool("IsWallRunning", false);
         animator.SetBool("IsWallRunningLeft", false);
             // AudioMNG.instance.WallRun(0);
- 
-        
+
+
+
         rb.useGravity = true;
         trailEffect.SetActive(false);
         //animator.SetBool("IsWallRunning", false);
@@ -116,6 +121,13 @@ public class WallRunning : MonoBehaviour
          StartCoroutine(CameraDutchReset());
 //        wallRunStartFeedback.StopFeedbacks();
     }
+
+
+
+
+
+
+
     // private IEnumerator WallRunningCooldown()
     // {
     //     while (wallRunTimer > 0)
@@ -125,7 +137,7 @@ public class WallRunning : MonoBehaviour
     //     }
     // }
 
-    private void WallRunningMovement()
+   private void WallRunningMovement()
     {          
 
         if (leftWall)
@@ -153,10 +165,13 @@ public class WallRunning : MonoBehaviour
         {
             wallForward = -wallForward;
         }
-        
-        // rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
 
-        rb.AddForce(Vector3.forward * wallRunForce, ForceMode.Force);
+
+rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+
+
+
+        rb.AddForce(wallForward * wallRunForce, ForceMode.Force);
 
         // Optional: Add a slight upward force to counteract gravity
         rb.AddForce(Vector3.forward * (wallRunForce / 10), ForceMode.Force);
@@ -167,10 +182,8 @@ public class WallRunning : MonoBehaviour
         
     }
 
-    private void StartWallRun()
+     private void StartWallRun()
     {
-       
-
         isWallRunning = true;
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
@@ -182,7 +195,7 @@ public class WallRunning : MonoBehaviour
 
     }
 
-    private bool AboveGround()
+   private bool AboveGround()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, minJumpHeight, groundLayer))
@@ -195,62 +208,42 @@ public class WallRunning : MonoBehaviour
     {
         leftWall = Physics.Raycast(transform.position, -orientation.right, out leftWallHit, wallCheckDistance, wallLayer);
         rightWall = Physics.Raycast(transform.position, orientation.right, out rightWallHit, wallCheckDistance, wallLayer);
-
-        // if (leftWallHit.collider != null )
-        // {
-            
-        //             TheWallThePlayerRunOnIt = leftWallHit.collider.gameObject.GetComponent<WallData>();
-
-        // }
-
-// if (rightWallHit.collider != null )
-//         {
-            
-//                     TheWallThePlayerRunOnIt = rightWallHit.collider.gameObject.GetComponent<WallData>();
-
-//         }
     }
-    public void OnWallJump(InputAction.CallbackContext context)
+
+
+
+
+
+
+
+
+
+
+public void OnWallJump(InputAction.CallbackContext context)
     {
         if (context.performed && isWallRunning)
         {
-            // if (TheWallThePlayerRunOnIt!= null && TheWallThePlayerRunOnIt.IsFinalWall == true)
-            // {
-            //     Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
-            //     Vector3 jumpDirection;
-            //     if (rightWall)
-            //         jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
-            //     else
-            //         jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
-
-            //     rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-            //     rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
-            //     StopWallRun();
-
-
-
-            // }
-
-
             Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
             Vector3 jumpDirection;
-            if (rightWall)
+            if(rightWall)
                 jumpDirection = Vector3.left * wallJumpForce + wallNormal * wallJumpForce;
             else
-                jumpDirection = Vector3.right * wallJumpForce + wallNormal * wallJumpForce;
+                jumpDirection = Vector3.right  *wallJumpForce + wallNormal * wallJumpForce;
 
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-            rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
+            rb.AddForce(jumpDirection.normalized     * wallJumpForce, ForceMode.Impulse);
             StopWallRun();
         }
-            
-
-        //     else if(TheWallThePlayerRunOnIt!= null && TheWallThePlayerRunOnIt.IsFinalWall == false)
-        //     {
-                
-
-        // }
     }
+
+
+
+
+
+
+
+
+
 
 
 }
