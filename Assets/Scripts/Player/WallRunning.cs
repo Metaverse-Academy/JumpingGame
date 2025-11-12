@@ -40,7 +40,7 @@ public class WallRunning : MonoBehaviour
     private bool rightWall;
     public GameObject trailEffect;
     public bool isWallRunning;
-    public WallData TheWallThePlayerRunOnIt;
+    // public WallData TheWallThePlayerRunOnIt;
 
     private void Start()
     {
@@ -55,6 +55,7 @@ public class WallRunning : MonoBehaviour
         {
             isWallRunning = false;
         }
+
         // Debug.Log("Is Wall Running: " + isWallRunning);
         // Debug.Log("Left Wall: " + leftWall + " Right Wall: " + rightWall);
         CheckForWall();
@@ -193,6 +194,8 @@ public class WallRunning : MonoBehaviour
     private void CheckForWall()
     {
         leftWall = Physics.Raycast(transform.position, -orientation.right, out leftWallHit, wallCheckDistance, wallLayer);
+        rightWall = Physics.Raycast(transform.position, orientation.right, out rightWallHit, wallCheckDistance, wallLayer);
+
         // if (leftWallHit.collider != null )
         // {
             
@@ -200,7 +203,6 @@ public class WallRunning : MonoBehaviour
 
         // }
 
-        rightWall = Physics.Raycast(transform.position, orientation.right, out rightWallHit, wallCheckDistance, wallLayer);
 // if (rightWallHit.collider != null )
 //         {
             
