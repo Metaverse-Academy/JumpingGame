@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.InteropServices;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
 using UnityEngine; // Import the UnityEngine namespace to access Unity-specific classes and functions.
@@ -18,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 5f;
 
     // Boolean to check if the player is grounded.
-    private bool isGrounded;
+    public bool isGrounded;
+
 private bool Iswalking;
     // Variable to store movement input.
     private Vector2 movementInput;
@@ -27,15 +29,19 @@ private bool Iswalking;
     public Transform cam;
     public Animator animator;
     private bool pushed = false;
+    bool ISPlayerJumpFromWall=false;
 
     // --- Soft fall fields ---
     [Header("Fall / Soft Landing")]
     [Range(0f, 3f)]
     public float fallGravityScale = 0.45f; // 1 = normal gravity, 0 = no gravity while falling
     public float fallVelocityThreshold = -0.1f; // apply when downward velocity < this
+    private bool inWallMovement;
 
     void Start()
     {
+
+        wallRunning = GetComponent<WallRunning>();
         // Get the Rigidbody component attached to this GameObject.
         rb = GetComponent<Rigidbody>();
         if (cam == null && Camera.main != null)
@@ -45,6 +51,12 @@ private bool Iswalking;
     }
     void Update()
     {
+        Debug.Log($" is on wall ={wallRunning.isWallRunning}");
+        Debug.Log($" is grounded ={ isGrounded}");
+       
+       
+
+
         animator.SetBool("IsWalking",Iswalking);
         if (isGrounded == true && Iswalking == true)
         {
@@ -53,7 +65,8 @@ private bool Iswalking;
 
 
         }
-        else {            AudioMNG.instance.Walking(0); 
+        else {            
+            AudioMNG.instance.Walking(0); 
  }
 
     }
@@ -101,6 +114,11 @@ private bool Iswalking;
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
+        if (wallRunning.isWallRunning && !isGrounded)
+            inWallMovement = true;
+        if (inWallMovement) return;    
+        Debug.Log(ISPlayerJumpFromWall);
+        if (ISPlayerJumpFromWall) return; 
         // -- Soft fall: reduce gravity while falling unless grappling or wallrunning or grounded --
         bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
         if (rb != null && !grapplingActive && !wallRunning.isWallRunning && !isGrounded)
@@ -172,4 +190,5 @@ private bool Iswalking;
             SceneManager.LoadScene("Prototype1");
         }
     }
+   
 }

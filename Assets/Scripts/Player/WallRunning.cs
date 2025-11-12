@@ -51,6 +51,13 @@ public class WallRunning : MonoBehaviour
         // Debug.Log("Is Wall Running: " + isWallRunning);
         // Debug.Log("Left Wall: " + leftWall + " Right Wall: " + rightWall);
         CheckForWall();
+        // if (isWallRunning == true)
+        // {
+        //     playerMovement.SetIsPlayerStartToJump();
+        // }
+
+       
+       
     }
     private IEnumerator CameraDutchReset()
     {
@@ -91,7 +98,9 @@ public class WallRunning : MonoBehaviour
         animator.SetBool("IsWallRunning", false);
         animator.SetBool("IsWallRunningLeft", false);
             // AudioMNG.instance.WallRun(0);
-
+ 
+           
+        
 
 
         isWallRunning = false;
@@ -153,6 +162,8 @@ public class WallRunning : MonoBehaviour
 
     private void StartWallRun()
     {
+       
+
         isWallRunning = true;
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
@@ -181,16 +192,19 @@ public class WallRunning : MonoBehaviour
     public void OnWallJump(InputAction.CallbackContext context)
     {
         if (context.performed && isWallRunning)
-        {
+        {      
+
+        
+
             Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
             Vector3 jumpDirection;
             if(rightWall)
-                jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
+                jumpDirection = Vector3.left * wallJumpForce + wallNormal * wallJumpForce;
             else
-                jumpDirection = Vector3.up  *wallJumpForce + wallNormal * wallJumpForce;
+                jumpDirection = Vector3.right  *wallJumpForce + wallNormal * wallJumpForce;
 
             rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-            rb.AddForce(jumpDirection.normalized     * wallJumpForce, ForceMode.Impulse);
+            rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
             StopWallRun();
         }
     }
