@@ -13,6 +13,8 @@ public class PlayerMovement : MonoBehaviour
 
     // Movement speed of the player.
     [SerializeField] private MMF_Player jumpFeedback;
+    [SerializeField]private Transform ReSpawnPos; 
+
     public float moveSpeed = 5f;
 
     // Force applied for jumping.
@@ -29,7 +31,7 @@ private bool Iswalking;
     public Transform cam;
     public Animator animator;
     private bool pushed = false;
-    bool ISPlayerJumpFromWall=false;
+    bool ISPlayerJumpFromWall = false;
 
     // --- Soft fall fields ---
     [Header("Fall / Soft Landing")]
@@ -51,9 +53,11 @@ private bool Iswalking;
     }
     void Update()
     {
-        Debug.Log($" is on wall ={wallRunning.isWallRunning}");
-        Debug.Log($" is grounded ={ isGrounded}");
-       
+                isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
+
+             ISPlayerJumpFromWall = wallRunning.isWallRunning;
+
+      
        
 
 
@@ -114,10 +118,6 @@ private bool Iswalking;
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
-        if (wallRunning.isWallRunning && !isGrounded)
-            inWallMovement = true;
-        if (inWallMovement) return;    
-        Debug.Log(ISPlayerJumpFromWall);
         if (ISPlayerJumpFromWall) return; 
         // -- Soft fall: reduce gravity while falling unless grappling or wallrunning or grounded --
         bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
@@ -168,7 +168,6 @@ private bool Iswalking;
         if(Grappling.instance != null && Grappling.instance.isGrappling==true) return;
         rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
 
-        isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
         animator.SetBool("IsGrounded", isGrounded); 
         if (movement != Vector3.zero)
         {
@@ -177,12 +176,15 @@ private bool Iswalking;
         }
     }
 
-    public IEnumerator setPushed()
+   public void ReLoad()
     {
-        pushed = true;
-        yield return new WaitForSeconds(1f);
-        pushed = false;
+        transform.position = ReSpawnPos.position;
+
+
+
     }
+
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Goal"))
@@ -191,4 +193,6 @@ private bool Iswalking;
         }
     }
    
+   
+
 }
