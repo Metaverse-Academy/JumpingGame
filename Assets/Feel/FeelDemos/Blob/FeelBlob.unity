@@ -20729,7 +20729,7 @@ MonoBehaviour:
         Active: 1
         UniqueID: -783640243
         Label: Sound
-        OriginalLabel: 
+        OriginalLabel: Sound
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
@@ -20854,7 +20854,7 @@ MonoBehaviour:
         Active: 1
         UniqueID: -1995371049
         Label: Cinemachine Impulse
-        OriginalLabel: 
+        OriginalLabel: Cinemachine Impulse
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}
@@ -20971,7 +20971,7 @@ MonoBehaviour:
         Active: 1
         UniqueID: -463709280
         Label: Haptic Preset
-        OriginalLabel: 
+        OriginalLabel: Haptic Preset
         ChannelMode: 0
         Channel: 0
         MMChannelDefinition: {fileID: 0}

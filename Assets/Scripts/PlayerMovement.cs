@@ -101,6 +101,7 @@ private bool Iswalking;
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
+        
         // -- Soft fall: reduce gravity while falling unless grappling or wallrunning or grounded --
         bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
         if (rb != null && !grapplingActive && !wallRunning.isWallRunning && !isGrounded)
