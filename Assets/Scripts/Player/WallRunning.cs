@@ -12,6 +12,9 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private LayerMask groundLayer;
     [Header("References")]
+    [SerializeField] private Animator BlackFramUp;
+    [SerializeField] private Animator BlackFramDown;
+
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private Transform orientation;
     [SerializeField] private PlayerMovement playerMovement;
@@ -53,7 +56,8 @@ public class WallRunning : MonoBehaviour
     }
     void Update()
     {
-
+           BlackFramUp.SetBool("IsWallRun",playerMovement.ISPlayerJumpFromWall); 
+           BlackFramDown.SetBool("IsWallRunning",playerMovement.ISPlayerJumpFromWall);
         if (TheWallThePlayerRunOnIt != null) { 
         if (!isWallRunning&&TheWallThePlayerRunOnIt.IsFinalWall==false)
         {
@@ -66,7 +70,7 @@ public class WallRunning : MonoBehaviour
         if (TheWallThePlayerRunOnIt.IsFinalWall == true)
         {
 
-            wallJumpForce = 20;
+            wallJumpForce = 22;
         }
         else    wallJumpForce = 38;
 }
@@ -200,11 +204,13 @@ public class WallRunning : MonoBehaviour
 
      private void StartWallRun()
     {
-        if (StartRunOnTime == false) {
+        if (StartRunOnTime == false)
+        {
 
             StartRunOnTime = true;
-        playerMovement.ISPlayerJumpFromWall = true;
-}
+            playerMovement.ISPlayerJumpFromWall = true;
+        }
+
         isWallRunning = true;
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
@@ -260,52 +266,55 @@ public void OnWallJump(InputAction.CallbackContext context)
         if (context.started && isWallRunning)
         {
 
-            if (TheWallThePlayerRunOnIt.IsFinalWall == true )
+            if (TheWallThePlayerRunOnIt.IsFinalWall == true)
             {
-                playerMovement.ISPlayerJumpFromWall = false;
-
+                playerMovement.ISPlayerJumpFromWall = true;
                 Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
                 Vector3 jumpDirection;
-                
+
                 if (rightWall)
                     jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
                 else
                     jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
+                Debug.Log("i am final");
+                                Invoke("SettheFinalWall",0.3f);
 
                 rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
                 StopWallRun();
             }
 
- else if (TheWallThePlayerRunOnIt.IsFinalWall == false)
+            else if (TheWallThePlayerRunOnIt.IsFinalWall == false)
             {
-                                playerMovement.ISPlayerJumpFromWall = true;
+                playerMovement.ISPlayerJumpFromWall = true;
 
                 Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
-               
-            Vector3 jumpDirection;
+
+                Vector3 jumpDirection;
                 if (rightWall)
                     jumpDirection = Vector3.left * wallJumpForce + wallNormal * wallJumpForce;
                 else
                     jumpDirection = Vector3.right * wallJumpForce + wallNormal * wallJumpForce;
-                
 
 
-            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-            rb.AddForce(jumpDirection.normalized     * wallJumpForce, ForceMode.Impulse);
-            StopWallRun();  
+                Debug.Log("i am not final");
+
+                rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+                rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
+                StopWallRun();
             }
 
 
         }
+       
     }
 
+ void SettheFinalWall()
+        {
+            Debug.Log("we overwrite");
+                            playerMovement.ISPlayerJumpFromWall = false;
 
 
-
-
-
-
-
+        }
 
 
 

@@ -54,15 +54,16 @@ private bool Iswalking;
     void Update()
     {
         isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 2f);
-        Debug.DrawRay(groundCheck.transform.position, Vector3.down* 2, Color.red);
-        Debug.Log(isGrounded);
+        Debug.DrawRay(groundCheck.transform.position, Vector3.down * 2, Color.red);
+        
+        // Debug.Log(ISPlayerJumpFromWall); 
+        
+        if (isGrounded)
+        {
 
-        // if (isGrounded)
-        // {
+            ISPlayerJumpFromWall = false;
 
-        //     ISPlayerJumpFromWall = false;
-
-        // }
+        }
 
         animator.SetBool("IsWalking",Iswalking);
         if (isGrounded == true && Iswalking == true)
