@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.InteropServices;
 using MoreMountains.Feedbacks;
 using MoreMountains.Tools;
 using UnityEngine; // Import the UnityEngine namespace to access Unity-specific classes and functions.
@@ -9,16 +10,21 @@ public class PlayerMovement : MonoBehaviour
 {
     // Reference to the Rigidbody component attached to the player.
     private Rigidbody rb;
+    [Header("VFX")]
+    public ParticleSystem jumpEffectPrefab;
 
     // Movement speed of the player.
     [SerializeField] private MMF_Player jumpFeedback;
+    [SerializeField]private Transform ReSpawnPos; 
+
     public float moveSpeed = 5f;
 
     // Force applied for jumping.
     public float jumpForce = 5f;
 
     // Boolean to check if the player is grounded.
-    private bool isGrounded;
+    public bool isGrounded;
+
 private bool Iswalking;
     // Variable to store movement input.
     private Vector2 movementInput;
@@ -27,15 +33,19 @@ private bool Iswalking;
     public Transform cam;
     public Animator animator;
     private bool pushed = false;
+    public bool ISPlayerJumpFromWall = false;
 
     // --- Soft fall fields ---
     [Header("Fall / Soft Landing")]
     [Range(0f, 3f)]
     public float fallGravityScale = 0.45f; // 1 = normal gravity, 0 = no gravity while falling
     public float fallVelocityThreshold = -0.1f; // apply when downward velocity < this
+    private bool inWallMovement;
 
     void Start()
     {
+
+        wallRunning = GetComponent<WallRunning>();
         // Get the Rigidbody component attached to this GameObject.
         rb = GetComponent<Rigidbody>();
         if (cam == null && Camera.main != null)
@@ -45,6 +55,18 @@ private bool Iswalking;
     }
     void Update()
     {
+        isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 2f);
+        Debug.DrawRay(groundCheck.transform.position, Vector3.down * 2, Color.red);
+        
+        // Debug.Log(ISPlayerJumpFromWall); 
+        
+        if (isGrounded)
+        {
+
+            ISPlayerJumpFromWall = false;
+
+        }
+
         animator.SetBool("IsWalking",Iswalking);
         if (isGrounded == true && Iswalking == true)
         {
@@ -53,7 +75,8 @@ private bool Iswalking;
 
 
         }
-        else {            AudioMNG.instance.Walking(0); 
+        else {            
+            AudioMNG.instance.Walking(0); 
  }
 
     }
@@ -87,20 +110,39 @@ private bool Iswalking;
         }
 
         if (context.performed && isGrounded)
-        {        
+        {
             AudioMNG.instance.PlaySounds(2);
             if (wallRunning.isWallRunning) return;
             AudioMNG.instance.PlaySounds(2);
             // Apply an upward force to the Rigidbody for jumping.
             jumpFeedback.PlayFeedbacks();
+            SpawnJumpEffect(transform.position);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             animator.SetTrigger("Jump");
         }
+    }
+    // partiacal effect for jump
+    private void SpawnJumpEffect(Vector3 position)
+    {
+        if (jumpEffectPrefab == null) return;
+        var ps = Instantiate(jumpEffectPrefab, position, Quaternion.identity);
+        ps.Play();
+        var main = ps.main;
+        // approximate lifetime: particle duration + max start lifetime
+        float life = main.duration + main.startLifetime.constantMax;
+        Destroy(ps.gameObject, life + 0.1f);
     }
 
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
+bool hookActive = HookingMechanic.instance != null &&
+                          HookingMechanic.instance.isHooking;
+        if (hookActive)
+        {
+            animator.SetFloat("Speed", 0f);
+            return;
+        }
         // -- Soft fall: reduce gravity while falling unless grappling or wallrunning or grounded --
         bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
         if (rb != null && !grapplingActive && !wallRunning.isWallRunning && !isGrounded)
@@ -147,10 +189,12 @@ private bool Iswalking;
 
         // preserve vertical velocity (you're using linearVelocity in your original)
         if (pushed == true) return;
-        if(Grappling.instance != null && Grappling.instance.isGrappling==true) return;
-        rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
+        if (Grappling.instance != null && Grappling.instance.isGrappling == true) return;
+        if (ISPlayerJumpFromWall ==false)
+        {
 
-        isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 1.1f);
+            rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
+        }
         animator.SetBool("IsGrounded", isGrounded); 
         if (movement != Vector3.zero)
         {
@@ -159,12 +203,15 @@ private bool Iswalking;
         }
     }
 
-    public IEnumerator setPushed()
+   public void ReLoad()
     {
-        pushed = true;
-        yield return new WaitForSeconds(1f);
-        pushed = false;
+        transform.position = ReSpawnPos.position;
+
+
+
     }
+
+
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Goal"))
@@ -172,4 +219,7 @@ private bool Iswalking;
             SceneManager.LoadScene("Prototype1");
         }
     }
+   
+   
+
 }

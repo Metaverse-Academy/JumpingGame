@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Unity.Cinemachine;
+using System.Collections;
 
 public class Grappling : MonoBehaviour
 {
@@ -10,7 +11,8 @@ public class Grappling : MonoBehaviour
     private Vector3 grapplePoint;
     public LayerMask whatIsGrappleable;
     public Transform gunTip, player;
-    [SerializeField]private float maxDistance = 12f;
+    [SerializeField] private float maxDistance = 12f;
+    public bool zeroVelocityOnStart = true;
     private SpringJoint joint;
     public PlayerInput playerInput;
     [SerializeField] public float jointSpring = 4.5f;
@@ -20,6 +22,10 @@ public class Grappling : MonoBehaviour
     public static Grappling instance;
     public bool isGrappling;
     public AudioSource audioSource;
+
+    // camera to base movement on (set this in inspector)
+    [Header("References")]
+    public Transform cameraTransform;
 
     // --- Added for movement while grappling ---
     private Rigidbody playerRb;
@@ -39,7 +45,20 @@ public class Grappling : MonoBehaviour
     }
     void Start()
     {
+        StartCoroutine(IntitializeGrapple());
+        Collider[] hits = Physics.OverlapSphere(player.position, maxDistance, whatIsGrappleable, QueryTriggerInteraction.Ignore);
+        if (hits == null || hits.Length == 0)
+            Debug.Log("No grapple target nearby on the selected layer.");
+
         instance = this;
+    }
+
+    private IEnumerator IntitializeGrapple()
+    {
+        lr.enabled = false;
+        joint = player.gameObject.AddComponent<SpringJoint>();
+        yield return new WaitForSeconds(0.1f);
+        if (joint) Destroy(joint);
     }
 
     public void OnGrapple(InputAction.CallbackContext context)
@@ -79,12 +98,46 @@ public class Grappling : MonoBehaviour
     private void StartGrapple()
     {
         // find ANY collider on the layer within radius around the player
-        
+        if (!lr.enabled)
+            lr.enabled = true;
+
+        StartCoroutine(CheckGrappling());
+
+        float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
+        float shortenFactor = 0.8f; // smaller = shorter rope, 0.8 = 80% of distance
+        joint.maxDistance = distanceFromPoint * shortenFactor;
+        joint.minDistance = distanceFromPoint * shortenFactor * 0.5f; // half of that for tension
+
+        // spring settings (layer-only logic, no other checks)
+        joint.spring = jointSpring;
+        joint.damper = jointDamper;
+        joint.massScale = jointMassScale;
+        joint.enableCollision = true;
+
+        lr.positionCount = 2;
+        isGrappling = true;
+        // --- NEW: immediately stop other movement sources and zero velocities to avoid conflict ---
+        // reset smoothed input so there's no leftover input when grappling starts
+        moveTarget = 0f;
+        moveSmooth = 0f;
+        moveSmoothVel = 0f;
+
+        if (zeroVelocityOnStart && playerRb != null)
+        {
+            // use valid Rigidbody API
+            playerRb.linearVelocity = Vector3.zero;
+            playerRb.angularVelocity = Vector3.zero;
+        }
+
+        if (audioSource) audioSource.Play();
+    }
+    IEnumerator CheckGrappling()
+    {
         Collider[] hits = Physics.OverlapSphere(player.position, maxDistance, whatIsGrappleable, QueryTriggerInteraction.Ignore);
         if (hits == null || hits.Length == 0)
         {
             Debug.Log("No grapple target nearby on the selected layer.");
-            return;
+            yield break;
         }
 
         // just use the first one found (no closest logic)
@@ -100,22 +153,8 @@ public class Grappling : MonoBehaviour
         joint = player.gameObject.AddComponent<SpringJoint>();
         joint.autoConfigureConnectedAnchor = false;
         joint.connectedAnchor = grapplePoint;
-
-        float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
-        float shortenFactor = 0.4f; // smaller = shorter rope, 0.4 = 40% of distance
-        joint.maxDistance = distanceFromPoint * shortenFactor;
-        joint.minDistance = distanceFromPoint * shortenFactor * 0.5f; // half of that for tension
-
-        // spring settings (layer-only logic, no other checks)
-        joint.spring = jointSpring;
-        joint.damper = jointDamper;
-        joint.massScale = jointMassScale;
-        joint.enableCollision = true;
-
-        lr.positionCount = 2;
-        isGrappling = true;
-
-        if (audioSource) audioSource.Play();
+        yield return new WaitForFixedUpdate();
+        //audioSource.Play();   
     }
 
     void LateUpdate()
@@ -145,13 +184,18 @@ public class Grappling : MonoBehaviour
 
         if (Mathf.Abs(moveSmooth) > 0.01f)
         {
-            // compute a forward direction that lies along the swing arc (player.forward projected on plane perpendicular to rope)
+            // compute a forward direction that lies along the swing arc based on camera (not player)
             Vector3 ropeDir = (grapplePoint - player.position).normalized;
-            Vector3 forwardAlongArc = Vector3.ProjectOnPlane(player.forward, ropeDir).normalized;
+
+            // prefer camera forward; fallback to player.forward if camera not assigned
+            Vector3 aimForward = cameraTransform != null ? cameraTransform.forward : player.forward;
+            Vector3 aimRight = cameraTransform != null ? cameraTransform.right : player.right;
+
+            Vector3 forwardAlongArc = Vector3.ProjectOnPlane(aimForward, ropeDir).normalized;
             if (forwardAlongArc.sqrMagnitude < 0.001f)
             {
                 // fallback if forward is nearly aligned with rope
-                forwardAlongArc = Vector3.ProjectOnPlane(player.right, ropeDir).normalized;
+                forwardAlongArc = Vector3.ProjectOnPlane(aimRight, ropeDir).normalized;
             }
 
             // positive moveSmooth (W) -> forward force; negative (S) -> backward

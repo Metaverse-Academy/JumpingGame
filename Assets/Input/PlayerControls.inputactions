@@ -95,6 +95,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "ReSpawn",
+                    "type": "Button",
+                    "id": "0d9c7090-7eee-4b60-80f6-779303923d74",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "OnHook",
+                    "type": "Button",
+                    "id": "16370625-6ae8-4bf0-be3a-bcab26a460d8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -416,6 +434,28 @@
                     "action": "GrappleMove",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "107f2610-b5e8-48e9-a56a-dad76a275327",
+                    "path": "<Keyboard>/r",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ReSpawn",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "740f6774-2a0c-4aad-ada4-2b57adfc17fe",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "OnHook",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
