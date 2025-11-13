@@ -10232,11 +10232,11 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600262252}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 21ce64e3a66e88642bd968c2e2a1c668, type: 3}
+  m_Resource: {fileID: 8300000, guid: ad90ce53f22b1be4083fa59dd27839f0, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.38
   m_Pitch: 1
@@ -26913,6 +26913,22 @@ MonoBehaviour:
     FrequencyGain: 1
     Duration: 1
     m_NoiseOffsets: {x: 0, y: 0, z: 0}
+--- !u!4 &1632263996 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5788970009182823184, guid: ad97230dae489224a811978f4583b477, type: 3}
+  m_PrefabInstance: {fileID: 2027010784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1632264003 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3678072691948991745, guid: ad97230dae489224a811978f4583b477, type: 3}
+  m_PrefabInstance: {fileID: 2027010784}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1632263987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
 --- !u!1 &1657551101
 GameObject:
   m_ObjectHideFlags: 0
@@ -35246,6 +35262,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 188530362025218113, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: jumpEffectPrefab
+      value: 
+      objectReference: {fileID: 917793564}
+    - target: {fileID: 188530362025218113, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: fallVelocityThreshold
       value: 17
       objectReference: {fileID: 0}
@@ -35729,6 +35749,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 9.085012
       objectReference: {fileID: 0}
+    - target: {fileID: 7285465045455584057, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: ShapeModule.radius.value
+      value: 3.66
+      objectReference: {fileID: 0}
     - target: {fileID: 8309626295716283635, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: FeedbacksList.Array.size
       value: 3
@@ -36011,7 +36035,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8309626295716283635, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: managedReferences[1736755798476063144].MoveToPosition
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8309626295716283635, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: managedReferences[1736755798476063144].Timing.TrackID
@@ -37186,9 +37210,17 @@ PrefabInstance:
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 8971074051706072882, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: defaultCamera
+      value: 
+      objectReference: {fileID: 1632264003}
+    - target: {fileID: 8971074051706072882, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: jointMassScale
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 8971074051706072882, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 1632263996}
     - target: {fileID: 9015413178880076664, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 85.639145
