@@ -197,7 +197,11 @@ public class MokeyAi : MonoBehaviour
                     AudioMNG.instance.PlaySounds(4);
 
             Rigidbody PlayerRB = other.gameObject.GetComponent<Rigidbody>();
-            StartCoroutine(other.gameObject.GetComponent<PlayerMovement>().setPushed());
+
+            // StartCoroutine(other.gameObject.GetComponent<PlayerMovement>().setPushed());
+
+
+
                         // PlayerRB.AddForce((Player.transform.position - transform.position) * ForceOfThePush, ForceMode.Impulse);
             Debug.Log("adding new force");
 Vector3 dir = (Player.transform.position - transform.position).normalized;

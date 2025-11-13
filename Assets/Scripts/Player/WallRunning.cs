@@ -12,6 +12,9 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private LayerMask wallLayer;
     [SerializeField] private LayerMask groundLayer;
     [Header("References")]
+    [SerializeField] private Animator BlackFramUp;
+    [SerializeField] private Animator BlackFramDown;
+
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private Transform orientation;
     [SerializeField] private PlayerMovement playerMovement;
@@ -40,6 +43,11 @@ public class WallRunning : MonoBehaviour
     private bool rightWall;
     public GameObject trailEffect;
     public bool isWallRunning;
+    public WallData TheWallThePlayerRunOnIt;
+
+    // i do this bool vvvv cus i want the StartWallRun Func run one time 
+    bool StartRunOnTime = false;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -48,9 +56,34 @@ public class WallRunning : MonoBehaviour
     }
     void Update()
     {
+           BlackFramUp.SetBool("IsWallRun",playerMovement.ISPlayerJumpFromWall); 
+           BlackFramDown.SetBool("IsWallRunning",playerMovement.ISPlayerJumpFromWall);
+        if (TheWallThePlayerRunOnIt != null) { 
+        if (!isWallRunning&&TheWallThePlayerRunOnIt.IsFinalWall==false)
+        {
+                        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+
+
+        }
+}
+        if (TheWallThePlayerRunOnIt) { 
+        if (TheWallThePlayerRunOnIt.IsFinalWall == true)
+        {
+
+            wallJumpForce = 22;
+        }
+        else    wallJumpForce = 38;
+}
         // Debug.Log("Is Wall Running: " + isWallRunning);
         // Debug.Log("Left Wall: " + leftWall + " Right Wall: " + rightWall);
         CheckForWall();
+        // if (isWallRunning == true)
+        // {
+        //     playerMovement.SetIsPlayerStartToJump();
+        // }
+
+       
+       
     }
     private IEnumerator CameraDutchReset()
     {
@@ -63,28 +96,34 @@ public class WallRunning : MonoBehaviour
         {
             if (!isWallRunning)
             {
-               // CameraSwitcher.instance.ActiveWallRun();
+                // CameraSwitcher.instance.ActiveWallRun();
                 StartWallRun();
             }
 
             WallRunningMovement();
         }
+
         else
         {
-            if (isWallRunning )
+            if (isWallRunning)
             {
                 // CameraSwitcher.instance.DeactiveWallRun();
                 StopWallRun();
-                 // WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, 0f, Time.fixedDeltaTime * 2f);
-                
-                
+                // WallRunCamera.Lens.Dutch = Mathf.Lerp(WallRunCamera.Lens.Dutch, 0f, Time.fixedDeltaTime * 2f);
+
+
             }
         }
     }
 
 
-    private void StopWallRun()
+
+
+
+
+   private void StopWallRun()
     {
+
             AudioMNG.instance.WallRun(0);
 
         Debug.Log("stop running");
@@ -93,8 +132,8 @@ public class WallRunning : MonoBehaviour
             // AudioMNG.instance.WallRun(0);
 
 
+                    isWallRunning = false;
 
-        isWallRunning = false;
         rb.useGravity = true;
         trailEffect.SetActive(false);
         //animator.SetBool("IsWallRunning", false);
@@ -102,6 +141,13 @@ public class WallRunning : MonoBehaviour
          StartCoroutine(CameraDutchReset());
 //        wallRunStartFeedback.StopFeedbacks();
     }
+
+
+
+
+
+
+
     // private IEnumerator WallRunningCooldown()
     // {
     //     while (wallRunTimer > 0)
@@ -111,7 +157,7 @@ public class WallRunning : MonoBehaviour
     //     }
     // }
 
-    private void WallRunningMovement()
+   private void WallRunningMovement()
     {          
 
         if (leftWall)
@@ -140,6 +186,11 @@ public class WallRunning : MonoBehaviour
             wallForward = -wallForward;
         }
 
+
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0, rb.linearVelocity.z);
+
+
+
         rb.AddForce(wallForward * wallRunForce, ForceMode.Force);
 
         // Optional: Add a slight upward force to counteract gravity
@@ -151,8 +202,15 @@ public class WallRunning : MonoBehaviour
         
     }
 
-    private void StartWallRun()
+     private void StartWallRun()
     {
+        if (StartRunOnTime == false)
+        {
+
+            StartRunOnTime = true;
+            playerMovement.ISPlayerJumpFromWall = true;
+        }
+
         isWallRunning = true;
         wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
@@ -164,7 +222,7 @@ public class WallRunning : MonoBehaviour
 
     }
 
-    private bool AboveGround()
+   private bool AboveGround()
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, Vector3.down, out hit, minJumpHeight, groundLayer))
@@ -177,23 +235,87 @@ public class WallRunning : MonoBehaviour
     {
         leftWall = Physics.Raycast(transform.position, -orientation.right, out leftWallHit, wallCheckDistance, wallLayer);
         rightWall = Physics.Raycast(transform.position, orientation.right, out rightWallHit, wallCheckDistance, wallLayer);
-    }
-    public void OnWallJump(InputAction.CallbackContext context)
-    {
-        if (context.performed && isWallRunning)
-        {
-            Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
-            Vector3 jumpDirection;
-            if(rightWall)
-                jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
-            else
-                jumpDirection = Vector3.up  *wallJumpForce + wallNormal * wallJumpForce;
 
-            rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-            rb.AddForce(jumpDirection.normalized     * wallJumpForce, ForceMode.Impulse);
-            StopWallRun();
+        if (rightWallHit.collider != null)
+        {
+
+            TheWallThePlayerRunOnIt = rightWallHit.collider.gameObject.GetComponent<WallData>();
+            Debug.Log(TheWallThePlayerRunOnIt.IsFinalWall);
+        }
+        
+         if (leftWallHit.collider != null)
+        {
+
+            TheWallThePlayerRunOnIt = leftWallHit.collider.gameObject.GetComponent<WallData>();
+                        Debug.Log(TheWallThePlayerRunOnIt.IsFinalWall);
+
         }
     }
+
+
+
+
+
+
+
+
+
+
+public void OnWallJump(InputAction.CallbackContext context)
+    {
+        if (context.started && isWallRunning)
+        {
+
+            if (TheWallThePlayerRunOnIt.IsFinalWall == true)
+            {
+                playerMovement.ISPlayerJumpFromWall = true;
+                Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
+                Vector3 jumpDirection;
+
+                if (rightWall)
+                    jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
+                else
+                    jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
+                Debug.Log("i am final");
+                                Invoke("SettheFinalWall",0.3f);
+
+                rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
+                StopWallRun();
+            }
+
+            else if (TheWallThePlayerRunOnIt.IsFinalWall == false)
+            {
+                playerMovement.ISPlayerJumpFromWall = true;
+
+                Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
+
+                Vector3 jumpDirection;
+                if (rightWall)
+                    jumpDirection = Vector3.left * wallJumpForce + wallNormal * wallJumpForce;
+                else
+                    jumpDirection = Vector3.right * wallJumpForce + wallNormal * wallJumpForce;
+
+
+                Debug.Log("i am not final");
+
+                rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+                rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
+                StopWallRun();
+            }
+
+
+        }
+       
+    }
+
+ void SettheFinalWall()
+        {
+            Debug.Log("we overwrite");
+                            playerMovement.ISPlayerJumpFromWall = false;
+
+
+        }
+
 
 
 }
