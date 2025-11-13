@@ -53,12 +53,16 @@ private bool Iswalking;
     }
     void Update()
     {
-                isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 2f);
+        isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 2f);
+        Debug.DrawRay(groundCheck.transform.position, Vector3.down* 2, Color.red);
+        Debug.Log(isGrounded);
 
+        // if (isGrounded)
+        // {
 
-      
-       
+        //     ISPlayerJumpFromWall = false;
 
+        // }
 
         animator.SetBool("IsWalking",Iswalking);
         if (isGrounded == true && Iswalking == true)
@@ -117,8 +121,13 @@ private bool Iswalking;
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
-        if (ISPlayerJumpFromWall) return;
-
+bool hookActive = HookingMechanic.instance != null &&
+                          HookingMechanic.instance.isHooking;
+        if (hookActive)
+        {
+            animator.SetFloat("Speed", 0f);
+            return;
+        }
         // -- Soft fall: reduce gravity while falling unless grappling or wallrunning or grounded --
         bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
         if (rb != null && !grapplingActive && !wallRunning.isWallRunning && !isGrounded)
@@ -165,9 +174,12 @@ private bool Iswalking;
 
         // preserve vertical velocity (you're using linearVelocity in your original)
         if (pushed == true) return;
-        if(Grappling.instance != null && Grappling.instance.isGrappling==true) return;
-        rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
+        if (Grappling.instance != null && Grappling.instance.isGrappling == true) return;
+        if (ISPlayerJumpFromWall ==false)
+        {
 
+            rb.linearVelocity = new Vector3(movement.x * moveSpeed, rb.linearVelocity.y, movement.z * moveSpeed);
+        }
         animator.SetBool("IsGrounded", isGrounded); 
         if (movement != Vector3.zero)
         {
