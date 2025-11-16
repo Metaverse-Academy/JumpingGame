@@ -14279,7 +14279,7 @@ AudioSource:
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.8
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -37183,7 +37183,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8971074051706072882, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: maxDistance
-      value: 13
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 8971074051706072882, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: jointMassScale
