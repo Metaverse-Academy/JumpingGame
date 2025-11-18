@@ -1,9 +1,11 @@
+using MoreMountains.Feedbacks;
 using UnityEngine;
 
 public class PlayerCheckpoint : MonoBehaviour
 {
     public Transform[] checkpoints;     // Assign in inspector
     private Transform lastCheckpoint;   // The most recent checkpoint
+    public MMF_Player respawnFeedback;
 
     void Start()
     {
@@ -25,6 +27,8 @@ public class PlayerCheckpoint : MonoBehaviour
     {
         transform.position = lastCheckpoint.position;
         Rigidbody rb = GetComponent<Rigidbody>();
+        respawnFeedback?.PlayFeedbacks();
+        
         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero; // Reset velocity to prevent continued fall
