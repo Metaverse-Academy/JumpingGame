@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6346902705274158800}
   - component: {fileID: 853862025636516793}
   - component: {fileID: 8716997290166758760}
+  - component: {fileID: 1785537765131909921}
+  - component: {fileID: -469404046243343841}
   m_Layer: 0
   m_Name: Crumbling Platform
   m_TagString: Untagged
@@ -112,3 +114,46 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.41528088, y: 0.4153196, z: 0.062516846}
   m_Center: {x: 0.0003930499, y: -0.00042964058, z: 0.01609667}
+--- !u!114 &1785537765131909921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4603043327286998244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998093249d7b2a546a7e978c3a4b43bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CrumblingPlatform_Timed
+  delayBeforeShake: 1
+  shakeDuration: 1
+  shakeIntensity: 0.05
+  respawnTime: 5
+--- !u!54 &-469404046243343841
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4603043327286998244}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
