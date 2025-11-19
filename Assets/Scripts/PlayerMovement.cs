@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
 {
     // Reference to the Rigidbody component attached to the player.
     private Rigidbody rb;
+    [Header("VFX")]
+    public ParticleSystem jumpEffectPrefab;
 
     // Movement speed of the player.
     [SerializeField] private MMF_Player jumpFeedback;
@@ -108,15 +110,27 @@ private bool Iswalking;
         }
 
         if (context.performed && isGrounded)
-        {        
+        {
             AudioMNG.instance.PlaySounds(2);
             if (wallRunning.isWallRunning) return;
             AudioMNG.instance.PlaySounds(2);
             // Apply an upward force to the Rigidbody for jumping.
             jumpFeedback.PlayFeedbacks();
+            SpawnJumpEffect(transform.position);
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             animator.SetTrigger("Jump");
         }
+    }
+    // partiacal effect for jump
+    private void SpawnJumpEffect(Vector3 position)
+    {
+        if (jumpEffectPrefab == null) return;
+        var ps = Instantiate(jumpEffectPrefab, position, Quaternion.identity);
+        ps.Play();
+        var main = ps.main;
+        // approximate lifetime: particle duration + max start lifetime
+        float life = main.duration + main.startLifetime.constantMax;
+        Destroy(ps.gameObject, life + 0.1f);
     }
 
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
