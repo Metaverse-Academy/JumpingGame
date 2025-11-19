@@ -9,6 +9,7 @@ public class HookingMechanic : MonoBehaviour
     public Transform[] points;
     public float moveSpeed = 5f;
     public float jumpForce = 20f;
+    public float hookSearchRadius = 25f;
 
     [Header("State Flags")]
     public bool isHooking { get; private set; }
@@ -25,8 +26,11 @@ public class HookingMechanic : MonoBehaviour
     public void OnHook(InputAction.CallbackContext context)
     {
         if (!context.performed || isHooking) return;
-        if (points == null || index >= points.Length) return;
 
+        int nearestIndex = FindNearestHookIndex();
+        if (nearestIndex == -1) return;
+
+        index = nearestIndex;
         target = points[index].position;
         isHooked = false;
         isHooking = true;
@@ -37,15 +41,44 @@ public class HookingMechanic : MonoBehaviour
     {
         if (!context.performed || !isHooked || isHooking) return;
 
-        if (points == null || index >= points.Length)
+        int nearestIndex = FindNearestHookIndex();
+        if (nearestIndex == -1)
         {
             isHooked = false;
             return;
         }
 
+        index = nearestIndex;
         target = points[index].position;
         isHooked = false;
         isHooking = true;
+    }
+
+    int FindNearestHookIndex()
+    {
+        if (points == null || points.Length == 0) return -1;
+
+        Vector3 origin = transform.position;
+        float maxSqrDistance = hookSearchRadius > 0f
+            ? hookSearchRadius * hookSearchRadius
+            : float.PositiveInfinity;
+        float bestSqrDistance = maxSqrDistance;
+        int bestIndex = -1;
+
+        for (int i = 0; i < points.Length; i++)
+        {
+            Transform hookPoint = points[i];
+            if (hookPoint == null) continue;
+
+            float sqrDistance = (hookPoint.position - origin).sqrMagnitude;
+            if (sqrDistance < bestSqrDistance)
+            {
+                bestSqrDistance = sqrDistance;
+                bestIndex = i;
+            }
+        }
+
+        return bestIndex;
     }
 
     void Update()
