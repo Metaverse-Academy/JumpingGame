@@ -33,7 +33,7 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
-  m_LockedProperties: 
+  m_LockedProperties: _Noise_Edge1
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -99,7 +99,7 @@ Material:
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Base_Time_Speed: 20
-    - _Base_scale: 0.01
+    - _Base_scale: 0.02
     - _Base_strength: 6.81
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
@@ -119,13 +119,13 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HightOfTheCoud: 8.9
+    - _HightOfTheCoud: 7.61
     - _Metallic: 0
     - _Noise_Edge1: -1
-    - _Noise_Edge2: 2
-    - _Noise_Scale: 2.29
+    - _Noise_Edge2: 1
+    - _Noise_Scale: 0.01
     - _OcclusionStrength: 1
-    - _Opacity: 0.6
+    - _Opacity: 1.15
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -143,8 +143,8 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorOfTheLevel1: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
-    - _ColorOfTheLevel2: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorOfTheLevel1: {r: 0.5949329, g: 0.6803613, b: 0.6981132, a: 1}
+    - _ColorOfTheLevel2: {r: 0.716091, g: 0.8392519, b: 0.93710685, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Rotate: {r: 1, g: 0, b: 0, a: 90}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
