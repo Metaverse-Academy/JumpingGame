@@ -100,13 +100,13 @@ Material:
     - _AlphaToMask: 0
     - _Base_Time_Speed: 20
     - _Base_scale: 0.01
-    - _Base_strength: 0.74
+    - _Base_strength: 6.81
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _Cloud_speed: 30
+    - _Cloud_speed: 1
     - _Cloud_strong: 2
     - _Cull: 2
     - _Cutoff: 0.5
@@ -115,17 +115,17 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _Fade_depth: 36.3
+    - _Fade_depth: 36.4
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _HightOfTheCoud: 25.33
+    - _HightOfTheCoud: 8.9
     - _Metallic: 0
     - _Noise_Edge1: -1
     - _Noise_Edge2: 2
-    - _Noise_Scale: 0.01
+    - _Noise_Scale: 2.29
     - _OcclusionStrength: 1
-    - _Opacity: 0.48
+    - _Opacity: 0.6
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -139,15 +139,15 @@ Material:
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1
-    - _fresnel_Power: 12.4
+    - _fresnel_Power: 14.81
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorOfTheLevel1: {r: 0.5396226, g: 0.5396226, b: 0.5396226, a: 1}
-    - _ColorOfTheLevel2: {r: 0.90188676, g: 0.78787464, b: 0.87817055, a: 1}
+    - _ColorOfTheLevel1: {r: 0.6792453, g: 0.6792453, b: 0.6792453, a: 1}
+    - _ColorOfTheLevel2: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Rotate: {r: 1, g: 0, b: 0, a: 90}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _test: {r: 0, g: 1, b: -0.3, a: 2.7}
+    - _test: {r: 0, g: 1, b: -0.3, a: -0.1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
