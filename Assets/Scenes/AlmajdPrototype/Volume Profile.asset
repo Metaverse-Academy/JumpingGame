@@ -94,11 +94,11 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 8.37
   aperture:
-    m_OverrideState: 0
-    m_Value: 5.6
+    m_OverrideState: 1
+    m_Value: 5.7
   focalLength:
-    m_OverrideState: 0
-    m_Value: 50
+    m_OverrideState: 1
+    m_Value: 93
   bladeCount:
     m_OverrideState: 0
     m_Value: 5
@@ -106,8 +106,8 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 1
   bladeRotation:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: 32
 --- !u!114 &-279735675467400275
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -123,7 +123,7 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.51
   contrast:
     m_OverrideState: 1
     m_Value: 5.72
@@ -132,10 +132,10 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   hueShift:
     m_OverrideState: 1
-    m_Value: -13.47
+    m_Value: -19
   saturation:
     m_OverrideState: 1
-    m_Value: 18.22
+    m_Value: 19
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0

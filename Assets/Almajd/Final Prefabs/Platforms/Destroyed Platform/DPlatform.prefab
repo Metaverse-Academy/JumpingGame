@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5751308449281014742
+--- !u!1 &4603043327286998244
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4845105519095820166}
-  - component: {fileID: 6728423786614931448}
-  - component: {fileID: 3081176272877552191}
-  - component: {fileID: 5493766674553256966}
-  - component: {fileID: 8798828123806813551}
-  m_Layer: 7
-  m_Name: Wall
+  - component: {fileID: 6478480533123522862}
+  - component: {fileID: 6346902705274158800}
+  - component: {fileID: 853862025636516793}
+  - component: {fileID: 8716997290166758760}
+  m_Layer: 0
+  m_Name: DPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4845105519095820166
+--- !u!4 &6478480533123522862
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751308449281014742}
+  m_GameObject: {fileID: 4603043327286998244}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7069834, y: 0, z: 0, w: 0.7072302}
-  m_LocalPosition: {x: -1.1373501, y: 0, z: 16.027798}
-  m_LocalScale: {x: 48.740967, y: 103.141014, z: 87.1547}
+  m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 28, y: 1.3044, z: -6.2}
+  m_LocalScale: {x: 18.803255, y: 18.803255, z: 37.60651}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -89.98, y: 0, z: 0}
---- !u!33 &6728423786614931448
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 90}
+--- !u!33 &6346902705274158800
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751308449281014742}
-  m_Mesh: {fileID: 4300000, guid: 4aff35eaaf01a5c44b6a405e3afc9836, type: 2}
---- !u!23 &3081176272877552191
+  m_GameObject: {fileID: 4603043327286998244}
+  m_Mesh: {fileID: 4300000, guid: 07d66459deebbf14c9b920cfa0d64dd9, type: 2}
+--- !u!23 &853862025636516793
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751308449281014742}
+  m_GameObject: {fileID: 4603043327286998244}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -68,8 +67,8 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e38349690cb6afb4d8bee90558484d4c, type: 2}
-  - {fileID: 2100000, guid: e38349690cb6afb4d8bee90558484d4c, type: 2}
+  - {fileID: 2100000, guid: 70bec02d7a9c88748bce2ef4cf64c416, type: 2}
+  - {fileID: 2100000, guid: 3a37e764f1b3a754180375a66bd00d68, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,13 +91,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &5493766674553256966
+--- !u!65 &8716997290166758760
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751308449281014742}
+  m_GameObject: {fileID: 4603043327286998244}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -111,18 +110,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.12368533, y: 0.28233585, z: 0.21716133}
-  m_Center: {x: -0.00022505224, y: -0.07492253, z: 0.047871355}
---- !u!114 &8798828123806813551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5751308449281014742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ea84f2751bba564b81c8fdd2489f996, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WallData
-  IsFinalWall: 0
+  m_Size: {x: 0.41528088, y: 0.4153196, z: 0.062516846}
+  m_Center: {x: 0.0003930499, y: -0.00042964058, z: 0.01609667}

@@ -17,7 +17,7 @@ public class PlayerCheckpoint : MonoBehaviour
     void Update()
     {
         // Check if player has fallen below Y = -20
-        if (transform.position.y < -20f)
+        if (transform.position.y < -10f)
         {
             Respawn();
         }
@@ -25,14 +25,16 @@ public class PlayerCheckpoint : MonoBehaviour
 
     void Respawn()
     {
-        transform.position = lastCheckpoint.position;
         Rigidbody rb = GetComponent<Rigidbody>();
-        respawnFeedback?.PlayFeedbacks();
-        
-        if (rb != null)
+         if (rb != null)
         {
             rb.linearVelocity = Vector3.zero; // Reset velocity to prevent continued fall
         }
+        transform.position = lastCheckpoint.position;
+        
+        respawnFeedback?.PlayFeedbacks();
+        
+       
     }
 
     public void SetCheckpoint(Transform newCheckpoint)
