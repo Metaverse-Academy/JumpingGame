@@ -136,6 +136,10 @@ private bool Iswalking;
     // FixedUpdate is called at a fixed time interval and is used for physics calculations.
     void FixedUpdate()
     {
+        if(PlayerCheckpoint.instance != null)
+        {
+            if (PlayerCheckpoint.instance.isRespawning) return;
+        }
 bool hookActive = HookingMechanic.instance != null &&
                           HookingMechanic.instance.isHooking;
         if (hookActive)
@@ -147,12 +151,12 @@ bool hookActive = HookingMechanic.instance != null &&
         bool grapplingActive = (Grappling.instance != null && Grappling.instance.isGrappling);
         if (rb != null && !grapplingActive && !wallRunning.isWallRunning && !isGrounded)
         {
-            if (rb.linearVelocity.y < fallVelocityThreshold)
-            {
-                // Compute anti-gravity so net gravity becomes `fallGravityScale * Physics.gravity`
-                Vector3 antiGravity = -Physics.gravity * (1f - fallGravityScale);
-                rb.AddForce(antiGravity, ForceMode.Acceleration);
-            }
+            // if (rb.linearVelocity.y < fallVelocityThreshold)
+            // {
+            //     // Compute anti-gravity so net gravity becomes `fallGravityScale * Physics.gravity`
+            //     Vector3 antiGravity = -Physics.gravity * (1f - fallGravityScale);
+            //     rb.AddForce(antiGravity, ForceMode.Acceleration);
+            // }
         }
 
         if (wallRunning.isWallRunning) return;
