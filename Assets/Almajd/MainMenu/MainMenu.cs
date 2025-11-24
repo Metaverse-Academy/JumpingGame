@@ -23,6 +23,9 @@ public class MainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private Vector3 normalScale;
     private Vector3 targetScale;
+    [SerializeField] private string persistentSceneName = "Persistent";
+    [SerializeField] private string firstLevelSceneName = "Level1";
+      private bool isStartingGame = false;
 
     void Start()
     {
@@ -83,7 +86,47 @@ public class MainMenu : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     // ---------------- Button Actions ----------------
     public void Play()
     {
-        StartCoroutine(FadeOutAndLoadScene());
+        if (!isStartingGame)
+        {
+            StartCoroutine(StartGameRoutine());
+        }
+        //StartCoroutine(FadeOutAndLoadScene());
+    }
+    private IEnumerator StartGameRoutine()
+    {
+        isStartingGame = true;
+
+        // 1) Load Persistent managers scene if not already loaded
+        Scene persistentScene = SceneManager.GetSceneByName(persistentSceneName);
+        if (!persistentScene.isLoaded)
+        {
+            AsyncOperation loadPersistent = SceneManager.LoadSceneAsync(persistentSceneName, LoadSceneMode.Additive);
+            while (!loadPersistent.isDone)
+            {
+                
+                yield return null;
+            }
+        }
+
+        // 2) Load Level1 additively
+        AsyncOperation loadLevel = SceneManager.LoadSceneAsync(firstLevelSceneName, LoadSceneMode.Additive);
+        while (!loadLevel.isDone)
+        {
+            yield return null;
+        }
+
+        // 3) Set Level1 as active scene
+        Scene levelScene = SceneManager.GetSceneByName(firstLevelSceneName);
+        SceneManager.SetActiveScene(levelScene);
+
+        // 4) Unload the main menu scene
+        AsyncOperation unloadMenu = SceneManager.UnloadSceneAsync("MainMenu");
+        while (!unloadMenu.isDone)
+        {
+            yield return null;
+        }
+
+        isStartingGame = false;
     }
 
     public void OpenCredits()

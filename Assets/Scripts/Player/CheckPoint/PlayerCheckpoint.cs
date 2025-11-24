@@ -14,12 +14,16 @@ public class PlayerCheckpoint : MonoBehaviour
     public static PlayerCheckpoint instance;
     public bool isRespawning = false;
     public float respawnCooldown = 0.5f;
+    private Vector3 initialPosition;
+    private Quaternion initialRotation;
 
     void Start()
     {
         instance = this;
-        if (checkpoints.Length > 0)
-            lastCheckpoint = checkpoints[0];
+         initialPosition = transform.position;
+        initialRotation = transform.rotation;
+        // if (checkpoints.Length > 0)
+        //     lastCheckpoint = checkpoints[0];
 
         UpdateHP();
     }
@@ -52,25 +56,28 @@ public class PlayerCheckpoint : MonoBehaviour
     {
         Debug.Log("Respawning at last checkpoint"+ lastCheckpoint.position);
         Rigidbody rb = GetComponent<Rigidbody>();
+         Vector3 targetPos = lastCheckpoint != null ? lastCheckpoint.position : initialPosition;
+        Quaternion targetRot = lastCheckpoint != null ? lastCheckpoint.rotation : initialRotation;
          if (lastCheckpoint != null)
         {
-            rb.position = lastCheckpoint.position;
-            rb.rotation = Quaternion.identity;
+            rb.position = targetPos;
+            rb.rotation = targetRot;
             
              rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
+        respawnFeedback?.PlayFeedbacks();
         }
        
-    else
-    {
-        if (lastCheckpoint != null)
-        {
-            transform.position = lastCheckpoint.position;
-            transform.rotation = Quaternion.identity;
-        }
+    // else
+    // {
+    //     if (lastCheckpoint != null)
+    //     {
+    //         transform.position = lastCheckpoint.position;
+    //         transform.rotation = Quaternion.identity;
+    //     }
 
-        respawnFeedback?.PlayFeedbacks();
-    }
+        
+    // }
     }
 
     private void UpdateHP()

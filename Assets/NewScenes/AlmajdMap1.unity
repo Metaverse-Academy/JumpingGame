@@ -13357,6 +13357,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 188530362025218113, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: jumpForce
+      value: 9.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 188530362025218113, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: moveSpeed
+      value: 11.8
+      objectReference: {fileID: 0}
     - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: BlackFramUp
       value: 

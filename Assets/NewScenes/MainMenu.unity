@@ -1274,6 +1274,8 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   fadeOverlay: {fileID: 0}
   fadeDuration: 0.5
+  persistentSceneName: Persistent
+  firstLevelSceneName: Level1
 --- !u!1 &672845859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,6 +1431,8 @@ MonoBehaviour:
   audioManager: {fileID: 289479766}
   fadeOverlay: {fileID: 0}
   fadeDuration: 0.5
+  persistentSceneName: Persistent
+  firstLevelSceneName: Level1
 --- !u!114 &672845865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2124,6 +2128,8 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   fadeOverlay: {fileID: 0}
   fadeDuration: 0.5
+  persistentSceneName: Persistent
+  firstLevelSceneName: Level1
 --- !u!1 &1570977745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2452,6 +2458,8 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   fadeOverlay: {fileID: 0}
   fadeDuration: 0.5
+  persistentSceneName: Persistent
+  firstLevelSceneName: Level1
 --- !u!1 &2093638114
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,6 +2497,8 @@ MonoBehaviour:
   audioManager: {fileID: 289479766}
   fadeOverlay: {fileID: 882754261}
   fadeDuration: 0.8
+  persistentSceneName: MainMenu
+  firstLevelSceneName: AlmajdMap1
 --- !u!4 &2093638116
 Transform:
   m_ObjectHideFlags: 0
