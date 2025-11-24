@@ -2227,8 +2227,8 @@ MonoBehaviour:
   jumpEffectPrefab: {fileID: 7285465045455584057}
   jumpFeedback: {fileID: 8309626295716283635}
   ReSpawnPos: {fileID: 0}
-  moveSpeed: 15
-  jumpForce: 10
+  moveSpeed: 11.8
+  jumpForce: 9.24
   isGrounded: 1
   groundCheck: {fileID: 7889256012930105585}
   wallRunning: {fileID: 1188056398765242582}
@@ -2440,6 +2440,9 @@ MonoBehaviour:
   maxWallRunTime: 2
   wallJumpForce: 35
   wallRunningCooldown: 0.4
+  targetWallRunSpeed: 12
+  wallStickForce: 30
+  maxDownwardWallSpeed: -5
   WallRunCamera: {fileID: 3678072691948991745}
   wallRunStartFeedback: {fileID: 6468116612866792003}
   cameraImpulse: {fileID: 0}
@@ -2478,6 +2481,10 @@ MonoBehaviour:
   cameraTransform: {fileID: 5788970009182823184}
   moveForce: 12
   inputSmoothTime: 0.08
+  swingForce: 25
+  autoSwingToTarget: 1
+  swingTime: 1.2
+  launchBoost: 8
 --- !u!65 &5708329933234950253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2807,8 +2814,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HookingMechanic
   points:
   - {fileID: 0}
+  - {fileID: 0}
   moveSpeed: 40
   jumpForce: 20
+  hookSearchRadius: 25
 --- !u!1 &4061332674753781649
 GameObject:
   m_ObjectHideFlags: 0

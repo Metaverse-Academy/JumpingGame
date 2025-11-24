@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     // Boolean to check if the player is grounded.
     public bool isGrounded;
 
+     private static PlayerMovement instance;
+
 private bool Iswalking;
     // Variable to store movement input.
     private Vector2 movementInput;
@@ -53,6 +55,20 @@ private bool Iswalking;
             cam = Camera.main.transform;
         }
     }
+
+    void Awake()
+    {
+        
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);  
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject); 
+    }
+    
     void Update()
     {
         isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 2f);

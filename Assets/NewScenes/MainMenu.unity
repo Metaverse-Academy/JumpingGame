@@ -2497,8 +2497,8 @@ MonoBehaviour:
   audioManager: {fileID: 289479766}
   fadeOverlay: {fileID: 882754261}
   fadeDuration: 0.8
-  persistentSceneName: MainMenu
-  firstLevelSceneName: AlmajdMap1
+  persistentSceneName: Presistense
+  firstLevelSceneName: FaresLvl1
 --- !u!4 &2093638116
 Transform:
   m_ObjectHideFlags: 0
