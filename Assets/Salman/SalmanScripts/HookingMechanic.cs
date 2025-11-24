@@ -11,6 +11,12 @@ public class HookingMechanic : MonoBehaviour
     public float jumpForce = 20f;
     public float hookSearchRadius = 25f;
 
+    [Header("Line")]
+    [Tooltip("Optional: assign a LineRenderer in inspector or one will be created at runtime.")]
+    public LineRenderer lineRenderer;
+    public Color lineColor = new Color(0.72f, 0.53f, 0.043f, 1f); // dark yellow
+    public float lineWidth = 0.04f;
+
     [Header("State Flags")]
     public bool isHooking { get; private set; }
     public bool isHooked { get; private set; }
@@ -19,9 +25,28 @@ public class HookingMechanic : MonoBehaviour
     int index = 0;
     Vector3 target;
     Rigidbody rb;
+    private bool showLine=false;
 
     void Awake() => rb = GetComponent<Rigidbody>();
     void OnEnable() => instance = this;
+
+    void Start()
+    {
+        // create a simple LineRenderer if none assigned
+        if (lineRenderer == null)
+        {
+            lineRenderer = gameObject.AddComponent<LineRenderer>();
+            lineRenderer.material = new Material(Shader.Find("Sprites/Default"));
+        }
+        lineRenderer.positionCount = 2;
+        lineRenderer.useWorldSpace = true;
+        lineRenderer.startWidth = lineWidth;
+        lineRenderer.endWidth = lineWidth;
+        lineRenderer.numCapVertices = 4;
+        lineRenderer.enabled = false;
+        lineRenderer.startColor = lineColor;
+        lineRenderer.endColor = lineColor;
+    }
     // Called by PlayerInput when the Hook action is triggered
     public void OnHook(InputAction.CallbackContext context)
     {
@@ -34,6 +59,8 @@ public class HookingMechanic : MonoBehaviour
         target = points[index].position;
         isHooked = false;
         isHooking = true;
+        showLine = true;
+        if (lineRenderer != null) lineRenderer.enabled = true;
     }
 
     // Called by PlayerInput when the HookJump action is triggered
@@ -52,6 +79,7 @@ public class HookingMechanic : MonoBehaviour
         target = points[index].position;
         isHooked = false;
         isHooking = true;
+        if (lineRenderer != null) lineRenderer.enabled = true;
     }
 
     int FindNearestHookIndex()
@@ -87,6 +115,23 @@ public class HookingMechanic : MonoBehaviour
        
     }
 
+    void LateUpdate()
+    {
+        // update line positions when hooking or hooked
+        if (lineRenderer == null) return;
+        if (!showLine)
+        {
+            lineRenderer.enabled = true;
+            lineRenderer.SetPosition(0, transform.position);
+            lineRenderer.SetPosition(1, target);
+            
+        }
+        else
+        {
+            lineRenderer.enabled = false;
+         
+        }
+    }
     void FixedUpdate()
     {
         if (!isHooking) return;
@@ -105,7 +150,9 @@ public class HookingMechanic : MonoBehaviour
                 rb.linearVelocity = Vector3.zero;
                 rb.angularVelocity = Vector3.zero;
                 rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+                  if (lineRenderer != null) lineRenderer.enabled = false;
             }
+            // keep showing line when hooked; LateUpdate will handle it
             return;
         }
 
@@ -122,5 +169,6 @@ public class HookingMechanic : MonoBehaviour
         isHooked = false;
         isHooking = false;
         index = 0;
+      
     }
 }
