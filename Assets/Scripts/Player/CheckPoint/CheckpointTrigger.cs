@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class CheckpointTrigger : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            PlayerCheckpoint playerCheckpoint = collision.gameObject.GetComponent<PlayerCheckpoint>();
+            PlayerCheckpoint playerCheckpoint = other.gameObject.GetComponent<PlayerCheckpoint>();
             if (playerCheckpoint != null)
             {
+                Debug.Log("Checkpoint reached!");
                 playerCheckpoint.SetCheckpoint(transform);
             }
         }

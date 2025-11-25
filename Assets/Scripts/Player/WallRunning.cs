@@ -35,6 +35,10 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private float wallStickForce = 30f;
     [SerializeField] private float maxDownwardWallSpeed = -5f;
 
+    [Header("Limits")]
+    [SerializeField] private float maxWallRunSpeed = 18f; // clamp horizontal speed while wallrunning
+    [SerializeField] private float maxWallRunVerticalSpeed = 10f; // optional clamp for upward speed
+
     [SerializeField] private CinemachineCamera WallRunCamera;
     public MMF_Player wallRunStartFeedback;
     public CinemachineImpulseSource cameraImpulse;
@@ -217,6 +221,21 @@ public class WallRunning : MonoBehaviour
 
         // Extra forward force if you still want it (small)
         rb.AddForce(wallForward * wallRunForce, ForceMode.Force);
+
+        // ---- LIMIT SPEED: clamp horizontal (XZ) velocity so forces don't accelerate infinitely ----
+        Vector3 horiz = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
+        float horizSpeed = horiz.magnitude;
+        if (horizSpeed > maxWallRunSpeed)
+        {
+            horiz = horiz.normalized * maxWallRunSpeed;
+            rb.linearVelocity = new Vector3(horiz.x, rb.linearVelocity.y, horiz.z);
+        }
+
+        // optional: clamp extreme upward velocity (if wall jumps push up too hard)
+        if (rb.linearVelocity.y > maxWallRunVerticalSpeed)
+        {
+            rb.linearVelocity = new Vector3(rb.linearVelocity.x, maxWallRunVerticalSpeed, rb.linearVelocity.z);
+        }
     }
 
     private void StartWallRun()
