@@ -17504,7 +17504,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &900239046
 Transform:
   m_ObjectHideFlags: 0
@@ -40956,6 +40956,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player 1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4042554045664443166, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5016348619258106316, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: points.Array.size
       value: 4
@@ -41125,6 +41129,8 @@ MonoBehaviour:
   HP1: {fileID: 0}
   HP2: {fileID: 0}
   HP3: {fileID: 0}
+  isRespawning: 0
+  respawnCooldown: 0.5
 --- !u!1 &1796254026
 GameObject:
   m_ObjectHideFlags: 0
