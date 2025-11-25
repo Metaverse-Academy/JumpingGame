@@ -23733,6 +23733,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1286666690}
+  - component: {fileID: 1286666692}
+  - component: {fileID: 1286666691}
   m_Layer: 0
   m_Name: Point3
   m_TagString: Untagged
@@ -23755,6 +23757,39 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1455638035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1286666691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286666689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76491b132d16fd94e8d803f976472bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointTrigger
+--- !u!65 &1286666692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286666689}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.46}
+  m_Center: {x: 0, y: 0, z: 0.18}
 --- !u!1 &1295535889
 GameObject:
   m_ObjectHideFlags: 0
@@ -41121,16 +41156,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae5c3bcbb3f53f546b7c422b4375a8c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCheckpoint
-  checkpoints:
-  - {fileID: 2053179156}
-  - {fileID: 1959470368}
-  - {fileID: 774738037}
   respawnFeedback: {fileID: 1381589445}
   HP1: {fileID: 0}
   HP2: {fileID: 0}
   HP3: {fileID: 0}
   isRespawning: 0
   respawnCooldown: 0.5
+  initialPosition: {x: 0, y: 0, z: 0}
+  initialRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1796254026
 GameObject:
   m_ObjectHideFlags: 0

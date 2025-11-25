@@ -20,6 +20,7 @@ public class LevelTransitionTrigger : MonoBehaviour
         if (other.CompareTag(playerTag))
         {
             StartCoroutine(TransitionToNextLevel());
+           // PlayerCheckpoint.instance.SetCheckpoint(transform);
         }
     }
 

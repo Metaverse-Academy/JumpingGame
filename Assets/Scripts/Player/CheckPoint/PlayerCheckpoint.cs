@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerCheckpoint : MonoBehaviour
 {
-    public Transform[] checkpoints;
-    private Transform lastCheckpoint;
+   
+    private Vector3 lastCheckpoint;
     public MMF_Player respawnFeedback;
     public GameObject HP1;
     public GameObject HP2;
@@ -14,17 +14,20 @@ public class PlayerCheckpoint : MonoBehaviour
     public static PlayerCheckpoint instance;
     public bool isRespawning = false;
     public float respawnCooldown = 0.5f;
-    private Vector3 initialPosition;
-    private Quaternion initialRotation;
+    [SerializeField] private Vector3 initialPosition;
+    [SerializeField] private Quaternion initialRotation;
 
-    void Start()
+     Rigidbody rb;
+    void Awake()
     {
         instance = this;
-         initialPosition = transform.position;
-        initialRotation = transform.rotation;
-        // if (checkpoints.Length > 0)
-        //     lastCheckpoint = checkpoints[0];
-
+       
+        lastCheckpoint = initialPosition;
+          rb = GetComponent<Rigidbody>();
+    }
+    void Start()
+    {
+        
         UpdateHP();
     }
 
@@ -46,39 +49,50 @@ public class PlayerCheckpoint : MonoBehaviour
             UpdateHP();
         }
 
-        Respawn();
-
-        yield return new WaitForSeconds(respawnCooldown);
-        isRespawning = false;
-    }
-
-    void Respawn()
-    {
-        Debug.Log("Respawning at last checkpoint"+ lastCheckpoint.position);
-        Rigidbody rb = GetComponent<Rigidbody>();
-         Vector3 targetPos = lastCheckpoint != null ? lastCheckpoint.position : initialPosition;
-        Quaternion targetRot = lastCheckpoint != null ? lastCheckpoint.rotation : initialRotation;
-         if (lastCheckpoint != null)
+       Debug.Log("Respawning at last checkpoint"+ lastCheckpoint);
+         Vector3 targetPos = lastCheckpoint != Vector3.zero ? lastCheckpoint : initialPosition;
+        // Quaternion targetRot = lastCheckpoint != null ? lastCheckpoint : initialRotation;
+         if (lastCheckpoint != Vector3.zero)
         {
             rb.position = targetPos;
-            rb.rotation = targetRot;
+            // rb.rotation = targetRot;
             
              rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
         respawnFeedback?.PlayFeedbacks();
         }
-       
-    // else
+
+        yield return new WaitForSeconds(respawnCooldown);
+        isRespawning = false;
+    }
+
+    // void Respawn()
     // {
-    //     if (lastCheckpoint != null)
+    //     Debug.Log("Respawning at last checkpoint"+ lastCheckpoint.position);
+    //     Rigidbody rb = GetComponent<Rigidbody>();
+    //      Vector3 targetPos = lastCheckpoint != null ? lastCheckpoint.position : initialPosition;
+    //     Quaternion targetRot = lastCheckpoint != null ? lastCheckpoint.rotation : initialRotation;
+    //      if (lastCheckpoint != null)
     //     {
-    //         transform.position = lastCheckpoint.position;
-    //         transform.rotation = Quaternion.identity;
+    //         rb.position = targetPos;
+    //         rb.rotation = targetRot;
+            
+    //          rb.linearVelocity = Vector3.zero;
+    //     rb.angularVelocity = Vector3.zero;
+    //     respawnFeedback?.PlayFeedbacks();
     //     }
+       
+    // // else
+    // // {
+    // //     if (lastCheckpoint != null)
+    // //     {
+    // //         transform.position = lastCheckpoint.position;
+    // //         transform.rotation = Quaternion.identity;
+    // //     }
 
         
+    // // }
     // }
-    }
 
     private void UpdateHP()
     {
@@ -90,6 +104,6 @@ public class PlayerCheckpoint : MonoBehaviour
 
     public void SetCheckpoint(Transform newCheckpoint)
     {
-        lastCheckpoint = newCheckpoint;
+        lastCheckpoint = newCheckpoint.position;
     }
 }
