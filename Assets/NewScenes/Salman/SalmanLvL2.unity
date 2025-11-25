@@ -8040,6 +8040,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 550878928}
+  - component: {fileID: 550878930}
+  - component: {fileID: 550878929}
   m_Layer: 0
   m_Name: Point3
   m_TagString: Untagged
@@ -8062,6 +8064,42 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1062709351}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &550878929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550878927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1328254e582fbb040ba7ee9da56d86b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelTransitionTrigger
+  currentLevelName: FaresLvL2
+  nextLevelName: FaresLvl3
+  playerTag: Player
+--- !u!65 &550878930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550878927}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.96, y: 1.1, z: 0.54}
+  m_Center: {x: 0.04, y: 0, z: 0}
 --- !u!1 &560454677
 GameObject:
   m_ObjectHideFlags: 0
@@ -11288,7 +11326,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &900239046
 Transform:
   m_ObjectHideFlags: 0
