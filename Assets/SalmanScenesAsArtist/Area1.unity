@@ -80458,18 +80458,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: hookPart
       objectReference: {fileID: 0}
-    - target: {fileID: 1062377762015367439, guid: 51a33654f9701af41914b419d5f4c98c, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: d457b01e6536d5b45a0a2ff2228ccf8d, type: 2}
-    - target: {fileID: 1816758682156440608, guid: 51a33654f9701af41914b419d5f4c98c, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 063d9295d7529bd4a996bbf1d945af78, type: 2}
-    - target: {fileID: 2844966211217571668, guid: 51a33654f9701af41914b419d5f4c98c, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: d457b01e6536d5b45a0a2ff2228ccf8d, type: 2}
     - target: {fileID: 3760538539143750008, guid: 51a33654f9701af41914b419d5f4c98c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 126.21
