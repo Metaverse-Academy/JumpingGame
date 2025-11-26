@@ -4659,63 +4659,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3e7bf786bd71de41bf0c26d138193b9, type: 3}
---- !u!1001 &1076739586
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3499741406267349523, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_Name
-      value: HighVertixSurface
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 66.80029
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -26.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -160.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4312835359151669417, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 91a893d1520c95e42a06287515e3b656, type: 3}
 --- !u!1 &1100955385
 GameObject:
   m_ObjectHideFlags: 0
@@ -10443,6 +10386,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
+--- !u!33 &897799062682104078
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499741407342961681}
+  m_Mesh: {fileID: 2534964839176971238, guid: ca62e8570043eb346a4eea786222031a, type: 3}
 --- !u!1 &919132148119968491
 GameObject:
   m_ObjectHideFlags: 0
@@ -10516,6 +10467,87 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69476bd41b4230c4b85f8faa5bd53da3, type: 3}
+--- !u!23 &3139404989022635460
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499741407342961681}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: e4fa9139543e969488a31331e1c2c0c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3499741407342961681
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4312835360223100587}
+  - component: {fileID: 897799062682104078}
+  - component: {fileID: 3139404989022635460}
+  m_Layer: 0
+  m_Name: HighVertixSurfaceForlevel1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4312835360223100587
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499741407342961681}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 66.80029, y: -26.9, z: -160.5}
+  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5817322793572611093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10613,7 +10645,7 @@ SceneRoots:
   - {fileID: 1663806562}
   - {fileID: 973634480}
   - {fileID: 1302634593}
-  - {fileID: 1076739586}
+  - {fileID: 4312835360223100587}
   - {fileID: 634085456}
   - {fileID: 1172724581}
   - {fileID: 1487899562}
