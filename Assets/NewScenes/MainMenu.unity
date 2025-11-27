@@ -1114,7 +1114,7 @@ Transform:
   m_GameObject: {fileID: 606713433}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 34, y: -56, z: 1058}
+  m_LocalPosition: {x: 34, y: -98.2, z: 1058}
   m_LocalScale: {x: 3.5909326, y: 3.5909326, z: 1.1969775}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1432,7 +1432,7 @@ MonoBehaviour:
   fadeOverlay: {fileID: 0}
   fadeDuration: 0.5
   persistentSceneName: Persistent
-  firstLevelSceneName: Level1
+  firstLevelSceneName: SalmanLvl1
 --- !u!114 &672845865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2498,7 +2498,7 @@ MonoBehaviour:
   fadeOverlay: {fileID: 882754261}
   fadeDuration: 0.8
   persistentSceneName: Presistense
-  firstLevelSceneName: FaresLvl1
+  firstLevelSceneName: SalmanLvl11
 --- !u!4 &2093638116
 Transform:
   m_ObjectHideFlags: 0

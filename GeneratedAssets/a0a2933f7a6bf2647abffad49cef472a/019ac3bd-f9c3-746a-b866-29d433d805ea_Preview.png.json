@@ -1,0 +1,11 @@
+{
+    "asset": "a0a2933f7a6bf2647abffad49cef472a",
+    "fileName": "019ac3bd-f9c3-746a-b866-29d433d805ea_Preview.png",
+    "prompt": "Wood Dungeon \n",
+    "negativePrompt": "",
+    "model": "44ec3749-963a-44b1-aa54-dc19f6ed8ab2",
+    "modelName": "Unity Texture2D",
+    "customSeed": 175028548,
+    "w3CTraceId": "e4d542d9b8f7fa4a245a3014f1fc973a",
+    "refinementMode": "Generation"
+}

@@ -46,7 +46,7 @@ public class WallRunning : MonoBehaviour
     [Header("Wall Check Settings")]
     [SerializeField] private float wallCheckDistance = 1f;
     [SerializeField] private float minJumpHeight = 1.5f;
-    [SerializeField] private Animator animator;
+    //[SerializeField] private Animator animator;
 
     private RaycastHit leftWallHit;
     private RaycastHit rightWallHit;
@@ -74,8 +74,8 @@ public class WallRunning : MonoBehaviour
     private void Update()
     {
         // UI anims
-        BlackFramUp.SetBool("IsWallRun", playerMovement.ISPlayerJumpFromWall);
-        BlackFramDown.SetBool("IsWallRunning", playerMovement.ISPlayerJumpFromWall);
+        // BlackFramUp.SetBool("IsWallRun", playerMovement.ISPlayerJumpFromWall);
+        // BlackFramDown.SetBool("IsWallRunning", playerMovement.ISPlayerJumpFromWall);
 
         // Adjust wall jump force based on wall data
         if (TheWallThePlayerRunOnIt)
@@ -135,8 +135,8 @@ public class WallRunning : MonoBehaviour
         AudioMNG.instance.WallRun(0);
 
         Debug.Log("stop running");
-        animator.SetBool("IsWallRunning", false);
-        animator.SetBool("IsWallRunningLeft", false);
+        // animator.SetBool("IsWallRunning", false);
+        // animator.SetBool("IsWallRunningLeft", false);
 
         isWallRunning = false;
 
@@ -157,7 +157,7 @@ public class WallRunning : MonoBehaviour
                 -mainCameraleftDutch,
                 Time.fixedDeltaTime * 1f
             );
-            animator.SetBool("IsWallRunningLeft", true);
+            //animator.SetBool("IsWallRunningLeft", true);
             AudioMNG.instance.WallRun(1);
         }
         else if (rightWall)
@@ -167,7 +167,7 @@ public class WallRunning : MonoBehaviour
                 mainCameraRightDutch,
                 Time.fixedDeltaTime * 1f
             );
-            animator.SetBool("IsWallRunning", true);
+            //animator.SetBool("IsWallRunning", true);
             AudioMNG.instance.WallRun(1);
         }
 
