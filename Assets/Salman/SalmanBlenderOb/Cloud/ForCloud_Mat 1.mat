@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ForCloud_Mat
+  m_Name: ForCloud_Mat 1
   m_Shader: {fileID: -6465566751694194690, guid: c7b4eee50f73bb244a9e7a6d7b78ec74, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -143,8 +143,8 @@ Material:
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _ColorOfTheLevel1: {r: 0.7924528, g: 0.7924528, b: 0.7924528, a: 1}
-    - _ColorOfTheLevel2: {r: 1, g: 1, b: 1, a: 1}
+    - _ColorOfTheLevel1: {r: 0.6886792, g: 0.6886792, b: 0.6886792, a: 1}
+    - _ColorOfTheLevel2: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Rotate: {r: 1, g: 0, b: 0, a: 90}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
