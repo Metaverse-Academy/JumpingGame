@@ -8654,6 +8654,7 @@ GameObject:
   - component: {fileID: 1851870553}
   - component: {fileID: 1851870552}
   - component: {fileID: 1851870554}
+  - component: {fileID: 1851870555}
   m_Layer: 0
   m_Name: Volume
   m_TagString: Untagged
@@ -8677,7 +8678,7 @@ MonoBehaviour:
   priority: 0
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: e21a79847baa8034e8c251464b31e274, type: 2}
+  sharedProfile: {fileID: 11400000, guid: c1c44bf0395007140a03096f081e4b44, type: 2}
 --- !u!4 &1851870553
 Transform:
   m_ObjectHideFlags: 0
@@ -8800,6 +8801,28 @@ MonoBehaviour:
   RemapColorZero: 0
   RemapColorOne: 1
   TargetColor: {r: 1, g: 0, b: 0, a: 1}
+--- !u!95 &1851870555
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851870551}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: db02024a6d541b9479a36118271d24a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!43 &1855215693
 Mesh:
   m_ObjectHideFlags: 0
