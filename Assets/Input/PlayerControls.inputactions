@@ -482,10 +482,10 @@
                 {
                     "name": "",
                     "id": "206fa4cc-c3c4-4905-8605-361bbb30d8ee",
-                    "path": "<Gamepad>/rightShoulder",
+                    "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": ";Keyboard&Mouse;Gamepad",
                     "action": "OnHook",
                     "isComposite": false,
                     "isPartOfComposite": false
