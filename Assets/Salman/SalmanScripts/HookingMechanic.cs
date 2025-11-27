@@ -32,6 +32,13 @@ public class HookingMechanic : MonoBehaviour
 
     void Start()
     {
+         if (instance != null && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = this;
         // create a simple LineRenderer if none assigned
         if (lineRenderer == null)
         {
@@ -81,6 +88,21 @@ public class HookingMechanic : MonoBehaviour
         isHooking = true;
         if (lineRenderer != null) lineRenderer.enabled = true;
     }
+     public void SetHookPoints(Transform[] newPoints)
+    {
+        points = newPoints;
+        index = 0;
+        isHooking = false;
+        isHooked = false;
+        showLine = false;
+
+        // just to be safe
+        if (lineRenderer != null)
+        {
+            //lineRenderer.enabled = false;
+        }
+    }
+
 
     int FindNearestHookIndex()
     {
