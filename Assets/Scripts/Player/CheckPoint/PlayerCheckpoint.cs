@@ -59,7 +59,7 @@ public class PlayerCheckpoint : MonoBehaviour
             
              rb.linearVelocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
-        respawnFeedback?.PlayFeedbacks();
+       // respawnFeedback?.PlayFeedbacks();
         }
 
         yield return new WaitForSeconds(respawnCooldown);

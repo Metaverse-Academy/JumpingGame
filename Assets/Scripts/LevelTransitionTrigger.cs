@@ -41,13 +41,13 @@ public class LevelTransitionTrigger : MonoBehaviour
         Scene nextScene = SceneManager.GetSceneByName(nextLevelName);
         SceneManager.SetActiveScene(nextScene);
 
-        // 3) Unload current level (but not the Persistent scene!)
-        // AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(currentLevelName);
+        //3) Unload current level (but not the Persistent scene!)
+        AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(currentLevelName);
 
-        // while (!asyncUnload.isDone)
-        // {
-        //     yield return null;
-        // }
+        while (!asyncUnload.isDone)
+        {
+            yield return null;
+        }
 
         isTransitioning = false;
     }

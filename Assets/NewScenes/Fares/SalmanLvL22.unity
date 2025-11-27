@@ -2542,8 +2542,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1328254e582fbb040ba7ee9da56d86b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelTransitionTrigger
-  currentLevelName: FaresLvL2
-  nextLevelName: FaresLvl3
+  currentLevelName: SalmanLvL22
+  nextLevelName: SalmanLvl33
   playerTag: Player
 --- !u!65 &550878930
 BoxCollider:
@@ -2564,8 +2564,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.96, y: 1.1, z: 0.54}
-  m_Center: {x: 0.04, y: 0, z: 0}
+  m_Size: {x: 0.99, y: 0.82, z: 0.54}
+  m_Center: {x: 0.04, y: 0, z: -0.33}
 --- !u!1 &560454677
 GameObject:
   m_ObjectHideFlags: 0
@@ -7698,6 +7698,7 @@ Transform:
   m_Children:
   - {fileID: 1057783329}
   - {fileID: 550878928}
+  - {fileID: 1116907234}
   m_Father: {fileID: 1100955386}
   m_LocalEulerAnglesHint: {x: 0, y: -1.333, z: 0}
 --- !u!23 &1062709352
@@ -9532,6 +9533,72 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1116907233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1116907234}
+  - component: {fileID: 1116907236}
+  - component: {fileID: 1116907235}
+  m_Layer: 0
+  m_Name: CheckPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1116907234
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116907233}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1062709351}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1116907235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116907233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76491b132d16fd94e8d803f976472bbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointTrigger
+--- !u!65 &1116907236
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116907233}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 0.28}
+  m_Center: {x: 0, y: 0, z: 0.71}
 --- !u!1 &1125492237
 GameObject:
   m_ObjectHideFlags: 0
