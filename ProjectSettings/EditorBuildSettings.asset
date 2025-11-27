@@ -12,14 +12,11 @@ EditorBuildSettings:
     path: Assets/NewScenes/Presistense.unity
     guid: 384daf26bbd589241b39c5479e97d320
   - enabled: 1
-    path: Assets/NewScenes/Fares/FaresLvl1.unity
-    guid: d45e358543e03ff4a80bc4c4aed26396
+    path: Assets/NewScenes/Salman/SalmanLvl1.unity
+    guid: 711910dd3b861ba47be2fba62baeb704
   - enabled: 1
-    path: Assets/NewScenes/Fares/FaresLvL2.unity
-    guid: 58caa59440ffb0846b193a2165289f01
-  - enabled: 1
-    path: Assets/NewScenes/Fares/FaresLvl3.unity
-    guid: 3fcaa57f65315c342a6fb618d5a09224
+    path: Assets/NewScenes/Salman/SalmanLvL2.unity
+    guid: 85d287759043dd741a30e8109f98ec66
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

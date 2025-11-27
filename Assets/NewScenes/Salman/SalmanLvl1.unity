@@ -1981,8 +1981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1328254e582fbb040ba7ee9da56d86b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  currentLevelName: FaresLvl1
-  nextLevelName: FaresLvL2
+  currentLevelName: SalmanLvl1
+  nextLevelName: SalmanLvL2
   playerTag: Player
 --- !u!65 &549611953
 BoxCollider:
@@ -2003,8 +2003,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 0.88, z: 0.5}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 0.91, z: 0.35}
+  m_Center: {x: 0.09, y: 0, z: -0.31}
 --- !u!1 &563011094
 GameObject:
   m_ObjectHideFlags: 0
@@ -7797,13 +7797,41 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4042554045664443166, guid: ad97230dae489224a811978f4583b477, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1663806565}
   m_SourcePrefab: {fileID: 100100000, guid: ad97230dae489224a811978f4583b477, type: 3}
 --- !u!4 &1663806563 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5788970009182823184, guid: ad97230dae489224a811978f4583b477, type: 3}
   m_PrefabInstance: {fileID: 1663806562}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1663806564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4042554045664443166, guid: ad97230dae489224a811978f4583b477, type: 3}
+  m_PrefabInstance: {fileID: 1663806562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1663806565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663806564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5c3bcbb3f53f546b7c422b4375a8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCheckpoint
+  respawnFeedback: {fileID: 1381589445}
+  HP1: {fileID: 688665272}
+  HP2: {fileID: 1634228649}
+  HP3: {fileID: 2115949656}
+  isRespawning: 0
+  respawnCooldown: 0.5
+  initialPosition: {x: 53.399998, y: 23, z: -50}
+  initialRotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1670290627
 GameObject:
   m_ObjectHideFlags: 0
