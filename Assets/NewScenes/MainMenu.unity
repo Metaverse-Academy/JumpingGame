@@ -2498,7 +2498,7 @@ MonoBehaviour:
   fadeOverlay: {fileID: 882754261}
   fadeDuration: 0.8
   persistentSceneName: Presistense
-  firstLevelSceneName: FaresLvl1
+  firstLevelSceneName: SalmanLvl11
 --- !u!4 &2093638116
 Transform:
   m_ObjectHideFlags: 0
