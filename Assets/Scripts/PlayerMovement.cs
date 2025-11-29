@@ -118,6 +118,10 @@ private bool Iswalking;
     // This method is called by the Input System when the "Jump" action is triggered.
     public void OnJump(InputAction.CallbackContext context)
     {
+        if(wallRunning.isWallRunning)
+        {
+          return;
+        }
 
         if (context.started && Iswalking == true)
         {
