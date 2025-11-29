@@ -30,26 +30,28 @@ public class WallRunning : MonoBehaviour
     [SerializeField] private float wallRunningCooldown = 0.4f;
     private float wallRunningCooldownTimer;
 
-    // 🔹 New: control speed & stickiness
+    // 🔹 New: control speed & stickiness (only partly used in this simple version)
     [SerializeField] private float targetWallRunSpeed = 12f;
     [SerializeField] private float wallStickForce = 30f;
     [SerializeField] private float maxDownwardWallSpeed = -5f;
 
-    [Header("Limits")]
-    [SerializeField] private float maxWallRunSpeed = 18f; // clamp horizontal speed while wallrunning
-    [SerializeField] private float maxWallRunVerticalSpeed = 10f; // optional clamp for upward speed
+    [Header("Limits (optional, not all used here)")]
+    [SerializeField] private float maxWallRunSpeed = 18f;
+    [SerializeField] private float maxWallRunVerticalSpeed = 10f;
 
     [SerializeField] private CinemachineCamera WallRunCamera;
     public MMF_Player wallRunStartFeedback;
     public CinemachineImpulseSource cameraImpulse;
 
     [Header("Wall Check Settings")]
-    [SerializeField] private float wallCheckDistance = 1f;
-    [SerializeField] private float minJumpHeight = 1.5f;
-    //[SerializeField] private Animator animator;
+    [Tooltip("Radius around the player used to find walls (replaces raycast distance).")]
+    [SerializeField] private float wallCheckDistance = 0.8f; // now used as radius
 
-    private RaycastHit leftWallHit;
-    private RaycastHit rightWallHit;
+    [SerializeField] private float minJumpHeight = 1.5f;
+
+    [Header("Wall Tags")]
+    [SerializeField] private string leftWallTag = "WallLeft";
+    [SerializeField] private string rightWallTag = "WallRight";
 
     private float mainCameraleftDutch = -10f;
     private float mainCameraRightDutch = 10f;
@@ -61,8 +63,12 @@ public class WallRunning : MonoBehaviour
     public bool isWallRunning;
     public WallData TheWallThePlayerRunOnIt;
 
-    // i do this bool vvvv cus i want the StartWallRun Func run one time 
+    // i do this bool cus i want the StartWallRun Func run one time
     bool StartRunOnTime = false;
+
+    // New: replaces RaycastHit
+    private Collider currentWallCollider;
+    private Vector3 currentWallNormal;
 
     private void Start()
     {
@@ -81,21 +87,13 @@ public class WallRunning : MonoBehaviour
         if (TheWallThePlayerRunOnIt)
         {
             if (TheWallThePlayerRunOnIt.IsFinalWall)
-            {
                 wallJumpForce = 22f;
-            }
             else
-            {
                 wallJumpForce = 38f;
-            }
         }
-
-        // ⛔ Removed: code that was zeroing velocity when not wallrunning
-        // It was killing your momentum between walls.
 
         CheckForWall();
 
-        // Optional: timer for wall running cooldown (if you want to use it later)
         if (wallRunningCooldownTimer > 0f)
         {
             wallRunningCooldownTimer -= Time.deltaTime;
@@ -114,7 +112,6 @@ public class WallRunning : MonoBehaviour
         {
             if (!isWallRunning)
             {
-                // CameraSwitcher.instance.ActiveWallRun();
                 StartWallRun();
             }
 
@@ -124,7 +121,6 @@ public class WallRunning : MonoBehaviour
         {
             if (isWallRunning)
             {
-                // CameraSwitcher.instance.DeactiveWallRun();
                 StopWallRun();
             }
         }
@@ -135,8 +131,6 @@ public class WallRunning : MonoBehaviour
         AudioMNG.instance.WallRun(0);
 
         Debug.Log("stop running");
-        // animator.SetBool("IsWallRunning", false);
-        // animator.SetBool("IsWallRunningLeft", false);
 
         isWallRunning = false;
 
@@ -144,103 +138,91 @@ public class WallRunning : MonoBehaviour
         trailEffect.SetActive(false);
 
         StartCoroutine(CameraDutchReset());
-        // wallRunStartFeedback.StopFeedbacks();
     }
 
     private void WallRunningMovement()
+{
+    // Camera tilt + audio
+    if (leftWall)
     {
-        // Camera tilt + anims
-        if (leftWall)
-        {
-            WallRunCamera.Lens.Dutch = Mathf.Lerp(
-                WallRunCamera.Lens.Dutch,
-                -mainCameraleftDutch,
-                Time.fixedDeltaTime * 1f
-            );
-            //animator.SetBool("IsWallRunningLeft", true);
-            AudioMNG.instance.WallRun(1);
-        }
-        else if (rightWall)
-        {
-            WallRunCamera.Lens.Dutch = Mathf.Lerp(
-                WallRunCamera.Lens.Dutch,
-                mainCameraRightDutch,
-                Time.fixedDeltaTime * 1f
-            );
-            //animator.SetBool("IsWallRunning", true);
-            AudioMNG.instance.WallRun(1);
-        }
-
-        // --- Wall forward direction ---
-
-        Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
-
-        // Direction along the wall (perpendicular to normal & up)
-        Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up).normalized;
-
-        // Make sure it's aligned with where the player looks
-        if (Vector3.Dot(wallForward, orientation.forward) < 0f)
-        {
-            wallForward = -wallForward;
-        }
-
-        // --- Preserve & reshape momentum ---
-
-        Vector3 vel = rb.linearVelocity;
-
-        // Component going into the wall
-        Vector3 velIntoWall = Vector3.Project(vel, -wallNormal);
-
-        // Component sliding along the wall
-        Vector3 velAlongWall = vel - velIntoWall;
-
-        // Vertical velocity: clamp how fast we can fall while wallrunning
-        float verticalVel = vel.y;
-        if (verticalVel < maxDownwardWallSpeed)
-        {
-            verticalVel = maxDownwardWallSpeed;
-        }
-
-        // If we are too slow along the wall, push towards a target speed
-        float currentSpeedAlongWall = velAlongWall.magnitude;
-
-        if (currentSpeedAlongWall < targetWallRunSpeed)
-        {
-            velAlongWall = wallForward * targetWallRunSpeed;
-        }
-        else
-        {
-            velAlongWall = wallForward * currentSpeedAlongWall;
-        }
-
-        // Apply combined velocity: along wall + vertical
-        rb.linearVelocity = new Vector3(velAlongWall.x, verticalVel, velAlongWall.z);
-
-        // Push slightly into the wall to keep us attached
-        rb.AddForce(-wallNormal * wallStickForce, ForceMode.Acceleration);
-
-        // Extra forward force if you still want it (small)
-        rb.AddForce(wallForward * wallRunForce, ForceMode.Force);
-
-        // ---- LIMIT SPEED: clamp horizontal (XZ) velocity so forces don't accelerate infinitely ----
-        Vector3 horiz = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-        float horizSpeed = horiz.magnitude;
-        if (horizSpeed > maxWallRunSpeed)
-        {
-            horiz = horiz.normalized * maxWallRunSpeed;
-            rb.linearVelocity = new Vector3(horiz.x, rb.linearVelocity.y, horiz.z);
-        }
-
-        // optional: clamp extreme upward velocity (if wall jumps push up too hard)
-        if (rb.linearVelocity.y > maxWallRunVerticalSpeed)
-        {
-            rb.linearVelocity = new Vector3(rb.linearVelocity.x, maxWallRunVerticalSpeed, rb.linearVelocity.z);
-        }
+        WallRunCamera.Lens.Dutch = Mathf.Lerp(
+            WallRunCamera.Lens.Dutch,
+            -mainCameraleftDutch,
+            Time.fixedDeltaTime * 1f
+        );
+        AudioMNG.instance.WallRun(1);
     }
+    else if (rightWall)
+    {
+        WallRunCamera.Lens.Dutch = Mathf.Lerp(
+            WallRunCamera.Lens.Dutch,
+            mainCameraRightDutch,
+            Time.fixedDeltaTime * 1f
+        );
+        AudioMNG.instance.WallRun(1);
+    }
+
+    // --- Get wall normal (from your detection) ---
+    Vector3 wallNormal = currentWallNormal;
+
+    // Safety: if something went wrong, fall back to a side direction
+    if (wallNormal == Vector3.zero)
+    {
+        wallNormal = rightWall ? orientation.right : -orientation.right;
+    }
+
+    // Direction along the wall (perpendicular to normal & up)
+    Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up).normalized;
+
+    // Make sure it's aligned with where the player looks
+    if (Vector3.Dot(wallForward, orientation.forward) < 0f)
+    {
+        wallForward = -wallForward;
+    }
+
+    // --- SHAPE VELOCITY TO TARGET SPEED ---
+
+    // Current velocity
+    Vector3 vel = rb.linearVelocity;
+
+    // Component going into the wall
+    Vector3 velIntoWall = Vector3.Project(vel, -wallNormal);
+
+    // Component sliding along the wall
+    Vector3 velAlongWall = vel - velIntoWall;
+
+    // Vertical velocity: clamp how fast we can fall while wallrunning
+    float verticalVel = vel.y;
+    if (verticalVel < maxDownwardWallSpeed)
+    {
+        verticalVel = maxDownwardWallSpeed;
+    }
+
+    // Ensure a minimum speed along the wall (e.g. 11.8)
+    float currentSpeedAlongWall = velAlongWall.magnitude;
+    float desiredSpeed = targetWallRunSpeed;   // set this to 11.8f in Inspector
+
+    if (currentSpeedAlongWall < desiredSpeed)
+    {
+        velAlongWall = wallForward * desiredSpeed;
+    }
+    else
+    {
+        // Keep current speed but align with wall direction
+        velAlongWall = wallForward * currentSpeedAlongWall;
+    }
+
+    // Apply combined velocity: along wall + vertical
+    Vector3 newVel = new Vector3(velAlongWall.x, verticalVel, velAlongWall.z);
+    rb.linearVelocity = newVel;
+
+    // Push slightly into the wall to keep us attached
+    rb.AddForce(-wallNormal * wallStickForce, ForceMode.Acceleration);
+}
 
     private void StartWallRun()
     {
-        if (StartRunOnTime == false)
+        if (!StartRunOnTime)
         {
             StartRunOnTime = true;
             playerMovement.ISPlayerJumpFromWall = true;
@@ -272,42 +254,66 @@ public class WallRunning : MonoBehaviour
         return false;
     }
 
+    // ============================================
+    //  Tag-based wall check using OverlapSphere
+    // ============================================
     private void CheckForWall()
     {
-        leftWall = Physics.Raycast(
-            transform.position,
-            -orientation.right,
-            out leftWallHit,
-            wallCheckDistance,
-            wallLayer
-        );
+        leftWall = false;
+        rightWall = false;
+        currentWallCollider = null;
+        currentWallNormal = Vector3.zero;
+        TheWallThePlayerRunOnIt = null;
 
-        rightWall = Physics.Raycast(
-            transform.position,
-            orientation.right,
-            out rightWallHit,
-            wallCheckDistance,
-            wallLayer
-        );
+        // Use a sphere around the player instead of raycasts
+        Collider[] hits = Physics.OverlapSphere(transform.position, wallCheckDistance, wallLayer);
 
-        if (rightWallHit.collider != null)
+        foreach (Collider col in hits)
         {
-            TheWallThePlayerRunOnIt = rightWallHit.collider.gameObject.GetComponent<WallData>();
-            Debug.Log(TheWallThePlayerRunOnIt.IsFinalWall);
+            if (col.CompareTag(rightWallTag))
+            {
+                rightWall = true;
+                leftWall = false;
+                currentWallCollider = col;
+                break;
+            }
+            else if (col.CompareTag(leftWallTag))
+            {
+                leftWall = true;
+                rightWall = false;
+                currentWallCollider = col;
+                break;
+            }
         }
 
-        if (leftWallHit.collider != null)
+        if (currentWallCollider != null)
         {
-            TheWallThePlayerRunOnIt = leftWallHit.collider.gameObject.GetComponent<WallData>();
-            Debug.Log(TheWallThePlayerRunOnIt.IsFinalWall);
+            // Approximate wall normal using closest point
+            Vector3 closestPoint = currentWallCollider.ClosestPoint(transform.position);
+            currentWallNormal = (transform.position - closestPoint).normalized;
+
+            TheWallThePlayerRunOnIt = currentWallCollider.GetComponent<WallData>();
+            if (TheWallThePlayerRunOnIt != null)
+            {
+                Debug.Log(TheWallThePlayerRunOnIt.IsFinalWall);
+            }
         }
     }
 
+    // ==============================
+    //  Wall Jump
+    // ==============================
     public void OnWallJump(InputAction.CallbackContext context)
     {
         if (context.started && isWallRunning && TheWallThePlayerRunOnIt != null)
         {
-            Vector3 wallNormal = rightWall ? rightWallHit.normal : leftWallHit.normal;
+            Vector3 wallNormal = currentWallNormal;
+
+            // Safety: fallback normal
+            if (wallNormal == Vector3.zero)
+            {
+                wallNormal = rightWall ? orientation.right : -orientation.right;
+            }
 
             if (TheWallThePlayerRunOnIt.IsFinalWall)
             {
@@ -327,11 +333,8 @@ public class WallRunning : MonoBehaviour
                 // Not final wall: jump towards next wall (left/right)
                 playerMovement.ISPlayerJumpFromWall = true;
 
-                Vector3 jumpDirection;
-                if (rightWall)
-                    jumpDirection = Vector3.left * wallJumpForce + wallNormal * wallJumpForce;
-                else
-                    jumpDirection = Vector3.right * wallJumpForce + wallNormal * wallJumpForce;
+                Vector3 sideDir = rightWall ? Vector3.left : Vector3.right;
+                Vector3 jumpDirection = sideDir * wallJumpForce + wallNormal * wallJumpForce;
 
                 Debug.Log("i am not final");
 
@@ -350,5 +353,11 @@ public class WallRunning : MonoBehaviour
     {
         Debug.Log("we overwrite");
         playerMovement.ISPlayerJumpFromWall = false;
+    }
+
+    // Optional: visualize wall check sphere in Scene view
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position, wallCheckDistance);
     }
 }
