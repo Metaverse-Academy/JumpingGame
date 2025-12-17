@@ -1,109 +1,87 @@
 using System;
+using System.Collections;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System.Collections;
 using MoreMountains.Feedbacks;
 
 public class WallRunning : MonoBehaviour
 {
-    [Header("Layer Masks")]
-    [SerializeField] private LayerMask wallLayer;
-    [SerializeField] private LayerMask groundLayer;
+    // =========================
+    //  Public (Inspector) Data
+    // =========================
 
-    [Header("References")]
-    [SerializeField] private Animator BlackFramUp;
-    [SerializeField] private Animator BlackFramDown;
+    // Layers
+    public LayerMask wallLayer;
+    public LayerMask groundLayer;
 
-    [SerializeField] private PlayerInput playerInput;
-    [SerializeField] private Transform orientation;
-    [SerializeField] private PlayerMovement playerMovement;
-    [SerializeField] private Rigidbody rb;
-    [SerializeField] private Transform camTransform;
+    // References
+    public Animator blackFrameUp;
+    public Animator blackFrameDown;
 
-    [Header("Wall Running Settings")]
-    [SerializeField] private float wallRunForce = 10f;
-    [SerializeField] private float maxWallRunTime = 2f;
-    private float wallRunTimer;
+    public PlayerInput playerInput;
+    public Transform orientation;
+    public PlayerMovement playerMovement;
+    public Rigidbody rb;
+    public Transform camTransform;
 
-    [SerializeField] private float wallJumpForce = 40f;
-    [SerializeField] private float wallRunningCooldown = 0.4f;
-    private float wallRunningCooldownTimer;
-
-    // 🔹 New: control speed & stickiness (only partly used in this simple version)
-    [SerializeField] private float targetWallRunSpeed = 12f;
-    [SerializeField] private float wallStickForce = 30f;
-    [SerializeField] private float maxDownwardWallSpeed = -5f;
-
-    [Header("Limits (optional, not all used here)")]
-    [SerializeField] private float maxWallRunSpeed = 18f;
-    [SerializeField] private float maxWallRunVerticalSpeed = 10f;
-
-    [SerializeField] private CinemachineCamera WallRunCamera;
+    public CinemachineCamera wallRunCamera;
     public MMF_Player wallRunStartFeedback;
     public CinemachineImpulseSource cameraImpulse;
+    public GameObject trailEffect;
 
-    [Header("Wall Check Settings")]
-    [Tooltip("Radius around the player used to find walls (replaces raycast distance).")]
-    [SerializeField] private float wallCheckDistance = 0.8f; // now used as radius
+    // Wall tags
+    public string leftWallTag = "WallLeft";
+    public string rightWallTag = "WallRight";
 
-    [SerializeField] private float minJumpHeight = 1.5f;
+    // =========================
+    //  Wall Run Settings
+    // =========================
+    public float wallCheckDistance = 0.8f;
+    public float wallRunTargetSpeed = 12f;
+    public float wallRunLerpSpeed = 8f;
+    public float maxDownwardWallSpeed = -5f;
 
-    [Header("Wall Tags")]
-    [SerializeField] private string leftWallTag = "WallLeft";
-    [SerializeField] private string rightWallTag = "WallRight";
+    public float wallJumpForce = 10f;
 
-    private float mainCameraleftDutch = -10f;
-    private float mainCameraRightDutch = 10f;
+    public float cameraTiltAmount = 10f;
+    public float cameraTiltLerpSpeed = 10f;
+
+    // Cooldown (if you want to use it later)
+    public float wallRunningCooldown = 0.4f;
+
+    // =========================
+    //  Runtime State
+    // =========================
+    public bool isWallRunning;
+    public WallData currentWallData;
 
     private bool leftWall;
     private bool rightWall;
 
-    public GameObject trailEffect;
-    public bool isWallRunning;
-    public WallData TheWallThePlayerRunOnIt;
+    private float wallRunningCooldownTimer;
+    private bool startRunOnce = false;
 
-    // i do this bool cus i want the StartWallRun Func run one time
-    bool StartRunOnTime = false;
-
-    // New: replaces RaycastHit
     private Collider currentWallCollider;
     private Vector3 currentWallNormal;
 
+    // =========================
+    //  Unity Methods
+    // =========================
+
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        playerMovement = GetComponent<PlayerMovement>();
-        playerInput = GetComponent<PlayerInput>();
+        if (rb == null) rb = GetComponent<Rigidbody>();
+        if (playerMovement == null) playerMovement = GetComponent<PlayerMovement>();
+        if (playerInput == null) playerInput = GetComponent<PlayerInput>();
     }
 
     private void Update()
     {
-        // UI anims
-        // BlackFramUp.SetBool("IsWallRun", playerMovement.ISPlayerJumpFromWall);
-        // BlackFramDown.SetBool("IsWallRunning", playerMovement.ISPlayerJumpFromWall);
-
-        // Adjust wall jump force based on wall data
-        if (TheWallThePlayerRunOnIt)
-        {
-            if (TheWallThePlayerRunOnIt.IsFinalWall)
-                wallJumpForce = 22f;
-            else
-                wallJumpForce = 38f;
-        }
-
         CheckForWall();
 
         if (wallRunningCooldownTimer > 0f)
-        {
             wallRunningCooldownTimer -= Time.deltaTime;
-        }
-    }
-
-    private IEnumerator CameraDutchReset()
-    {
-        yield return new WaitForSeconds(0.2f);
-        WallRunCamera.Lens.Dutch = 0f;
     }
 
     private void FixedUpdate()
@@ -111,161 +89,124 @@ public class WallRunning : MonoBehaviour
         if (leftWall || rightWall)
         {
             if (!isWallRunning)
-            {
                 StartWallRun();
-            }
 
-            WallRunningMovement();
+            HandleWallRunMovement();
         }
         else
         {
             if (isWallRunning)
-            {
                 StopWallRun();
-            }
         }
     }
 
-    private void StopWallRun()
+    private void OnDrawGizmosSelected()
     {
-        AudioMNG.instance.WallRun(0);
-
-        Debug.Log("stop running");
-
-        isWallRunning = false;
-
-        rb.useGravity = true;
-        trailEffect.SetActive(false);
-
-        StartCoroutine(CameraDutchReset());
+        Gizmos.DrawWireSphere(transform.position, wallCheckDistance);
     }
 
-    private void WallRunningMovement()
-{
-    // Camera tilt + audio
-    if (leftWall)
-    {
-        WallRunCamera.Lens.Dutch = Mathf.Lerp(
-            WallRunCamera.Lens.Dutch,
-            -mainCameraleftDutch,
-            Time.fixedDeltaTime * 1f
-        );
-        AudioMNG.instance.WallRun(1);
-    }
-    else if (rightWall)
-    {
-        WallRunCamera.Lens.Dutch = Mathf.Lerp(
-            WallRunCamera.Lens.Dutch,
-            mainCameraRightDutch,
-            Time.fixedDeltaTime * 1f
-        );
-        AudioMNG.instance.WallRun(1);
-    }
-
-    // --- Get wall normal (from your detection) ---
-    Vector3 wallNormal = currentWallNormal;
-
-    // Safety: if something went wrong, fall back to a side direction
-    if (wallNormal == Vector3.zero)
-    {
-        wallNormal = rightWall ? orientation.right : -orientation.right;
-    }
-
-    // Direction along the wall (perpendicular to normal & up)
-    Vector3 wallForward = Vector3.Cross(wallNormal, Vector3.up).normalized;
-
-    // Make sure it's aligned with where the player looks
-    if (Vector3.Dot(wallForward, orientation.forward) < 0f)
-    {
-        wallForward = -wallForward;
-    }
-
-    // --- SHAPE VELOCITY TO TARGET SPEED ---
-
-    // Current velocity
-    Vector3 vel = rb.linearVelocity;
-
-    // Component going into the wall
-    Vector3 velIntoWall = Vector3.Project(vel, -wallNormal);
-
-    // Component sliding along the wall
-    Vector3 velAlongWall = vel - velIntoWall;
-
-    // Vertical velocity: clamp how fast we can fall while wallrunning
-    float verticalVel = vel.y;
-    if (verticalVel < maxDownwardWallSpeed)
-    {
-        verticalVel = maxDownwardWallSpeed;
-    }
-
-    // Ensure a minimum speed along the wall (e.g. 11.8)
-    float currentSpeedAlongWall = velAlongWall.magnitude;
-    float desiredSpeed = targetWallRunSpeed;   // set this to 11.8f in Inspector
-
-    if (currentSpeedAlongWall < desiredSpeed)
-    {
-        velAlongWall = wallForward * desiredSpeed;
-    }
-    else
-    {
-        // Keep current speed but align with wall direction
-        velAlongWall = wallForward * currentSpeedAlongWall;
-    }
-
-    // Apply combined velocity: along wall + vertical
-    Vector3 newVel = new Vector3(velAlongWall.x, verticalVel, velAlongWall.z);
-    rb.linearVelocity = newVel;
-
-    // Push slightly into the wall to keep us attached
-    rb.AddForce(-wallNormal * wallStickForce, ForceMode.Acceleration);
-}
+    // =========================
+    //  Wall Run Core
+    // =========================
 
     private void StartWallRun()
     {
-        if (!StartRunOnTime)
+        if (!startRunOnce)
         {
-            StartRunOnTime = true;
+            startRunOnce = true;
             playerMovement.ISPlayerJumpFromWall = true;
         }
 
         isWallRunning = true;
-        wallRunTimer = maxWallRunTime;
         rb.useGravity = false;
-        trailEffect.SetActive(true);
-        wallRunStartFeedback.PlayFeedbacks();
-        // cameraImpulse.GenerateImpulse();
 
-        // Optional: don't let us slam downward on latch
+        if (trailEffect != null)
+            trailEffect.SetActive(true);
+
+        if (wallRunStartFeedback != null)
+            wallRunStartFeedback.PlayFeedbacks();
+
+        // Optional: don't slam downward on latch
         Vector3 vel = rb.linearVelocity;
         if (vel.y < 0f)
         {
             vel.y = 0f;
             rb.linearVelocity = vel;
         }
+
+        AudioMNG.instance.WallRun(1);
     }
 
-    private bool AboveGround()
+    private void StopWallRun()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, minJumpHeight, groundLayer))
-        {
-            return true;
-        }
-        return false;
+        isWallRunning = false;
+        rb.useGravity = true;
+
+        if (trailEffect != null)
+            trailEffect.SetActive(false);
+
+        AudioMNG.instance.WallRun(0);
+
+        StartCoroutine(CameraDutchReset());
     }
 
-    // ============================================
-    //  Tag-based wall check using OverlapSphere
-    // ============================================
+    private IEnumerator CameraDutchReset()
+    {
+        yield return new WaitForSeconds(0.2f);
+        if (wallRunCamera != null)
+            wallRunCamera.Lens.Dutch = 0f;
+    }
+
+    private void HandleWallRunMovement()
+    {
+        // ---- Camera Tilt ----
+        if (wallRunCamera != null)
+        {
+            float targetTilt = 0f;
+            if (leftWall) targetTilt = -cameraTiltAmount;
+            else if (rightWall) targetTilt = cameraTiltAmount;
+
+            wallRunCamera.Lens.Dutch = Mathf.Lerp(
+                wallRunCamera.Lens.Dutch,
+                targetTilt,
+                cameraTiltLerpSpeed * Time.fixedDeltaTime
+            );
+        }
+
+        // ---- Wall Direction ----
+        // Use world +Z (global forward) always so wall run moves along world Z regardless of player rotation
+        Vector3 wallForward = Vector3.forward;
+
+        // ---- Velocity Lerp (no AddForce for run) ----
+        Vector3 currentVel = rb.linearVelocity;
+
+        // Build horizontal-only vectors so Y is not changed
+        Vector3 currentHoriz = new Vector3(currentVel.x, 0f, currentVel.z);
+        Vector3 targetHoriz = wallForward * wallRunTargetSpeed;
+
+        // Lerp only on horizontal components
+        Vector3 lerpedHoriz = Vector3.Lerp(
+            currentHoriz,
+            targetHoriz,
+            wallRunLerpSpeed * Time.fixedDeltaTime
+        );
+
+        // Preserve vertical level: lock vertical velocity to zero while wall running
+        rb.linearVelocity = new Vector3(lerpedHoriz.x, 0f, lerpedHoriz.z);
+    }
+
+    // =========================
+    //  Wall Detection
+    // =========================
+
     private void CheckForWall()
     {
         leftWall = false;
         rightWall = false;
         currentWallCollider = null;
         currentWallNormal = Vector3.zero;
-        TheWallThePlayerRunOnIt = null;
+        currentWallData = null;
 
-        // Use a sphere around the player instead of raycasts
         Collider[] hits = Physics.OverlapSphere(transform.position, wallCheckDistance, wallLayer);
 
         foreach (Collider col in hits)
@@ -288,76 +229,60 @@ public class WallRunning : MonoBehaviour
 
         if (currentWallCollider != null)
         {
-            // Approximate wall normal using closest point
             Vector3 closestPoint = currentWallCollider.ClosestPoint(transform.position);
             currentWallNormal = (transform.position - closestPoint).normalized;
 
-            TheWallThePlayerRunOnIt = currentWallCollider.GetComponent<WallData>();
-            if (TheWallThePlayerRunOnIt != null)
-            {
-                Debug.Log(TheWallThePlayerRunOnIt.IsFinalWall);
-            }
+            currentWallData = currentWallCollider.GetComponent<WallData>();
         }
     }
 
-    // ==============================
+    // =========================
     //  Wall Jump
-    // ==============================
+    // =========================
+
     public void OnWallJump(InputAction.CallbackContext context)
     {
-        if (context.started && isWallRunning && TheWallThePlayerRunOnIt != null)
+        if (!context.started) return;
+        if (!isWallRunning) return;
+        if (currentWallData == null) return;
+
+        Vector3 jumpDirection;
+
+        if (currentWallData.IsFinalWall)
         {
-            Vector3 wallNormal = currentWallNormal;
-
-            // Safety: fallback normal
-            if (wallNormal == Vector3.zero)
-            {
-                wallNormal = rightWall ? orientation.right : -orientation.right;
-            }
-
-            if (TheWallThePlayerRunOnIt.IsFinalWall)
-            {
-                // Final wall: jump up & away
-                playerMovement.ISPlayerJumpFromWall = true;
-
-                Vector3 jumpDirection = Vector3.up * wallJumpForce + wallNormal * wallJumpForce;
-
-                Debug.Log("i am final");
-                Invoke(nameof(SettheFinalWall), 0.3f);
-
-                rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
-                StopWallRun();
-            }
-            else
-            {
-                // Not final wall: jump towards next wall (left/right)
-                playerMovement.ISPlayerJumpFromWall = true;
-
-                Vector3 sideDir = rightWall ? Vector3.left : Vector3.right;
-                Vector3 jumpDirection = sideDir * wallJumpForce + wallNormal * wallJumpForce;
-
-                Debug.Log("i am not final");
-
-                // Don't completely kill momentum, just avoid huge downward spikes
-                Vector3 vel = rb.linearVelocity;
-                if (vel.y < 0f) vel.y = 0f;
-                rb.linearVelocity = vel;
-
-                rb.AddForce(jumpDirection.normalized * wallJumpForce, ForceMode.Impulse);
-                StopWallRun();
-            }
+            // Final wall: jump straight up (same idea as normal jump)
+            jumpDirection = Vector3.up;
+            Debug.Log("Final wall jump (Up)");
         }
+        else
+        {
+            // Left wall: jump +X
+            // Right wall: jump -X
+            float xDir = leftWall ? 2f : -2f    ;
+
+            // Slight upward component so it feels like a jump, not just a shove
+            jumpDirection = new Vector3(xDir, 0.5f, 0f).normalized;
+            Debug.Log("Side wall jump (X direction)");
+        }
+
+        playerMovement.ISPlayerJumpFromWall = true;
+
+        // Clean up downward velocity before applying impulse
+        Vector3 vel = rb.linearVelocity;
+        if (vel.y < 0f) vel.y = 0f;
+        rb.linearVelocity = vel;
+
+        rb.AddForce(jumpDirection * wallJumpForce, ForceMode.Impulse);
+
+        if (currentWallData.IsFinalWall)
+            Invoke(nameof(ResetFinalWallState), 0.3f);
+
+        StopWallRun();
     }
 
-    void SettheFinalWall()
+    private void ResetFinalWallState()
     {
-        Debug.Log("we overwrite");
+        Debug.Log("Reset final wall state");
         playerMovement.ISPlayerJumpFromWall = false;
-    }
-
-    // Optional: visualize wall check sphere in Scene view
-    private void OnDrawGizmosSelected()
-    {
-        Gizmos.DrawWireSphere(transform.position, wallCheckDistance);
     }
 }

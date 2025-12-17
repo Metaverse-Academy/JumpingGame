@@ -33,7 +33,7 @@ public class Grappling : MonoBehaviour
     [SerializeField] public float inputSmoothTime = 0.08f;
 
     [Header("Swing Settings")]
-    public float swingForce = 25f;
+    public float swingForce = 10f; // 10 for good initial momentum as you asked
     public bool autoSwingToTarget = true;
 
     [Header("Auto Release Settings")]
@@ -77,6 +77,7 @@ public class Grappling : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext ctx)
     {
+        // W = positive (forward), S = negative (backward)
         Vector2 v = ctx.ReadValue<Vector2>();
         moveTarget = v.y;
     }
@@ -90,6 +91,7 @@ public class Grappling : MonoBehaviour
         if (joint) Destroy(joint);
         moveTarget = 0f;
         moveSmooth = 0f;
+        moveSmoothVel = 0f;
     }
 
     private void StartGrapple()
@@ -120,7 +122,7 @@ public class Grappling : MonoBehaviour
         yield return new WaitForFixedUpdate();
 
         float distanceFromPoint = Vector3.Distance(player.position, grapplePoint);
-        float shortenFactor = 0.8f;
+        float shortenFactor = 0.8f; // just initial setup, not driven by input
         joint.maxDistance = distanceFromPoint * shortenFactor;
         joint.minDistance = distanceFromPoint * shortenFactor * 0.5f;
 
@@ -142,12 +144,18 @@ public class Grappling : MonoBehaviour
             playerRb.angularVelocity = Vector3.zero;
         }
 
-        if (autoSwingToTarget && cameraTransform != null)
+        // Initial camera-based swing impulse so it doesn't feel "stopped"
+        if (autoSwingToTarget && cameraTransform != null && playerRb != null)
         {
             Vector3 grappleDir = (grapplePoint - player.position).normalized;
             Vector3 cameraDir = cameraTransform.forward;
+
+            // Direction tangent to the rope but aligned with where the camera is looking
             Vector3 swingDir = Vector3.Cross(grappleDir, Vector3.Cross(cameraDir, grappleDir)).normalized;
-            playerRb.AddForce(swingDir * swingForce, ForceMode.VelocityChange);
+
+            // Give an initial velocity of magnitude ~10 in that direction
+            playerRb.linearVelocity += swingDir * swingForce;
+
             StartCoroutine(AutoReleaseGrapple());
         }
 
@@ -168,33 +176,46 @@ public class Grappling : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (!isGrappling || joint == null || playerRb == null)
-        {
-            moveSmooth = Mathf.SmoothDamp(moveSmooth, 0f, ref moveSmoothVel, inputSmoothTime);
+        if (playerRb == null)
             return;
-        }
+
+        // Smoothly move input towards target (W/S)
+        moveSmooth = Mathf.SmoothDamp(moveSmooth, moveTarget, ref moveSmoothVel, inputSmoothTime);
+
+        if (!isGrappling || joint == null)
+            return;
+
+        // --- Move along the arc using camera-based forward ---
 
         if (!autoSwingToTarget && Mathf.Abs(moveSmooth) > 0.01f)
         {
+            // Direction of the rope (player to grapple)
             Vector3 ropeDir = (grapplePoint - player.position).normalized;
-            Vector3 aimForward = cameraTransform != null ? cameraTransform.forward : player.forward;
-            Vector3 aimRight = cameraTransform != null ? cameraTransform.right : player.right;
 
+            // Camera forward/right
+            Vector3 aimForward = cameraTransform != null ? cameraTransform.forward : player.forward;
+            Vector3 aimRight   = cameraTransform != null ? cameraTransform.right   : player.right;
+
+            // Project camera forward onto plane perpendicular to rope => move along swing arc
             Vector3 forwardAlongArc = Vector3.ProjectOnPlane(aimForward, ropeDir).normalized;
             if (forwardAlongArc.sqrMagnitude < 0.001f)
             {
+                // If looking directly along the rope, fall back to right direction
                 forwardAlongArc = Vector3.ProjectOnPlane(aimRight, ropeDir).normalized;
             }
 
+            // W (positive) pushes forwardAlongArc, S (negative) pushes opposite
             Vector3 force = forwardAlongArc * (moveSmooth * moveForce);
             playerRb.AddForceAtPosition(force, gunTip.position, ForceMode.Acceleration);
 
+            // Small tangential damping to keep it stable
             Vector3 radialVel = Vector3.Project(playerRb.linearVelocity, ropeDir);
             Vector3 tangentialVel = playerRb.linearVelocity - radialVel;
             playerRb.AddForce(-tangentialVel * 0.12f, ForceMode.Acceleration);
         }
         else
         {
+            // Light auto damping when no manual input or autoSwingToTarget is true
             Vector3 ropeDir = (grapplePoint - player.position).normalized;
             Vector3 radialVel = Vector3.Project(playerRb.linearVelocity, ropeDir);
             Vector3 tangentialVel = playerRb.linearVelocity - radialVel;
@@ -212,7 +233,11 @@ public class Grappling : MonoBehaviour
         Vector3 exitVelocity = playerRb.linearVelocity;
         StopGrapple();
 
-        Vector3 forwardDir = cameraTransform.forward;
-        playerRb.AddForce(forwardDir * launchBoost, ForceMode.VelocityChange);
+        // Launch in camera forward + keep swing velocity
+        if (cameraTransform != null)
+        {
+            Vector3 forwardDir = cameraTransform.forward;
+            playerRb.linearVelocity = exitVelocity + forwardDir * launchBoost;
+        }
     }
 }

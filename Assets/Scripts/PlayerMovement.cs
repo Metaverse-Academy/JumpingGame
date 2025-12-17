@@ -12,6 +12,9 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody rb;
     [Header("VFX")]
     public ParticleSystem jumpEffectPrefab;
+    [Header("Coyote Jump")]
+[SerializeField] private float coyoteTime = 0.15f; // how long after leaving ground you can still jump
+private float lastGroundedTime;
 
     // Movement speed of the player.
     [SerializeField] private MMF_Player jumpFeedback;
@@ -78,7 +81,7 @@ private bool Iswalking;
         
         if (isGrounded)
         {
-
+            lastGroundedTime = Time.time;
             ISPlayerJumpFromWall = false;
 
         }
@@ -129,17 +132,27 @@ private bool Iswalking;
 
         }
 
-        if (context.performed && isGrounded)
-        {
-            AudioMNG.instance.PlaySounds(2);
-            if (wallRunning.isWallRunning) return;
-            AudioMNG.instance.PlaySounds(2);
-            // Apply an upward force to the Rigidbody for jumping.
-            jumpFeedback.PlayFeedbacks();
-            SpawnJumpEffect(transform.position);
-            rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-            animator.SetTrigger("Jump");
-        }
+       if (context.performed)
+{
+    // Don't allow jumping from wall run (you already had this)
+    if (wallRunning.isWallRunning)
+        return;
+
+    // Check coyote jump: allow if grounded OR recently left the ground
+    bool canCoyoteJump = (Time.time - lastGroundedTime) <= coyoteTime;
+
+    if (isGrounded || canCoyoteJump)
+    {
+        // Optional: "consume" coyote time so you can't use it twice
+        lastGroundedTime = -999f;
+
+        AudioMNG.instance.PlaySounds(2);
+        jumpFeedback.PlayFeedbacks();
+        SpawnJumpEffect(transform.position);
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+        animator.SetTrigger("Jump");
+    }
+}
     }
     // partiacal effect for jump
     private void SpawnJumpEffect(Vector3 position)
@@ -179,7 +192,7 @@ bool hookActive = HookingMechanic.instance != null &&
             }
         }
 
-        if (wallRunning.isWallRunning) return;
+        if(wallRunning.isWallRunning) return;
         if (movementInput.y < 0)
         {
             

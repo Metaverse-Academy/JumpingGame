@@ -1831,8 +1831,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3871492292552610306}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12974574, y: -0.0143893035, z: 0.001883068, w: 0.99144113}
-  m_LocalPosition: {x: -59.116253, y: 12.619926, z: 53.258385}
+  m_LocalRotation: {x: -0.06962324, y: 0.0677915, z: -0.018787725, w: -0.99508995}
+  m_LocalPosition: {x: -58.1727, y: 10.161801, z: 53.06781}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1893,15 +1893,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5d7c088409d9a40b7b09aa707777f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineOrbitalFollow
-  TargetOffset: {x: -0.16, y: 1.81, z: -0.78}
+  TargetOffset: {x: -0.16, y: 2.67, z: -0.78}
   TrackerSettings:
     BindingMode: 4
-    PositionDamping: {x: 2.15, y: 1, z: 1}
+    PositionDamping: {x: 1.66, y: 0.04, z: 1}
     AngularDampingMode: 0
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
   OrbitStyle: 0
-  Radius: 5
+  Radius: 4.76
   Orbits:
     Top:
       Radius: 0.26
@@ -1917,17 +1917,17 @@ MonoBehaviour:
   HorizontalAxis:
     Value: 0
     Center: 0
-    Range: {x: -180, y: 180}
-    Wrap: 1
+    Range: {x: -136.6, y: 142.3}
+    Wrap: 0
     Recentering:
       Enabled: 0
       Wait: 1
       Time: 2
     Restrictions: 0
   VerticalAxis:
-    Value: 17.5
-    Center: 17.5
-    Range: {x: -112, y: 109}
+    Value: 0
+    Center: 0
+    Range: {x: -81.9, y: 80.7}
     Wrap: 0
     Recentering:
       Enabled: 0
@@ -1935,9 +1935,9 @@ MonoBehaviour:
       Time: 2
     Restrictions: 0
   RadialAxis:
-    Value: 1
-    Center: 1
-    Range: {x: 1, y: 1}
+    Value: 0.93
+    Center: 0.93
+    Range: {x: 0.93, y: 0.93}
     Wrap: 0
     Recentering:
       Enabled: 0
@@ -1957,7 +1957,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineRotationComposer
   Composition:
-    ScreenPosition: {x: 0.02, y: 0.17}
+    ScreenPosition: {x: 0, y: 0}
     DeadZone:
       Enabled: 0
       Size: {x: 0.2, y: 0.2}
@@ -1966,8 +1966,8 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
-  Damping: {x: 0.38, y: 0.11}
+  TargetOffset: {x: 0, y: 0.03, z: 0}
+  Damping: {x: 0.38, y: 0.15}
   Lookahead:
     Enabled: 0
     Time: 0
@@ -2152,11 +2152,12 @@ GameObject:
   - component: {fileID: 2881141204011395300}
   - component: {fileID: 1188056398765242582}
   - component: {fileID: 8971074051706072882}
-  - component: {fileID: 5708329933234950253}
   - component: {fileID: 724759008245031350}
   - component: {fileID: 1796621888068212509}
   - component: {fileID: 4119263243160074652}
   - component: {fileID: 5016348619258106316}
+  - component: {fileID: 2156491093685209056}
+  - component: {fileID: 7474128954421873893}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Player
@@ -2225,14 +2226,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   jumpEffectPrefab: {fileID: 7285465045455584057}
+  coyoteTime: 0.15
   jumpFeedback: {fileID: 8309626295716283635}
   ReSpawnPos: {fileID: 0}
   moveSpeed: 11.8
-  jumpForce: 9.24
+  jumpForce: 10.45
   isGrounded: 1
   groundCheck: {fileID: 7889256012930105585}
   wallRunning: {fileID: 1188056398765242582}
-  cam: {fileID: 0}
+  cam: {fileID: 5788970009182823184}
   animator: {fileID: 3931139887851891185}
   ISPlayerJumpFromWall: 0
   fallGravityScale: 3
@@ -2429,29 +2431,29 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  BlackFramUp: {fileID: 0}
-  BlackFramDown: {fileID: 0}
+  blackFrameUp: {fileID: 0}
+  blackFrameDown: {fileID: 0}
   playerInput: {fileID: 2881141204011395300}
   orientation: {fileID: 5830916957234706033}
   playerMovement: {fileID: 188530362025218113}
   rb: {fileID: 6268739359866533302}
   camTransform: {fileID: 0}
-  wallRunForce: 20.7
-  maxWallRunTime: 2
-  wallJumpForce: 35
-  wallRunningCooldown: 0.4
-  targetWallRunSpeed: 12
-  wallStickForce: 30
-  maxDownwardWallSpeed: -5
-  WallRunCamera: {fileID: 3678072691948991745}
+  wallRunCamera: {fileID: 0}
   wallRunStartFeedback: {fileID: 6468116612866792003}
   cameraImpulse: {fileID: 0}
-  wallCheckDistance: 1
-  minJumpHeight: 1.5
-  animator: {fileID: 3931139887851891185}
   trailEffect: {fileID: 3349745986058133274}
+  leftWallTag: WallLeft
+  rightWallTag: WallRight
+  wallCheckDistance: 1
+  wallRunTargetSpeed: 12
+  wallRunLerpSpeed: 8
+  maxDownwardWallSpeed: -5
+  wallJumpForce: 34.7
+  cameraTiltAmount: 10
+  cameraTiltLerpSpeed: 10
+  wallRunningCooldown: 0.4
   isWallRunning: 0
-  TheWallThePlayerRunOnIt: {fileID: 0}
+  currentWallData: {fileID: 0}
 --- !u!114 &8971074051706072882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2469,7 +2471,7 @@ MonoBehaviour:
     m_Bits: 256
   gunTip: {fileID: 4761137386036664815}
   player: {fileID: 5830916957234706033}
-  maxDistance: 13
+  maxDistance: 20.6
   zeroVelocityOnStart: 1
   playerInput: {fileID: 2881141204011395300}
   jointSpring: 18
@@ -2483,29 +2485,8 @@ MonoBehaviour:
   inputSmoothTime: 0.08
   swingForce: 25
   autoSwingToTarget: 1
-  swingTime: 1.2
+  swingTime: 2.32
   launchBoost: 8
---- !u!65 &5708329933234950253
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4042554045664443166}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.55, z: 0}
 --- !u!120 &724759008245031350
 LineRenderer:
   serializedVersion: 2
@@ -2815,9 +2796,54 @@ MonoBehaviour:
   points:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   moveSpeed: 40
   jumpForce: 20
   hookSearchRadius: 25
+  lineRenderer: {fileID: 0}
+  lineColor: {r: 0.72, g: 0.53, b: 0.043, a: 1}
+  lineWidth: 0.04
+--- !u!114 &2156491093685209056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4042554045664443166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5c3bcbb3f53f546b7c422b4375a8c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerCheckpoint
+  respawnFeedback: {fileID: 0}
+  HP1: {fileID: 0}
+  HP2: {fileID: 0}
+  HP3: {fileID: 0}
+  isRespawning: 0
+  respawnCooldown: 0.5
+  initialPosition: {x: 53.399998, y: 23, z: -50}
+  initialRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!135 &7474128954421873893
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4042554045664443166}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.50854886
+  m_Center: {x: 0, y: 0.52, z: 0}
 --- !u!1 &4061332674753781649
 GameObject:
   m_ObjectHideFlags: 0
