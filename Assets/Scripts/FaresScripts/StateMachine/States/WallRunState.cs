@@ -29,12 +29,29 @@ public class WallRunState : IPlayerState
     {
         if (p.GrappleActive) { sm.ChangeState(sm.Grapple); return; }
         if (p.isGrounded) { sm.ChangeState(sm.Walking); return; }
+        if (p.wallRunning == null) { sm.ChangeState(sm.Jumping); return; }
 
-        if (p.wallRunning == null || !p.wallRunning.HasRunnableWall())
+        bool hasWall = p.wallRunning.HasRunnableWall();
+        bool onFinalWall = p.wallRunning.currentWallData != null && p.wallRunning.currentWallData.IsFinalWall;
+
+        // Only exit the state if we leave the final wall
+        if (!hasWall && onFinalWall)
         {
             sm.ChangeState(sm.Jumping);
             return;
         }
+
+        // If we temporarily leave a non-final wall, stop the wallrun but keep the state active
+        if (!hasWall)
+        {
+            if (p.wallRunning.isWallRunning)
+                p.wallRunning.EndWallRun();
+            return;
+        }
+
+        // Re-begin wallrun if we reattach while still in this state
+        if (!p.wallRunning.isWallRunning)
+            p.wallRunning.BeginWallRun();
     }
 
     public void FixedTick()
@@ -45,7 +62,7 @@ public class WallRunState : IPlayerState
 
     public void OnMove(Vector2 input, InputAction.CallbackContext ctx) { }
 
-    public void OnJumpPressed() => DoWallJump();
+    public void OnJumpPressed() { }
     public void OnWallJumpPressed() => DoWallJump();
 
     private void DoWallJump()

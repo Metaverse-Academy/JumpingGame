@@ -10,6 +10,7 @@ public class GrappleState : IPlayerState
 
     public void Enter()
     {
+        p.ClearFinalWallExitLock();
         if (p.wallRunning != null && p.wallRunning.isWallRunning)
             p.wallRunning.EndWallRun();
 

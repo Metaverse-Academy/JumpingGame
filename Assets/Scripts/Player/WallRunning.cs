@@ -1,93 +1,89 @@
-using System.Collections;
-using Unity.Cinemachine;
 using UnityEngine;
-using MoreMountains.Feedbacks;
 
 public class WallRunning : MonoBehaviour
 {
+    [Header("Setup")]
     public LayerMask wallLayer;
-
-    public PlayerMovFSM playerMovement;
     public Rigidbody rb;
+    public PlayerMovement motor; // <- if your motor is named PlayerMovFSM, change this type
 
-    public CinemachineCamera wallRunCamera;
-    public MMF_Player wallRunStartFeedback;
-    public GameObject trailEffect;
-
+    [Header("Detection")]
+    public float wallCheckDistance = 0.8f;
     public string leftWallTag = "WallLeft";
     public string rightWallTag = "WallRight";
 
-    public float wallCheckDistance = 0.8f;
+    [Header("Run")]
     public float wallRunTargetSpeed = 12f;
-    public float wallRunLerpSpeed = 8f;
+    public float wallRunLerpSpeed = 10f;
 
-    public float wallJumpForce = 10f;
+    [Header("Jump")]
+    public float wallJumpSidewaysForce = 15f;      // "away from wall"
+    public float wallJumpUpwardForce = 0f;         // non-final upward (set 0 if you want pure sideways)
+    public float finalWallExtraUpwardForce = 6f;   // extra upward on final wall
 
-    public float cameraTiltAmount = 10f;
-    public float cameraTiltLerpSpeed = 10f;
+    [Header("Wall Grace")]
+    public float wallDetachCoyoteTime = 0.15f;     // jump allowed shortly after losing wall
 
-    public float wallRunningCooldown = 0.4f;
+    public bool isWallRunning { get; private set; }
+    public WallData currentWallData { get; private set; }
 
-    public bool isWallRunning;
-    public WallData currentWallData;
+    private Collider currentWallCollider;
+    private Vector3 currentWallNormal;
+
+    private float lastWallTouchTime = -999f;
+    private Vector3 lastWallNormal = Vector3.right;
+    private bool lastWallWasFinal = false;
 
     private bool leftWall;
     private bool rightWall;
 
-    private float wallRunningCooldownTimer;
-
-    private Collider currentWallCollider;
-
-    private void Start()
+    private void Awake()
     {
         if (rb == null) rb = GetComponent<Rigidbody>();
-        if (playerMovement == null) playerMovement = GetComponent<PlayerMovFSM>();
+        if (motor == null) motor = GetComponent<PlayerMovement>(); // change if your motor class name differs
     }
 
     private void Update()
     {
         CheckForWall();
 
-        if (wallRunningCooldownTimer > 0f)
-            wallRunningCooldownTimer -= Time.deltaTime;
+        // If we are wallrunning but lost the wall, end.
+        if (isWallRunning && !HasRunnableWall())
+            EndWallRun();
     }
 
-    public bool HasRunnableWall() => leftWall || rightWall;
+    public bool HasRunnableWall() => currentWallCollider != null;
+
+    private bool HasRecentWallContact() => (Time.time - lastWallTouchTime) <= wallDetachCoyoteTime;
 
     public bool CanStartWallRun()
     {
-        if (wallRunningCooldownTimer > 0f) return false;
-        if (playerMovement != null && playerMovement.isGrounded) return false;
+        // FSM decides when to start; this just tells if wall exists
+        if (motor != null && motor.isGrounded) return false;
         return HasRunnableWall();
     }
 
     public void BeginWallRun()
     {
-        if (!HasRunnableWall()) return;
+        if (!HasRunnableWall() || isWallRunning) return;
 
         isWallRunning = true;
         rb.useGravity = false;
 
-        if (trailEffect != null) trailEffect.SetActive(true);
-        if (wallRunStartFeedback != null) wallRunStartFeedback.PlayFeedbacks();
-
+        // optional: remove downward velocity so it feels sticky
         Vector3 vel = rb.linearVelocity;
-        if (vel.y < 0f) { vel.y = 0f; rb.linearVelocity = vel; }
-
-        AudioMNG.instance.WallRun(1);
+        if (vel.y < 0f)
+        {
+            vel.y = 0f;
+            rb.linearVelocity = vel;
+        }
     }
 
     public void EndWallRun()
     {
+        if (!isWallRunning) return;
         isWallRunning = false;
         rb.useGravity = true;
-
-        if (trailEffect != null) trailEffect.SetActive(false);
-
-        AudioMNG.instance.WallRun(0);
-
-        wallRunningCooldownTimer = wallRunningCooldown;
-        StartCoroutine(CameraDutchReset());
     }
 
     public void TickWallRunMovement()
@@ -95,53 +91,52 @@ public class WallRunning : MonoBehaviour
         if (!isWallRunning) return;
         if (!HasRunnableWall()) return;
 
-        if (wallRunCamera != null)
-        {
-            float targetTilt = leftWall ? -cameraTiltAmount : (rightWall ? cameraTiltAmount : 0f);
-            wallRunCamera.Lens.Dutch = Mathf.Lerp(
-                wallRunCamera.Lens.Dutch,
-                targetTilt,
-                cameraTiltLerpSpeed * Time.fixedDeltaTime
-            );
-        }
-
+        // Keeps your original "run along world forward" behavior
         Vector3 wallForward = Vector3.forward;
 
-        Vector3 currentVel = rb.linearVelocity;
-        Vector3 currentHoriz = new Vector3(currentVel.x, 0f, currentVel.z);
+        Vector3 v = rb.linearVelocity;
+        Vector3 currentHoriz = new Vector3(v.x, 0f, v.z);
         Vector3 targetHoriz = wallForward * wallRunTargetSpeed;
 
-        Vector3 lerpedHoriz = Vector3.Lerp(currentHoriz, targetHoriz, wallRunLerpSpeed * Time.fixedDeltaTime);
-        rb.linearVelocity = new Vector3(lerpedHoriz.x, 0f, lerpedHoriz.z);
+        Vector3 lerped = Vector3.Lerp(currentHoriz, targetHoriz, wallRunLerpSpeed * Time.fixedDeltaTime);
+        rb.linearVelocity = new Vector3(lerped.x, 0f, lerped.z); // lock Y to 0 while wallrunning
     }
 
+    /// <summary>
+    /// Wall jump that does NOT depend on movement input.
+    /// Works while wallrunning OR within grace time after losing wall.
+    /// </summary>
     public bool TryWallJump(out bool jumpedFromFinalWall)
     {
         jumpedFromFinalWall = false;
 
-        if (!isWallRunning) return false;
-        if (currentWallData == null) return false;
+        bool hasWallNow = HasRunnableWall();
+        bool hasRecent = HasRecentWallContact();
+        if (!hasWallNow && !hasRecent) return false;
 
-        Vector3 jumpDirection;
+        // Use current if available; else last known within grace
+        Vector3 awayFromWall = hasWallNow ? currentWallNormal : lastWallNormal;
+        bool onFinalWall = false;
 
-        if (currentWallData.IsFinalWall)
-        {
-            jumpedFromFinalWall = true;
-            jumpDirection = Vector3.up;
-        }
-        else
-        {
-            float xDir = leftWall ? 2f : -2f;
-            jumpDirection = new Vector3(xDir, 0.5f, 0f).normalized;
-        }
+        if (hasWallNow && currentWallData != null) onFinalWall = currentWallData.IsFinalWall;
+        else onFinalWall = lastWallWasFinal;
 
-        playerMovement.ISPlayerJumpFromWall = true;
+        jumpedFromFinalWall = onFinalWall;
 
+        float up = wallJumpUpwardForce + (onFinalWall ? finalWallExtraUpwardForce : 0f);
+
+        // Side (away) + Up (final adds extra)
+        Vector3 impulse = (awayFromWall.normalized * wallJumpSidewaysForce) + (Vector3.up * up);
+
+        // Clear downward velocity so jump feels consistent
         Vector3 vel = rb.linearVelocity;
         if (vel.y < 0f) vel.y = 0f;
         rb.linearVelocity = vel;
 
-        rb.AddForce(jumpDirection * wallJumpForce, ForceMode.Impulse);
+        if (motor != null)
+            motor.ISPlayerJumpFromWall = true;
+
+        rb.AddForce(impulse, ForceMode.Impulse);
 
         EndWallRun();
         return true;
@@ -149,38 +144,46 @@ public class WallRunning : MonoBehaviour
 
     private void CheckForWall()
     {
-        leftWall = false;
-        rightWall = false;
         currentWallCollider = null;
         currentWallData = null;
+        currentWallNormal = Vector3.zero;
+        leftWall = false;
+        rightWall = false;
 
+        // Find a wall collider near us
         Collider[] hits = Physics.OverlapSphere(transform.position, wallCheckDistance, wallLayer);
+        if (hits == null || hits.Length == 0) return;
 
-        foreach (Collider col in hits)
+        // Pick the closest one (stable)
+        float best = float.MaxValue;
+        Collider bestCol = null;
+
+        for (int i = 0; i < hits.Length; i++)
         {
-            if (col.CompareTag(rightWallTag))
+            float d = (hits[i].ClosestPoint(transform.position) - transform.position).sqrMagnitude;
+            if (d < best)
             {
-                rightWall = true;
-                leftWall = false;
-                currentWallCollider = col;
-                break;
-            }
-            else if (col.CompareTag(leftWallTag))
-            {
-                leftWall = true;
-                rightWall = false;
-                currentWallCollider = col;
-                break;
+                best = d;
+                bestCol = hits[i];
             }
         }
 
-        if (currentWallCollider != null)
-            currentWallData = currentWallCollider.GetComponent<WallData>();
-    }
+        currentWallCollider = bestCol;
+        if (currentWallCollider == null) return;
 
-    private IEnumerator CameraDutchReset()
-    {
-        yield return new WaitForSeconds(0.2f);
-        if (wallRunCamera != null) wallRunCamera.Lens.Dutch = 0f;
+        // Optional: keep your left/right tags (only if you still use them elsewhere)
+        if (currentWallCollider.CompareTag(leftWallTag)) leftWall = true;
+        if (currentWallCollider.CompareTag(rightWallTag)) rightWall = true;
+
+        currentWallData = currentWallCollider.GetComponent<WallData>();
+
+        // Compute normal robustly
+        Vector3 closest = currentWallCollider.ClosestPoint(transform.position);
+        currentWallNormal = (transform.position - closest).normalized; // points away from wall
+
+        // Store for grace window
+        lastWallTouchTime = Time.time;
+        lastWallNormal = currentWallNormal;
+        lastWallWasFinal = (currentWallData != null && currentWallData.IsFinalWall);
     }
 }

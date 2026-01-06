@@ -47,6 +47,7 @@ public class PlayerMovFSM : MonoBehaviour
     // Final wall lock: after final wall jump, wallrun can't start until grounded
     private bool finalWallExitLock = false;
     public bool FinalWallExitLocked => finalWallExitLock;
+    private static PlayerMovFSM instance;
 
     // Small control lock after wall jump so normal movement doesn't overwrite instantly
     private float wallJumpControlLockTimer = 0f;
@@ -65,6 +66,15 @@ public class PlayerMovFSM : MonoBehaviour
 
     private void Awake()
     {
+
+        if (instance != null && instance != this)
+        {
+            Destroy(gameObject);  
+            return;
+        }
+
+        instance = this;
+        DontDestroyOnLoad(gameObject); 
         rb = GetComponent<Rigidbody>();
         wallRunning = GetComponent<WallRunning>();
         fsm = GetComponent<PlayerStateMachine>();
@@ -154,6 +164,11 @@ public class PlayerMovFSM : MonoBehaviour
             rb.AddForce(antiGravity, ForceMode.Acceleration);
         }
     }
+
+    public void ClearFinalWallExitLock()
+{
+    finalWallExitLock = false;
+}
 
     public void ApplyCameraRelativeMove()
     {

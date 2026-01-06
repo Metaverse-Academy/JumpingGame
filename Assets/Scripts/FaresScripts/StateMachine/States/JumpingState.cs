@@ -23,13 +23,13 @@ public class JumpingState : IPlayerState
 
         // Try wallrun enter (blocked if final wall lock is active)
         if (!p.FinalWallExitLocked &&
-            p.wallRunning != null &&
-            p.wallRunning.CanStartWallRun() &&
-            p.MovementInput.y > 0.1f)
-        {
-            sm.ChangeState(sm.WallRunning);
-            return;
-        }
+    p.wallRunning != null &&
+    p.wallRunning.CanStartWallRun())
+{
+    sm.ChangeState(sm.WallRunning);
+    return;
+}
+
     }
 
     public void FixedTick()
@@ -42,5 +42,18 @@ public class JumpingState : IPlayerState
 
     public void OnMove(Vector2 input, InputAction.CallbackContext ctx) { }
     public void OnJumpPressed() { } // no double jump
-    public void OnWallJumpPressed() { }
+   public void OnWallJumpPressed()
+{
+    if (p.wallRunning == null) return;
+
+    if (p.wallRunning.TryWallJump(out bool jumpedFromFinalWall))
+    {
+        p.LockWallJumpControl(jumpedFromFinalWall ? 0.30f : 0.15f);
+
+        if (jumpedFromFinalWall)
+            p.SetFinalWallExitLock();
+
+        // stay in Jumping state (already airborne)
+    }
+}
 }

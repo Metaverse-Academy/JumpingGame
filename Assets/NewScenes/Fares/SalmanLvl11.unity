@@ -3809,7 +3809,7 @@ PrefabInstance:
       objectReference: {fileID: 194451160}
     - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: wallJumpForce
-      value: 18.2
+      value: 30.4
       objectReference: {fileID: 0}
     - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: playerMovement
@@ -3820,8 +3820,20 @@ PrefabInstance:
       value: 9.2
       objectReference: {fileID: 0}
     - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: wallRunTargetSpeed
+      value: 17.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: wallJumpUpwardForce
+      value: 6.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: wallJumpUpMultiplier
       value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
+      propertyPath: wallJumpSidewaysForce
+      value: 31.2
       objectReference: {fileID: 0}
     - target: {fileID: 1188056398765242582, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: wallJumpAwayMultiplier
@@ -3910,7 +3922,7 @@ PrefabInstance:
     - target: {fileID: 2881141204011395300, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: m_ActionEvents.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 885732687}
+      objectReference: {fileID: 885732703}
     - target: {fileID: 2881141204011395300, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: m_ActionEvents.Array.data[10].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -3929,7 +3941,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2881141204011395300, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: m_ActionEvents.Array.data[8].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: OnGrapple
       objectReference: {fileID: 0}
     - target: {fileID: 2881141204011395300, guid: ad97230dae489224a811978f4583b477, type: 3}
       propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -4191,6 +4203,17 @@ MonoBehaviour:
   respawnCooldown: 0.5
   initialPosition: {x: 53.399998, y: 23, z: -50}
   initialRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &885732703 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8971074051706072882, guid: ad97230dae489224a811978f4583b477, type: 3}
+  m_PrefabInstance: {fileID: 885732686}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885732687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccc77a031cb53f04e9ef18c684f719ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Grappling
 --- !u!4 &894451747 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3175669794508974230, guid: 4f0b697c6f2a62e4f80132deb613cdce, type: 3}
@@ -5329,7 +5352,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &970044159
 MonoBehaviour:
   m_ObjectHideFlags: 0
