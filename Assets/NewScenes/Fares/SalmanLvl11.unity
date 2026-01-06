@@ -4160,7 +4160,7 @@ MonoBehaviour:
   jumpForce: 10.07
   coyoteTime: 0.15
   fallGravityScale: 2.82
-  fallVelocityThreshold: 0.8
+  fallVelocityThreshold: -0.22
   ISPlayerJumpFromWall: 0
 --- !u!135 &885732695
 SphereCollider:
