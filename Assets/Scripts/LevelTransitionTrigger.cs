@@ -15,40 +15,42 @@ public class LevelTransitionTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (isTransitioning) return;
+       // if (isTransitioning) return;
 
         if (other.CompareTag(playerTag))
         {
-            StartCoroutine(TransitionToNextLevel());
+            var timer = Object.FindAnyObjectByType<LevelTimer>();
+        if (timer != null) timer.StopTimer();
+           // StartCoroutine(TransitionToNextLevel());
            // PlayerCheckpoint.instance.SetCheckpoint(transform);
         }
     }
 
-    private IEnumerator TransitionToNextLevel()
-    {
-        isTransitioning = true;
+    // private IEnumerator TransitionToNextLevel()
+    // {
+    //     isTransitioning = true;
 
-        // 1) Load next level additively
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(nextLevelName, LoadSceneMode.Additive);
+    //     // 1) Load next level additively
+    //     AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(nextLevelName, LoadSceneMode.Additive);
 
-        while (!asyncLoad.isDone)
-        {
-            // Optionally, show loading progress here: asyncLoad.progress
-            yield return null;
-        }
+    //     while (!asyncLoad.isDone)
+    //     {
+    //         // Optionally, show loading progress here: asyncLoad.progress
+    //         yield return null;
+    //     }
 
-        // 2) Make next level active
-        Scene nextScene = SceneManager.GetSceneByName(nextLevelName);
-        SceneManager.SetActiveScene(nextScene);
+    //     // 2) Make next level active
+    //     Scene nextScene = SceneManager.GetSceneByName(nextLevelName);
+    //     SceneManager.SetActiveScene(nextScene);
 
-        //3) Unload current level (but not the Persistent scene!)
-        AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(currentLevelName);
+    //     //3) Unload current level (but not the Persistent scene!)
+    //     AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(currentLevelName);
 
-        while (!asyncUnload.isDone)
-        {
-            yield return null;
-        }
+    //     while (!asyncUnload.isDone)
+    //     {
+    //         yield return null;
+    //     }
 
-        isTransitioning = false;
-    }
+    //     isTransitioning = false;
+    // }
 }

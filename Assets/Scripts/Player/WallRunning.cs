@@ -28,6 +28,7 @@ public class WallRunning : MonoBehaviour
     public WallData currentWallData { get; private set; }
 
     private Collider currentWallCollider;
+    [SerializeField]private Animator animator;
     private Vector3 currentWallNormal;
 
     private float lastWallTouchTime = -999f;
@@ -68,6 +69,8 @@ public class WallRunning : MonoBehaviour
         if (!HasRunnableWall() || isWallRunning) return;
 
         isWallRunning = true;
+        animator.SetBool("IsWallRunning", true);
+
         rb.useGravity = false;
 
         // optional: remove downward velocity so it feels sticky
@@ -84,6 +87,7 @@ public class WallRunning : MonoBehaviour
         if (!isWallRunning) return;
         isWallRunning = false;
         rb.useGravity = true;
+        animator.SetBool("IsWallRunning", false);
     }
 
     public void TickWallRunMovement()
@@ -180,6 +184,16 @@ public class WallRunning : MonoBehaviour
         // Compute normal robustly
         Vector3 closest = currentWallCollider.ClosestPoint(transform.position);
         currentWallNormal = (transform.position - closest).normalized; // points away from wall
+
+        // Ignore floor-like surfaces so top-of-wall doesn't count as a wall
+    float upDot = Vector3.Dot(currentWallNormal, Vector3.up);
+    if (upDot > 0.2f)
+    {
+        currentWallCollider = null;
+        currentWallData = null;
+        currentWallNormal = Vector3.zero;
+        return;
+    }
 
         // Store for grace window
         lastWallTouchTime = Time.time;

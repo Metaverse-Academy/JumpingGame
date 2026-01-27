@@ -7,6 +7,9 @@ public class PlayerMovFSM : MonoBehaviour
 {
     private Rigidbody rb;
     private PlayerStateMachine fsm;
+    [Header("Ground Check")]
+[SerializeField] private LayerMask groundLayer;
+[SerializeField] private float groundCheckDistance = 2f;
 
     [Header("Refs")]
     public GameObject groundCheck;
@@ -33,8 +36,11 @@ public class PlayerMovFSM : MonoBehaviour
 
     [Header("Fall / Soft Landing")]
     [Range(0f, 3f)]
-    public float fallGravityScale = 0.45f;
+    public float fallGravityScale = 1.8f;
     public float fallVelocityThreshold = -0.1f;
+    public float softFallStartSpeed = -5f;
+public float softFallFullSpeed = -15f;
+
 
     // Runtime
     public bool isGrounded { get; private set; }
@@ -81,12 +87,21 @@ public class PlayerMovFSM : MonoBehaviour
 
         if (cam == null && Camera.main != null)
             cam = Camera.main.transform;
+            var timer = Object.FindAnyObjectByType<LevelTimer>();
+        if (timer != null) timer.StartTimer();
     }
 
     // Called by FSM each Update
     public void UpdateSensors()
     {
-        isGrounded = Physics.Raycast(groundCheck.transform.position, Vector3.down, 2f);
+       isGrounded = Physics.Raycast(
+    groundCheck.transform.position,
+    Vector3.down,
+    groundCheckDistance,
+    groundLayer
+);
+Debug.DrawRay(groundCheck.transform.position, Vector3.down * groundCheckDistance, Color.red);
+
         Debug.DrawRay(groundCheck.transform.position, Vector3.down * 2f, Color.red);
 
         if (isGrounded)
@@ -152,18 +167,23 @@ public class PlayerMovFSM : MonoBehaviour
         animator.SetTrigger("Jump");
     }
 
-    public void ApplySoftFall()
-    {
-        if (GrappleActive) return;
-        if (wallRunning != null && wallRunning.isWallRunning) return;
-        if (isGrounded) return;
+   public void ApplySoftFall()
+{
+    if (GrappleActive) return;
+    if (wallRunning != null && wallRunning.isWallRunning) return;
+    if (isGrounded) return;
 
-        if (rb.linearVelocity.y < fallVelocityThreshold)
-        {
-            Vector3 antiGravity = -Physics.gravity * (1f - fallGravityScale);
-            rb.AddForce(antiGravity, ForceMode.Acceleration);
-        }
+    if (rb.linearVelocity.y < fallVelocityThreshold)
+    {
+        float t = Mathf.Clamp01(
+            Mathf.InverseLerp(softFallStartSpeed, softFallFullSpeed, rb.linearVelocity.y)
+        );
+        float gravityScale = Mathf.Lerp(1f, fallGravityScale, t);
+        Vector3 antiGravity = -Physics.gravity * (1f - gravityScale);
+        rb.AddForce(antiGravity, ForceMode.Acceleration);
     }
+}
+
 
     public void ClearFinalWallExitLock()
 {
