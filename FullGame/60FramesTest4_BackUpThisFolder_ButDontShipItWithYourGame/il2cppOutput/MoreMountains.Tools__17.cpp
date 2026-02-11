@@ -1,0 +1,9353 @@
+﻿#include "pch-cpp.hpp"
+
+
+
+
+
+struct VirtualActionInvoker0
+{
+	typedef void (*Action)(void*, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+template <typename T1>
+struct VirtualActionInvoker1
+{
+	typedef void (*Action)(void*, T1, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, invokeData.method);
+	}
+};
+template <typename T1, typename T2>
+struct VirtualActionInvoker2
+{
+	typedef void (*Action)(void*, T1, T2, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, invokeData.method);
+	}
+};
+template <typename T1, typename T2, typename T3>
+struct VirtualActionInvoker3
+{
+	typedef void (*Action)(void*, T1, T2, T3, const RuntimeMethod*);
+
+	static inline void Invoke (Il2CppMethodSlot slot, RuntimeObject* obj, T1 p1, T2 p2, T3 p3)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		((Action)invokeData.methodPtr)(obj, p1, p2, p3, invokeData.method);
+	}
+};
+template <typename R>
+struct VirtualFuncInvoker0
+{
+	typedef R (*Func)(void*, const RuntimeMethod*);
+
+	static inline R Invoke (Il2CppMethodSlot slot, RuntimeObject* obj)
+	{
+		const VirtualInvokeData& invokeData = il2cpp_codegen_get_virtual_invoke_data(slot, obj);
+		return ((Func)invokeData.methodPtr)(obj, invokeData.method);
+	}
+};
+
+struct Action_1_tC95790E55CF4D5C803FAD201917F7CB367351E3F;
+struct Action_1_tB4B0D0DB16148980518A9D58761727D77FA1F1D3;
+struct Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1;
+struct Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180;
+struct Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C;
+struct Func_3_t6F6D9932638EA1A5A45303C6626C818C25D164E5;
+struct HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2;
+struct InputProcessor_1_tFE49B42CB371A9A2A3F29802695BD251947AD0B4;
+struct List_1_tFED1C27AA4B8AC9813FF4858B3ABB1B3F74558EF;
+struct List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35;
+struct List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252;
+struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B;
+struct List_1_t708480FA8595226274F2A92C5B3A650BAEB6A1BD;
+struct List_1_t2649C118B5073784A780FA8C3F129B02BA7E83B4;
+struct List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433;
+struct List_1_t5886A301D8FC2A3907E3C39AA5FB041D3CF1FD95;
+struct List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607;
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D;
+struct List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D;
+struct List_1_t70C71660C368B9474B9889CBADDC30685A5D2363;
+struct List_1_t2428E6342703056E5984273E984A21B042262086;
+struct List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A;
+struct List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465;
+struct List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46;
+struct List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D;
+struct TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4;
+struct Action_1U5BU5D_t525E90B5D1212F32F34CD47670B3553347DFB133;
+struct Action_1U5BU5D_t22E45C2BFF8C89B61E349730E6255288D35F6B88;
+struct InputProcessor_1U5BU5D_tFEE411B67EEAA6B997AF875A65D072993C8C809C;
+struct TMP_TextProcessingStack_1U5BU5D_t08293E0BB072311BB96170F351D1083BCA97B9B2;
+struct CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB;
+struct ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787;
+struct Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259;
+struct DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615;
+struct FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA;
+struct GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF;
+struct HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622;
+struct HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658;
+struct InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17;
+struct Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C;
+struct IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832;
+struct InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5;
+struct KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA;
+struct MMAutoRotateU5BU5D_t81F42945070A2DF47551AD491E855957A872D720;
+struct MMSpringFloatU5BU5D_t45D8CBC59465674DF729A18A43CE21B4A1A3D74F;
+struct MMWiggleU5BU5D_t236D7CE7D85C5CBFDE4A38F7B69F00848E56E472;
+struct MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D;
+struct MaterialReferenceU5BU5D_t7491D335AB3E3E13CE9C0F5E931F396F6A02E1F2;
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct ParticleSystemU5BU5D_tC5E33DA557C9C2064085128B3530C5F04D48F6E6;
+struct RichTextTagAttributeU5BU5D_t5816316EFD8F59DBC30B9F88E15828C564E47B6D;
+struct RigidbodyU5BU5D_t052E8AB174C34DFD0EBB5E897554DEBB841CC649;
+struct SelectableU5BU5D_t4160E135F02A40F75A63F787D36F31FEC6FE91A9;
+struct SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C;
+struct SnakeFoodU5BU5D_t79EFA21D8B9BFB8BF8337E49A32B3CB48C23B744;
+struct StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF;
+struct StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987;
+struct TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99;
+struct TMP_ColorGradientU5BU5D_t2F65E8C42F268DFF33BB1392D94BCF5B5087308A;
+struct TrailRendererU5BU5D_t0B57D67F9726AB05E2629500108D794B8AD21754;
+struct TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24;
+struct UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F;
+struct UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83;
+struct UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA;
+struct Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA;
+struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+struct WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9;
+struct ControlBitRangeNodeU5BU5D_t912A404149DE6D350D1735A026182C409C510F27;
+struct TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113;
+struct AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354;
+struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
+struct AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14;
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA;
+struct BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA;
+struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF;
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
+struct CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B;
+struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
+struct CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860;
+struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76;
+struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52;
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3;
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B;
+struct Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F;
+struct FeelSpringsAdvancedFloatDemo_tC92B56EE1926C4CF86F1BEA3C5B58FD84F2D895F;
+struct FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB;
+struct FeelSpringsComparisonDemo_t2EA6245725C0E78A9440C690A8655A2547E056C0;
+struct FeelSpringsDemoManager_tE03954B8C1861688E83BE86C85B09EF4D77C6303;
+struct FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1;
+struct FeelSpringsFloatDemo_t26ECCFDA367C9DE307C67BA0A5C2F98224141933;
+struct FeelSpringsVector2Demo_t8AF6849A3D4CCB36F5DD45775280E5F23E32D7AF;
+struct FeelSpringsVector3Demo_t0AFAF0DA24CA3DEEF88B82CDCABF3D4A0F6EBC4C;
+struct FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD;
+struct FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224;
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
+struct IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220;
+struct IEnumerator_t7B609C2FFA6EB5167D9C62A0C32A21DE2F666DAA;
+struct ITextPreprocessor_tDBB49C8B68D7B80E8D233B9D9666C43981EFAAB9;
+struct Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E;
+struct InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B;
+struct KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0;
+struct Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43;
+struct LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A;
+struct MMAutoRotate_t31F9725CC7249FF7F64A3A71771C9E83D4F20AB1;
+struct MMChannel_tC8C93FE7E6E5C93AA9081D03BA746AE79FC5D2D3;
+struct MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC;
+struct MMFeedbacksEvents_tE7946D95CC101B5C95182C8C372A2288DE19758E;
+struct MMPanningTexture_t5D8D3857894363337711619730EDC1DA6A9C3E59;
+struct MMPositionRecorder_t3DED771117AEAEA0F663E38AF5515A2B527F816F;
+struct MMSpringClampSettings_t114D1D421E1542F035A87C935C508252A0CAE53A;
+struct MMSpringDebug_t7C600761B229F9111B15A53D0F7C0A28C95A3575;
+struct MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585;
+struct MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C;
+struct MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14;
+struct MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE;
+struct MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B;
+struct MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3;
+struct Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3;
+struct MaterialPropertyBlock_t2308669579033A857EFE6E4831909F638B27411D;
+struct Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4;
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71;
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A;
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C;
+struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1;
+struct RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179;
+struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
+struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF;
+struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C;
+struct SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6;
+struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712;
+struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F;
+struct Snake_t3CA4F075CA07424316858C42883FB985D51A0365;
+struct SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F;
+struct SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA;
+struct SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB;
+struct Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99;
+struct Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C;
+struct StrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF;
+struct String_t;
+struct TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35;
+struct TMP_ColorGradient_t17B51752B4E9499A1FF7D875DCEC1D15A0F4AEBB;
+struct TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160;
+struct TMP_SpriteAnimator_t2E0F016A61CA343E3222FF51E7CF0E53F9F256E4;
+struct TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39;
+struct TMP_Style_tA9E5B1B35EBFE24EF980CEA03251B638282E120C;
+struct TMP_StyleSheet_t70C71699F5CB2D855C361DBB78A44C901236C859;
+struct TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9;
+struct TMP_TextElement_t262A55214F712D4274485ABE5676E5254B84D0A5;
+struct TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D;
+struct Tactical_tA162DB90B2EDDF237672937A32C783569F3F77F6;
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62;
+struct TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC;
+struct Texture2D_tE6505BC111DD8A424A9DBE8E05D7D09E11FFFCF4;
+struct TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39;
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1;
+struct UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7;
+struct UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977;
+struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
+struct Wheel_t546738B706575F6C4DAC27DA5EE103617298B275;
+struct WiggleProperties_t108BC5684079F6C8CA02E1447BCA19F22FDB893E;
+struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
+struct U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E;
+struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
+struct SliderEvent_t92A82EF6C62E15AF92B640FE2D960E877E8C6555;
+struct U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635;
+struct U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F;
+struct U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A;
+struct U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1;
+struct MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6;
+
+IL2CPP_EXTERN_C RuntimeClass* GameObjectExtensions_t39A9481ED8A703CD214AC70247DB6A7F8938B7E5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeField* StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var;
+IL2CPP_EXTERN_C String_t* _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748;
+IL2CPP_EXTERN_C String_t* _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024;
+IL2CPP_EXTERN_C const RuntimeMethod* Component_GetComponent_TisSnake_t3CA4F075CA07424316858C42883FB985D51A0365_m8407229FD1E27BEAF158EE3926C923947D0795D6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m07D362A07C19B36C2FD1B4DC79DD99903D4DA95D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m0AA607BF00E37113CE657A0EF67E82DAAC97FF51_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m0D5A0FD29428808933AFA5DC2242D75B8C27B8B7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_m3B62AD039A11BDA3C9140A67B3F38E869492B280_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mAF70E9B39A0AD39183DE4B5A7789CE0B0D28BE2D_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mBAC15B96B6400AC68E1915F7F59F9EF533D54AAB_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mE34A5E8222A8BB4495C1DB5AABA812CC057B84B8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mEA141407B9C3872C2D88F3752A759F218F401422_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_Dispose_mEDF0AB4DFD56C5EA9E93278AEABA698E8664B961_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m11596AF3E5DFDE8232421AB369156A95E59816EA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m2885AE486576CA3A63DD6681191F4122FE68CBDD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m3D4A033F6992377529F2B173AD5A73DFA777A410_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m5EACDBB485FC446D242EA04A0435919E661F3F60_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m6561DC83C402739651BBB6140E6FCC142CA315E1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m7C1900E744F38DB293FFA07A4A8FAAF606638E88_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_MoveNext_mAF3EE83CE5E0C50BBC16CB77B0EFB065C8CF143C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m2EE19BDB785EF06929DF6AD052451DF0C76A6818_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m54E2C7A7744158781CA572DF215D14D115A8CF2C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m6D11CD1F05E476D2B14FE71168C5F0D78497D112_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m95D429CCCB81EDF1ACC449DF3DF9559581EBD9DE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_m9822B326FC4E04A23C53BBB2A7E1F1D89C2E9245_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mDE3367A7C30BE10A1E8DC6194D3262D43DD110B1_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Enumerator_get_Current_mE3F1874DFA39CBF5ED716D234C8C5B08817C7567_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObjectExtensions_MMGetComponentNoAlloc_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m02A9A55BBEB6AC0BA30FB0E026498BBE62852DD5_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObjectExtensions_MMGetComponentNoAlloc_TisStrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF_m776B32E07B91F918321304F16901FB879DD4E314_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m3133A1BF8C842DB06F39C6EAF5D75A0C581670E7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_m67ADCB698F31486B35CF5DB4CFB1E97EB807FEFD_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_Add_mED9EAF1A4D4B0B9561DB6F42F9DBE59D56186D46_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m19808ADC197B0B09F6EA267D908659788EFDBB5C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m1D5E48528014F2A36980D68EC7CDB6FF03B83420_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m29A2B92BCCAF305C7BC9355B4E3BB3396CBF930C_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m6335A92F0CCF8CE5669F4BF8684F5A765C8BE86B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_m68A24B12D9737E67067D68E2268495B48541CEDE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mA843D26C63E5963415DFCA6E49DFA27AFD9C75E8_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mACCDB7B0427797F2CFCCA14C4D42E38022C2ED0A_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mCC0586D4E8BFC53C6DC7C0EC51807A6EC0C471BE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_GetEnumerator_mF3A7124A5AFF8C2D0E9121108038AF1E978E0093_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m0CDD6F02F45026B4267E7117C5DDC188F87EE7BE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m67AF8C1A0BBEEDDB922069DA624F525AF7E7ED01_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1__ctor_m907ED55175FEE7D8BDA628942831D2FE60A4BDEE_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Count_m7085A2CE74842462C2D61DBB1730435300E01A94_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m070FA4E9997DC2AAD3387BD29B01AC9297891911_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mC0EC6F027B570FE23A7539B35437404BFA732B7E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* List_1_get_Item_mE8DBE527F24D9CFED839C34216C475B716169979_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* Object_Instantiate_TisSnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA_m5A71FFFBC8F9E772C1165F8E7A41F6EE78D26BD7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CActivateColliderU3Ed__8_System_Collections_IEnumerator_Reset_mFB96194DE08F039CAD4E8E5A85B2A96B18531BA0_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CMoveFoodU3Ed__10_System_Collections_IEnumerator_Reset_mD9FE766AD6EC17E518F04366A3350E0249F2821E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CResetCountdownU3Ed__36_System_Collections_IEnumerator_Reset_m2BE10E65F509F517ADFDAE0A24CD2A295F7BEDC7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CResetSceneCoU3Ed__37_System_Collections_IEnumerator_Reset_mB95C021B42F70970936DEBE8FBA1DDA56301E188_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* U3CTeleportSequenceU3Ed__18_System_Collections_IEnumerator_Reset_m54E0EEA6C1DF994A876F6ECB72ACC90B059455A7_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeType* StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var;
+struct Exception_t_marshaled_com;
+struct Exception_t_marshaled_pinvoke;
+
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918;
+struct StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987;
+struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C;
+
+IL2CPP_EXTERN_C_BEGIN
+IL2CPP_EXTERN_C_END
+
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+struct List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252  : public RuntimeObject
+{
+	ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B  : public RuntimeObject
+{
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t708480FA8595226274F2A92C5B3A650BAEB6A1BD  : public RuntimeObject
+{
+	MMAutoRotateU5BU5D_t81F42945070A2DF47551AD491E855957A872D720* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433  : public RuntimeObject
+{
+	MMSpringFloatU5BU5D_t45D8CBC59465674DF729A18A43CE21B4A1A3D74F* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t5886A301D8FC2A3907E3C39AA5FB041D3CF1FD95  : public RuntimeObject
+{
+	MMWiggleU5BU5D_t236D7CE7D85C5CBFDE4A38F7B69F00848E56E472* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D  : public RuntimeObject
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D  : public RuntimeObject
+{
+	ParticleSystemU5BU5D_tC5E33DA557C9C2064085128B3530C5F04D48F6E6* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t70C71660C368B9474B9889CBADDC30685A5D2363  : public RuntimeObject
+{
+	RigidbodyU5BU5D_t052E8AB174C34DFD0EBB5E897554DEBB841CC649* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A  : public RuntimeObject
+{
+	SnakeFoodU5BU5D_t79EFA21D8B9BFB8BF8337E49A32B3CB48C23B744* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465  : public RuntimeObject
+{
+	StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46  : public RuntimeObject
+{
+	TrailRendererU5BU5D_t0B57D67F9726AB05E2629500108D794B8AD21754* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D  : public RuntimeObject
+{
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ____items;
+	int32_t ____size;
+	int32_t ____version;
+	RuntimeObject* ____syncRoot;
+};
+struct MMSpringDefinition_1_t566730C4D4844C8C07AF274EB2FC4C378A493C3C  : public RuntimeObject
+{
+};
+struct MMSpringDefinition_1_t54086D950FE5C4023B6C33B1C826472AF0D3481D  : public RuntimeObject
+{
+};
+struct U3CPrivateImplementationDetailsU3E_tEA0C5CBA779B1D017536F2B0E2AE828CA743048A  : public RuntimeObject
+{
+};
+struct String_t  : public RuntimeObject
+{
+	int32_t ____stringLength;
+	Il2CppChar ____firstChar;
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F  : public RuntimeObject
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_pinvoke
+{
+};
+struct ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F_marshaled_com
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D  : public RuntimeObject
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+};
+struct YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+};
+struct U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* ___U3CU3E4__this;
+};
+struct U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* ___U3CU3E4__this;
+};
+struct U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* ___U3CU3E4__this;
+};
+struct U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* ___U3CU3E4__this;
+};
+struct U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state;
+	RuntimeObject* ___U3CU3E2__current;
+	Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* ___U3CU3E4__this;
+};
+struct Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A 
+{
+	List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ____current;
+};
+struct Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 
+{
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ____current;
+};
+struct Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A 
+{
+	List_1_t708480FA8595226274F2A92C5B3A650BAEB6A1BD* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	MMAutoRotate_t31F9725CC7249FF7F64A3A71771C9E83D4F20AB1* ____current;
+};
+struct Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059 
+{
+	List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ____current;
+};
+struct Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D 
+{
+	List_1_t5886A301D8FC2A3907E3C39AA5FB041D3CF1FD95* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* ____current;
+};
+struct Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A 
+{
+	List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	RuntimeObject* ____current;
+};
+struct Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F 
+{
+	List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* ____current;
+};
+struct Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842 
+{
+	List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ____current;
+};
+struct Enumerator_t321325353D119865EB1ACE7140BAE366972365ED 
+{
+	List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* ____current;
+};
+struct InlinedArray_1_t031A607559EE9F23E8BC012CD9661BFB3EB2BFC1 
+{
+	int32_t ___length;
+	Action_1_tC95790E55CF4D5C803FAD201917F7CB367351E3F* ___firstValue;
+	Action_1U5BU5D_t525E90B5D1212F32F34CD47670B3553347DFB133* ___additionalValues;
+};
+struct InlinedArray_1_t8249EE706E2222F1A22F40FB70BEB230C11C5992 
+{
+	int32_t ___length;
+	Action_1_tB4B0D0DB16148980518A9D58761727D77FA1F1D3* ___firstValue;
+	Action_1U5BU5D_t22E45C2BFF8C89B61E349730E6255288D35F6B88* ___additionalValues;
+};
+struct InlinedArray_1_t2A86A6C75E0160EE14310E053C5249518871D847 
+{
+	int32_t ___length;
+	InputProcessor_1_tFE49B42CB371A9A2A3F29802695BD251947AD0B4* ___firstValue;
+	InputProcessor_1U5BU5D_tFEE411B67EEAA6B997AF875A65D072993C8C809C* ___additionalValues;
+};
+struct TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C 
+{
+	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___itemStack;
+	int32_t ___index;
+	int32_t ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 
+{
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___itemStack;
+	int32_t ___index;
+	float ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C 
+{
+	TMP_ColorGradientU5BU5D_t2F65E8C42F268DFF33BB1392D94BCF5B5087308A* ___itemStack;
+	int32_t ___index;
+	TMP_ColorGradient_t17B51752B4E9499A1FF7D875DCEC1D15A0F4AEBB* ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22 
+{
+	bool ___m_value;
+};
+struct Color_tD001788D726C3A7F1379BEED0260B9591F440C1F 
+{
+	float ___r;
+	float ___g;
+	float ___b;
+	float ___a;
+};
+struct Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B 
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___rgba;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___rgba_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			uint8_t ___r;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			uint8_t ___r_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___g_OffsetPadding[1];
+			uint8_t ___g;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___g_OffsetPadding_forAlignmentOnly[1];
+			uint8_t ___g_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___b_OffsetPadding[2];
+			uint8_t ___b;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___b_OffsetPadding_forAlignmentOnly[2];
+			uint8_t ___b_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___a_OffsetPadding[3];
+			uint8_t ___a;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___a_OffsetPadding_forAlignmentOnly[3];
+			uint8_t ___a_forAlignmentOnly;
+		};
+	};
+};
+struct DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1__padding[1];
+	};
+};
+struct EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8 
+{
+	union
+	{
+		struct
+		{
+			int32_t ___m_Data;
+		};
+		uint8_t EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8__padding[4];
+	};
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2  : public ValueType_t6D9B272BD21782F0A9A14F2E41F85A50E97A986F
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_pinvoke
+{
+};
+struct Enum_t2A1A94B24E3B776EEF4E5E485E290BB9D4D072E2_marshaled_com
+{
+};
+struct FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED 
+{
+	int32_t ___m_Code;
+};
+struct InputDeviceDescription_tE86DD77422AAF60ADDAC788B31E5A05E739B708F 
+{
+	String_t* ___m_InterfaceName;
+	String_t* ___m_DeviceClass;
+	String_t* ___m_Manufacturer;
+	String_t* ___m_Product;
+	String_t* ___m_Serial;
+	String_t* ___m_Version;
+	String_t* ___m_Capabilities;
+};
+struct InputDeviceDescription_tE86DD77422AAF60ADDAC788B31E5A05E739B708F_marshaled_pinvoke
+{
+	char* ___m_InterfaceName;
+	char* ___m_DeviceClass;
+	char* ___m_Manufacturer;
+	char* ___m_Product;
+	char* ___m_Serial;
+	char* ___m_Version;
+	char* ___m_Capabilities;
+};
+struct InputDeviceDescription_tE86DD77422AAF60ADDAC788B31E5A05E739B708F_marshaled_com
+{
+	Il2CppChar* ___m_InterfaceName;
+	Il2CppChar* ___m_DeviceClass;
+	Il2CppChar* ___m_Manufacturer;
+	Il2CppChar* ___m_Product;
+	Il2CppChar* ___m_Serial;
+	Il2CppChar* ___m_Version;
+	Il2CppChar* ___m_Capabilities;
+};
+struct Int32_t680FF22E76F6EFAD4375103CBBFFA0421349384C 
+{
+	int32_t ___m_value;
+};
+struct IntPtr_t 
+{
+	void* ___m_value;
+};
+struct InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 
+{
+	String_t* ___m_StringOriginalCase;
+	String_t* ___m_StringLowerCase;
+};
+struct InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735_marshaled_pinvoke
+{
+	char* ___m_StringOriginalCase;
+	char* ___m_StringLowerCase;
+};
+struct InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735_marshaled_com
+{
+	Il2CppChar* ___m_StringOriginalCase;
+	Il2CppChar* ___m_StringLowerCase;
+};
+struct MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585  : public MMSpringDefinition_1_t566730C4D4844C8C07AF274EB2FC4C378A493C3C
+{
+	float ___Damping;
+	float ___Frequency;
+	MMSpringClampSettings_t114D1D421E1542F035A87C935C508252A0CAE53A* ___ClampSettings;
+	float ___U3CInitialValueU3Ek__BackingField;
+	MMSpringDebug_t7C600761B229F9111B15A53D0F7C0A28C95A3575* ___SpringDebug;
+	bool ___UnifiedSpring;
+	float ___CurrentValueDisplay;
+	float ___TargetValueDisplay;
+	float ___VelocityDisplay;
+	float ____actualCurrentValue;
+	float ____returnCurrentValue;
+	float ____targetValue;
+	float ____velocity;
+};
+struct MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B 
+{
+	int32_t ___index;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___spriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	bool ___isDefaultMaterial;
+	bool ___isFallbackMaterial;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___fallbackMaterial;
+	float ___padding;
+	int32_t ___referenceCount;
+};
+struct MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B_marshaled_pinvoke
+{
+	int32_t ___index;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___spriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___isDefaultMaterial;
+	int32_t ___isFallbackMaterial;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___fallbackMaterial;
+	float ___padding;
+	int32_t ___referenceCount;
+};
+struct MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B_marshaled_com
+{
+	int32_t ___index;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___spriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___isDefaultMaterial;
+	int32_t ___isFallbackMaterial;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___fallbackMaterial;
+	float ___padding;
+	int32_t ___referenceCount;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+	float ___w;
+};
+struct Single_t4530F2FF86FCB0DC29F35385CA1BD21BE294761C 
+{
+	float ___m_value;
+};
+struct SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD 
+{
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_HighlightedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_PressedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_SelectedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_DisabledSprite;
+};
+struct SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD_marshaled_pinvoke
+{
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_HighlightedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_PressedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_SelectedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_DisabledSprite;
+};
+struct SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD_marshaled_com
+{
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_HighlightedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_PressedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_SelectedSprite;
+	Sprite_tAFF74BC83CD68037494CB0B4F28CBDF8971CAB99* ___m_DisabledSprite;
+};
+struct TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC 
+{
+	uint8_t ___bold;
+	uint8_t ___italic;
+	uint8_t ___underline;
+	uint8_t ___strikethrough;
+	uint8_t ___highlight;
+	uint8_t ___superscript;
+	uint8_t ___subscript;
+	uint8_t ___uppercase;
+	uint8_t ___lowercase;
+	uint8_t ___smallcaps;
+};
+struct TMP_Offset_t2262BE4E87D9662487777FF8FFE1B17B0E4438C6 
+{
+	float ___m_Left;
+	float ___m_Right;
+	float ___m_Top;
+	float ___m_Bottom;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 
+{
+	float ___x;
+	float ___y;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+};
+struct Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 
+{
+	float ___x;
+	float ___y;
+	float ___z;
+	float ___w;
+};
+struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915 
+{
+	union
+	{
+		struct
+		{
+		};
+		uint8_t Void_t4861ACF8F4594C3437BB48B6E56783494B843915__padding[1];
+	};
+};
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D1024_tDCFDCAB2135227E1A06CB58ADED7CEB677C400A3 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D1024_tDCFDCAB2135227E1A06CB58ADED7CEB677C400A3__padding[1024];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D45610_tC7288B6C8A53F95427858FC395A45C7D55E90852 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D45610_tC7288B6C8A53F95427858FC395A45C7D55E90852__padding[45610];
+	};
+};
+#pragma pack(pop, tp)
+#pragma pack(push, tp, 1)
+struct __StaticArrayInitTypeSizeU3D72875_tDF53A81657E52633F9569C956E2CF823F4DD804B 
+{
+	union
+	{
+		struct
+		{
+			union
+			{
+			};
+		};
+		uint8_t __StaticArrayInitTypeSizeU3D72875_tDF53A81657E52633F9569C956E2CF823F4DD804B__padding[72875];
+	};
+};
+#pragma pack(pop, tp)
+struct SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777 
+{
+	TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35* ___character;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___materialIndex;
+};
+struct SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777_marshaled_pinvoke
+{
+	TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35* ___character;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___materialIndex;
+};
+struct SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777_marshaled_com
+{
+	TMP_Character_t7D37A55EF1A9FF6D0BFE6D50E86A00F80E7FAF35* ___character;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___fontAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___material;
+	int32_t ___materialIndex;
+};
+struct TextBackingContainer_t33D1CE628E7B26C45EDAC1D87BEF2DD22A5C6361 
+{
+	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___m_Array;
+	int32_t ___m_Index;
+};
+struct TextBackingContainer_t33D1CE628E7B26C45EDAC1D87BEF2DD22A5C6361_marshaled_pinvoke
+{
+	Il2CppSafeArray* ___m_Array;
+	int32_t ___m_Index;
+};
+struct TextBackingContainer_t33D1CE628E7B26C45EDAC1D87BEF2DD22A5C6361_marshaled_com
+{
+	Il2CppSafeArray* ___m_Array;
+	int32_t ___m_Index;
+};
+struct TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 
+{
+	Color32U5BU5D_t38116C3E91765C4C5726CE12C77FAD7F9F737259* ___itemStack;
+	int32_t ___index;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 
+{
+	MaterialReferenceU5BU5D_t7491D335AB3E3E13CE9C0F5E931F396F6A02E1F2* ___itemStack;
+	int32_t ___index;
+	MaterialReference_tFD98FFFBBDF168028E637446C6676507186F4D0B ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Center;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Extents;
+};
+struct ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_NormalColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_HighlightedColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_PressedColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_SelectedColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_DisabledColor;
+	float ___m_ColorMultiplier;
+	float ___m_FadeDuration;
+};
+struct ColorMode_tA7A815AAB9F175EFBA0AE0814E55728432A880BF 
+{
+	int32_t ___value__;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B  : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_pinvoke : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_pinvoke
+{
+	intptr_t ___m_Ptr;
+};
+struct Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
+{
+	intptr_t ___m_Ptr;
+};
+struct Exception_t  : public RuntimeObject
+{
+	String_t* ____className;
+	String_t* ____message;
+	RuntimeObject* ____data;
+	Exception_t* ____innerException;
+	String_t* ____helpURL;
+	RuntimeObject* ____stackTrace;
+	String_t* ____stackTraceString;
+	String_t* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	RuntimeObject* ____dynamicMethods;
+	int32_t ____HResult;
+	String_t* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	IntPtrU5BU5D_tFD177F8C806A6921AD7150264CCC62FA00CAD832* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_pinvoke
+{
+	char* ____className;
+	char* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_pinvoke* ____innerException;
+	char* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	char* ____stackTraceString;
+	char* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	char* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Exception_t_marshaled_com
+{
+	Il2CppChar* ____className;
+	Il2CppChar* ____message;
+	RuntimeObject* ____data;
+	Exception_t_marshaled_com* ____innerException;
+	Il2CppChar* ____helpURL;
+	Il2CppIUnknown* ____stackTrace;
+	Il2CppChar* ____stackTraceString;
+	Il2CppChar* ____remoteStackTraceString;
+	int32_t ____remoteStackIndex;
+	Il2CppIUnknown* ____dynamicMethods;
+	int32_t ____HResult;
+	Il2CppChar* ____source;
+	SafeSerializationManager_tCBB85B95DFD1634237140CD892E82D06ECB3F5E6* ____safeSerializationManager;
+	StackTraceU5BU5D_t32FBCB20930EAF5BAE3F450FF75228E5450DA0DF* ___captured_traces;
+	Il2CppSafeArray* ___native_trace_ips;
+	int32_t ___caught_in_unmanaged;
+};
+struct Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___min;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___max;
+};
+struct FontStyles_t9E611EE6BBE6E192A73EAFF7872596517C527FF5 
+{
+	int32_t ___value__;
+};
+struct FontWeight_tA2585C0A73B70D31CE71E7843149098A5E16BC80 
+{
+	int32_t ___value__;
+};
+struct ForceMode_t603F3ECB085E4FDD30C91273A469047EA64F4459 
+{
+	int32_t ___value__;
+};
+struct HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B 
+{
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___color;
+	TMP_Offset_t2262BE4E87D9662487777FF8FFE1B17B0E4438C6 ___padding;
+};
+struct HorizontalAlignmentOptions_tCC21260E9FBEC656BA7783643ED5F44AFF7955A1 
+{
+	int32_t ___value__;
+};
+struct InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 
+{
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___U3CformatU3Ek__BackingField;
+	uint32_t ___m_ByteOffset;
+	uint32_t ___U3CbitOffsetU3Ek__BackingField;
+	uint32_t ___U3CsizeInBitsU3Ek__BackingField;
+};
+struct InternalWiggleProperties_t05771543815E6FFA8EAF03F957AABEBB436498B2 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___returnVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___newValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___initialValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startValue;
+	float ___timeSinceLastChange;
+	float ___randomFrequency;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomNoiseFrequency;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomAmplitude;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomNoiseShift;
+	float ___timeSinceLastPause;
+	float ___pauseDuration;
+	float ___noiseElapsedTime;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___limitedTimeValueSave;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___remapZero;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___remapOne;
+	float ___curveDirection;
+	bool ___ping;
+};
+struct InternalWiggleProperties_t05771543815E6FFA8EAF03F957AABEBB436498B2_marshaled_pinvoke
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___returnVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___newValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___initialValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startValue;
+	float ___timeSinceLastChange;
+	float ___randomFrequency;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomNoiseFrequency;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomAmplitude;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomNoiseShift;
+	float ___timeSinceLastPause;
+	float ___pauseDuration;
+	float ___noiseElapsedTime;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___limitedTimeValueSave;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___remapZero;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___remapOne;
+	float ___curveDirection;
+	int32_t ___ping;
+};
+struct InternalWiggleProperties_t05771543815E6FFA8EAF03F957AABEBB436498B2_marshaled_com
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___returnVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___newValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___initialValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___startValue;
+	float ___timeSinceLastChange;
+	float ___randomFrequency;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomNoiseFrequency;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomAmplitude;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___randomNoiseShift;
+	float ___timeSinceLastPause;
+	float ___pauseDuration;
+	float ___noiseElapsedTime;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___limitedTimeValueSave;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___remapZero;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___remapOne;
+	float ___curveDirection;
+	int32_t ___ping;
+};
+struct Key_tA157C0DCB2A0D2BE58B76B3BB836A1B2E4EAF387 
+{
+	int32_t ___value__;
+};
+struct KeyCode_t75B9ECCC26D858F55040DDFF9523681E996D17E9 
+{
+	int32_t ___value__;
+};
+struct MMChannelModes_t97CA97DCDD49F79A9C83B1362B669F7555E21AD8 
+{
+	int32_t ___value__;
+};
+struct MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B  : public MMSpringDefinition_1_t54086D950FE5C4023B6C33B1C826472AF0D3481D
+{
+	bool ___SeparateAxis;
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___UnifiedSpring;
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___SpringX;
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___SpringY;
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___SpringZ;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____returnCurrentValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____returnTargetValue;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____returnVelocity;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C  : public RuntimeObject
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_pinvoke
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_marshaled_com
+{
+	intptr_t ___m_CachedPtr;
+};
+struct Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_Normal;
+	float ___m_Distance;
+};
+struct ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD 
+{
+	intptr_t ___m_Ptr;
+};
+struct SceneHandle_t4C3B517546B91EF78A6ED15DDC6C54AB5E03D8A3 
+{
+	EntityId_t982FBD037EAC5CA077B1602A7EA40E3523AA0FC8 ___m_Value;
+};
+struct Space_tF043E93E06B702DD05199C28C6F779049B38A969 
+{
+	int32_t ___value__;
+};
+struct StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 
+{
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___Rb;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___InitialPosition;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___InitialRotation;
+};
+struct StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshaled_pinvoke
+{
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___Rb;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___InitialPosition;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___InitialRotation;
+};
+struct StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshaled_com
+{
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___Rb;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___InitialPosition;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___InitialRotation;
+};
+struct TMP_TextElementType_t51EE6662436732F22C6B599F5757B7F35F706342 
+{
+	int32_t ___value__;
+};
+struct TextAlignmentOptions_tF3FA9020F7E2AF1A48660044540254009A22EF01 
+{
+	int32_t ___value__;
+};
+struct TextOverflowModes_t7DCCD00C16E3223CE50CDDCC53F785C0405BE203 
+{
+	int32_t ___value__;
+};
+struct TextRenderFlags_tE023FF398ECFE57A1DBC6FD2A1AF4AE9620F6E1C 
+{
+	int32_t ___value__;
+};
+struct TextWrappingModes_t982BC65D6DA703E73C04B99286285ECD3DDF207E 
+{
+	int32_t ___value__;
+};
+struct TextureMappingOptions_t0E1A47C529DEB45A875486256E7026E97C940DAE 
+{
+	int32_t ___value__;
+};
+struct TimescaleModes_t83D685A55252F1C2BFB436AE445A1B05C2166AFA 
+{
+	int32_t ___value__;
+};
+struct TypeCode_tBEF9BE86C8BCF5A6B82F3381219738D27804EF79 
+{
+	int32_t ___value__;
+};
+struct VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F 
+{
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topLeft;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___topRight;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomLeft;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___bottomRight;
+};
+struct VertexSortingOrder_t95B7AEDBDCAACC3459B6476E5CCC594A6422FFA8 
+{
+	int32_t ___value__;
+};
+struct VerticalAlignmentOptions_tCEF70AF60282B71AEEE14D51253CE6A61E72D855 
+{
+	int32_t ___value__;
+};
+struct Clamp_tCB96E8D34067B0DCBED42C565F4443DF880DD284 
+{
+	int32_t ___value__;
+};
+struct Directions_t6DD83CC4540B9AA1A114476F63E104BA02237FD9 
+{
+	int32_t ___value__;
+};
+struct ControlFlags_t9C297F208DE19CEB00A0560F7FDE59F6A2004132 
+{
+	int32_t ___value__;
+};
+struct DeviceFlags_tF02F85DA24FF16879A67B540FCA560EC955CE728 
+{
+	int32_t ___value__;
+};
+struct UpdateModes_tEC0B8DA917DD5CFDABA3628E61E8F6DF37F00CCC 
+{
+	int32_t ___value__;
+};
+struct Directions_t9D9CE1F34C8F4BAB8F6F765B696BDC6FA7BE1937 
+{
+	int32_t ___value__;
+};
+struct InitializationModes_t1C8FFA20D74FDD94D82760840CC161069A503328 
+{
+	int32_t ___value__;
+};
+struct SafeModes_tC17669F115FFD6A3D747F79C003E00EB0EF893C2 
+{
+	int32_t ___value__;
+};
+struct Modes_tFF45EDE903D9E38CA5D381BB013A291A0AE2882F 
+{
+	int32_t ___value__;
+};
+struct TimeScaleModes_tDEF611F7D4FF0C0136AA64E239D5C33CF45628EF 
+{
+	int32_t ___value__;
+};
+struct Spaces_tA9F01F3C2C7B0AB0BF227060DCB6D0EFF9E7EF4D 
+{
+	int32_t ___value__;
+};
+struct Spaces_t335DF0810493194DAAD9FBD59253CFC448EAB0F3 
+{
+	int32_t ___value__;
+};
+struct UpdateModes_tBBFE5F91E4D7C34EACB5A23209DAAC5FD705F5F0 
+{
+	int32_t ___value__;
+};
+struct Mode_t2D49D0E10E2FDA0026278C2400C16033888D0542 
+{
+	int32_t ___value__;
+};
+struct Transition_tF856A77C9FAC6D26EA3CA158CF68B739D35397B3 
+{
+	int32_t ___value__;
+};
+struct Direction_t4C81D17BB6C089A0EC1C4934525B86E75E693EFA 
+{
+	int32_t ___value__;
+};
+struct TextInputSources_t41387D6C9CB16E60390F47A15AEB8185BE966D26 
+{
+	int32_t ___value__;
+};
+struct Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0 
+{
+	List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* ____list;
+	int32_t ____index;
+	int32_t ____version;
+	StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 ____current;
+};
+struct TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 
+{
+	FontWeightU5BU5D_t2A406B5BAB0DD0F06E7F1773DB062E4AF98067BA* ___itemStack;
+	int32_t ___index;
+	int32_t ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D 
+{
+	HighlightStateU5BU5D_tA878A0AF1F4F52882ACD29515AADC277EE135622* ___itemStack;
+	int32_t ___index;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 
+{
+	HorizontalAlignmentOptionsU5BU5D_t4D185662282BFB910D8B9A8199E91578E9422658* ___itemStack;
+	int32_t ___index;
+	int32_t ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F  : public Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C
+{
+};
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C 
+{
+	int32_t ___m_Mode;
+	bool ___m_WrapAround;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
+};
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_marshaled_pinvoke
+{
+	int32_t ___m_Mode;
+	int32_t ___m_WrapAround;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
+};
+struct Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C_marshaled_com
+{
+	int32_t ___m_Mode;
+	int32_t ___m_WrapAround;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnUp;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnDown;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnLeft;
+	Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712* ___m_SelectOnRight;
+};
+struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___m_Type;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___m_Type_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding[4];
+			bool ___m_BoolValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding_forAlignmentOnly[4];
+			bool ___m_BoolValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding[4];
+			Il2CppChar ___m_CharValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding_forAlignmentOnly[4];
+			Il2CppChar ___m_CharValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding[4];
+			uint8_t ___m_ByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_ByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding[4];
+			int8_t ___m_SByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding_forAlignmentOnly[4];
+			int8_t ___m_SByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding[4];
+			int16_t ___m_ShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding_forAlignmentOnly[4];
+			int16_t ___m_ShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding[4];
+			uint16_t ___m_UShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding_forAlignmentOnly[4];
+			uint16_t ___m_UShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding[4];
+			int32_t ___m_IntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_IntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding[4];
+			uint32_t ___m_UIntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding_forAlignmentOnly[4];
+			uint32_t ___m_UIntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding[4];
+			int64_t ___m_LongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding_forAlignmentOnly[4];
+			int64_t ___m_LongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding[4];
+			uint64_t ___m_ULongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding_forAlignmentOnly[4];
+			uint64_t ___m_ULongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding[4];
+			float ___m_FloatValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding_forAlignmentOnly[4];
+			float ___m_FloatValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding[4];
+			double ___m_DoubleValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding_forAlignmentOnly[4];
+			double ___m_DoubleValue_forAlignmentOnly;
+		};
+	};
+};
+struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4_marshaled_pinvoke
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___m_Type;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___m_Type_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding[4];
+			int32_t ___m_BoolValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_BoolValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding[4];
+			uint8_t ___m_CharValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_CharValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding[4];
+			uint8_t ___m_ByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_ByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding[4];
+			int8_t ___m_SByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding_forAlignmentOnly[4];
+			int8_t ___m_SByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding[4];
+			int16_t ___m_ShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding_forAlignmentOnly[4];
+			int16_t ___m_ShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding[4];
+			uint16_t ___m_UShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding_forAlignmentOnly[4];
+			uint16_t ___m_UShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding[4];
+			int32_t ___m_IntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_IntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding[4];
+			uint32_t ___m_UIntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding_forAlignmentOnly[4];
+			uint32_t ___m_UIntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding[4];
+			int64_t ___m_LongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding_forAlignmentOnly[4];
+			int64_t ___m_LongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding[4];
+			uint64_t ___m_ULongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding_forAlignmentOnly[4];
+			uint64_t ___m_ULongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding[4];
+			float ___m_FloatValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding_forAlignmentOnly[4];
+			float ___m_FloatValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding[4];
+			double ___m_DoubleValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding_forAlignmentOnly[4];
+			double ___m_DoubleValue_forAlignmentOnly;
+		};
+	};
+};
+struct PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4_marshaled_com
+{
+	union
+	{
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			int32_t ___m_Type;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			int32_t ___m_Type_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding[4];
+			int32_t ___m_BoolValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_BoolValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_BoolValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding[4];
+			uint8_t ___m_CharValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_CharValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_CharValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding[4];
+			uint8_t ___m_ByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ByteValue_OffsetPadding_forAlignmentOnly[4];
+			uint8_t ___m_ByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding[4];
+			int8_t ___m_SByteValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_SByteValue_OffsetPadding_forAlignmentOnly[4];
+			int8_t ___m_SByteValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding[4];
+			int16_t ___m_ShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ShortValue_OffsetPadding_forAlignmentOnly[4];
+			int16_t ___m_ShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding[4];
+			uint16_t ___m_UShortValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UShortValue_OffsetPadding_forAlignmentOnly[4];
+			uint16_t ___m_UShortValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding[4];
+			int32_t ___m_IntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_IntValue_OffsetPadding_forAlignmentOnly[4];
+			int32_t ___m_IntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding[4];
+			uint32_t ___m_UIntValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_UIntValue_OffsetPadding_forAlignmentOnly[4];
+			uint32_t ___m_UIntValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding[4];
+			int64_t ___m_LongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_LongValue_OffsetPadding_forAlignmentOnly[4];
+			int64_t ___m_LongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding[4];
+			uint64_t ___m_ULongValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_ULongValue_OffsetPadding_forAlignmentOnly[4];
+			uint64_t ___m_ULongValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding[4];
+			float ___m_FloatValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_FloatValue_OffsetPadding_forAlignmentOnly[4];
+			float ___m_FloatValue_forAlignmentOnly;
+		};
+		#pragma pack(push, tp, 1)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding[4];
+			double ___m_DoubleValue;
+		};
+		#pragma pack(pop, tp)
+		struct
+		{
+			char ___m_DoubleValue_OffsetPadding_forAlignmentOnly[4];
+			double ___m_DoubleValue_forAlignmentOnly;
+		};
+	};
+};
+struct Scene_tA1DC762B79745EB5140F054C884855B922318356 
+{
+	SceneHandle_t4C3B517546B91EF78A6ED15DDC6C54AB5E03D8A3 ___m_Handle;
+};
+struct SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295  : public Exception_t
+{
+};
+struct TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 
+{
+	int32_t ___controlCharacterCount;
+	int32_t ___characterCount;
+	int32_t ___visibleCharacterCount;
+	int32_t ___spaceCount;
+	int32_t ___visibleSpaceCount;
+	int32_t ___wordCount;
+	int32_t ___firstCharacterIndex;
+	int32_t ___firstVisibleCharacterIndex;
+	int32_t ___lastCharacterIndex;
+	int32_t ___lastVisibleCharacterIndex;
+	float ___length;
+	float ___lineHeight;
+	float ___ascender;
+	float ___baseline;
+	float ___descender;
+	float ___maxAdvance;
+	float ___width;
+	float ___marginLeft;
+	float ___marginRight;
+	int32_t ___alignment;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___lineExtents;
+};
+struct Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E  : public RuntimeObject
+{
+	InputStateBlock_t0E05211ACF29A99C0FE7FC9EA7042196BFF1F3B5 ___m_StateBlock;
+	InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___m_Name;
+	String_t* ___m_Path;
+	String_t* ___m_DisplayName;
+	String_t* ___m_DisplayNameFromLayout;
+	String_t* ___m_ShortDisplayName;
+	String_t* ___m_ShortDisplayNameFromLayout;
+	InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___m_Layout;
+	InternedString_t8D62A48CB7D85AAE9CFCCCFB0A77AC2844905735 ___m_Variants;
+	InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B* ___m_Device;
+	InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E* ___m_Parent;
+	int32_t ___m_UsageCount;
+	int32_t ___m_UsageStartIndex;
+	int32_t ___m_AliasCount;
+	int32_t ___m_AliasStartIndex;
+	int32_t ___m_ChildCount;
+	int32_t ___m_ChildStartIndex;
+	int32_t ___m_ControlFlags;
+	bool ___m_CachedValueIsStale;
+	bool ___m_UnprocessedCachedValueIsStale;
+	PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___m_DefaultState;
+	PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___m_MinValue;
+	PrimitiveValue_t1CC37566F40746757D5E3F87474A05909D85C2D4 ___m_MaxValue;
+	FourCC_tA6CAA4015BC25A7F1053B6C512202D57A9C994ED ___m_OptimizedControlDataType;
+};
+struct NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A  : public SystemException_tCC48D868298F4C0705279823E34B00F4FBDB7295
+{
+};
+struct ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Rigidbody_t268697F5A994213ED97393309870968BC1C7393C  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1  : public Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3
+{
+};
+struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A 
+{
+	int32_t ___previous_WordBreak;
+	int32_t ___total_CharacterCount;
+	int32_t ___visible_CharacterCount;
+	int32_t ___visibleSpaceCount;
+	int32_t ___visible_SpriteCount;
+	int32_t ___visible_LinkCount;
+	int32_t ___firstCharacterIndex;
+	int32_t ___firstVisibleCharacterIndex;
+	int32_t ___lastCharacterIndex;
+	int32_t ___lastVisibleCharIndex;
+	int32_t ___lineNumber;
+	float ___maxCapHeight;
+	float ___maxAscender;
+	float ___maxDescender;
+	float ___startOfLineAscender;
+	float ___maxLineAscender;
+	float ___maxLineDescender;
+	float ___pageAscender;
+	int32_t ___horizontalAlignment;
+	float ___marginLeft;
+	float ___marginRight;
+	float ___xAdvance;
+	float ___preferredWidth;
+	float ___preferredHeight;
+	float ___renderedWidth;
+	float ___renderedHeight;
+	float ___previousLineScale;
+	int32_t ___wordCount;
+	int32_t ___fontStyle;
+	int32_t ___italicAngle;
+	float ___fontScaleMultiplier;
+	float ___currentFontSize;
+	float ___baselineOffset;
+	float ___lineOffset;
+	bool ___isDrivenLineSpacing;
+	int32_t ___lastBaseGlyphIndex;
+	float ___cSpace;
+	float ___mSpace;
+	TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* ___textInfo;
+	TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 ___lineInfo;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___vertexColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___underlineColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___strikethroughColor;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___highlightState;
+	TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC ___basicStyleStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___italicAngleStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___colorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___underlineColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___strikethroughColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___highlightColorStack;
+	TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D ___highlightStateStack;
+	TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C ___colorGradientStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___sizeStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___indentStack;
+	TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 ___fontWeightStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___styleStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___baselineStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___actionStack;
+	TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 ___materialReferenceStack;
+	TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 ___lineJustificationStack;
+	int32_t ___spriteAnimationID;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___currentFontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___currentSpriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial;
+	int32_t ___currentMaterialIndex;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___meshExtents;
+	bool ___tagNoParsing;
+	bool ___isNonBreakingSpace;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fxRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fxScale;
+};
+struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A_marshaled_pinvoke
+{
+	int32_t ___previous_WordBreak;
+	int32_t ___total_CharacterCount;
+	int32_t ___visible_CharacterCount;
+	int32_t ___visibleSpaceCount;
+	int32_t ___visible_SpriteCount;
+	int32_t ___visible_LinkCount;
+	int32_t ___firstCharacterIndex;
+	int32_t ___firstVisibleCharacterIndex;
+	int32_t ___lastCharacterIndex;
+	int32_t ___lastVisibleCharIndex;
+	int32_t ___lineNumber;
+	float ___maxCapHeight;
+	float ___maxAscender;
+	float ___maxDescender;
+	float ___startOfLineAscender;
+	float ___maxLineAscender;
+	float ___maxLineDescender;
+	float ___pageAscender;
+	int32_t ___horizontalAlignment;
+	float ___marginLeft;
+	float ___marginRight;
+	float ___xAdvance;
+	float ___preferredWidth;
+	float ___preferredHeight;
+	float ___renderedWidth;
+	float ___renderedHeight;
+	float ___previousLineScale;
+	int32_t ___wordCount;
+	int32_t ___fontStyle;
+	int32_t ___italicAngle;
+	float ___fontScaleMultiplier;
+	float ___currentFontSize;
+	float ___baselineOffset;
+	float ___lineOffset;
+	int32_t ___isDrivenLineSpacing;
+	int32_t ___lastBaseGlyphIndex;
+	float ___cSpace;
+	float ___mSpace;
+	TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* ___textInfo;
+	TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 ___lineInfo;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___vertexColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___underlineColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___strikethroughColor;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___highlightState;
+	TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC ___basicStyleStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___italicAngleStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___colorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___underlineColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___strikethroughColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___highlightColorStack;
+	TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D ___highlightStateStack;
+	TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C ___colorGradientStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___sizeStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___indentStack;
+	TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 ___fontWeightStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___styleStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___baselineStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___actionStack;
+	TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 ___materialReferenceStack;
+	TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 ___lineJustificationStack;
+	int32_t ___spriteAnimationID;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___currentFontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___currentSpriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial;
+	int32_t ___currentMaterialIndex;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___meshExtents;
+	int32_t ___tagNoParsing;
+	int32_t ___isNonBreakingSpace;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fxRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fxScale;
+};
+struct WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A_marshaled_com
+{
+	int32_t ___previous_WordBreak;
+	int32_t ___total_CharacterCount;
+	int32_t ___visible_CharacterCount;
+	int32_t ___visibleSpaceCount;
+	int32_t ___visible_SpriteCount;
+	int32_t ___visible_LinkCount;
+	int32_t ___firstCharacterIndex;
+	int32_t ___firstVisibleCharacterIndex;
+	int32_t ___lastCharacterIndex;
+	int32_t ___lastVisibleCharIndex;
+	int32_t ___lineNumber;
+	float ___maxCapHeight;
+	float ___maxAscender;
+	float ___maxDescender;
+	float ___startOfLineAscender;
+	float ___maxLineAscender;
+	float ___maxLineDescender;
+	float ___pageAscender;
+	int32_t ___horizontalAlignment;
+	float ___marginLeft;
+	float ___marginRight;
+	float ___xAdvance;
+	float ___preferredWidth;
+	float ___preferredHeight;
+	float ___renderedWidth;
+	float ___renderedHeight;
+	float ___previousLineScale;
+	int32_t ___wordCount;
+	int32_t ___fontStyle;
+	int32_t ___italicAngle;
+	float ___fontScaleMultiplier;
+	float ___currentFontSize;
+	float ___baselineOffset;
+	float ___lineOffset;
+	int32_t ___isDrivenLineSpacing;
+	int32_t ___lastBaseGlyphIndex;
+	float ___cSpace;
+	float ___mSpace;
+	TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* ___textInfo;
+	TMP_LineInfo_tB75C1965B58DB7B3A046C8CA55AD6AB92B6B17B3 ___lineInfo;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___vertexColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___underlineColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___strikethroughColor;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___highlightState;
+	TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC ___basicStyleStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___italicAngleStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___colorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___underlineColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___strikethroughColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___highlightColorStack;
+	TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D ___highlightStateStack;
+	TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C ___colorGradientStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___sizeStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___indentStack;
+	TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 ___fontWeightStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___styleStack;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___baselineStack;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___actionStack;
+	TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 ___materialReferenceStack;
+	TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 ___lineJustificationStack;
+	int32_t ___spriteAnimationID;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___currentFontAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___currentSpriteAsset;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___currentMaterial;
+	int32_t ___currentMaterialIndex;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___meshExtents;
+	int32_t ___tagNoParsing;
+	int32_t ___isNonBreakingSpace;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___fxRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___fxScale;
+};
+struct InputControl_1_t7A35A4AF63A7AA94678E000D4F3265A1FD84288A  : public InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E
+{
+	InlinedArray_1_t2A86A6C75E0160EE14310E053C5249518871D847 ___m_ProcessorStack;
+	float ___m_CachedValue;
+	float ___m_UnprocessedCachedValue;
+	bool ___evaluateProcessorsEveryRead;
+};
+struct TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F 
+{
+	WordWrapStateU5BU5D_t473D59C9DBCC949CE72EF1EB471CBA152A6CEAC9* ___itemStack;
+	int32_t ___index;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_DefaultItem;
+	int32_t ___m_Capacity;
+	int32_t ___m_RolloverSize;
+	int32_t ___m_Count;
+};
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	uint32_t ___m_NonSerializedVersion;
+};
+struct Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+};
+struct InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B  : public InputControl_t74F06B623518F992BF8E38656A5E0857169E3E2E
+{
+	int32_t ___m_DeviceFlags;
+	int32_t ___m_DeviceId;
+	int32_t ___m_ParticipantId;
+	int32_t ___m_DeviceIndex;
+	uint32_t ___m_CurrentProcessedEventBytesOnUpdate;
+	InputDeviceDescription_tE86DD77422AAF60ADDAC788B31E5A05E739B708F ___m_Description;
+	double ___m_LastUpdateTimeInternal;
+	uint32_t ___m_CurrentUpdateStepCount;
+	InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5* ___m_AliasesForEachControl;
+	InternedStringU5BU5D_t0B851758733FC0B118D84BE83AED10A0404C18D5* ___m_UsagesForEachControl;
+	InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17* ___m_UsageToControl;
+	InputControlU5BU5D_t0B951FEF1504D6340387C4735F5D6F426F40FE17* ___m_ChildrenForEachControl;
+	HashSet_1_t4A2F2B74276D0AD3ED0F873045BD61E9504ECAE2* ___m_UpdatedButtons;
+	List_1_tFED1C27AA4B8AC9813FF4858B3ABB1B3F74558EF* ___m_ButtonControlsCheckingPressState;
+	bool ___m_UseCachePathForButtonPresses;
+	UInt32U5BU5D_t02FBD658AD156A17574ECE6106CF1FBFCC9807FA* ___m_StateOffsetToControlMap;
+	ControlBitRangeNodeU5BU5D_t912A404149DE6D350D1735A026182C409C510F27* ___m_ControlTreeNodes;
+	UInt16U5BU5D_tEB7C42D811D999D2AA815BADC3FCCDD9C67B3F83* ___m_ControlTreeIndices;
+};
+struct MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71  : public Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA
+{
+	CancellationTokenSource_tAAE1E0033BCFC233801F8CB4CED5C852B350CB7B* ___m_CancellationTokenSource;
+};
+struct TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39  : public Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF
+{
+};
+struct AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7  : public InputControl_1_t7A35A4AF63A7AA94678E000D4F3265A1FD84288A
+{
+	int32_t ___clamp;
+	float ___clampMin;
+	float ___clampMax;
+	float ___clampConstant;
+	bool ___invert;
+	bool ___normalize;
+	float ___normalizeMin;
+	float ___normalizeMax;
+	float ___normalizeZero;
+	bool ___scale;
+	float ___scaleFactor;
+};
+struct BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA  : public Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52
+{
+};
+struct Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	int32_t ___ActionKey;
+	int32_t ___ActionKeyAlt;
+	List_1_t5886A301D8FC2A3907E3C39AA5FB041D3CF1FD95* ___Wigglers;
+	MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* ___CameraWiggler;
+	MMPanningTexture_t5D8D3857894363337711619730EDC1DA6A9C3E59* ___Offsetter;
+	List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D* ___ParticleLoops;
+	List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D* ___ParticleEmitters;
+	List_1_t708480FA8595226274F2A92C5B3A650BAEB6A1BD* ___AutoRotaters;
+	float ___RotationSpeed;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___DriveFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___StopFeedback;
+	bool ____turning;
+};
+struct FeelSpringsAdvancedFloatDemo_tC92B56EE1926C4CF86F1BEA3C5B58FD84F2D895F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* ___PositionSpring;
+	MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* ___RotationSpring;
+	MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE* ___ScaleSpring;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___PositionDampingSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___PositionFrequencySlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___RotationDampingSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___RotationFrequencySlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___ScaleDampingSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___ScaleFrequencySlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___BumpAmountSlider;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___MovingObject;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newPosition;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newBump;
+	float ____range;
+};
+struct FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* ___MovementSpring;
+	MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* ___RotationSpring;
+	MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE* ___ScaleSpring;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___DampingSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___FrequencySlider;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___MoveFeedback;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newPosition;
+	float ____cellWidth;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____currentPosition;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____movementPosition;
+};
+struct FeelSpringsComparisonDemo_t2EA6245725C0E78A9440C690A8655A2547E056C0  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* ___Springs;
+	List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* ___MovingObjects;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___BumpAmountSlider;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newPosition;
+	float ____range;
+};
+struct FeelSpringsDemoManager_tE03954B8C1861688E83BE86C85B09EF4D77C6303  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___DemoObjects;
+	int32_t ___CurrentIndex;
+};
+struct FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* ___TargetSlider;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___ValueText;
+};
+struct FeelSpringsFloatDemo_t26ECCFDA367C9DE307C67BA0A5C2F98224141933  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___FloatSpring;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___DampingSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___FrequencySlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___BumpAmountSlider;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___MovingObject;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newPosition;
+	float ____range;
+};
+struct FeelSpringsVector2Demo_t8AF6849A3D4CCB36F5DD45775280E5F23E32D7AF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___SpringX;
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___SpringY;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___DampingXSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___FrequencyXSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___DampingYSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___FrequencyYSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___BumpAmountSlider;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___MovingObject;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newPosition;
+	float ____range;
+};
+struct FeelSpringsVector3Demo_t0AFAF0DA24CA3DEEF88B82CDCABF3D4A0F6EBC4C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___SpringX;
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___SpringY;
+	MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* ___SpringZ;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___DampingXSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___FrequencyXSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___DampingYSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___FrequencyYSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___DampingZSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___FrequencyZSlider;
+	FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* ___BumpAmountSlider;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___MovingObject;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newPosition;
+	float ____range;
+};
+struct FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___Speed;
+	float ___RotationSpeed;
+	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___BoundaryCollider;
+	List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46* ___Trails;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___TeleportFeedbacks;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ____input;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____rotationAxis;
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ____bounds;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____thisPosition;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newPosition;
+	float ____trailTime;
+};
+struct Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43  : public InputDevice_t8BCF67533E872A75779C24C93D1D7085B72D364B
+{
+	AnyKeyControl_t88E59A594CAF1E3A432C3BEC2634C0CA462D8A14* ___U3CanyKeyU3Ek__BackingField;
+	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CshiftKeyU3Ek__BackingField;
+	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CctrlKeyU3Ek__BackingField;
+	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CaltKeyU3Ek__BackingField;
+	ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* ___U3CimeSelectedU3Ek__BackingField;
+	InlinedArray_1_t031A607559EE9F23E8BC012CD9661BFB3EB2BFC1 ___m_TextInputListeners;
+	String_t* ___m_KeyboardLayoutName;
+	KeyControlU5BU5D_t247D92FAA9E46BA28BB54BB6E38E7F99BD2C02DA* ___m_Keys;
+	InlinedArray_1_t8249EE706E2222F1A22F40FB70BEB230C11C5992 ___m_ImeCompositionListeners;
+};
+struct MMAutoRotate_t31F9725CC7249FF7F64A3A71771C9E83D4F20AB1  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	bool ___Rotating;
+	int32_t ___RotationSpace;
+	int32_t ___UpdateMode;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___RotationSpeed;
+	bool ___RandomizeRotationSpeed;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___RotationSpeedMin;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___RotationSpeedMax;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___RandomInitialDelay;
+	bool ___Orbiting;
+	bool ___AdditiveOrbitRotation;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___OrbitCenterTransform;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___OrbitCenterOffset;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___OrbitRotationAxis;
+	float ___OrbitRotationSpeed;
+	float ___OrbitRadius;
+	float ___OrbitCorrectionSpeed;
+	bool ___DrawGizmos;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___OrbitPlaneColor;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___OrbitLineColor;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____orbitCenter;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____worldRotationAxis;
+	Plane_tB7D8CC6F7AACF5F3AA483AF005C1102A8577BC0C ____rotationPlane;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____snappedPosition;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____radius;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ____newRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____desiredOrbitPosition;
+	float ____initialDelay;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____previousPosition;
+	float ____startTime;
+};
+struct MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	List_1_t2649C118B5073784A780FA8C3F129B02BA7E83B4* ___Feedbacks;
+	int32_t ___InitializationMode;
+	bool ___AutoInitialization;
+	int32_t ___SafeMode;
+	int32_t ___Direction;
+	bool ___AutoChangeDirectionOnEnd;
+	bool ___AutoPlayOnStart;
+	bool ___AutoPlayOnEnable;
+	bool ___ForceTimescaleMode;
+	int32_t ___ForcedTimescaleMode;
+	float ___DurationMultiplier;
+	float ___TimescaleMultiplier;
+	bool ___RandomizeDuration;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___RandomDurationMultiplier;
+	bool ___DisplayFullDurationDetails;
+	int32_t ___PlayerTimescaleMode;
+	bool ___OnlyPlayIfWithinRange;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___RangeCenter;
+	float ___RangeDistance;
+	bool ___UseRangeFalloff;
+	AnimationCurve_tCBFFAAD05CEBB35EF8D8631BD99914BE1A6BB354* ___RangeFalloff;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___RemapRangeFalloff;
+	bool ___IgnoreRangeEvents;
+	float ___CooldownDuration;
+	float ___InitialDelay;
+	bool ___CanPlay;
+	bool ___CanPlayWhileAlreadyPlaying;
+	float ___ChanceToPlay;
+	float ___FeedbacksIntensity;
+	MMFeedbacksEvents_tE7946D95CC101B5C95182C8C372A2288DE19758E* ___Events;
+	bool ___DebugActive;
+	bool ___U3CIsPlayingU3Ek__BackingField;
+	int32_t ___U3CTimesPlayedU3Ek__BackingField;
+	bool ___InScriptDrivenPause;
+	bool ___U3CContainsLoopU3Ek__BackingField;
+	bool ___U3CShouldChangeDirectionOnNextPlayU3Ek__BackingField;
+	float ____startTime;
+	float ____holdingMax;
+	float ____lastStartAt;
+	int32_t ____lastStartFrame;
+	bool ____pauseFound;
+	float ____totalDuration;
+	bool ____shouldStop;
+	float ____randomDurationMultiplier;
+	float ____lastOnEnableFrame;
+};
+struct MMMonoBehaviour_t983071B1C77C21CC3432DBBE41E3B288AC64FD15  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+struct MMPanningTexture_t5D8D3857894363337711619730EDC1DA6A9C3E59  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	bool ___TextureShouldPan;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___Speed;
+	String_t* ___SortingLayerName;
+	String_t* ___MaterialPropertyName;
+	int32_t ___MaterialIndex;
+	RawImage_tFF12F7DB574FBDC1863CF607C7A12A5D9F8D6179* ____rawImage;
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ____renderer;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ____position;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ____speed;
+	MaterialPropertyBlock_t2308669579033A857EFE6E4831909F638B27411D* ____propertyBlock;
+};
+struct MMPositionRecorder_t3DED771117AEAEA0F663E38AF5515A2B527F816F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	int32_t ___NumberOfPositionsToRecord;
+	int32_t ___Mode;
+	int32_t ___FrameInterval;
+	float ___TimeInterval;
+	bool ___RecordOnTimescaleZero;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___Positions;
+	int32_t ___FrameCounter;
+	int32_t ____frameCountLastRecord;
+	float ____timeLastRecord;
+};
+struct MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	int32_t ___UpdateMode;
+	bool ___PositionActive;
+	bool ___RotationActive;
+	bool ___ScaleActive;
+	WiggleProperties_t108BC5684079F6C8CA02E1447BCA19F22FDB893E* ___PositionWiggleProperties;
+	WiggleProperties_t108BC5684079F6C8CA02E1447BCA19F22FDB893E* ___RotationWiggleProperties;
+	WiggleProperties_t108BC5684079F6C8CA02E1447BCA19F22FDB893E* ___ScaleWiggleProperties;
+	float ___DebugWiggleDuration;
+	InternalWiggleProperties_t05771543815E6FFA8EAF03F957AABEBB436498B2 ____positionInternalProperties;
+	InternalWiggleProperties_t05771543815E6FFA8EAF03F957AABEBB436498B2 ____rotationInternalProperties;
+	InternalWiggleProperties_t05771543815E6FFA8EAF03F957AABEBB436498B2 ____scaleInternalProperties;
+};
+struct Snake_t3CA4F075CA07424316858C42883FB985D51A0365  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___Speed;
+	float ___NormalSpeedMultiplier;
+	float ___SpeedChangeRate;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Direction;
+	float ___BoostMultiplier;
+	float ___BoostDuration;
+	SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* ___BodyPartPrefab;
+	int32_t ___BodyPartsOffset;
+	int32_t ___MaxAmountOfBodyParts;
+	float ___MinTimeBetweenLostParts;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___PointsCounter;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___TurnFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___TeleportFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___TeleportOnceFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___EatFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___LoseFeedback;
+	int32_t ___SnakePoints;
+	float ____speed;
+	float ____speedMultiplier;
+	float ____lastFoodEatenAt;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____newPosition;
+	MMPositionRecorder_t3DED771117AEAEA0F663E38AF5515A2B527F816F* ____recorder;
+	List_1_t2428E6342703056E5984273E984A21B042262086* ____snakeBodyParts;
+	float ____lastLostPart;
+};
+struct SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	MMPositionRecorder_t3DED771117AEAEA0F663E38AF5515A2B527F816F* ___TargetRecorder;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___EatFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___NewFeedback;
+	int32_t ___Offset;
+	int32_t ___Index;
+	Snake_t3CA4F075CA07424316858C42883FB985D51A0365* ____snake;
+	BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* ____collider2D;
+};
+struct SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___OffDelay;
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___Model;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___EatFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___AppearFeedback;
+	SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* ___U3CSpawnerU3Ek__BackingField;
+	Snake_t3CA4F075CA07424316858C42883FB985D51A0365* ____snake;
+};
+struct SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* ___SnakeFoodPrefab;
+	int32_t ___AmountOfFood;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___MinRandom;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___MaxRandom;
+	List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A* ___Foods;
+	Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* ____mainCamera;
+};
+struct Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	int32_t ___ActionKey;
+	int32_t ___ActionKeyAlt;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___BowlingBallRb;
+	Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___PointsCollider;
+	List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* ___Pins;
+	MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* ___BowlingBallLauncherWiggler;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___LastScoreText;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___TotalScoreText;
+	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___ConsecutiveStrikesText;
+	List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* ___StrikeElements;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___ThrowingForce;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___Gravity;
+	float ___MaxDurationBeforeReset;
+	float ___DelayBeforeReset;
+	float ___DelayForPoints;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___ThrowBallFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___ResetFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___StrikeFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___NoStrikeFeedback;
+	int32_t ___LastScore;
+	int32_t ___TotalPoints;
+	int32_t ___ConsecutiveStrikes;
+	bool ____ballThrown;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ____initialBallPosition;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ____initialBallRotation;
+	List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* ____strikePins;
+	List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252* ____pinColliders;
+	Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ____resetCoroutine;
+};
+struct StrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+struct Tactical_tA162DB90B2EDDF237672937A32C783569F3F77F6  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	float ___CooldownDuration;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___ImpactPosition;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___ShootFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___ShootStopFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___ReloadFeedback;
+	float ____lastJumpStartedAt;
+	int32_t ____magazine;
+};
+struct UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+};
+struct Wheel_t546738B706575F6C4DAC27DA5EE103617298B275  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___RotatingPart;
+	float ___RotationSpeed;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___TurnFeedback;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* ___TurnStopFeedback;
+	bool ____turning;
+};
+struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF  : public AxisControl_tD6613A2445A3C2BFA22C77E16CA3201AF72354A7
+{
+	bool ___m_NeedsToCheckFramePress;
+	uint32_t ___m_UpdateCountLastPressed;
+	uint32_t ___m_UpdateCountLastReleased;
+	bool ___m_LastUpdateWasPress;
+	bool ___U3CneedsToCheckFramePressU3Ek__BackingField;
+	float ___pressPoint;
+};
+struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
+{
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_Material;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_Color;
+	bool ___m_SkipLayoutUpdate;
+	bool ___m_SkipMaterialUpdate;
+	bool ___m_RaycastTarget;
+	bool ___m_RaycastTargetCache;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___m_RaycastPadding;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_RectTransform;
+	CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860* ___m_CanvasRenderer;
+	Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26* ___m_Canvas;
+	bool ___m_VertsDirty;
+	bool ___m_MaterialDirty;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyLayoutCallback;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyVertsCallback;
+	UnityAction_t11A1F3B953B365C072A5DCC32677EE1796A962A7* ___m_OnDirtyMaterialCallback;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___m_CachedMesh;
+	Vector2U5BU5D_tFEBBC94BCC6C9C88277BA04047D2B3FDB6ED7FDA* ___m_CachedUvs;
+	TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4* ___m_ColorTweenRunner;
+	bool ___U3CuseLegacyMeshGenerationU3Ek__BackingField;
+};
+struct MMSpringComponentBase_t07EAC75B61F007CC04DFBDA4069C0A213B885AFC  : public MMMonoBehaviour_t983071B1C77C21CC3432DBBE41E3B288AC64FD15
+{
+	UnityEvent_tDC2C3548799DBC91D1E3F3DE60083A66F4751977* ___OnEquilibriumReached;
+	float ____velocityLowThreshold;
+};
+struct Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712  : public UIBehaviour_tB9D4295827BD2EEDEF0749200C6CA7090C742A9D
+{
+	bool ___m_EnableCalled;
+	Navigation_t4D2E201D65749CF4E104E8AC1232CF1D6F14795C ___m_Navigation;
+	int32_t ___m_Transition;
+	ColorBlock_tDD7C62E7AFE442652FC98F8D058CE8AE6BFD7C11 ___m_Colors;
+	SpriteState_tC8199570BE6337FB5C49347C97892B4222E5AACD ___m_SpriteState;
+	AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074* ___m_AnimationTriggers;
+	bool ___m_Interactable;
+	Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931* ___m_TargetGraphic;
+	bool ___m_GroupsAllowInteraction;
+	int32_t ___m_CurrentIndex;
+	bool ___U3CisPointerInsideU3Ek__BackingField;
+	bool ___U3CisPointerDownU3Ek__BackingField;
+	bool ___U3ChasSelectionU3Ek__BackingField;
+	List_1_t2CDCA768E7F493F5EDEBC75AEB200FD621354E35* ___m_CanvasGroupCache;
+};
+struct MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834  : public MMSpringComponentBase_t07EAC75B61F007CC04DFBDA4069C0A213B885AFC
+{
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___Target;
+	int32_t ___TimeScaleMode;
+	int32_t ___ChannelMode;
+	int32_t ___Channel;
+	MMChannel_tC8C93FE7E6E5C93AA9081D03BA746AE79FC5D2D3* ___MMChannelDefinition;
+	MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* ___SpringVector3;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___MoveToRandomValueMin;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___MoveToRandomValueMax;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___BumpAmountRandomValueMin;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___BumpAmountRandomValueMax;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___TestMoveToValue;
+	bool ___MoveToToolbar;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___TestBumpAmount;
+	bool ___BumpToToolbar;
+	bool ___OtherControlsToToolbar;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___U3CTargetVector3U3Ek__BackingField;
+};
+struct KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0  : public ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF
+{
+	int32_t ___U3CkeyCodeU3Ek__BackingField;
+	int32_t ___m_ScanCode;
+};
+struct MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E  : public Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931
+{
+	bool ___m_ShouldRecalculateStencil;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_MaskMaterial;
+	RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670* ___m_ParentMask;
+	bool ___m_Maskable;
+	bool ___m_IsMaskingGraphic;
+	bool ___m_IncludeForMasking;
+	CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8* ___m_OnCullStateChanged;
+	bool ___m_ShouldRecalculate;
+	int32_t ___m_StencilValue;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_Corners;
+};
+struct Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F  : public Selectable_t3251808068A17B8E92FB33590A4C2FA66D456712
+{
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_FillRect;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_HandleRect;
+	int32_t ___m_Direction;
+	float ___m_MinValue;
+	float ___m_MaxValue;
+	bool ___m_WholeNumbers;
+	float ___m_Value;
+	SliderEvent_t92A82EF6C62E15AF92B640FE2D960E877E8C6555* ___m_OnValueChanged;
+	Image_tBC1D03F63BF71132E9A5E472B8742F172A011E7E* ___m_FillImage;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_FillTransform;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_FillContainerRect;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_HandleTransform;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_HandleContainerRect;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_Offset;
+	DrivenRectTransformTracker_tFB0706C933E3C68E4F377C204FCEEF091F1EE0B1 ___m_Tracker;
+	bool ___m_DelayedUpdateVisuals;
+};
+struct MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C  : public MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834
+{
+	int32_t ___Space;
+};
+struct MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14  : public MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834
+{
+	int32_t ___Space;
+};
+struct MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE  : public MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834
+{
+};
+struct TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	String_t* ___m_text;
+	bool ___m_IsTextBackingStringDirty;
+	RuntimeObject* ___m_TextPreprocessor;
+	bool ___m_isRightToLeft;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___m_fontAsset;
+	TMP_FontAsset_t923BF2F78D7C5AC36376E168A1193B7CB4855160* ___m_currentFontAsset;
+	bool ___m_isSDFShader;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_sharedMaterial;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_currentMaterial;
+	int32_t ___m_currentMaterialIndex;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ___m_fontSharedMaterials;
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___m_fontMaterial;
+	MaterialU5BU5D_t2B1D11C42DB07A4400C0535F92DBB87A2E346D3D* ___m_fontMaterials;
+	bool ___m_isMaterialDirty;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_fontColor32;
+	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___m_fontColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_underlineColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_strikethroughColor;
+	HighlightState_tE4F50287E5E2E91D42AB77DEA281D88D3AD6A28B ___m_HighlightState;
+	bool ___m_ConvertToLinearSpace;
+	bool ___m_enableVertexGradient;
+	int32_t ___m_colorMode;
+	VertexGradient_t2C057B53C0EA6E987C2B7BAB0305E686DA1C9A8F ___m_fontColorGradient;
+	TMP_ColorGradient_t17B51752B4E9499A1FF7D875DCEC1D15A0F4AEBB* ___m_fontColorGradientPreset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___m_spriteAsset;
+	bool ___m_tintAllSprites;
+	bool ___m_tintSprite;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_spriteColor;
+	TMP_StyleSheet_t70C71699F5CB2D855C361DBB78A44C901236C859* ___m_StyleSheet;
+	TMP_Style_tA9E5B1B35EBFE24EF980CEA03251B638282E120C* ___m_TextStyle;
+	int32_t ___m_TextStyleHashCode;
+	bool ___m_overrideHtmlColors;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_faceColor;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_outlineColor;
+	float ___m_outlineWidth;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_currentEnvMapRotation;
+	bool ___m_hasEnvMapProperty;
+	float ___m_fontSize;
+	float ___m_currentFontSize;
+	float ___m_fontSizeBase;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___m_sizeStack;
+	int32_t ___m_fontWeight;
+	int32_t ___m_FontWeightInternal;
+	TMP_TextProcessingStack_1_tA5C8CED87DD9E73F6359E23B334FFB5B6F813FD4 ___m_FontWeightStack;
+	bool ___m_enableAutoSizing;
+	float ___m_maxFontSize;
+	float ___m_minFontSize;
+	int32_t ___m_AutoSizeIterationCount;
+	int32_t ___m_AutoSizeMaxIterationCount;
+	bool ___m_IsAutoSizePointSizeSet;
+	float ___m_fontSizeMin;
+	float ___m_fontSizeMax;
+	int32_t ___m_fontStyle;
+	int32_t ___m_FontStyleInternal;
+	TMP_FontStyleStack_t52885F172FADBC21346C835B5302167BDA8020DC ___m_fontStyleStack;
+	bool ___m_isUsingBold;
+	int32_t ___m_HorizontalAlignment;
+	int32_t ___m_VerticalAlignment;
+	int32_t ___m_textAlignment;
+	int32_t ___m_lineJustification;
+	TMP_TextProcessingStack_1_t243EA1B5D7FD2295D6533B953F0BBE8F52EFB8A0 ___m_lineJustificationStack;
+	Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* ___m_textContainerLocalCorners;
+	float ___m_characterSpacing;
+	float ___m_cSpacing;
+	float ___m_monoSpacing;
+	bool ___m_duoSpace;
+	float ___m_characterHorizontalScale;
+	float ___m_wordSpacing;
+	float ___m_lineSpacing;
+	float ___m_lineSpacingDelta;
+	float ___m_lineHeight;
+	bool ___m_IsDrivenLineSpacing;
+	float ___m_lineSpacingMax;
+	float ___m_paragraphSpacing;
+	float ___m_charWidthMaxAdj;
+	float ___m_charWidthAdjDelta;
+	int32_t ___m_TextWrappingMode;
+	bool ___m_isCharacterWrappingEnabled;
+	bool ___m_isNonBreakingSpace;
+	bool ___m_isIgnoringAlignment;
+	float ___m_wordWrappingRatios;
+	int32_t ___m_overflowMode;
+	int32_t ___m_firstOverflowCharacterIndex;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___m_linkedTextComponent;
+	TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* ___parentLinkedComponent;
+	bool ___m_isTextTruncated;
+	bool ___m_enableKerning;
+	int32_t ___m_LastBaseGlyphIndex;
+	List_1_t3A076A19AF26E22A128C32B5C19804DDD2877607* ___m_ActiveFontFeatures;
+	bool ___m_enableExtraPadding;
+	bool ___checkPaddingRequired;
+	bool ___m_isRichText;
+	bool ___m_EmojiFallbackSupport;
+	bool ___m_parseCtrlCharacters;
+	bool ___m_isOverlay;
+	bool ___m_isOrthographic;
+	bool ___m_isCullingEnabled;
+	bool ___m_isMaskingEnabled;
+	bool ___isMaskUpdateRequired;
+	bool ___m_ignoreCulling;
+	int32_t ___m_horizontalMapping;
+	int32_t ___m_verticalMapping;
+	float ___m_uvLineOffset;
+	int32_t ___m_renderMode;
+	int32_t ___m_geometrySortingOrder;
+	bool ___m_IsTextObjectScaleStatic;
+	bool ___m_VertexBufferAutoSizeReduction;
+	int32_t ___m_firstVisibleCharacter;
+	int32_t ___m_maxVisibleCharacters;
+	int32_t ___m_maxVisibleWords;
+	int32_t ___m_maxVisibleLines;
+	bool ___m_useMaxVisibleDescender;
+	int32_t ___m_pageToDisplay;
+	bool ___m_isNewPage;
+	Vector4_t58B63D32F48C0DBF50DE2C60794C4676C80EDBE3 ___m_margin;
+	float ___m_marginLeft;
+	float ___m_marginRight;
+	float ___m_marginWidth;
+	float ___m_marginHeight;
+	float ___m_width;
+	TMP_TextInfo_t09A8E906329422C3F0C059876801DD695B8D524D* ___m_textInfo;
+	bool ___m_havePropertiesChanged;
+	bool ___m_isUsingLegacyAnimationComponent;
+	Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* ___m_transform;
+	RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5* ___m_rectTransform;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_PreviousRectTransformSize;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___m_PreviousPivotPosition;
+	bool ___U3CautoSizeTextContainerU3Ek__BackingField;
+	bool ___m_autoSizeTextContainer;
+	Mesh_t6D9C539763A09BC2B12AEAEF36F6DFFC98AE63D4* ___m_mesh;
+	bool ___m_isVolumetricText;
+	Action_1_tB93AB717F9D419A1BEC832FF76E74EAA32184CC1* ___OnPreRenderText;
+	TMP_SpriteAnimator_t2E0F016A61CA343E3222FF51E7CF0E53F9F256E4* ___m_spriteAnimator;
+	float ___m_flexibleHeight;
+	float ___m_flexibleWidth;
+	float ___m_minWidth;
+	float ___m_minHeight;
+	float ___m_maxWidth;
+	float ___m_maxHeight;
+	LayoutElement_tB1F24CC11AF4AA87015C8D8EE06D22349C5BF40A* ___m_LayoutElement;
+	float ___m_preferredWidth;
+	float ___m_RenderedWidth;
+	bool ___m_isPreferredWidthDirty;
+	float ___m_preferredHeight;
+	float ___m_RenderedHeight;
+	bool ___m_isPreferredHeightDirty;
+	bool ___m_isCalculatingPreferredValues;
+	int32_t ___m_layoutPriority;
+	bool ___m_isLayoutDirty;
+	bool ___m_isAwake;
+	bool ___m_isWaitingOnResourceLoad;
+	int32_t ___m_inputSource;
+	float ___m_fontScaleMultiplier;
+	float ___tag_LineIndent;
+	float ___tag_Indent;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___m_indentStack;
+	bool ___tag_NoParsing;
+	bool ___m_isTextLayoutPhase;
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___m_FXRotation;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___m_FXScale;
+	TextProcessingElementU5BU5D_tC3E97D1672C8DB6E1F91DB2C0987D0ED9A2E7113* ___m_TextProcessingArray;
+	int32_t ___m_InternalTextProcessingArraySize;
+	TMP_CharacterInfoU5BU5D_t297D56FCF66DAA99D8FEA7C30F9F3926902C5B99* ___m_internalCharacterInfo;
+	int32_t ___m_totalCharacterCount;
+	int32_t ___m_characterCount;
+	int32_t ___m_firstCharacterOfLine;
+	int32_t ___m_firstVisibleCharacterOfLine;
+	int32_t ___m_lastCharacterOfLine;
+	int32_t ___m_lastVisibleCharacterOfLine;
+	int32_t ___m_lineNumber;
+	int32_t ___m_lineVisibleCharacterCount;
+	int32_t ___m_lineVisibleSpaceCount;
+	int32_t ___m_pageNumber;
+	float ___m_PageAscender;
+	float ___m_maxTextAscender;
+	float ___m_maxCapHeight;
+	float ___m_ElementAscender;
+	float ___m_ElementDescender;
+	float ___m_maxLineAscender;
+	float ___m_maxLineDescender;
+	float ___m_startOfLineAscender;
+	float ___m_startOfLineDescender;
+	float ___m_lineOffset;
+	Extents_tA2D2F95811D0A18CB7AC3570D2D8F8CD3AF4C4A8 ___m_meshExtents;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___m_htmlColor;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___m_colorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___m_underlineColorStack;
+	TMP_TextProcessingStack_1_tF2CD5BE59E5EB22EA9E3EE3043A004EA918C4BB3 ___m_strikethroughColorStack;
+	TMP_TextProcessingStack_1_t57AECDCC936A7FF1D6CF66CA11560B28A675648D ___m_HighlightStateStack;
+	TMP_ColorGradient_t17B51752B4E9499A1FF7D875DCEC1D15A0F4AEBB* ___m_colorGradientPreset;
+	TMP_TextProcessingStack_1_tC8FAEB17246D3B171EFD11165A5761AE39B40D0C ___m_colorGradientStack;
+	bool ___m_colorGradientPresetIsTinted;
+	float ___m_tabSpacing;
+	float ___m_spacing;
+	TMP_TextProcessingStack_1U5BU5D_t08293E0BB072311BB96170F351D1083BCA97B9B2* ___m_TextStyleStacks;
+	int32_t ___m_TextStyleStackDepth;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___m_ItalicAngleStack;
+	int32_t ___m_ItalicAngle;
+	TMP_TextProcessingStack_1_tFBA719426D68CE1F2B5849D97AF5E5D65846290C ___m_actionStack;
+	float ___m_padding;
+	float ___m_baselineOffset;
+	TMP_TextProcessingStack_1_t138EC06BE7F101AA0A3C8D2DC951E55AACE085E9 ___m_baselineOffsetStack;
+	float ___m_xAdvance;
+	int32_t ___m_textElementType;
+	TMP_TextElement_t262A55214F712D4274485ABE5676E5254B84D0A5* ___m_cached_TextElement;
+	SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777 ___m_Ellipsis;
+	SpecialCharacter_t6C1DBE8C490706D1620899BAB7F0B8091AD26777 ___m_Underline;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___m_defaultSpriteAsset;
+	TMP_SpriteAsset_t81F779E6F705CE190DC0D1F93A954CB8B1774B39* ___m_currentSpriteAsset;
+	int32_t ___m_spriteCount;
+	int32_t ___m_spriteIndex;
+	int32_t ___m_spriteAnimationID;
+	bool ___m_ignoreActiveState;
+	TextBackingContainer_t33D1CE628E7B26C45EDAC1D87BEF2DD22A5C6361 ___m_TextBackingArray;
+	DecimalU5BU5D_t93BA0C88FA80728F73B792EE1A5199D0C060B615* ___k_Power;
+};
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62  : public MaskableGraphic_tFC5B6BE351C90DE53744DF2A70940242774B361E
+{
+	FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224* ___m_FontData;
+	String_t* ___m_Text;
+	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCache;
+	TextGenerator_t85D00417640A53953556C01F9D4E7DDE1ABD8FEC* ___m_TextCacheForLayout;
+	bool ___m_DisableFontTextureRebuiltCallback;
+	UIVertexU5BU5D_tBC532486B45D071A520751A90E819C77BA4E3D2F* ___m_TempVerts;
+};
+struct List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252_StaticFields
+{
+	ColliderU5BU5D_t94A9D70F63D095AFF2A9B4613012A5F7F3141787* ___s_emptyArray;
+};
+struct List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_StaticFields
+{
+	GameObjectU5BU5D_tFF67550DFCE87096D7A3734EA15B75896B2722CF* ___s_emptyArray;
+};
+struct List_1_t708480FA8595226274F2A92C5B3A650BAEB6A1BD_StaticFields
+{
+	MMAutoRotateU5BU5D_t81F42945070A2DF47551AD491E855957A872D720* ___s_emptyArray;
+};
+struct List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433_StaticFields
+{
+	MMSpringFloatU5BU5D_t45D8CBC59465674DF729A18A43CE21B4A1A3D74F* ___s_emptyArray;
+};
+struct List_1_t5886A301D8FC2A3907E3C39AA5FB041D3CF1FD95_StaticFields
+{
+	MMWiggleU5BU5D_t236D7CE7D85C5CBFDE4A38F7B69F00848E56E472* ___s_emptyArray;
+};
+struct List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D_StaticFields
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___s_emptyArray;
+};
+struct List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D_StaticFields
+{
+	ParticleSystemU5BU5D_tC5E33DA557C9C2064085128B3530C5F04D48F6E6* ___s_emptyArray;
+};
+struct List_1_t70C71660C368B9474B9889CBADDC30685A5D2363_StaticFields
+{
+	RigidbodyU5BU5D_t052E8AB174C34DFD0EBB5E897554DEBB841CC649* ___s_emptyArray;
+};
+struct List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A_StaticFields
+{
+	SnakeFoodU5BU5D_t79EFA21D8B9BFB8BF8337E49A32B3CB48C23B744* ___s_emptyArray;
+};
+struct List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465_StaticFields
+{
+	StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987* ___s_emptyArray;
+};
+struct List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46_StaticFields
+{
+	TrailRendererU5BU5D_t0B57D67F9726AB05E2629500108D794B8AD21754* ___s_emptyArray;
+};
+struct List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D_StaticFields
+{
+	TransformU5BU5D_tBB9C5F5686CAE82E3D97D43DF0F3D68ABF75EC24* ___s_emptyArray;
+};
+struct U3CPrivateImplementationDetailsU3E_tEA0C5CBA779B1D017536F2B0E2AE828CA743048A_StaticFields
+{
+	__StaticArrayInitTypeSizeU3D45610_tC7288B6C8A53F95427858FC395A45C7D55E90852 ___5538D2FE9737EA760A9E8D7DF7DF8E7BE9966B326F2224123E2FC578FF09304D;
+	__StaticArrayInitTypeSizeU3D72875_tDF53A81657E52633F9569C956E2CF823F4DD804B ___B776C79725C4B7A27FDFF5349EB862C471B1768B8F847951C1A68B25EC46BDA9;
+	__StaticArrayInitTypeSizeU3D1024_tDCFDCAB2135227E1A06CB58ADED7CEB677C400A3 ___EA3CF748EF2EED46C8D386654894EFB4A0ACA29E79789C2D3A4A27B57352CECD;
+};
+struct String_t_StaticFields
+{
+	String_t* ___Empty;
+};
+struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
+{
+	String_t* ___TrueString;
+	String_t* ___FalseString;
+};
+struct Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974_StaticFields
+{
+	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___identityQuaternion;
+};
+struct Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_StaticFields
+{
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___zeroVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___oneVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___upVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___downVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___leftVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___rightVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___positiveInfinityVector;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___negativeInfinityVector;
+};
+struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___zeroVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___oneVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___upVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___downVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___leftVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___rightVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___forwardVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___backVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___positiveInfinityVector;
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___negativeInfinityVector;
+};
+struct Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_StaticFields
+{
+	int32_t ___OffsetOfInstanceIDInCPlusPlusObject;
+};
+struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184_StaticFields
+{
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreCull;
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPreRender;
+	CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD* ___onPostRender;
+};
+struct Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43_StaticFields
+{
+	Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* ___U3CcurrentU3Ek__BackingField;
+};
+struct MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC_StaticFields
+{
+	bool ___GlobalMMFeedbacksActive;
+};
+struct ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF_StaticFields
+{
+	float ___s_GlobalDefaultButtonPressPoint;
+	float ___s_GlobalDefaultButtonReleaseThreshold;
+};
+struct TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_StaticFields
+{
+	MaterialReferenceU5BU5D_t7491D335AB3E3E13CE9C0F5E931F396F6A02E1F2* ___m_materialReferences;
+	Dictionary_2_tABE19B9C5C52F1DE14F0D3287B2696E7D7419180* ___m_materialReferenceIndexLookup;
+	TMP_TextProcessingStack_1_tB03E08F69415B281A5A81138F09E49EE58402DF9 ___m_materialReferenceStack;
+	Color32_t73C5004937BF5BB8AD55323D51AAA40A898EF48B ___s_colorWhite;
+	Func_3_tC721DF8CDD07ED66A4833A19A2ED2302608C906C* ___OnFontAssetRequest;
+	Func_3_t6F6D9932638EA1A5A45303C6626C818C25D164E5* ___OnSpriteAssetRequest;
+	MissingCharacterEventCallback_t955241181324E0FEF9A9BDBA400E8780F8979DE6* ___OnMissingCharacter;
+	CharU5BU5D_t799905CF001DD5F13F7DBB310181FC4D8B7D0AAB* ___m_htmlTag;
+	RichTextTagAttributeU5BU5D_t5816316EFD8F59DBC30B9F88E15828C564E47B6D* ___m_xmlAttribute;
+	SingleU5BU5D_t89DEFE97BCEDB5857010E79ECE0F52CF6E93B87C* ___m_attributeParameterValues;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedWordWrapState;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedLineState;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedEllipsisState;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedLastValidState;
+	WordWrapState_t80F67D8CAA9B1A0A3D5266521E23A9F3100EDD0A ___m_SavedSoftLineBreakState;
+	TMP_TextProcessingStack_1_t2DDA00FFC64AF6E3AFD475AB2086D16C34787E0F ___m_EllipsisInsertionCandidateStack;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_ParseTextMarker;
+	ProfilerMarker_tA256E18DA86EDBC5528CE066FC91C96EE86501AD ___k_InsertNewLineMarker;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___k_LargePositiveVector2;
+	Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___k_LargeNegativeVector2;
+	float ___k_LargePositiveFloat;
+	float ___k_LargeNegativeFloat;
+	int32_t ___k_LargePositiveInt;
+	int32_t ___k_LargeNegativeInt;
+};
+struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62_StaticFields
+{
+	Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* ___s_DefaultText;
+};
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+struct Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C  : public RuntimeArray
+{
+	ALIGN_FIELD (8) Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 m_Items[1];
+
+	inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+	}
+	inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 value)
+	{
+		m_Items[index] = value;
+	}
+};
+struct ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918  : public RuntimeArray
+{
+	ALIGN_FIELD (8) RuntimeObject* m_Items[1];
+
+	inline RuntimeObject* GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+	inline RuntimeObject* GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline RuntimeObject** GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, RuntimeObject* value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)m_Items + index, (void*)value);
+	}
+};
+struct StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987  : public RuntimeArray
+{
+	ALIGN_FIELD (8) StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 m_Items[1];
+
+	inline StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 GetAt(il2cpp_array_size_t index) const
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items[index];
+	}
+	inline StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61* GetAddressAt(il2cpp_array_size_t index)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		return m_Items + index;
+	}
+	inline void SetAt(il2cpp_array_size_t index, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 value)
+	{
+		IL2CPP_ARRAY_BOUNDS_CHECK(index, (uint32_t)(this)->max_length);
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___Rb), (void*)NULL);
+	}
+	inline StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 GetAtUnchecked(il2cpp_array_size_t index) const
+	{
+		return m_Items[index];
+	}
+	inline StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61* GetAddressAtUnchecked(il2cpp_array_size_t index)
+	{
+		return m_Items + index;
+	}
+	inline void SetAtUnchecked(il2cpp_array_size_t index, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 value)
+	{
+		m_Items[index] = value;
+		Il2CppCodeGenWriteBarrier((void**)&((m_Items + index)->___Rb), (void*)NULL);
+	}
+};
+
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObjectExtensions_MMGetComponentNoAlloc_TisRuntimeObject_mADC6831589B33EC47E8A39E989310B233232B839_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Object_Instantiate_TisRuntimeObject_m90A1E6C4C2B445D2E848DB75C772D1B95AAC046A_gshared (RuntimeObject* ___0_original, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, int32_t ___0_index, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void List_1__ctor_m67AF8C1A0BBEEDDB922069DA624F525AF7E7ED01_gshared (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m3133A1BF8C842DB06F39C6EAF5D75A0C581670E7_gshared_inline (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0 List_1_GetEnumerator_m6335A92F0CCF8CE5669F4BF8684F5A765C8BE86B_gshared (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Enumerator_Dispose_mBAC15B96B6400AC68E1915F7F59F9EF533D54AAB_gshared (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 Enumerator_get_Current_m6D11CD1F05E476D2B14FE71168C5F0D78497D112_gshared_inline (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_m5EACDBB485FC446D242EA04A0435919E661F3F60_gshared (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_NO_INLINE IL2CPP_METHOD_ATTR void List_1_AddWithResize_m7C28F5AC2A3CC7F6FC55AD60A9B58F85C0EC1A3F_gshared (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 ___0_item, const RuntimeMethod* method) ;
+
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+inline BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* GameObjectExtensions_MMGetComponentNoAlloc_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m02A9A55BBEB6AC0BA30FB0E026498BBE62852DD5 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_this, const RuntimeMethod* method)
+{
+	return ((  BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObjectExtensions_MMGetComponentNoAlloc_TisRuntimeObject_mADC6831589B33EC47E8A39E989310B233232B839_gshared)(___0_this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812 (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, RuntimeObject* ___0_routine, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CActivateColliderU3Ed__8__ctor_m1D206ECF1E6159DA7801BBD854B8D9E73FA48945 (U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+inline Snake_t3CA4F075CA07424316858C42883FB985D51A0365* Component_GetComponent_TisSnake_t3CA4F075CA07424316858C42883FB985D51A0365_m8407229FD1E27BEAF158EE3926C923947D0795D6 (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3* __this, const RuntimeMethod* method)
+{
+	return ((  Snake_t3CA4F075CA07424316858C42883FB985D51A0365* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602 (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___0_x, Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C* ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2 (RuntimeObject* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MMCoroutine_WaitFor_mBA1E6ECE59D5887B69FD85B7C560FDD4B72016A5 (float ___0_seconds, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A (Behaviour_t01970CFBBA658497AE30F311C447DB0440BAB7FA* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveFoodU3Ed__10__ctor_mC770B856785EE8E94CA9CB8E5DD3679F87F872AD (U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* SnakeFood_get_Spawner_m6DC7C185272E43DBFA32DE30862B9EB754BBFA1B_inline (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF (const RuntimeMethod* method) ;
+inline void List_1__ctor_m907ED55175FEE7D8BDA628942831D2FE60A4BDEE (List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+inline SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* Object_Instantiate_TisSnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA_m5A71FFFBC8F9E772C1165F8E7A41F6EE78D26BD7 (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* ___0_original, const RuntimeMethod* method)
+{
+	return ((  SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* (*) (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA*, const RuntimeMethod*))Object_Instantiate_TisRuntimeObject_m90A1E6C4C2B445D2E848DB75C772D1B95AAC046A_gshared)(___0_original, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Scene_tA1DC762B79745EB5140F054C884855B922318356 GameObject_get_scene_m747D45E8CECC56DD47D1E103F9E51D5FBEDA4B01 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SceneManager_MoveGameObjectToScene_mF5DC73256FA145D321DE14771F93AF7B832FE62A (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_go, Scene_tA1DC762B79745EB5140F054C884855B922318356 ___1_scene, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SnakeFood_set_Spawner_m655A8A2B093067F6F7C371D342BC6324C4CCE5F7_inline (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* ___0_value, const RuntimeMethod* method) ;
+inline void List_1_Add_mED9EAF1A4D4B0B9561DB6F42F9DBE59D56186D46_inline (List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A* __this, SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A*, SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 MMMaths_RandomVector2_m1DD29743DDC13D9AFCC484609011C5190D47AAD6 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_minimum, Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___1_maximum, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494 (float ___0_minInclusive, float ___1_maxInclusive, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62 (FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68 (int32_t ___0_minInclusive, int32_t ___1_maxExclusive, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* Keyboard_get_current_mDE773B54C9975CEFEAA469AD091C49E150A3FEC3_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* Keyboard_get_leftArrowKey_m892B16258F44B124B9ECC1D6F0EB53E9947597EB (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool ButtonControl_get_wasPressedThisFrame_m6ED1DB185035A406B0659A055C3096A5058DBD5B (ButtonControl_t85949109B98AAF5B7ADC0285F0EC98A61EC88ECF* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* Keyboard_get_rightArrowKey_mECEFE3645349708104CB154806BD4F04F24B3439 (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* Keyboard_get_downArrowKey_mBDAA4263098E5C3820432A563111F8DDB546339B (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* Keyboard_get_upArrowKey_m23DEF54F4CAB3F885F2F511968A00D2570C62B83 (Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* __this, const RuntimeMethod* method) ;
+inline Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059 List_1_GetEnumerator_mACCDB7B0427797F2CFCCA14C4D42E38022C2ED0A (List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059 (*) (List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_mE34A5E8222A8BB4495C1DB5AABA812CC057B84B8 (Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* Enumerator_get_Current_m95D429CCCB81EDF1ACC449DF3DF9559581EBD9DE_inline (Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059* __this, const RuntimeMethod* method)
+{
+	return ((  MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* (*) (Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+inline bool Enumerator_MoveNext_m2885AE486576CA3A63DD6681191F4122FE68CBDD (Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+inline MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* List_1_get_Item_mC0EC6F027B570FE23A7539B35437404BFA732B7E (List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* (*) (List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865 (const RuntimeMethod* method) ;
+inline Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* (*) (List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float MMMaths_Remap_m2144FC4A123DA80D481E38AFCC8DB8A21FFD6F93 (float ___0_x, float ___1_A, float ___2_B, float ___3_C, float ___4_D, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+inline int32_t List_1_get_Count_m7085A2CE74842462C2D61DBB1730435300E01A94_inline (List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+inline int32_t List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_inline (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* __this, const RuntimeMethod* method)
+{
+	return ((  int32_t (*) (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B*, const RuntimeMethod*))List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline)(__this, method);
+}
+inline Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 List_1_GetEnumerator_mA843D26C63E5963415DFCA6E49DFA27AFD9C75E8 (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 (*) (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_m07D362A07C19B36C2FD1B4DC79DD99903D4DA95D (Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_inline (Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60* __this, const RuntimeMethod* method)
+{
+	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method) ;
+inline bool Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27 (Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+inline GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* List_1_get_Item_mE8DBE527F24D9CFED839C34216C475B716169979 (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* (*) (List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D (float* __this, String_t* ___0_format, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 Collider_get_bounds_mCC32F749590E9A85C7930E5355661367F78E4CB4 (Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* __this, const RuntimeMethod* method) ;
+inline TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* List_1_get_Item_m070FA4E9997DC2AAD3387BD29B01AC9297891911 (List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46* __this, int32_t ___0_index, const RuntimeMethod* method)
+{
+	return ((  TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* (*) (List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46*, int32_t, const RuntimeMethod*))List_1_get_Item_m33561245D64798C2AB07584C0EC4F240E4839A38_gshared)(__this, ___0_index, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float TrailRenderer_get_time_mC1990BCC4C1A584EE689FD3BBF5ACC43F3AB96D8 (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 FeelDemosInputHelper_GetDirectionAxis_m1B9ACDABF01E0CF1587BB76C1CCFE86EE186AB01 (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* ___0_direction, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Rotate_m35B44707FE16FF8015D519D8C162C0B4A85D6D1F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_axis, float ___1_angle, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_Translate_m4A9E3D8836586E7562F6A18EBF5F5B6089D8B649 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_translation, int32_t ___1_relativeTo, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_op_Inequality_m9F170CDFBF1E490E559DA5D06D6547501A402BBF_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTeleportSequenceU3Ed__18__ctor_mC5E6BFD9D8BC64C547CBE6EA0A67F028EA529838 (U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+inline Enumerator_t321325353D119865EB1ACE7140BAE366972365ED List_1_GetEnumerator_m29A2B92BCCAF305C7BC9355B4E3BB3396CBF930C (List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t321325353D119865EB1ACE7140BAE366972365ED (*) (List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_m0D5A0FD29428808933AFA5DC2242D75B8C27B8B7 (Enumerator_t321325353D119865EB1ACE7140BAE366972365ED* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t321325353D119865EB1ACE7140BAE366972365ED*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* Enumerator_get_Current_m54E2C7A7744158781CA572DF215D14D115A8CF2C_inline (Enumerator_t321325353D119865EB1ACE7140BAE366972365ED* __this, const RuntimeMethod* method)
+{
+	return ((  TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* (*) (Enumerator_t321325353D119865EB1ACE7140BAE366972365ED*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TrailRenderer_Clear_m52593FE681F7171649479A57A2AFCA89C508413F (TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* __this, const RuntimeMethod* method) ;
+inline bool Enumerator_MoveNext_m3D4A033F6992377529F2B173AD5A73DFA777A410 (Enumerator_t321325353D119865EB1ACE7140BAE366972365ED* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t321325353D119865EB1ACE7140BAE366972365ED*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MMCoroutine_WaitForFrames_mD9D42BC7264C5927C093B7B87FFDF213E0E1CEC3 (int32_t ___0_frameCount, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StrikePin_ResetPin_mB2D93966048116F6AAE75653F4B16CA8865F7F86 (StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_set_gravity_mAEF3D6B45E6E567F04244C7889366CACCB4F1952 (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_set_bounceThreshold_m12BD6903B10DCA2606B6E9426F41FAE2DD015456 (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_set_sleepThreshold_m4C6D94024F0508934D79633DDC20F77C8D28DFC7 (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_set_defaultContactOffset_m81A4A3C4CB07A1DC86F5A8B53DE4A137985D4C49 (float ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_set_defaultSolverIterations_mB0A33680F0181471737C776367CB8F9F9F275B50 (int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_set_defaultSolverVelocityIterations_mD05B7ED682A3A670258473C5A796DD430D15BCD2 (int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Physics_set_queriesHitTriggers_m763834B1050946C0C490CF9FF453783107AEF212 (bool ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+inline void List_1__ctor_m67AF8C1A0BBEEDDB922069DA624F525AF7E7ED01 (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465*, const RuntimeMethod*))List_1__ctor_m67AF8C1A0BBEEDDB922069DA624F525AF7E7ED01_gshared)(__this, method);
+}
+inline void List_1__ctor_m0CDD6F02F45026B4267E7117C5DDC188F87EE7BE (List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252* __this, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
+}
+inline Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842 List_1_GetEnumerator_mCC0586D4E8BFC53C6DC7C0EC51807A6EC0C471BE (List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842 (*) (List_1_t70C71660C368B9474B9889CBADDC30685A5D2363*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_m3B62AD039A11BDA3C9140A67B3F38E869492B280 (Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_inline (Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842* __this, const RuntimeMethod* method)
+{
+	return ((  Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* (*) (Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+inline void List_1_Add_m3133A1BF8C842DB06F39C6EAF5D75A0C581670E7_inline (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465*, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61, const RuntimeMethod*))List_1_Add_m3133A1BF8C842DB06F39C6EAF5D75A0C581670E7_gshared_inline)(__this, ___0_item, method);
+}
+inline Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* __this, const RuntimeMethod* method)
+{
+	return ((  Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObject_GetComponent_TisRuntimeObject_m6EAED4AA356F0F48288F67899E5958792395563B_gshared)(__this, method);
+}
+inline void List_1_Add_m67ADCB698F31486B35CF5DB4CFB1E97EB807FEFD_inline (List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252*, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76*, const RuntimeMethod*))List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline)(__this, ___0_item, method);
+}
+inline bool Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A (Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FeelDemosInputHelper_CheckMainActionInputPressedThisFrame_m837DD0F3A8896F4B0320DEEB307B1CE29065F352 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddRelativeForce_mAF5EA6C0A2417A4C72AF31538D66EB9612CB6543 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_force, int32_t ___1_mode, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_AddTorque_m7922F76C73DACF9E1610D72726C01709C14F0937 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_torque, int32_t ___1_mode, const RuntimeMethod* method) ;
+inline StrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF* GameObjectExtensions_MMGetComponentNoAlloc_TisStrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF_m776B32E07B91F918321304F16901FB879DD4E314 (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___0_this, const RuntimeMethod* method)
+{
+	return ((  StrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF* (*) (GameObject_t76FEDD663AB33C991A9C9A23129337651094216F*, const RuntimeMethod*))GameObjectExtensions_MMGetComponentNoAlloc_TisRuntimeObject_mADC6831589B33EC47E8A39E989310B233232B839_gshared)(___0_this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A (MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* __this, Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* ___0_routine, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetCountdownU3Ed__36__ctor_m787137A944E0DD4AD9FC75D243B34B9FBBD9CAD5 (U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetSceneCoU3Ed__37__ctor_m1ACDC52D914E25EEC24FCDDFBFC217F03E96F6BE (U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
+inline Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A List_1_GetEnumerator_m1D5E48528014F2A36980D68EC7CDB6FF03B83420 (List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A (*) (List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_mAF70E9B39A0AD39183DE4B5A7789CE0B0D28BE2D (Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* Enumerator_get_Current_m9822B326FC4E04A23C53BBB2A7E1F1D89C2E9245_inline (Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A* __this, const RuntimeMethod* method)
+{
+	return ((  Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* (*) (Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Bounds_Intersects_m91D6CE48052C56F8519243104C3575738B159531_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___0_bounds, const RuntimeMethod* method) ;
+inline bool Enumerator_MoveNext_m6561DC83C402739651BBB6140E6FCC142CA315E1 (Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5 (int32_t* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Rigidbody_MovePosition_mB2CD29ABC8F59AC338C0A3A5A6B75C38FDA92CA9 (Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* __this, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_position, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___0_value, const RuntimeMethod* method) ;
+inline Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0 List_1_GetEnumerator_m6335A92F0CCF8CE5669F4BF8684F5A765C8BE86B (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0 (*) (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465*, const RuntimeMethod*))List_1_GetEnumerator_m6335A92F0CCF8CE5669F4BF8684F5A765C8BE86B_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_mBAC15B96B6400AC68E1915F7F59F9EF533D54AAB (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0*, const RuntimeMethod*))Enumerator_Dispose_mBAC15B96B6400AC68E1915F7F59F9EF533D54AAB_gshared)(__this, method);
+}
+inline StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 Enumerator_get_Current_m6D11CD1F05E476D2B14FE71168C5F0D78497D112_inline (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0* __this, const RuntimeMethod* method)
+{
+	return ((  StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 (*) (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0*, const RuntimeMethod*))Enumerator_get_Current_m6D11CD1F05E476D2B14FE71168C5F0D78497D112_gshared_inline)(__this, method);
+}
+inline bool Enumerator_MoveNext_m5EACDBB485FC446D242EA04A0435919E661F3F60 (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0*, const RuntimeMethod*))Enumerator_MoveNext_m5EACDBB485FC446D242EA04A0435919E661F3F60_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FeelDemosInputHelper_CheckMainActionInputPressed_m65BF03412344A925C72F56846363293E57B02280 (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool FeelDemosInputHelper_CheckMainActionInputUpThisFrame_mE91072739C751AE5E35CA7743585D66E923180AD (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4 (Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* __this, const RuntimeMethod* method) ;
+inline Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D List_1_GetEnumerator_m68A24B12D9737E67067D68E2268495B48541CEDE (List_1_t5886A301D8FC2A3907E3C39AA5FB041D3CF1FD95* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D (*) (List_1_t5886A301D8FC2A3907E3C39AA5FB041D3CF1FD95*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_mEDF0AB4DFD56C5EA9E93278AEABA698E8664B961 (Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* Enumerator_get_Current_mDE3367A7C30BE10A1E8DC6194D3262D43DD110B1_inline (Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D* __this, const RuntimeMethod* method)
+{
+	return ((  MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* (*) (Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+inline bool Enumerator_MoveNext_m7C1900E744F38DB293FFA07A4A8FAAF606638E88 (Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+inline Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F List_1_GetEnumerator_m19808ADC197B0B09F6EA267D908659788EFDBB5C (List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F (*) (List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_mEA141407B9C3872C2D88F3752A759F218F401422 (Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* Enumerator_get_Current_m2EE19BDB785EF06929DF6AD052451DF0C76A6818_inline (Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F* __this, const RuntimeMethod* method)
+{
+	return ((  ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* (*) (Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_Stop_m2D8D4967496EF0F5BFEF679C49A9E65A9646C423 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
+inline bool Enumerator_MoveNext_m11596AF3E5DFDE8232421AB369156A95E59816EA (Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ParticleSystem_Pause_m2A5CE9D753E6E58FB9BC62C6A548B01E9FA63009 (ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* __this, const RuntimeMethod* method) ;
+inline Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A List_1_GetEnumerator_mF3A7124A5AFF8C2D0E9121108038AF1E978E0093 (List_1_t708480FA8595226274F2A92C5B3A650BAEB6A1BD* __this, const RuntimeMethod* method)
+{
+	return ((  Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A (*) (List_1_t708480FA8595226274F2A92C5B3A650BAEB6A1BD*, const RuntimeMethod*))List_1_GetEnumerator_mD8294A7FA2BEB1929487127D476F8EC1CDC23BFC_gshared)(__this, method);
+}
+inline void Enumerator_Dispose_m0AA607BF00E37113CE657A0EF67E82DAAC97FF51 (Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A* __this, const RuntimeMethod* method)
+{
+	((  void (*) (Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A*, const RuntimeMethod*))Enumerator_Dispose_mD9DC3E3C3697830A4823047AB29A77DBBB5ED419_gshared)(__this, method);
+}
+inline MMAutoRotate_t31F9725CC7249FF7F64A3A71771C9E83D4F20AB1* Enumerator_get_Current_mE3F1874DFA39CBF5ED716D234C8C5B08817C7567_inline (Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A* __this, const RuntimeMethod* method)
+{
+	return ((  MMAutoRotate_t31F9725CC7249FF7F64A3A71771C9E83D4F20AB1* (*) (Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A*, const RuntimeMethod*))Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline)(__this, method);
+}
+inline bool Enumerator_MoveNext_mAF3EE83CE5E0C50BBC16CB77B0EFB065C8CF143C (Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A* __this, const RuntimeMethod* method)
+{
+	return ((  bool (*) (Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A*, const RuntimeMethod*))Enumerator_MoveNext_mE921CC8F29FBBDE7CC3209A0ED0D921D58D00BCB_gshared)(__this, method);
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_op_Equality_mCDCBB8D2EDC3D3BF20F31A25ACB34705D352B479_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) ;
+inline void List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4 (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D*, RuntimeObject*, const RuntimeMethod*))List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4_gshared)(__this, ___0_item, method);
+}
+inline void List_1_AddWithResize_m7C28F5AC2A3CC7F6FC55AD60A9B58F85C0EC1A3F (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 ___0_item, const RuntimeMethod* method)
+{
+	((  void (*) (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465*, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61, const RuntimeMethod*))List_1_AddWithResize_m7C28F5AC2A3CC7F6FC55AD60A9B58F85C0EC1A3F_gshared)(__this, ___0_item, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32200
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeBodyPart_Awake_m206064C0047B4E387E2C9BEFBE1619775AF1B330 (SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObjectExtensions_MMGetComponentNoAlloc_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m02A9A55BBEB6AC0BA30FB0E026498BBE62852DD5_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObjectExtensions_t39A9481ED8A703CD214AC70247DB6A7F8938B7E5_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:36>
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0;
+		L_0 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		il2cpp_codegen_runtime_class_init_inline(GameObjectExtensions_t39A9481ED8A703CD214AC70247DB6A7F8938B7E5_il2cpp_TypeInfo_var);
+		BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* L_1;
+		L_1 = GameObjectExtensions_MMGetComponentNoAlloc_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m02A9A55BBEB6AC0BA30FB0E026498BBE62852DD5(L_0, GameObjectExtensions_MMGetComponentNoAlloc_TisBoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA_m02A9A55BBEB6AC0BA30FB0E026498BBE62852DD5_RuntimeMethod_var);
+		__this->____collider2D = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____collider2D), (void*)L_1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:38>
+		RuntimeObject* L_2;
+		L_2 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(5, __this);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
+		L_3 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_2, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:39>
+		return;
+	}
+}
+// Method Definition Index: 32201
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SnakeBodyPart_ActivateCollider_m162D977AF2025769067E22B0637CB8A7B86A9BEB (SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* L_0 = (U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635*)il2cpp_codegen_object_new(U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635_il2cpp_TypeInfo_var);
+		U3CActivateColliderU3Ed__8__ctor_m1D206ECF1E6159DA7801BBD854B8D9E73FA48945(L_0, 0, NULL);
+		U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 32202
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeBodyPart_Update_m4841C1633EF7CBB6069D698B3993168BE55C922B (SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:58>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		MMPositionRecorder_t3DED771117AEAEA0F663E38AF5515A2B527F816F* L_1 = __this->___TargetRecorder;
+		NullCheck(L_1);
+		Vector3U5BU5D_tFF1859CCE176131B909E2044F76443064254679C* L_2 = L_1->___Positions;
+		int32_t L_3 = __this->___Offset;
+		NullCheck(L_2);
+		int32_t L_4 = L_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = (L_2)->GetAt(static_cast<il2cpp_array_size_t>(L_4));
+		NullCheck(L_0);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_0, L_5, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:59>
+		return;
+	}
+}
+// Method Definition Index: 32203
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeBodyPart_Eat_mC003FC20813E62574AFCF39EF4AFDA1E207396D2 (SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* __this, float ___0_intensity, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B1_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:67>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_0 = __this->___EatFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000b;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		return;
+	}
+
+IL_000b:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_2);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_2, NULL);
+		float L_4 = ___0_intensity;
+		NullCheck(G_B2_0);
+		VirtualActionInvoker3< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, float, bool >::Invoke(17, G_B2_0, L_3, L_4, (bool)0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:68>
+		return;
+	}
+}
+// Method Definition Index: 32204
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeBodyPart_New_mC1E9F31CBEFE78E76BA50BC58A7040A940C13B99 (SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* __this, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B1_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B5_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B4_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:75>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_0 = __this->___NewFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000c;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		goto IL_0012;
+	}
+
+IL_000c:
+	{
+		NullCheck(G_B2_0);
+		VirtualActionInvoker1< bool >::Invoke(12, G_B2_0, (bool)0);
+	}
+
+IL_0012:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:76>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_2 = __this->___NewFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_3 = L_2;
+		if (L_3)
+		{
+			G_B5_0 = L_3;
+			goto IL_001d;
+		}
+		G_B4_0 = L_3;
+	}
+	{
+		return;
+	}
+
+IL_001d:
+	{
+		NullCheck(G_B5_0);
+		VirtualActionInvoker0::Invoke(14, G_B5_0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:77>
+		return;
+	}
+}
+// Method Definition Index: 32205
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeBodyPart_OnTriggerEnter2D_m2ECE3DC2F0036027D30AA62DCBCA06D064E238DA (SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* __this, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisSnake_t3CA4F075CA07424316858C42883FB985D51A0365_m8407229FD1E27BEAF158EE3926C923947D0795D6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:86>
+		int32_t L_0 = __this->___Index;
+		if (L_0)
+		{
+			goto IL_0009;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:88>
+		return;
+	}
+
+IL_0009:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:91>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_1 = ___0_other;
+		NullCheck(L_1);
+		Snake_t3CA4F075CA07424316858C42883FB985D51A0365* L_2;
+		L_2 = Component_GetComponent_TisSnake_t3CA4F075CA07424316858C42883FB985D51A0365_m8407229FD1E27BEAF158EE3926C923947D0795D6(L_1, Component_GetComponent_TisSnake_t3CA4F075CA07424316858C42883FB985D51A0365_m8407229FD1E27BEAF158EE3926C923947D0795D6_RuntimeMethod_var);
+		__this->____snake = L_2;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____snake), (void*)L_2);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:93>
+		Snake_t3CA4F075CA07424316858C42883FB985D51A0365* L_3 = __this->____snake;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_4;
+		L_4 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_3, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_4)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:95>
+		Snake_t3CA4F075CA07424316858C42883FB985D51A0365* L_5 = __this->____snake;
+		NullCheck(L_5);
+		VirtualActionInvoker1< SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* >::Invoke(13, L_5, __this);
+	}
+
+IL_002f:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:97>
+		return;
+	}
+}
+// Method Definition Index: 32206
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeBodyPart__ctor_mB1BC9292FA52C07E6A582F1128020289D534022B (SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:22>
+		__this->___Offset = ((int32_t)20);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32207
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CActivateColliderU3Ed__8__ctor_m1D206ECF1E6159DA7801BBD854B8D9E73FA48945 (U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 32208
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CActivateColliderU3Ed__8_System_IDisposable_Dispose_mDB6E230D2AE2329BC383C29B30B8A33DAE5B5FEB (U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 32209
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CActivateColliderU3Ed__8_MoveNext_m3E15A95E872B276DEFA66D1FDDFF154C74850804 (U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0037;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:47>
+		RuntimeObject* L_4;
+		L_4 = MMCoroutine_WaitFor_mBA1E6ECE59D5887B69FD85B7C560FDD4B72016A5((1.0f), NULL);
+		__this->___U3CU3E2__current = L_4;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_4);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0037:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:49>
+		SnakeBodyPart_t1568E00709A9ECC0B8EB6B655DCA8C2A1A61696F* L_5 = V_1;
+		NullCheck(L_5);
+		BoxCollider2D_tF860C7737FFB062CEC06577E0CD8364EEC1D4EDA* L_6 = L_5->____collider2D;
+		NullCheck(L_6);
+		Behaviour_set_enabled_mF1DCFE60EB09E0529FE9476CA804A3AA2D72B16A(L_6, (bool)1, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeBodyPart.cs:51>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 32210
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CActivateColliderU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mD7EF692B85BA38993C854F17FC1793125E8DCDA7 (U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 32211
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CActivateColliderU3Ed__8_System_Collections_IEnumerator_Reset_mFB96194DE08F039CAD4E8E5A85B2A96B18531BA0 (U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CActivateColliderU3Ed__8_System_Collections_IEnumerator_Reset_mFB96194DE08F039CAD4E8E5A85B2A96B18531BA0_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 32212
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CActivateColliderU3Ed__8_System_Collections_IEnumerator_get_Current_mC71758AD27141DEB19157A68114EF918787F0A6E (U3CActivateColliderU3Ed__8_tF8C6B5E11049B575317D20C4B6AB01CAAA346635* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32213
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* SnakeFood_get_Spawner_m6DC7C185272E43DBFA32DE30862B9EB754BBFA1B (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:25>
+		SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* L_0 = __this->___U3CSpawnerU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 32214
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeFood_set_Spawner_m655A8A2B093067F6F7C371D342BC6324C4CCE5F7 (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:25>
+		SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* L_0 = ___0_value;
+		__this->___U3CSpawnerU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSpawnerU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 32215
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeFood_OnTriggerEnter2D_mD530D9FEF41D5B3ED21E717CB425145D35200242 (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Component_GetComponent_TisSnake_t3CA4F075CA07424316858C42883FB985D51A0365_m8407229FD1E27BEAF158EE3926C923947D0795D6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B3_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:36>
+		Collider2D_t6A17BA7734600EF3F26588E9ED903617D5B8EB52* L_0 = ___0_other;
+		NullCheck(L_0);
+		Snake_t3CA4F075CA07424316858C42883FB985D51A0365* L_1;
+		L_1 = Component_GetComponent_TisSnake_t3CA4F075CA07424316858C42883FB985D51A0365_m8407229FD1E27BEAF158EE3926C923947D0795D6(L_0, Component_GetComponent_TisSnake_t3CA4F075CA07424316858C42883FB985D51A0365_m8407229FD1E27BEAF158EE3926C923947D0795D6_RuntimeMethod_var);
+		__this->____snake = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____snake), (void*)L_1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:38>
+		Snake_t3CA4F075CA07424316858C42883FB985D51A0365* L_2 = __this->____snake;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0043;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:40>
+		Snake_t3CA4F075CA07424316858C42883FB985D51A0365* L_4 = __this->____snake;
+		NullCheck(L_4);
+		VirtualActionInvoker0::Invoke(10, L_4);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:41>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_5 = __this->___EatFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_6 = L_5;
+		if (L_6)
+		{
+			G_B3_0 = L_6;
+			goto IL_0031;
+		}
+		G_B2_0 = L_6;
+	}
+	{
+		goto IL_0036;
+	}
+
+IL_0031:
+	{
+		NullCheck(G_B3_0);
+		VirtualActionInvoker0::Invoke(14, G_B3_0);
+	}
+
+IL_0036:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:42>
+		RuntimeObject* L_7;
+		L_7 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(4, __this);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_8;
+		L_8 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_7, NULL);
+	}
+
+IL_0043:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:44>
+		return;
+	}
+}
+// Method Definition Index: 32216
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* SnakeFood_MoveFood_m5E9192B162A0F0301E397FDA5B77CB75D72C9B6C (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* L_0 = (U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F*)il2cpp_codegen_object_new(U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F_il2cpp_TypeInfo_var);
+		U3CMoveFoodU3Ed__10__ctor_mC770B856785EE8E94CA9CB8E5DD3679F87F872AD(L_0, 0, NULL);
+		U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 32217
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeFood__ctor_mFD9C2C25F83193F6DB9F2F9812E43FFCA69A5E32 (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:17>
+		__this->___OffDelay = (1.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32218
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveFoodU3Ed__10__ctor_mC770B856785EE8E94CA9CB8E5DD3679F87F872AD (U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 32219
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveFoodU3Ed__10_System_IDisposable_Dispose_m97B22FCFE431D4888725F10F43E4BC300D25CC77 (U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 32220
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CMoveFoodU3Ed__10_MoveNext_mF360D1B85A6EEA7A9D18D5641F3BB4EE1C9E7118 (U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* V_1 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B6_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B5_0 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:53>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_4 = V_1;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5 = L_4->___Model;
+		NullCheck(L_5);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_5, (bool)0, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:54>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_6 = V_1;
+		NullCheck(L_6);
+		float L_7 = L_6->___OffDelay;
+		RuntimeObject* L_8;
+		L_8 = MMCoroutine_WaitFor_mBA1E6ECE59D5887B69FD85B7C560FDD4B72016A5(L_7, NULL);
+		__this->___U3CU3E2__current = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_8);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0044:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:55>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_9 = V_1;
+		NullCheck(L_9);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_10 = L_9->___Model;
+		NullCheck(L_10);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_10, (bool)1, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:56>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_11 = V_1;
+		NullCheck(L_11);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_11, NULL);
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_13 = V_1;
+		NullCheck(L_13);
+		SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* L_14;
+		L_14 = SnakeFood_get_Spawner_m6DC7C185272E43DBFA32DE30862B9EB754BBFA1B_inline(L_13, NULL);
+		NullCheck(L_14);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = VirtualFuncInvoker0< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(5, L_14);
+		NullCheck(L_12);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_12, L_15, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:57>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_16 = V_1;
+		NullCheck(L_16);
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_17 = L_16->___AppearFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_18 = L_17;
+		if (L_18)
+		{
+			G_B6_0 = L_18;
+			goto IL_0079;
+		}
+		G_B5_0 = L_18;
+	}
+	{
+		goto IL_007e;
+	}
+
+IL_0079:
+	{
+		NullCheck(G_B6_0);
+		VirtualActionInvoker0::Invoke(14, G_B6_0);
+	}
+
+IL_007e:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:58>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 32221
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveFoodU3Ed__10_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mE850223C1EB6056BAAB81911D4D6264056CFC4E5 (U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 32222
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CMoveFoodU3Ed__10_System_Collections_IEnumerator_Reset_mD9FE766AD6EC17E518F04366A3350E0249F2821E (U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CMoveFoodU3Ed__10_System_Collections_IEnumerator_Reset_mD9FE766AD6EC17E518F04366A3350E0249F2821E_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 32223
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CMoveFoodU3Ed__10_System_Collections_IEnumerator_get_Current_mCC93DC52BFF9BC145C52B85D6E12BFD0117116FA (U3CMoveFoodU3Ed__10_t3C38D257D825B5DCD3D19174C6C4162A035E9A4F* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32224
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeFoodSpawner_Start_m37A00E44C226D7C4C38978C84E514A9B8FF80973 (SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_mED9EAF1A4D4B0B9561DB6F42F9DBE59D56186D46_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m907ED55175FEE7D8BDA628942831D2FE60A4BDEE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_Instantiate_TisSnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA_m5A71FFFBC8F9E772C1165F8E7A41F6EE78D26BD7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* V_1 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:32>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_0;
+		L_0 = Camera_get_main_m52C992F18E05355ABB9EEB64A4BF2215E12762DF(NULL);
+		__this->____mainCamera = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____mainCamera), (void*)L_0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:33>
+		List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A* L_1 = (List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A*)il2cpp_codegen_object_new(List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A_il2cpp_TypeInfo_var);
+		List_1__ctor_m907ED55175FEE7D8BDA628942831D2FE60A4BDEE(L_1, List_1__ctor_m907ED55175FEE7D8BDA628942831D2FE60A4BDEE_RuntimeMethod_var);
+		__this->___Foods = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___Foods), (void*)L_1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:34>
+		V_0 = 0;
+		goto IL_0064;
+	}
+
+IL_001a:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:36>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_2 = __this->___SnakeFoodPrefab;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_3;
+		L_3 = Object_Instantiate_TisSnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA_m5A71FFFBC8F9E772C1165F8E7A41F6EE78D26BD7(L_2, Object_Instantiate_TisSnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA_m5A71FFFBC8F9E772C1165F8E7A41F6EE78D26BD7_RuntimeMethod_var);
+		V_1 = L_3;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:37>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_4 = V_1;
+		NullCheck(L_4);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_5;
+		L_5 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_4, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6;
+		L_6 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(__this, NULL);
+		NullCheck(L_6);
+		Scene_tA1DC762B79745EB5140F054C884855B922318356 L_7;
+		L_7 = GameObject_get_scene_m747D45E8CECC56DD47D1E103F9E51D5FBEDA4B01(L_6, NULL);
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_MoveGameObjectToScene_mF5DC73256FA145D321DE14771F93AF7B832FE62A(L_5, L_7, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:38>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_8 = V_1;
+		NullCheck(L_8);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_8, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = VirtualFuncInvoker0< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(5, __this);
+		NullCheck(L_9);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_9, L_10, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:39>
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_11 = V_1;
+		NullCheck(L_11);
+		SnakeFood_set_Spawner_m655A8A2B093067F6F7C371D342BC6324C4CCE5F7_inline(L_11, __this, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:40>
+		List_1_t678F1EBDC7DEB60923B340107DA8C08707D49F8A* L_12 = __this->___Foods;
+		SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* L_13 = V_1;
+		NullCheck(L_12);
+		List_1_Add_mED9EAF1A4D4B0B9561DB6F42F9DBE59D56186D46_inline(L_12, L_13, List_1_Add_mED9EAF1A4D4B0B9561DB6F42F9DBE59D56186D46_RuntimeMethod_var);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:34>
+		int32_t L_14 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_14, 1));
+	}
+
+IL_0064:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:34>
+		int32_t L_15 = V_0;
+		int32_t L_16 = __this->___AmountOfFood;
+		if ((((int32_t)L_15) < ((int32_t)L_16)))
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:42>
+		return;
+	}
+}
+// Method Definition Index: 32225
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 SnakeFoodSpawner_DetermineSpawnPosition_m62CA045CE2D3C7C09B8D14CECEF1ADBBF062102C (SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:50>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = __this->___MinRandom;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1 = __this->___MaxRandom;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2;
+		L_2 = MMMaths_RandomVector2_m1DD29743DDC13D9AFCC484609011C5190D47AAD6(L_0, L_1, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline(L_2, NULL);
+		V_0 = L_3;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:51>
+		(&V_0)->___z = (10.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:52>
+		Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* L_4 = __this->____mainCamera;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = V_0;
+		NullCheck(L_4);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Camera_ViewportToWorldPoint_m9D76494E8B695ADF7690BAF7953B89B152D96E71(L_4, L_5, NULL);
+		V_0 = L_6;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:53>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7 = V_0;
+		return L_7;
+	}
+}
+// Method Definition Index: 32226
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SnakeFoodSpawner__ctor_m81BEBB9F8D032F4917BDFF642D8A494EE94F7279 (SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:18>
+		__this->___AmountOfFood = 3;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:20>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_0), (0.100000001f), (0.100000001f), NULL);
+		__this->___MinRandom = L_0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFoodSpawner.cs:22>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline((&L_1), (0.899999976f), (0.899999976f), NULL);
+		__this->___MaxRandom = L_1;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32227
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsAdvancedFloatDemo_Awake_m9E304E928A8D6A294CA2A37E1F0488351A32D249 (FeelSpringsAdvancedFloatDemo_tC92B56EE1926C4CF86F1BEA3C5B58FD84F2D895F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:35>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0 = __this->___MovingObject;
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		NullCheck(L_1);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_1, NULL);
+		__this->____newPosition = L_2;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:36>
+		return;
+	}
+}
+// Method Definition Index: 32228
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsAdvancedFloatDemo_RandomMove_m3670EDC40EC5C694B88D7AD77CB671D5CEDB05D8 (FeelSpringsAdvancedFloatDemo_tC92B56EE1926C4CF86F1BEA3C5B58FD84F2D895F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:40>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		float L_1 = __this->____range;
+		float L_2 = __this->____range;
+		float L_3;
+		L_3 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494(((-L_1)), L_2, NULL);
+		L_0->___x = L_3;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:41>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_4 = __this->___PositionSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = __this->____newPosition;
+		NullCheck(L_4);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(27, L_4, L_5);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:42>
+		MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE* L_6 = __this->___ScaleSpring;
+		NullCheck(L_6);
+		VirtualActionInvoker0::Invoke(34, L_6);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:43>
+		MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* L_7 = __this->___RotationSpring;
+		NullCheck(L_7);
+		VirtualActionInvoker0::Invoke(34, L_7);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:44>
+		return;
+	}
+}
+// Method Definition Index: 32229
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsAdvancedFloatDemo_RandomBump_mDEC6D0F81C3AF04F923EE7FD7F0ACFAFA2C684B7 (FeelSpringsAdvancedFloatDemo_tC92B56EE1926C4CF86F1BEA3C5B58FD84F2D895F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:48>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newBump);
+		L_0->___x = (0.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:49>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newBump);
+		L_1->___y = (0.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:50>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newBump);
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_3 = __this->___BumpAmountSlider;
+		NullCheck(L_3);
+		float L_4;
+		L_4 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_3, NULL);
+		L_2->___z = ((float)il2cpp_codegen_multiply((1000.0f), L_4));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:51>
+		MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* L_5 = __this->___RotationSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = __this->____newBump;
+		NullCheck(L_5);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_5, L_6);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:52>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_7 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newBump);
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_8 = __this->___BumpAmountSlider;
+		NullCheck(L_8);
+		float L_9;
+		L_9 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_8, NULL);
+		L_7->___x = ((float)il2cpp_codegen_multiply((10.0f), L_9));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:53>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_10 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newBump);
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_11 = __this->___BumpAmountSlider;
+		NullCheck(L_11);
+		float L_12;
+		L_12 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_11, NULL);
+		L_10->___y = ((float)il2cpp_codegen_multiply((10.0f), L_12));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:54>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_13 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newBump);
+		L_13->___z = (0.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:55>
+		MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE* L_14 = __this->___ScaleSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15 = __this->____newBump;
+		NullCheck(L_14);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_14, L_15);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:56>
+		return;
+	}
+}
+// Method Definition Index: 32230
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsAdvancedFloatDemo_Update_m31F17154283C308792A4552F350B165E4FEE120F (FeelSpringsAdvancedFloatDemo_tC92B56EE1926C4CF86F1BEA3C5B58FD84F2D895F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:60>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_0 = __this->___PositionSpring;
+		NullCheck(L_0);
+		MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* L_1 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_0)->___SpringVector3;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_2 = __this->___PositionDampingSlider;
+		NullCheck(L_2);
+		float L_3;
+		L_3 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_2, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_3, L_4, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(23, L_1, L_5);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:61>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_6 = __this->___PositionSpring;
+		NullCheck(L_6);
+		MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* L_7 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_6)->___SpringVector3;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_8 = __this->___PositionFrequencySlider;
+		NullCheck(L_8);
+		float L_9;
+		L_9 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_8, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_9, L_10, NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(24, L_7, L_11);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:63>
+		MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* L_12 = __this->___RotationSpring;
+		NullCheck(L_12);
+		MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* L_13 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_12)->___SpringVector3;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_14 = __this->___RotationDampingSlider;
+		NullCheck(L_14);
+		float L_15;
+		L_15 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_14, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17;
+		L_17 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_15, L_16, NULL);
+		NullCheck(L_13);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(23, L_13, L_17);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:64>
+		MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* L_18 = __this->___RotationSpring;
+		NullCheck(L_18);
+		MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* L_19 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_18)->___SpringVector3;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_20 = __this->___RotationFrequencySlider;
+		NullCheck(L_20);
+		float L_21;
+		L_21 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_20, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22;
+		L_22 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_23;
+		L_23 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_21, L_22, NULL);
+		NullCheck(L_19);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(24, L_19, L_23);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:66>
+		MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE* L_24 = __this->___ScaleSpring;
+		NullCheck(L_24);
+		MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* L_25 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_24)->___SpringVector3;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_26 = __this->___ScaleDampingSlider;
+		NullCheck(L_26);
+		float L_27;
+		L_27 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_26, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
+		L_28 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_27, L_28, NULL);
+		NullCheck(L_25);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(23, L_25, L_29);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:67>
+		MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE* L_30 = __this->___ScaleSpring;
+		NullCheck(L_30);
+		MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* L_31 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_30)->___SpringVector3;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_32 = __this->___ScaleFrequencySlider;
+		NullCheck(L_32);
+		float L_33;
+		L_33 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_32, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_35;
+		L_35 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_33, L_34, NULL);
+		NullCheck(L_31);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(24, L_31, L_35);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:68>
+		return;
+	}
+}
+// Method Definition Index: 32231
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsAdvancedFloatDemo__ctor_mDE4B5CBAF33A4AB4DEA7001FF8E3AB7F15E763CD (FeelSpringsAdvancedFloatDemo_tC92B56EE1926C4CF86F1BEA3C5B58FD84F2D895F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:29>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		__this->____newPosition = L_0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:30>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		__this->____newBump = L_1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsAdvancedFloatDemo.cs:31>
+		__this->____range = (0.375f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32232
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsCellMovementDemo_Update_m37C00C8C4224C04AFE7135C0F4C3B29135B13763 (FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:36>
+		VirtualActionInvoker0::Invoke(10, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:37>
+		VirtualActionInvoker0::Invoke(9, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:38>
+		return;
+	}
+}
+// Method Definition Index: 32233
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsCellMovementDemo_MoveRandomly_m9EFF3595AED13E400A16B8C07490FF63B3E5DAAC (FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:42>
+		int32_t L_0;
+		L_0 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(0, 4, NULL);
+		V_0 = L_0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:43>
+		int32_t L_1 = V_0;
+		VirtualActionInvoker1< int32_t >::Invoke(6, __this, L_1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:44>
+		return;
+	}
+}
+// Method Definition Index: 32234
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsCellMovementDemo_Move_m5AD1766D599E39A094E842332731E2422F664630 (FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB* __this, int32_t ___0_direction, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B1_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:53>
+		int32_t L_0 = ___0_direction;
+		VirtualActionInvoker1< int32_t >::Invoke(8, __this, L_0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:57>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_1 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____movementPosition);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float L_3 = L_2->___x;
+		float L_4 = __this->____cellWidth;
+		L_1->___x = ((float)il2cpp_codegen_multiply(L_3, L_4));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:58>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_5 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____movementPosition);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_6 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float L_7 = L_6->___y;
+		float L_8 = __this->____cellWidth;
+		L_5->___y = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:59>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_9 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____movementPosition);
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_10 = __this->___MovementSpring;
+		NullCheck(L_10);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_11 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_10)->___Target;
+		NullCheck(L_11);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_12;
+		L_12 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_11, NULL);
+		NullCheck(L_12);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_12, NULL);
+		float L_14 = L_13.___z;
+		L_9->___z = L_14;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:61>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_15 = __this->___MovementSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = __this->____movementPosition;
+		NullCheck(L_15);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(27, L_15, L_16);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:63>
+		MMSpringScale_tB423ED3585DF6F4D450F69752503478AA4F6EBDE* L_17 = __this->___ScaleSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19;
+		L_19 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline((5.0f), L_18, NULL);
+		NullCheck(L_17);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_17, L_19);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:64>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_20 = __this->___MoveFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_21 = L_20;
+		if (L_21)
+		{
+			G_B2_0 = L_21;
+			goto IL_009c;
+		}
+		G_B1_0 = L_21;
+	}
+	{
+		return;
+	}
+
+IL_009c:
+	{
+		NullCheck(G_B2_0);
+		VirtualActionInvoker0::Invoke(14, G_B2_0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:65>
+		return;
+	}
+}
+// Method Definition Index: 32235
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsCellMovementDemo_Bump_m48FE187E1DEFF9A5F86FA985C1C40A56046BC271 (FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB* __this, int32_t ___0_direction, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_direction;
+		switch (L_0)
+		{
+			case 0:
+			{
+				goto IL_0017;
+			}
+			case 1:
+			{
+				goto IL_0056;
+			}
+			case 2:
+			{
+				goto IL_0095;
+			}
+			case 3:
+			{
+				goto IL_00d4;
+			}
+		}
+	}
+	{
+		return;
+	}
+
+IL_0017:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:72>
+		MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* L_1 = __this->___RotationSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		memset((&L_2), 0, sizeof(L_2));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_2), (0.0f), (0.0f), (-900.0f), NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_1, L_2);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:73>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_3 = __this->___MovementSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		memset((&L_4), 0, sizeof(L_4));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_4), (4.0f), (0.0f), (0.0f), NULL);
+		NullCheck(L_3);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_3, L_4);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:74>
+		return;
+	}
+
+IL_0056:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:76>
+		MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* L_5 = __this->___RotationSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		memset((&L_6), 0, sizeof(L_6));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_6), (0.0f), (0.0f), (900.0f), NULL);
+		NullCheck(L_5);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_5, L_6);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:77>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_7 = __this->___MovementSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		memset((&L_8), 0, sizeof(L_8));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_8), (-4.0f), (0.0f), (0.0f), NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_7, L_8);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:78>
+		return;
+	}
+
+IL_0095:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:80>
+		MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* L_9 = __this->___RotationSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		memset((&L_10), 0, sizeof(L_10));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_10), (0.0f), (0.0f), (450.0f), NULL);
+		NullCheck(L_9);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_9, L_10);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:81>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_11 = __this->___MovementSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12;
+		memset((&L_12), 0, sizeof(L_12));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_12), (0.0f), (-4.0f), (0.0f), NULL);
+		NullCheck(L_11);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_11, L_12);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:82>
+		return;
+	}
+
+IL_00d4:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:84>
+		MMSpringRotation_tE5DF662B21E98B886A00054C9805A9A422E57C14* L_13 = __this->___RotationSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14;
+		memset((&L_14), 0, sizeof(L_14));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_14), (0.0f), (0.0f), (-450.0f), NULL);
+		NullCheck(L_13);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_13, L_14);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:85>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_15 = __this->___MovementSpring;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		memset((&L_16), 0, sizeof(L_16));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_16), (0.0f), (4.0f), (0.0f), NULL);
+		NullCheck(L_15);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(33, L_15, L_16);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:88>
+		return;
+	}
+}
+// Method Definition Index: 32236
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsCellMovementDemo_ComputeNewGridPosition_mFE461A27CC50FEE969B399D3C2ACC7F84A8FAD2E (FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB* __this, int32_t ___0_direction, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = ___0_direction;
+		switch (L_0)
+		{
+			case 0:
+			{
+				goto IL_0018;
+			}
+			case 1:
+			{
+				goto IL_002e;
+			}
+			case 2:
+			{
+				goto IL_0044;
+			}
+			case 3:
+			{
+				goto IL_005a;
+			}
+		}
+	}
+	{
+		goto IL_006e;
+	}
+
+IL_0018:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:95>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_1 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float* L_2 = (float*)(&L_1->___x);
+		float* L_3 = L_2;
+		float L_4 = *((float*)L_3);
+		*((float*)L_3) = (float)((float)il2cpp_codegen_subtract(L_4, (1.0f)));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:96>
+		goto IL_006e;
+	}
+
+IL_002e:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:98>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_5 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float* L_6 = (float*)(&L_5->___x);
+		float* L_7 = L_6;
+		float L_8 = *((float*)L_7);
+		*((float*)L_7) = (float)((float)il2cpp_codegen_add(L_8, (1.0f)));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:99>
+		goto IL_006e;
+	}
+
+IL_0044:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:101>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_9 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float* L_10 = (float*)(&L_9->___y);
+		float* L_11 = L_10;
+		float L_12 = *((float*)L_11);
+		*((float*)L_11) = (float)((float)il2cpp_codegen_add(L_12, (1.0f)));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:102>
+		goto IL_006e;
+	}
+
+IL_005a:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:104>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_13 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float* L_14 = (float*)(&L_13->___y);
+		float* L_15 = L_14;
+		float L_16 = *((float*)L_15);
+		*((float*)L_15) = (float)((float)il2cpp_codegen_subtract(L_16, (1.0f)));
+	}
+
+IL_006e:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:107>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_17 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float L_18 = L_17->___x;
+		if ((!(((float)L_18) < ((float)(-3.0f)))))
+		{
+			goto IL_0098;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:109>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_19 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		L_19->___x = (-3.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:110>
+		VirtualActionInvoker1< int32_t >::Invoke(7, __this, 0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:111>
+		return;
+	}
+
+IL_0098:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:113>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_20 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float L_21 = L_20->___x;
+		if ((!(((float)L_21) > ((float)(3.0f)))))
+		{
+			goto IL_00c2;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:115>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_22 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		L_22->___x = (3.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:116>
+		VirtualActionInvoker1< int32_t >::Invoke(7, __this, 1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:117>
+		return;
+	}
+
+IL_00c2:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:119>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_23 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float L_24 = L_23->___y;
+		if ((!(((float)L_24) < ((float)(-3.0f)))))
+		{
+			goto IL_00ec;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:121>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_25 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		L_25->___y = (-3.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:122>
+		VirtualActionInvoker1< int32_t >::Invoke(7, __this, 3);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:123>
+		return;
+	}
+
+IL_00ec:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:125>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_26 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		float L_27 = L_26->___y;
+		if ((!(((float)L_27) > ((float)(3.0f)))))
+		{
+			goto IL_0116;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:127>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_28 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____currentPosition);
+		L_28->___y = (3.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:128>
+		VirtualActionInvoker1< int32_t >::Invoke(7, __this, 2);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:129>
+		return;
+	}
+
+IL_0116:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:131>
+		return;
+	}
+}
+// Method Definition Index: 32237
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsCellMovementDemo_HandleInput_m4501ABBD7E89EBF29001D3B0CF8578324A4B573D (FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:138>
+		Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* L_0;
+		L_0 = Keyboard_get_current_mDE773B54C9975CEFEAA469AD091C49E150A3FEC3_inline(NULL);
+		NullCheck(L_0);
+		KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* L_1;
+		L_1 = Keyboard_get_leftArrowKey_m892B16258F44B124B9ECC1D6F0EB53E9947597EB(L_0, NULL);
+		NullCheck(L_1);
+		bool L_2;
+		L_2 = ButtonControl_get_wasPressedThisFrame_m6ED1DB185035A406B0659A055C3096A5058DBD5B(L_1, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:142>
+		if (!L_2)
+		{
+			goto IL_0018;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:142>
+		VirtualActionInvoker1< int32_t >::Invoke(6, __this, 0);
+	}
+
+IL_0018:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:145>
+		Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* L_3;
+		L_3 = Keyboard_get_current_mDE773B54C9975CEFEAA469AD091C49E150A3FEC3_inline(NULL);
+		NullCheck(L_3);
+		KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* L_4;
+		L_4 = Keyboard_get_rightArrowKey_mECEFE3645349708104CB154806BD4F04F24B3439(L_3, NULL);
+		NullCheck(L_4);
+		bool L_5;
+		L_5 = ButtonControl_get_wasPressedThisFrame_m6ED1DB185035A406B0659A055C3096A5058DBD5B(L_4, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:149>
+		if (!L_5)
+		{
+			goto IL_0030;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:149>
+		VirtualActionInvoker1< int32_t >::Invoke(6, __this, 1);
+	}
+
+IL_0030:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:153>
+		Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* L_6;
+		L_6 = Keyboard_get_current_mDE773B54C9975CEFEAA469AD091C49E150A3FEC3_inline(NULL);
+		NullCheck(L_6);
+		KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* L_7;
+		L_7 = Keyboard_get_downArrowKey_mBDAA4263098E5C3820432A563111F8DDB546339B(L_6, NULL);
+		NullCheck(L_7);
+		bool L_8;
+		L_8 = ButtonControl_get_wasPressedThisFrame_m6ED1DB185035A406B0659A055C3096A5058DBD5B(L_7, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:157>
+		if (!L_8)
+		{
+			goto IL_0048;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:157>
+		VirtualActionInvoker1< int32_t >::Invoke(6, __this, 3);
+	}
+
+IL_0048:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:160>
+		Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* L_9;
+		L_9 = Keyboard_get_current_mDE773B54C9975CEFEAA469AD091C49E150A3FEC3_inline(NULL);
+		NullCheck(L_9);
+		KeyControl_t1686D14A78AEC9364B8C7628DD482DE99CC20FE0* L_10;
+		L_10 = Keyboard_get_upArrowKey_m23DEF54F4CAB3F885F2F511968A00D2570C62B83(L_9, NULL);
+		NullCheck(L_10);
+		bool L_11;
+		L_11 = ButtonControl_get_wasPressedThisFrame_m6ED1DB185035A406B0659A055C3096A5058DBD5B(L_10, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:164>
+		if (!L_11)
+		{
+			goto IL_0060;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:164>
+		VirtualActionInvoker1< int32_t >::Invoke(6, __this, 2);
+	}
+
+IL_0060:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:165>
+		return;
+	}
+}
+// Method Definition Index: 32238
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsCellMovementDemo_UpdateSliderValues_m46285126959FB66AFEBB81594AD20967A15988EB (FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:170>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_0 = __this->___MovementSpring;
+		NullCheck(L_0);
+		MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* L_1 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_0)->___SpringVector3;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_2 = __this->___DampingSlider;
+		NullCheck(L_2);
+		float L_3;
+		L_3 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_2, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5;
+		L_5 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_3, L_4, NULL);
+		NullCheck(L_1);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(23, L_1, L_5);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:171>
+		MMSpringPosition_t65DA89A1F2E36AB262035632D1B1B688C2E60E5C* L_6 = __this->___MovementSpring;
+		NullCheck(L_6);
+		MMSpringVector3_tB0C93B28088DD94539C414C42164395E6363AE8B* L_7 = ((MMSpringVector3Component_1_t746203373F2C029318CA6262E29BB074BE387834*)L_6)->___SpringVector3;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_8 = __this->___FrequencySlider;
+		NullCheck(L_8);
+		float L_9;
+		L_9 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_8, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline(L_9, L_10, NULL);
+		NullCheck(L_7);
+		VirtualActionInvoker1< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 >::Invoke(24, L_7, L_11);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:172>
+		return;
+	}
+}
+// Method Definition Index: 32239
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsCellMovementDemo__ctor_mC8229C3BE8BA7D35EEFBBF9DF4ACD0A72AE229ED (FeelSpringsCellMovementDemo_t4FDDC7DFB8FEB723F7DF9C8DDA478E240A6BADCB* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsCellMovementDemo.cs:27>
+		__this->____cellWidth = (0.125f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32240
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsComparisonDemo_OnEnable_mF85B6A5F67B6A024E4BA974005714B4C5662440B (FeelSpringsComparisonDemo_t2EA6245725C0E78A9440C690A8655A2547E056C0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mE34A5E8222A8BB4495C1DB5AABA812CC057B84B8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m2885AE486576CA3A63DD6681191F4122FE68CBDD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m95D429CCCB81EDF1ACC449DF3DF9559581EBD9DE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_mACCDB7B0427797F2CFCCA14C4D42E38022C2ED0A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:25>
+		List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* L_0 = __this->___Springs;
+		NullCheck(L_0);
+		Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059 L_1;
+		L_1 = List_1_GetEnumerator_mACCDB7B0427797F2CFCCA14C4D42E38022C2ED0A(L_0, List_1_GetEnumerator_mACCDB7B0427797F2CFCCA14C4D42E38022C2ED0A_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0040:
+			{
+				Enumerator_Dispose_mE34A5E8222A8BB4495C1DB5AABA812CC057B84B8((&V_0), Enumerator_Dispose_mE34A5E8222A8BB4495C1DB5AABA812CC057B84B8_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_0035_1;
+			}
+
+IL_000e_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:25>
+				MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2;
+				L_2 = Enumerator_get_Current_m95D429CCCB81EDF1ACC449DF3DF9559581EBD9DE_inline((&V_0), Enumerator_get_Current_m95D429CCCB81EDF1ACC449DF3DF9559581EBD9DE_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:27>
+				MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_3 = L_2;
+				NullCheck(L_3);
+				VirtualActionInvoker1< float >::Invoke(5, L_3, (0.0f));
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:28>
+				MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_4 = L_3;
+				NullCheck(L_4);
+				VirtualActionInvoker1< float >::Invoke(7, L_4, (0.0f));
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:29>
+				NullCheck(L_4);
+				VirtualActionInvoker1< float >::Invoke(9, L_4, (0.0f));
+			}
+
+IL_0035_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:25>
+				bool L_5;
+				L_5 = Enumerator_MoveNext_m2885AE486576CA3A63DD6681191F4122FE68CBDD((&V_0), Enumerator_MoveNext_m2885AE486576CA3A63DD6681191F4122FE68CBDD_RuntimeMethod_var);
+				if (L_5)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_004e;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_004e:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:31>
+		return;
+	}
+}
+// Method Definition Index: 32241
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsComparisonDemo_RandomBump_m137DC73816030C471B70192264CC4DB93BFED048 (FeelSpringsComparisonDemo_t2EA6245725C0E78A9440C690A8655A2547E056C0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mE34A5E8222A8BB4495C1DB5AABA812CC057B84B8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m2885AE486576CA3A63DD6681191F4122FE68CBDD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m95D429CCCB81EDF1ACC449DF3DF9559581EBD9DE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_mACCDB7B0427797F2CFCCA14C4D42E38022C2ED0A_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:35>
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_0 = __this->___BumpAmountSlider;
+		NullCheck(L_0);
+		float L_1;
+		L_1 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_0, NULL);
+		V_0 = L_1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:36>
+		List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* L_2 = __this->___Springs;
+		NullCheck(L_2);
+		Enumerator_t31979671840EB23F5E0F3D3DA9FA993C5D7BE059 L_3;
+		L_3 = List_1_GetEnumerator_mACCDB7B0427797F2CFCCA14C4D42E38022C2ED0A(L_2, List_1_GetEnumerator_mACCDB7B0427797F2CFCCA14C4D42E38022C2ED0A_RuntimeMethod_var);
+		V_1 = L_3;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0032:
+			{
+				Enumerator_Dispose_mE34A5E8222A8BB4495C1DB5AABA812CC057B84B8((&V_1), Enumerator_Dispose_mE34A5E8222A8BB4495C1DB5AABA812CC057B84B8_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_0027_1;
+			}
+
+IL_001a_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:36>
+				MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_4;
+				L_4 = Enumerator_get_Current_m95D429CCCB81EDF1ACC449DF3DF9559581EBD9DE_inline((&V_1), Enumerator_get_Current_m95D429CCCB81EDF1ACC449DF3DF9559581EBD9DE_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:38>
+				float L_5 = V_0;
+				NullCheck(L_4);
+				VirtualActionInvoker1< float >::Invoke(20, L_4, L_5);
+			}
+
+IL_0027_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:36>
+				bool L_6;
+				L_6 = Enumerator_MoveNext_m2885AE486576CA3A63DD6681191F4122FE68CBDD((&V_1), Enumerator_MoveNext_m2885AE486576CA3A63DD6681191F4122FE68CBDD_RuntimeMethod_var);
+				if (L_6)
+				{
+					goto IL_001a_1;
+				}
+			}
+			{
+				goto IL_0040;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0040:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:40>
+		return;
+	}
+}
+// Method Definition Index: 32242
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsComparisonDemo_Update_mC83CFA2BCDC2683137105BE89A5B76E1EB749994 (FeelSpringsComparisonDemo_t2EA6245725C0E78A9440C690A8655A2547E056C0* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m7085A2CE74842462C2D61DBB1730435300E01A94_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mC0EC6F027B570FE23A7539B35437404BFA732B7E_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:44>
+		V_0 = 0;
+		goto IL_0091;
+	}
+
+IL_0007:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:46>
+		List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* L_0 = __this->___Springs;
+		int32_t L_1 = V_0;
+		NullCheck(L_0);
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2;
+		L_2 = List_1_get_Item_mC0EC6F027B570FE23A7539B35437404BFA732B7E(L_0, L_1, List_1_get_Item_mC0EC6F027B570FE23A7539B35437404BFA732B7E_RuntimeMethod_var);
+		float L_3;
+		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_2);
+		VirtualActionInvoker1< float >::Invoke(10, L_2, L_3);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:48>
+		List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_4 = __this->___MovingObjects;
+		int32_t L_5 = V_0;
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA(L_4, L_5, List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA_RuntimeMethod_var);
+		NullCheck(L_6);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_6, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_7, NULL);
+		__this->____newPosition = L_8;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:49>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_9 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* L_10 = __this->___Springs;
+		int32_t L_11 = V_0;
+		NullCheck(L_10);
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_12;
+		L_12 = List_1_get_Item_mC0EC6F027B570FE23A7539B35437404BFA732B7E(L_10, L_11, List_1_get_Item_mC0EC6F027B570FE23A7539B35437404BFA732B7E_RuntimeMethod_var);
+		NullCheck(L_12);
+		float L_13;
+		L_13 = VirtualFuncInvoker0< float >::Invoke(4, L_12);
+		float L_14 = __this->____range;
+		float L_15 = __this->____range;
+		float L_16;
+		L_16 = MMMaths_Remap_m2144FC4A123DA80D481E38AFCC8DB8A21FFD6F93(L_13, (-1.0f), (1.0f), ((-L_14)), L_15, NULL);
+		L_9->___x = L_16;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:50>
+		List_1_t991BBC5A1D51F59A450367DF944DAA207F22D06D* L_17 = __this->___MovingObjects;
+		int32_t L_18 = V_0;
+		NullCheck(L_17);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_19;
+		L_19 = List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA(L_17, L_18, List_1_get_Item_m8EAA91B4CE37CBB6C720FD238E4505097B29FFDA_RuntimeMethod_var);
+		NullCheck(L_19);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_19, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_21 = __this->____newPosition;
+		NullCheck(L_20);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_20, L_21, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:44>
+		int32_t L_22 = V_0;
+		V_0 = ((int32_t)il2cpp_codegen_add(L_22, 1));
+	}
+
+IL_0091:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:44>
+		int32_t L_23 = V_0;
+		List_1_t9D52A75BDF2004AC3EF681C4A9A2830603F9C433* L_24 = __this->___Springs;
+		NullCheck(L_24);
+		int32_t L_25;
+		L_25 = List_1_get_Count_m7085A2CE74842462C2D61DBB1730435300E01A94_inline(L_24, List_1_get_Count_m7085A2CE74842462C2D61DBB1730435300E01A94_RuntimeMethod_var);
+		if ((((int32_t)L_23) < ((int32_t)L_25)))
+		{
+			goto IL_0007;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:52>
+		return;
+	}
+}
+// Method Definition Index: 32243
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsComparisonDemo__ctor_mAC539B779158BCDFC3EB07554E58AA7D9FDC0307 (FeelSpringsComparisonDemo_t2EA6245725C0E78A9440C690A8655A2547E056C0* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsComparisonDemo.cs:21>
+		__this->____range = (0.375f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32244
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsDemoManager_Start_m829F6DAED2D4089B278A1251E56A051C863106B8 (FeelSpringsDemoManager_tE03954B8C1861688E83BE86C85B09EF4D77C6303* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:16>
+		VirtualActionInvoker0::Invoke(7, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:17>
+		return;
+	}
+}
+// Method Definition Index: 32245
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsDemoManager_NextDemo_mD8EF70825E392CFE4BF13DFB62C9EF02631119A1 (FeelSpringsDemoManager_tE03954B8C1861688E83BE86C85B09EF4D77C6303* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:21>
+		int32_t L_0 = __this->___CurrentIndex;
+		__this->___CurrentIndex = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:22>
+		int32_t L_1 = __this->___CurrentIndex;
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_2 = __this->___DemoObjects;
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_inline(L_2, List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_RuntimeMethod_var);
+		if ((((int32_t)L_1) < ((int32_t)L_3)))
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:24>
+		__this->___CurrentIndex = 0;
+	}
+
+IL_0028:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:26>
+		VirtualActionInvoker0::Invoke(7, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:27>
+		return;
+	}
+}
+// Method Definition Index: 32246
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsDemoManager_PreviousDemo_mF3DE0A790E5136B3D6C155AB7C4A0022EF541AFC (FeelSpringsDemoManager_tE03954B8C1861688E83BE86C85B09EF4D77C6303* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:31>
+		int32_t L_0 = __this->___CurrentIndex;
+		__this->___CurrentIndex = ((int32_t)il2cpp_codegen_subtract(L_0, 1));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:32>
+		int32_t L_1 = __this->___CurrentIndex;
+		if ((((int32_t)L_1) >= ((int32_t)0)))
+		{
+			goto IL_002a;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:34>
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_2 = __this->___DemoObjects;
+		NullCheck(L_2);
+		int32_t L_3;
+		L_3 = List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_inline(L_2, List_1_get_Count_m4C37ED2D928D63B80F55AF434730C2D64EEB9F22_RuntimeMethod_var);
+		__this->___CurrentIndex = ((int32_t)il2cpp_codegen_subtract(L_3, 1));
+	}
+
+IL_002a:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:36>
+		VirtualActionInvoker0::Invoke(7, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:37>
+		return;
+	}
+}
+// Method Definition Index: 32247
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsDemoManager_EnableCurrentDemo_mAFD4E89AB61022968708094BB2DDADBF605B636E (FeelSpringsDemoManager_tE03954B8C1861688E83BE86C85B09EF4D77C6303* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m07D362A07C19B36C2FD1B4DC79DD99903D4DA95D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_mA843D26C63E5963415DFCA6E49DFA27AFD9C75E8_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_mE8DBE527F24D9CFED839C34216C475B716169979_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:41>
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_0 = __this->___DemoObjects;
+		NullCheck(L_0);
+		Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 L_1;
+		L_1 = List_1_GetEnumerator_mA843D26C63E5963415DFCA6E49DFA27AFD9C75E8(L_0, List_1_GetEnumerator_mA843D26C63E5963415DFCA6E49DFA27AFD9C75E8_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_002b:
+			{
+				Enumerator_Dispose_m07D362A07C19B36C2FD1B4DC79DD99903D4DA95D((&V_0), Enumerator_Dispose_m07D362A07C19B36C2FD1B4DC79DD99903D4DA95D_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_0020_1;
+			}
+
+IL_000e_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:41>
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+				L_2 = Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_inline((&V_0), Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:43>
+				NullCheck(L_2);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_3;
+				L_3 = GameObject_get_gameObject_m0878015B8CF7F5D432B583C187725810D27B57DC(L_2, NULL);
+				NullCheck(L_3);
+				GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_3, (bool)0, NULL);
+			}
+
+IL_0020_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:41>
+				bool L_4;
+				L_4 = Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27((&V_0), Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27_RuntimeMethod_var);
+				if (L_4)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0039;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0039:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:45>
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_5 = __this->___DemoObjects;
+		int32_t L_6 = __this->___CurrentIndex;
+		NullCheck(L_5);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_7;
+		L_7 = List_1_get_Item_mE8DBE527F24D9CFED839C34216C475B716169979(L_5, L_6, List_1_get_Item_mE8DBE527F24D9CFED839C34216C475B716169979_RuntimeMethod_var);
+		NullCheck(L_7);
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_7, (bool)1, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoManager.cs:46>
+		return;
+	}
+}
+// Method Definition Index: 32248
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsDemoManager__ctor_m2FC572F7153C50F727EF75AA58256F80784F7324 (FeelSpringsDemoManager_tE03954B8C1861688E83BE86C85B09EF4D77C6303* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32249
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62 (FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoSlider.cs:22>
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_0 = __this->___TargetSlider;
+		NullCheck(L_0);
+		float L_1;
+		L_1 = VirtualFuncInvoker0< float >::Invoke(46, L_0);
+		return L_1;
+	}
+}
+// Method Definition Index: 32250
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsDemoSlider_UpdateText_m5FA803BEAC987EB38816C92022B74A8E684D9C4A (FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoSlider.cs:30>
+		TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9* L_0 = __this->___ValueText;
+		Slider_t87EA570E3D6556CABF57456C2F3873FFD86E652F* L_1 = __this->___TargetSlider;
+		NullCheck(L_1);
+		float L_2;
+		L_2 = VirtualFuncInvoker0< float >::Invoke(46, L_1);
+		V_0 = L_2;
+		String_t* L_3;
+		L_3 = Single_ToString_m3F2C4433B6ADFA5ED8E3F14ED19CD23014E5179D((&V_0), _stringLiteral2409165FB90CD4A8B916FCA75790766B82C91748, NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< String_t* >::Invoke(66, L_0, L_3);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsDemoSlider.cs:32>
+		return;
+	}
+}
+// Method Definition Index: 32251
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsDemoSlider__ctor_m533A3737974B50A259444714DD33BFC552B586FD (FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32252
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsFloatDemo_OnEnable_mFC5E635C15F0A4BC3AEAF6A68DCBCE572F62B31D (FeelSpringsFloatDemo_t26ECCFDA367C9DE307C67BA0A5C2F98224141933* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:27>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___FloatSpring;
+		NullCheck(L_0);
+		VirtualActionInvoker1< float >::Invoke(5, L_0, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:28>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_1 = __this->___FloatSpring;
+		NullCheck(L_1);
+		VirtualActionInvoker1< float >::Invoke(7, L_1, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:29>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2 = __this->___FloatSpring;
+		NullCheck(L_2);
+		VirtualActionInvoker1< float >::Invoke(9, L_2, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:30>
+		return;
+	}
+}
+// Method Definition Index: 32253
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsFloatDemo_RandomMove_mBE8D2146D3D644A920458BB0E4ADF6230D15CBCB (FeelSpringsFloatDemo_t26ECCFDA367C9DE307C67BA0A5C2F98224141933* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:34>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___FloatSpring;
+		float L_1;
+		L_1 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-1.0f), (1.0f), NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< float >::Invoke(16, L_0, L_1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:35>
+		return;
+	}
+}
+// Method Definition Index: 32254
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsFloatDemo_RandomBump_mF6B7B90374CDC93BC1B6906BAEE550AAB307B914 (FeelSpringsFloatDemo_t26ECCFDA367C9DE307C67BA0A5C2F98224141933* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:39>
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_0 = __this->___BumpAmountSlider;
+		NullCheck(L_0);
+		float L_1;
+		L_1 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_0, NULL);
+		V_0 = L_1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:40>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2 = __this->___FloatSpring;
+		float L_3 = V_0;
+		float L_4 = V_0;
+		NullCheck(L_2);
+		VirtualActionInvoker2< float, float >::Invoke(21, L_2, ((-L_3)), L_4);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:41>
+		return;
+	}
+}
+// Method Definition Index: 32255
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsFloatDemo_Update_m674E5606DF9136C5A803FE549325E952E9C9B703 (FeelSpringsFloatDemo_t26ECCFDA367C9DE307C67BA0A5C2F98224141933* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:45>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___FloatSpring;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_1 = __this->___DampingSlider;
+		NullCheck(L_1);
+		float L_2;
+		L_2 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_1, NULL);
+		NullCheck(L_0);
+		L_0->___Damping = L_2;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:46>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_3 = __this->___FloatSpring;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_4 = __this->___FrequencySlider;
+		NullCheck(L_4);
+		float L_5;
+		L_5 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_4, NULL);
+		NullCheck(L_3);
+		L_3->___Frequency = L_5;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:47>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_6 = __this->___FloatSpring;
+		float L_7;
+		L_7 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_6);
+		VirtualActionInvoker1< float >::Invoke(10, L_6, L_7);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:49>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8 = __this->___MovingObject;
+		NullCheck(L_8);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_9;
+		L_9 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_8, NULL);
+		NullCheck(L_9);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10;
+		L_10 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_9, NULL);
+		__this->____newPosition = L_10;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:50>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_11 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_12 = __this->___FloatSpring;
+		NullCheck(L_12);
+		float L_13;
+		L_13 = VirtualFuncInvoker0< float >::Invoke(4, L_12);
+		float L_14 = __this->____range;
+		float L_15 = __this->____range;
+		float L_16;
+		L_16 = MMMaths_Remap_m2144FC4A123DA80D481E38AFCC8DB8A21FFD6F93(L_13, (-1.0f), (1.0f), ((-L_14)), L_15, NULL);
+		L_11->___x = L_16;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:52>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17 = __this->___MovingObject;
+		NullCheck(L_17);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_18;
+		L_18 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_17, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_19 = __this->____newPosition;
+		NullCheck(L_18);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_18, L_19, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:53>
+		return;
+	}
+}
+// Method Definition Index: 32256
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsFloatDemo__ctor_m45FC6CF21BE76D7784845635538F30C7E3FF5D0C (FeelSpringsFloatDemo_t26ECCFDA367C9DE307C67BA0A5C2F98224141933* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsFloatDemo.cs:23>
+		__this->____range = (0.375f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32257
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector2Demo_OnEnable_mB4952AAE96A4356F5773DC22A377FCB82ACD88DE (FeelSpringsVector2Demo_t8AF6849A3D4CCB36F5DD45775280E5F23E32D7AF* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:30>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___SpringX;
+		NullCheck(L_0);
+		VirtualActionInvoker1< float >::Invoke(5, L_0, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:31>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_1 = __this->___SpringX;
+		NullCheck(L_1);
+		VirtualActionInvoker1< float >::Invoke(7, L_1, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:32>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2 = __this->___SpringX;
+		NullCheck(L_2);
+		VirtualActionInvoker1< float >::Invoke(9, L_2, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:33>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_3 = __this->___SpringY;
+		NullCheck(L_3);
+		VirtualActionInvoker1< float >::Invoke(5, L_3, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:34>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_4 = __this->___SpringY;
+		NullCheck(L_4);
+		VirtualActionInvoker1< float >::Invoke(7, L_4, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:35>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_5 = __this->___SpringY;
+		NullCheck(L_5);
+		VirtualActionInvoker1< float >::Invoke(9, L_5, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:36>
+		return;
+	}
+}
+// Method Definition Index: 32258
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector2Demo_RandomMove_m31A2D1690CD6E526668FA9B09DFB53477097B8AD (FeelSpringsVector2Demo_t8AF6849A3D4CCB36F5DD45775280E5F23E32D7AF* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:40>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___SpringX;
+		float L_1;
+		L_1 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-1.0f), (1.0f), NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< float >::Invoke(16, L_0, L_1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:41>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2 = __this->___SpringY;
+		float L_3;
+		L_3 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-1.0f), (1.0f), NULL);
+		NullCheck(L_2);
+		VirtualActionInvoker1< float >::Invoke(16, L_2, L_3);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:42>
+		return;
+	}
+}
+// Method Definition Index: 32259
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector2Demo_RandomBump_m3B3EF6504640A2667CB3500AB93F4F8611C40002 (FeelSpringsVector2Demo_t8AF6849A3D4CCB36F5DD45775280E5F23E32D7AF* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:46>
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_0 = __this->___BumpAmountSlider;
+		NullCheck(L_0);
+		float L_1;
+		L_1 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_0, NULL);
+		V_0 = L_1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:47>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2 = __this->___SpringX;
+		float L_3 = V_0;
+		float L_4 = V_0;
+		NullCheck(L_2);
+		VirtualActionInvoker2< float, float >::Invoke(21, L_2, ((-L_3)), L_4);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:48>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_5 = __this->___SpringY;
+		float L_6 = V_0;
+		float L_7 = V_0;
+		NullCheck(L_5);
+		VirtualActionInvoker2< float, float >::Invoke(21, L_5, ((-L_6)), L_7);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:49>
+		return;
+	}
+}
+// Method Definition Index: 32260
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector2Demo_Update_mDAD9C32C56EE06257C74E17406B90A547E903AE8 (FeelSpringsVector2Demo_t8AF6849A3D4CCB36F5DD45775280E5F23E32D7AF* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:53>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___SpringX;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_1 = __this->___DampingXSlider;
+		NullCheck(L_1);
+		float L_2;
+		L_2 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_1, NULL);
+		NullCheck(L_0);
+		L_0->___Damping = L_2;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:54>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_3 = __this->___SpringY;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_4 = __this->___DampingYSlider;
+		NullCheck(L_4);
+		float L_5;
+		L_5 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_4, NULL);
+		NullCheck(L_3);
+		L_3->___Damping = L_5;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:55>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_6 = __this->___SpringX;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_7 = __this->___FrequencyXSlider;
+		NullCheck(L_7);
+		float L_8;
+		L_8 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_7, NULL);
+		NullCheck(L_6);
+		L_6->___Frequency = L_8;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:56>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_9 = __this->___SpringY;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_10 = __this->___FrequencyYSlider;
+		NullCheck(L_10);
+		float L_11;
+		L_11 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_10, NULL);
+		NullCheck(L_9);
+		L_9->___Frequency = L_11;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:57>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_12 = __this->___SpringX;
+		float L_13;
+		L_13 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_12);
+		VirtualActionInvoker1< float >::Invoke(10, L_12, L_13);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:58>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_14 = __this->___SpringY;
+		float L_15;
+		L_15 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_14);
+		VirtualActionInvoker1< float >::Invoke(10, L_14, L_15);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:60>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_16 = __this->___MovingObject;
+		NullCheck(L_16);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+		L_17 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_16, NULL);
+		NullCheck(L_17);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+		L_18 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_17, NULL);
+		__this->____newPosition = L_18;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:62>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_19 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_20 = __this->___SpringX;
+		NullCheck(L_20);
+		float L_21;
+		L_21 = VirtualFuncInvoker0< float >::Invoke(4, L_20);
+		float L_22 = __this->____range;
+		float L_23 = __this->____range;
+		float L_24;
+		L_24 = MMMaths_Remap_m2144FC4A123DA80D481E38AFCC8DB8A21FFD6F93(L_21, (-1.0f), (1.0f), ((-L_22)), L_23, NULL);
+		L_19->___x = L_24;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:63>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_25 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_26 = __this->___SpringY;
+		NullCheck(L_26);
+		float L_27;
+		L_27 = VirtualFuncInvoker0< float >::Invoke(4, L_26);
+		float L_28 = __this->____range;
+		float L_29 = __this->____range;
+		float L_30;
+		L_30 = MMMaths_Remap_m2144FC4A123DA80D481E38AFCC8DB8A21FFD6F93(L_27, (-1.0f), (1.0f), ((-L_28)), L_29, NULL);
+		L_25->___y = L_30;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:65>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_31 = __this->___MovingObject;
+		NullCheck(L_31);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32;
+		L_32 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_31, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_33 = __this->____newPosition;
+		NullCheck(L_32);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_32, L_33, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:66>
+		return;
+	}
+}
+// Method Definition Index: 32261
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector2Demo__ctor_mE67ECC674018C99E4C5621824EF05ACA59EAEB79 (FeelSpringsVector2Demo_t8AF6849A3D4CCB36F5DD45775280E5F23E32D7AF* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector2Demo.cs:26>
+		__this->____range = (0.375f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32262
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector3Demo_OnEnable_m6B7965FCAF280E149A830F50ACA9E312E3E0D29F (FeelSpringsVector3Demo_t0AFAF0DA24CA3DEEF88B82CDCABF3D4A0F6EBC4C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:34>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___SpringX;
+		NullCheck(L_0);
+		VirtualActionInvoker1< float >::Invoke(5, L_0, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:35>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_1 = __this->___SpringX;
+		NullCheck(L_1);
+		VirtualActionInvoker1< float >::Invoke(7, L_1, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:36>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2 = __this->___SpringX;
+		NullCheck(L_2);
+		VirtualActionInvoker1< float >::Invoke(9, L_2, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:37>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_3 = __this->___SpringY;
+		NullCheck(L_3);
+		VirtualActionInvoker1< float >::Invoke(5, L_3, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:38>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_4 = __this->___SpringY;
+		NullCheck(L_4);
+		VirtualActionInvoker1< float >::Invoke(7, L_4, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:39>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_5 = __this->___SpringY;
+		NullCheck(L_5);
+		VirtualActionInvoker1< float >::Invoke(9, L_5, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:40>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_6 = __this->___SpringZ;
+		NullCheck(L_6);
+		VirtualActionInvoker1< float >::Invoke(5, L_6, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:41>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_7 = __this->___SpringZ;
+		NullCheck(L_7);
+		VirtualActionInvoker1< float >::Invoke(7, L_7, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:42>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_8 = __this->___SpringZ;
+		NullCheck(L_8);
+		VirtualActionInvoker1< float >::Invoke(9, L_8, (0.0f));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:43>
+		return;
+	}
+}
+// Method Definition Index: 32263
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector3Demo_RandomMove_m5487A1E2C1B3B7DD73919D7997B94DE13F718B5F (FeelSpringsVector3Demo_t0AFAF0DA24CA3DEEF88B82CDCABF3D4A0F6EBC4C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:47>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___SpringX;
+		float L_1;
+		L_1 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-1.0f), (1.0f), NULL);
+		NullCheck(L_0);
+		VirtualActionInvoker1< float >::Invoke(16, L_0, L_1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:48>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2 = __this->___SpringY;
+		float L_3;
+		L_3 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-1.0f), (1.0f), NULL);
+		NullCheck(L_2);
+		VirtualActionInvoker1< float >::Invoke(16, L_2, L_3);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:49>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_4 = __this->___SpringZ;
+		float L_5;
+		L_5 = Random_Range_m5236C99A7D8AE6AC9190592DC66016652A2D2494((-1.0f), (1.0f), NULL);
+		NullCheck(L_4);
+		VirtualActionInvoker1< float >::Invoke(16, L_4, L_5);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:50>
+		return;
+	}
+}
+// Method Definition Index: 32264
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector3Demo_RandomBump_mE6EA3858803759936E3AEDE4B50A5A0A1EB51375 (FeelSpringsVector3Demo_t0AFAF0DA24CA3DEEF88B82CDCABF3D4A0F6EBC4C* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:54>
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_0 = __this->___BumpAmountSlider;
+		NullCheck(L_0);
+		float L_1;
+		L_1 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_0, NULL);
+		V_0 = L_1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:55>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_2 = __this->___SpringX;
+		float L_3 = V_0;
+		float L_4 = V_0;
+		NullCheck(L_2);
+		VirtualActionInvoker2< float, float >::Invoke(21, L_2, ((-L_3)), L_4);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:56>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_5 = __this->___SpringY;
+		float L_6 = V_0;
+		float L_7 = V_0;
+		NullCheck(L_5);
+		VirtualActionInvoker2< float, float >::Invoke(21, L_5, ((-L_6)), L_7);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:57>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_8 = __this->___SpringZ;
+		float L_9 = V_0;
+		float L_10 = V_0;
+		NullCheck(L_8);
+		VirtualActionInvoker2< float, float >::Invoke(21, L_8, ((-L_9)), L_10);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:58>
+		return;
+	}
+}
+// Method Definition Index: 32265
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector3Demo_Update_mD733ABAEF9E28B0F9B1DAA441DE4B1241C067370 (FeelSpringsVector3Demo_t0AFAF0DA24CA3DEEF88B82CDCABF3D4A0F6EBC4C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:62>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_0 = __this->___SpringX;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_1 = __this->___DampingXSlider;
+		NullCheck(L_1);
+		float L_2;
+		L_2 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_1, NULL);
+		NullCheck(L_0);
+		L_0->___Damping = L_2;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:63>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_3 = __this->___SpringY;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_4 = __this->___DampingYSlider;
+		NullCheck(L_4);
+		float L_5;
+		L_5 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_4, NULL);
+		NullCheck(L_3);
+		L_3->___Damping = L_5;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:64>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_6 = __this->___SpringX;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_7 = __this->___FrequencyXSlider;
+		NullCheck(L_7);
+		float L_8;
+		L_8 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_7, NULL);
+		NullCheck(L_6);
+		L_6->___Frequency = L_8;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:65>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_9 = __this->___SpringY;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_10 = __this->___FrequencyYSlider;
+		NullCheck(L_10);
+		float L_11;
+		L_11 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_10, NULL);
+		NullCheck(L_9);
+		L_9->___Frequency = L_11;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:66>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_12 = __this->___SpringZ;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_13 = __this->___DampingZSlider;
+		NullCheck(L_13);
+		float L_14;
+		L_14 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_13, NULL);
+		NullCheck(L_12);
+		L_12->___Damping = L_14;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:67>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_15 = __this->___SpringZ;
+		FeelSpringsDemoSlider_tB5C4CC79B283945407CD6A673E7FA07547EA4BC1* L_16 = __this->___FrequencyZSlider;
+		NullCheck(L_16);
+		float L_17;
+		L_17 = FeelSpringsDemoSlider_get_value_m71E658C728DD998B51B6EDB14FDA3801062EBC62(L_16, NULL);
+		NullCheck(L_15);
+		L_15->___Frequency = L_17;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:68>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_18 = __this->___SpringX;
+		float L_19;
+		L_19 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_18);
+		VirtualActionInvoker1< float >::Invoke(10, L_18, L_19);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:69>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_20 = __this->___SpringY;
+		float L_21;
+		L_21 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_20);
+		VirtualActionInvoker1< float >::Invoke(10, L_20, L_21);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:70>
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_22 = __this->___SpringZ;
+		float L_23;
+		L_23 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_22);
+		VirtualActionInvoker1< float >::Invoke(10, L_22, L_23);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:72>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_24 = __this->___MovingObject;
+		NullCheck(L_24);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_25;
+		L_25 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_24, NULL);
+		NullCheck(L_25);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26;
+		L_26 = Transform_get_localPosition_mA9C86B990DF0685EA1061A120218993FDCC60A95(L_25, NULL);
+		__this->____newPosition = L_26;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:74>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_27 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_28 = __this->___SpringX;
+		NullCheck(L_28);
+		float L_29;
+		L_29 = VirtualFuncInvoker0< float >::Invoke(4, L_28);
+		float L_30 = __this->____range;
+		float L_31 = __this->____range;
+		float L_32;
+		L_32 = MMMaths_Remap_m2144FC4A123DA80D481E38AFCC8DB8A21FFD6F93(L_29, (-1.0f), (1.0f), ((-L_30)), L_31, NULL);
+		L_27->___x = L_32;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:75>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_33 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_34 = __this->___SpringY;
+		NullCheck(L_34);
+		float L_35;
+		L_35 = VirtualFuncInvoker0< float >::Invoke(4, L_34);
+		float L_36 = __this->____range;
+		float L_37 = __this->____range;
+		float L_38;
+		L_38 = MMMaths_Remap_m2144FC4A123DA80D481E38AFCC8DB8A21FFD6F93(L_35, (-1.0f), (1.0f), ((-L_36)), L_37, NULL);
+		L_33->___y = ((float)il2cpp_codegen_add(L_38, (1.0f)));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:76>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_39 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		MMSpringFloat_tAF577C028247B8E8AEBD291BE13490CA16025585* L_40 = __this->___SpringZ;
+		NullCheck(L_40);
+		float L_41;
+		L_41 = VirtualFuncInvoker0< float >::Invoke(4, L_40);
+		float L_42 = __this->____range;
+		float L_43 = __this->____range;
+		float L_44;
+		L_44 = MMMaths_Remap_m2144FC4A123DA80D481E38AFCC8DB8A21FFD6F93(L_41, (-1.0f), (1.0f), ((-L_42)), L_43, NULL);
+		L_39->___z = L_44;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:78>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_45 = __this->___MovingObject;
+		NullCheck(L_45);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_46;
+		L_46 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_45, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_47 = __this->____newPosition;
+		NullCheck(L_46);
+		Transform_set_localPosition_mDE1C997F7D79C0885210B7732B4BA50EE7D73134(L_46, L_47, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:79>
+		return;
+	}
+}
+// Method Definition Index: 32266
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSpringsVector3Demo__ctor_m4B5D7DA27C4BF30756DD9BA19CBC7FF6FBECE819 (FeelSpringsVector3Demo_t0AFAF0DA24CA3DEEF88B82CDCABF3D4A0F6EBC4C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Springs/Scripts/FeelSpringsVector3Demo.cs:30>
+		__this->____range = (0.375f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32267
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSquashAndStretchCarController_Start_m26F737C1445F5603A339EB5A30086A0B9CB892F4 (FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_get_Item_m070FA4E9997DC2AAD3387BD29B01AC9297891911_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B1_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:34>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = __this->___BoundaryCollider;
+		NullCheck(L_0);
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_1;
+		L_1 = Collider_get_bounds_mCC32F749590E9A85C7930E5355661367F78E4CB4(L_0, NULL);
+		__this->____bounds = L_1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:35>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_2 = __this->___TeleportFeedbacks;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_3 = L_2;
+		if (L_3)
+		{
+			G_B2_0 = L_3;
+			goto IL_001d;
+		}
+		G_B1_0 = L_3;
+	}
+	{
+		goto IL_0023;
+	}
+
+IL_001d:
+	{
+		NullCheck(G_B2_0);
+		VirtualActionInvoker1< bool >::Invoke(12, G_B2_0, (bool)0);
+	}
+
+IL_0023:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:36>
+		List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46* L_4 = __this->___Trails;
+		NullCheck(L_4);
+		TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* L_5;
+		L_5 = List_1_get_Item_m070FA4E9997DC2AAD3387BD29B01AC9297891911(L_4, 0, List_1_get_Item_m070FA4E9997DC2AAD3387BD29B01AC9297891911_RuntimeMethod_var);
+		NullCheck(L_5);
+		float L_6;
+		L_6 = TrailRenderer_get_time_mC1990BCC4C1A584EE689FD3BBF5ACC43F3AB96D8(L_5, NULL);
+		__this->____trailTime = L_6;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:37>
+		return;
+	}
+}
+// Method Definition Index: 32268
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSquashAndStretchCarController_HandleInput_m27ED13883B84F8DB71EBECAC045925E38023AA84 (FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:41>
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_0 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____input);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_1;
+		L_1 = FeelDemosInputHelper_GetDirectionAxis_m1B9ACDABF01E0CF1587BB76C1CCFE86EE186AB01(L_0, NULL);
+		__this->____input = L_1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:42>
+		return;
+	}
+}
+// Method Definition Index: 32269
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSquashAndStretchCarController_Update_m9E1E74DD9C3FE257ECFDBFFDA3D7F1BF120F1956 (FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:46>
+		VirtualActionInvoker0::Invoke(5, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:47>
+		VirtualActionInvoker0::Invoke(7, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:48>
+		VirtualActionInvoker0::Invoke(8, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:49>
+		return;
+	}
+}
+// Method Definition Index: 32270
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSquashAndStretchCarController_MoveCar_m80B5873AC3D4160E33BF0B68D9AD567319A71BC4 (FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:53>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = __this->____rotationAxis;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_2 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____input);
+		float L_3 = L_2->___x;
+		float L_4;
+		L_4 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		float L_5 = __this->___RotationSpeed;
+		NullCheck(L_0);
+		Transform_Rotate_m35B44707FE16FF8015D519D8C162C0B4A85D6D1F(L_0, L_1, ((float)il2cpp_codegen_multiply(((float)il2cpp_codegen_multiply(L_3, L_4)), L_5)), NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:54>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6;
+		L_6 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_7;
+		L_7 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_7);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8;
+		L_8 = Transform_get_forward_mFCFACF7165FDAB21E80E384C494DF278386CEE2F(L_7, NULL);
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* L_9 = (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7*)(&__this->____input);
+		float L_10 = L_9->___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_8, L_10, NULL);
+		float L_12 = __this->___Speed;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_13;
+		L_13 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_11, L_12, NULL);
+		float L_14;
+		L_14 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_15;
+		L_15 = Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline(L_13, L_14, NULL);
+		NullCheck(L_6);
+		Transform_Translate_m4A9E3D8836586E7562F6A18EBF5F5B6089D8B649(L_6, L_15, 0, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:55>
+		return;
+	}
+}
+// Method Definition Index: 32271
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSquashAndStretchCarController_HandleBounds_m12A6F1852DF733B7107BF4FDAC5052E93DE1BB18 (FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:59>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_0;
+		L_0 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_0);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_0, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = L_1;
+		V_0 = L_2;
+		__this->____thisPosition = L_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = V_0;
+		__this->____newPosition = L_3;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:61>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____thisPosition);
+		float L_5 = L_4->___x;
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* L_6 = (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3*)(&__this->____bounds);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline(L_6, NULL);
+		float L_8 = L_7.___x;
+		if ((!(((float)L_5) < ((float)L_8))))
+		{
+			goto IL_0054;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:63>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_9 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* L_10 = (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3*)(&__this->____bounds);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_11;
+		L_11 = Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline(L_10, NULL);
+		float L_12 = L_11.___x;
+		L_9->___x = L_12;
+		goto IL_008c;
+	}
+
+IL_0054:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:65>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_13 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____thisPosition);
+		float L_14 = L_13->___x;
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* L_15 = (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3*)(&__this->____bounds);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16;
+		L_16 = Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline(L_15, NULL);
+		float L_17 = L_16.___x;
+		if ((!(((float)L_14) > ((float)L_17))))
+		{
+			goto IL_008c;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:67>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_18 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* L_19 = (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3*)(&__this->____bounds);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20;
+		L_20 = Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline(L_19, NULL);
+		float L_21 = L_20.___x;
+		L_18->___x = L_21;
+	}
+
+IL_008c:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:70>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_22 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____thisPosition);
+		float L_23 = L_22->___z;
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* L_24 = (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3*)(&__this->____bounds);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+		L_25 = Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline(L_24, NULL);
+		float L_26 = L_25.___z;
+		if ((!(((float)L_23) < ((float)L_26))))
+		{
+			goto IL_00c6;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:72>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_27 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* L_28 = (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3*)(&__this->____bounds);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_29;
+		L_29 = Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline(L_28, NULL);
+		float L_30 = L_29.___z;
+		L_27->___z = L_30;
+		goto IL_00fe;
+	}
+
+IL_00c6:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:74>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_31 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____thisPosition);
+		float L_32 = L_31->___z;
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* L_33 = (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3*)(&__this->____bounds);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34;
+		L_34 = Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline(L_33, NULL);
+		float L_35 = L_34.___z;
+		if ((!(((float)L_32) > ((float)L_35))))
+		{
+			goto IL_00fe;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:76>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_36 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->____newPosition);
+		Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* L_37 = (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3*)(&__this->____bounds);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_38;
+		L_38 = Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline(L_37, NULL);
+		float L_39 = L_38.___z;
+		L_36->___z = L_39;
+	}
+
+IL_00fe:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:79>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_40 = __this->____newPosition;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_41 = __this->____thisPosition;
+		bool L_42;
+		L_42 = Vector3_op_Inequality_m9F170CDFBF1E490E559DA5D06D6547501A402BBF_inline(L_40, L_41, NULL);
+		if (!L_42)
+		{
+			goto IL_011e;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:81>
+		RuntimeObject* L_43;
+		L_43 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(9, __this);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_44;
+		L_44 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_43, NULL);
+	}
+
+IL_011e:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:83>
+		return;
+	}
+}
+// Method Definition Index: 32272
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* FeelSquashAndStretchCarController_TeleportSequence_m65ECF29C3A4B2BD1FC4F7F4D0FC1D40D95548D3A (FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* L_0 = (U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E*)il2cpp_codegen_object_new(U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E_il2cpp_TypeInfo_var);
+		U3CTeleportSequenceU3Ed__18__ctor_mC5E6BFD9D8BC64C547CBE6EA0A67F028EA529838(L_0, 0, NULL);
+		U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 32273
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSquashAndStretchCarController_SetTrails_m281E239FC79D38E0AE6C3A617C5930953B92F444 (FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* __this, bool ___0_status, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m0D5A0FD29428808933AFA5DC2242D75B8C27B8B7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m3D4A033F6992377529F2B173AD5A73DFA777A410_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m54E2C7A7744158781CA572DF215D14D115A8CF2C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m29A2B92BCCAF305C7BC9355B4E3BB3396CBF930C_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t321325353D119865EB1ACE7140BAE366972365ED V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:97>
+		List_1_t6A097A0F08985111F548827DCA6A71B3D34BAF46* L_0 = __this->___Trails;
+		NullCheck(L_0);
+		Enumerator_t321325353D119865EB1ACE7140BAE366972365ED L_1;
+		L_1 = List_1_GetEnumerator_m29A2B92BCCAF305C7BC9355B4E3BB3396CBF930C(L_0, List_1_GetEnumerator_m29A2B92BCCAF305C7BC9355B4E3BB3396CBF930C_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0025:
+			{
+				Enumerator_Dispose_m0D5A0FD29428808933AFA5DC2242D75B8C27B8B7((&V_0), Enumerator_Dispose_m0D5A0FD29428808933AFA5DC2242D75B8C27B8B7_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_001a_1;
+			}
+
+IL_000e_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:97>
+				TrailRenderer_tF7E185EF383CF4300DFC3E1DE59FA6100B93CA39* L_2;
+				L_2 = Enumerator_get_Current_m54E2C7A7744158781CA572DF215D14D115A8CF2C_inline((&V_0), Enumerator_get_Current_m54E2C7A7744158781CA572DF215D14D115A8CF2C_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:99>
+				NullCheck(L_2);
+				TrailRenderer_Clear_m52593FE681F7171649479A57A2AFCA89C508413F(L_2, NULL);
+			}
+
+IL_001a_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:97>
+				bool L_3;
+				L_3 = Enumerator_MoveNext_m3D4A033F6992377529F2B173AD5A73DFA777A410((&V_0), Enumerator_MoveNext_m3D4A033F6992377529F2B173AD5A73DFA777A410_RuntimeMethod_var);
+				if (L_3)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0033;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0033:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:101>
+		return;
+	}
+}
+// Method Definition Index: 32274
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void FeelSquashAndStretchCarController__ctor_m6028407294A2133DB9313CC5B5688413227BB8C5 (FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:13>
+		__this->___Speed = (2.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:14>
+		__this->___RotationSpeed = (2.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:23>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline(NULL);
+		__this->____rotationAxis = L_0;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32275
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTeleportSequenceU3Ed__18__ctor_mC5E6BFD9D8BC64C547CBE6EA0A67F028EA529838 (U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 32276
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTeleportSequenceU3Ed__18_System_IDisposable_Dispose_m5186625FF74AAE584401BC94CF3509F77D573E42 (U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 32277
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CTeleportSequenceU3Ed__18_MoveNext_m7729E4C453FE61C847F60C0C53C73C86BA7EF87F (U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* V_1 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B5_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B4_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B9_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B8_0 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_004b;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:87>
+		FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* L_4 = V_1;
+		NullCheck(L_4);
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_5 = L_4->___TeleportFeedbacks;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_6 = L_5;
+		if (L_6)
+		{
+			G_B5_0 = L_6;
+			goto IL_002a;
+		}
+		G_B4_0 = L_6;
+	}
+	{
+		goto IL_002f;
+	}
+
+IL_002a:
+	{
+		NullCheck(G_B5_0);
+		VirtualActionInvoker0::Invoke(14, G_B5_0);
+	}
+
+IL_002f:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:88>
+		FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* L_7 = V_1;
+		NullCheck(L_7);
+		VirtualActionInvoker1< bool >::Invoke(10, L_7, (bool)0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:89>
+		RuntimeObject* L_8;
+		L_8 = MMCoroutine_WaitForFrames_mD9D42BC7264C5927C093B7B87FFDF213E0E1CEC3(1, NULL);
+		__this->___U3CU3E2__current = L_8;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_8);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_004b:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:90>
+		FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* L_9 = V_1;
+		NullCheck(L_9);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_10;
+		L_10 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_9, NULL);
+		FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* L_11 = V_1;
+		NullCheck(L_11);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = L_11->____newPosition;
+		NullCheck(L_10);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_10, L_12, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:91>
+		FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* L_13 = V_1;
+		NullCheck(L_13);
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_14 = L_13->___TeleportFeedbacks;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_15 = L_14;
+		if (L_15)
+		{
+			G_B9_0 = L_15;
+			goto IL_006f;
+		}
+		G_B8_0 = L_15;
+	}
+	{
+		goto IL_0074;
+	}
+
+IL_006f:
+	{
+		NullCheck(G_B9_0);
+		VirtualActionInvoker0::Invoke(14, G_B9_0);
+	}
+
+IL_0074:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:92>
+		FeelSquashAndStretchCarController_tE5A50AC083E874353BC9E2C9CE7DBDE1D0A016DD* L_16 = V_1;
+		NullCheck(L_16);
+		VirtualActionInvoker1< bool >::Invoke(10, L_16, (bool)1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/SquashAndStretch/Scripts/FeelSquashAndStretchCarController.cs:93>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 32278
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CTeleportSequenceU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m4DA0982AA4694B387C750F837E306D5567D782FC (U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 32279
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CTeleportSequenceU3Ed__18_System_Collections_IEnumerator_Reset_m54E0EEA6C1DF994A876F6ECB72ACC90B059455A7 (U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CTeleportSequenceU3Ed__18_System_Collections_IEnumerator_Reset_m54E0EEA6C1DF994A876F6ECB72ACC90B059455A7_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 32280
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CTeleportSequenceU3Ed__18_System_Collections_IEnumerator_get_Current_m66684D2C7BF8E0565A389DEBAA055B80F24E6E4E (U3CTeleportSequenceU3Ed__18_tBB81D122D3188F093086E44ACD9290C1F30ABB9E* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C void StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshal_pinvoke(const StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61& unmarshaled, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshaled_pinvoke& marshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___RbException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___RbException, NULL);
+}
+IL2CPP_EXTERN_C void StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshal_pinvoke_back(const StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshaled_pinvoke& marshaled, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___RbException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___RbException, NULL);
+}
+IL2CPP_EXTERN_C void StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshal_pinvoke_cleanup(StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshaled_pinvoke& marshaled)
+{
+}
+IL2CPP_EXTERN_C void StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshal_com(const StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61& unmarshaled, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshaled_com& marshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___RbException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___RbException, NULL);
+}
+IL2CPP_EXTERN_C void StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshal_com_back(const StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshaled_com& marshaled, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61& unmarshaled)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Exception_t* ___RbException = il2cpp_codegen_get_marshal_directive_exception("Cannot marshal field '%s' of type '%s': Reference type field marshaling is not supported.", StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61____Rb_FieldInfo_var, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_0_0_0_var);
+	IL2CPP_RAISE_MANAGED_EXCEPTION(___RbException, NULL);
+}
+IL2CPP_EXTERN_C void StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshal_com_cleanup(StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61_marshaled_com& marshaled)
+{
+}
+// Method Definition Index: 32281
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StrikePin_ResetPin_mB2D93966048116F6AAE75653F4B16CA8865F7F86 (StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:20>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0 = __this->___Rb;
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_0, NULL);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = __this->___InitialPosition;
+		NullCheck(L_1);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_2, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:21>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_3 = __this->___Rb;
+		NullCheck(L_3);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_4;
+		L_4 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_3, NULL);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_5 = __this->___InitialRotation;
+		NullCheck(L_4);
+		Transform_set_rotation_m61340DE74726CF0F9946743A727C4D444397331D(L_4, L_5, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:22>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_6 = __this->___Rb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_6);
+		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_6, L_7, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:23>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_8 = __this->___Rb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9;
+		L_9 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_8);
+		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_8, L_9, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:24>
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void StrikePin_ResetPin_mB2D93966048116F6AAE75653F4B16CA8865F7F86_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61*>(__this + _offset);
+	StrikePin_ResetPin_mB2D93966048116F6AAE75653F4B16CA8865F7F86(_thisAdjusted, method);
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32282
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_Start_m29E635F2ED3B8E0A27E8FB5CA1C3EB0A680B6CF8 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:126>
+		VirtualActionInvoker0::Invoke(5, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:127>
+		return;
+	}
+}
+// Method Definition Index: 32283
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_Initialization_m6360E89581D43A7AFBE3182180F80B4E62FE0861 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m3B62AD039A11BDA3C9140A67B3F38E869492B280_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m3133A1BF8C842DB06F39C6EAF5D75A0C581670E7_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_Add_m67ADCB698F31486B35CF5DB4CFB1E97EB807FEFD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_mCC0586D4E8BFC53C6DC7C0EC51807A6EC0C471BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m0CDD6F02F45026B4267E7117C5DDC188F87EE7BE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1__ctor_m67AF8C1A0BBEEDDB922069DA624F525AF7E7ED01_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* V_1 = NULL;
+	StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:135>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = __this->___Gravity;
+		il2cpp_codegen_runtime_class_init_inline(Physics_t1244C2983AEAFA149425AFFC3DF53BC91C18ED56_il2cpp_TypeInfo_var);
+		Physics_set_gravity_mAEF3D6B45E6E567F04244C7889366CACCB4F1952(L_0, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:136>
+		Physics_set_bounceThreshold_m12BD6903B10DCA2606B6E9426F41FAE2DD015456((2.0f), NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:137>
+		Physics_set_sleepThreshold_m4C6D94024F0508934D79633DDC20F77C8D28DFC7((0.00499999989f), NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:138>
+		Physics_set_defaultContactOffset_m81A4A3C4CB07A1DC86F5A8B53DE4A137985D4C49((0.00999999978f), NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:139>
+		Physics_set_defaultSolverIterations_mB0A33680F0181471737C776367CB8F9F9F275B50(6, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:140>
+		Physics_set_defaultSolverVelocityIterations_mD05B7ED682A3A670258473C5A796DD430D15BCD2(1, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:141>
+		Physics_set_queriesHitTriggers_m763834B1050946C0C490CF9FF453783107AEF212((bool)1, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:144>
+		__this->___ConsecutiveStrikes = 0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:145>
+		__this->___LastScore = 0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:146>
+		__this->___TotalPoints = 0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:147>
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_1 = __this->___ConsecutiveStrikesText;
+		NullCheck(L_1);
+		VirtualActionInvoker1< String_t* >::Invoke(75, L_1, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:148>
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_2 = __this->___LastScoreText;
+		NullCheck(L_2);
+		VirtualActionInvoker1< String_t* >::Invoke(75, L_2, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:149>
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_3 = __this->___TotalScoreText;
+		NullCheck(L_3);
+		VirtualActionInvoker1< String_t* >::Invoke(75, L_3, _stringLiteralF944DCD635F9801F7AC90A407FBC479964DEC024);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:150>
+		VirtualActionInvoker1< bool >::Invoke(6, __this, (bool)0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:153>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = __this->___BowlingBallRb;
+		NullCheck(L_4);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
+		L_5 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_4, NULL);
+		NullCheck(L_5);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
+		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
+		__this->____initialBallPosition = L_6;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:154>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_7 = __this->___BowlingBallRb;
+		NullCheck(L_7);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_8;
+		L_8 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_7, NULL);
+		NullCheck(L_8);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_9;
+		L_9 = Transform_get_localRotation_mD53D37611A5DAE93EC6C7BBCAC337408C5CACA77(L_8, NULL);
+		__this->____initialBallRotation = L_9;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:157>
+		List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* L_10 = (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465*)il2cpp_codegen_object_new(List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465_il2cpp_TypeInfo_var);
+		List_1__ctor_m67AF8C1A0BBEEDDB922069DA624F525AF7E7ED01(L_10, List_1__ctor_m67AF8C1A0BBEEDDB922069DA624F525AF7E7ED01_RuntimeMethod_var);
+		__this->____strikePins = L_10;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____strikePins), (void*)L_10);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:158>
+		List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252* L_11 = (List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252*)il2cpp_codegen_object_new(List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252_il2cpp_TypeInfo_var);
+		List_1__ctor_m0CDD6F02F45026B4267E7117C5DDC188F87EE7BE(L_11, List_1__ctor_m0CDD6F02F45026B4267E7117C5DDC188F87EE7BE_RuntimeMethod_var);
+		__this->____pinColliders = L_11;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____pinColliders), (void*)L_11);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:159>
+		List_1_t70C71660C368B9474B9889CBADDC30685A5D2363* L_12 = __this->___Pins;
+		NullCheck(L_12);
+		Enumerator_tBCCFDD88A8829D356C04401970D47F72C0DDE842 L_13;
+		L_13 = List_1_GetEnumerator_mCC0586D4E8BFC53C6DC7C0EC51807A6EC0C471BE(L_12, List_1_GetEnumerator_mCC0586D4E8BFC53C6DC7C0EC51807A6EC0C471BE_RuntimeMethod_var);
+		V_0 = L_13;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0145:
+			{
+				Enumerator_Dispose_m3B62AD039A11BDA3C9140A67B3F38E869492B280((&V_0), Enumerator_Dispose_m3B62AD039A11BDA3C9140A67B3F38E869492B280_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_013a_1;
+			}
+
+IL_00d7_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:159>
+				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_14;
+				L_14 = Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_inline((&V_0), Enumerator_get_Current_mB522A37542943714D1AD1A0A5E1421F587A6D000_RuntimeMethod_var);
+				V_1 = L_14;
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:161>
+				il2cpp_codegen_initobj((&V_2), sizeof(StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61));
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:162>
+				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_15 = V_1;
+				(&V_2)->___Rb = L_15;
+				Il2CppCodeGenWriteBarrier((void**)(&(&V_2)->___Rb), (void*)L_15);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:163>
+				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_16 = V_1;
+				NullCheck(L_16);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_17;
+				L_17 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_16, NULL);
+				NullCheck(L_17);
+				Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18;
+				L_18 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_17, NULL);
+				(&V_2)->___InitialPosition = L_18;
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:164>
+				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_19 = V_1;
+				NullCheck(L_19);
+				Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+				L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_19, NULL);
+				NullCheck(L_20);
+				Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_21;
+				L_21 = Transform_get_rotation_m32AF40CA0D50C797DA639A696F8EAEC7524C179C(L_20, NULL);
+				(&V_2)->___InitialRotation = L_21;
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:165>
+				List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* L_22 = __this->____strikePins;
+				StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 L_23 = V_2;
+				NullCheck(L_22);
+				List_1_Add_m3133A1BF8C842DB06F39C6EAF5D75A0C581670E7_inline(L_22, L_23, List_1_Add_m3133A1BF8C842DB06F39C6EAF5D75A0C581670E7_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:166>
+				List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252* L_24 = __this->____pinColliders;
+				StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 L_25 = V_2;
+				Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_26 = L_25.___Rb;
+				NullCheck(L_26);
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_27;
+				L_27 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_26, NULL);
+				NullCheck(L_27);
+				Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_28;
+				L_28 = GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597(L_27, GameObject_GetComponent_TisCollider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76_m4CB0FC4E59CE6C91F1106739EF364208A63E2597_RuntimeMethod_var);
+				NullCheck(L_24);
+				List_1_Add_m67ADCB698F31486B35CF5DB4CFB1E97EB807FEFD_inline(L_24, L_28, List_1_Add_m67ADCB698F31486B35CF5DB4CFB1E97EB807FEFD_RuntimeMethod_var);
+			}
+
+IL_013a_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:159>
+				bool L_29;
+				L_29 = Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A((&V_0), Enumerator_MoveNext_m5A4644C9C797A794B5707DFF60547FC580FEAE2A_RuntimeMethod_var);
+				if (L_29)
+				{
+					goto IL_00d7_1;
+				}
+			}
+			{
+				goto IL_0153;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0153:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:168>
+		return;
+	}
+}
+// Method Definition Index: 32284
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_SetStrikeElements_m9B52D7F0E1BC25FA05AA679D6A0D418EB5FA457B (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, bool ___0_status, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m07D362A07C19B36C2FD1B4DC79DD99903D4DA95D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_mA843D26C63E5963415DFCA6E49DFA27AFD9C75E8_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:172>
+		List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B* L_0 = __this->___StrikeElements;
+		NullCheck(L_0);
+		Enumerator_t88BD1282EF117E59AACFC9EC55B89F0B9EDACE60 L_1;
+		L_1 = List_1_GetEnumerator_mA843D26C63E5963415DFCA6E49DFA27AFD9C75E8(L_0, List_1_GetEnumerator_mA843D26C63E5963415DFCA6E49DFA27AFD9C75E8_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0026:
+			{
+				Enumerator_Dispose_m07D362A07C19B36C2FD1B4DC79DD99903D4DA95D((&V_0), Enumerator_Dispose_m07D362A07C19B36C2FD1B4DC79DD99903D4DA95D_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_001b_1;
+			}
+
+IL_000e_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:172>
+				GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2;
+				L_2 = Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_inline((&V_0), Enumerator_get_Current_m7236EBE1CFCB6533F96E030500D322B13D0CA5A4_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:174>
+				bool L_3 = ___0_status;
+				NullCheck(L_2);
+				GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_2, L_3, NULL);
+			}
+
+IL_001b_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:172>
+				bool L_4;
+				L_4 = Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27((&V_0), Enumerator_MoveNext_m96F4B0BD0A5485C8E8CC57D961DF6F1FA256AF27_RuntimeMethod_var);
+				if (L_4)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0034;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0034:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:176>
+		return;
+	}
+}
+// Method Definition Index: 32285
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_Update_mE4EFE92040CB07EFC7BA834C954DA978435D0AD9 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:183>
+		VirtualActionInvoker0::Invoke(8, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:184>
+		return;
+	}
+}
+// Method Definition Index: 32286
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_HandleInput_mFC0BB60F53D316983A0B8F6D11C33FB238421B34 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:191>
+		bool L_0;
+		L_0 = FeelDemosInputHelper_CheckMainActionInputPressedThisFrame_m837DD0F3A8896F4B0320DEEB307B1CE29065F352(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:193>
+		VirtualActionInvoker0::Invoke(9, __this);
+	}
+
+IL_000d:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:195>
+		return;
+	}
+}
+// Method Definition Index: 32287
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_StartBall_mC3E46DE4009992815AFEC4027C554C017DD01822 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B3_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:202>
+		bool L_0 = __this->____ballThrown;
+		if (L_0)
+		{
+			goto IL_002c;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:204>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_1 = __this->___ThrowBallFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_2 = L_1;
+		if (L_2)
+		{
+			G_B3_0 = L_2;
+			goto IL_0014;
+		}
+		G_B2_0 = L_2;
+	}
+	{
+		goto IL_0019;
+	}
+
+IL_0014:
+	{
+		NullCheck(G_B3_0);
+		VirtualActionInvoker0::Invoke(14, G_B3_0);
+	}
+
+IL_0019:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:205>
+		MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* L_3 = __this->___BowlingBallLauncherWiggler;
+		NullCheck(L_3);
+		L_3->___RotationActive = (bool)0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:206>
+		__this->____ballThrown = (bool)1;
+	}
+
+IL_002c:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:208>
+		return;
+	}
+}
+// Method Definition Index: 32288
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_ThrowBall_m3D403979553161841BA2E8955B701490B6D5DCE8 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:217>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_0 = __this->___BowlingBallRb;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_1;
+		L_1 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_0, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_1)
+		{
+			goto IL_0044;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:219>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_2 = __this->___BowlingBallRb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = __this->___ThrowingForce;
+		NullCheck(L_2);
+		Rigidbody_AddRelativeForce_mAF5EA6C0A2417A4C72AF31538D66EB9612CB6543(L_2, L_3, 1, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:220>
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_4 = __this->___BowlingBallRb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_5 = __this->___ThrowingForce;
+		NullCheck(L_4);
+		Rigidbody_AddTorque_m7922F76C73DACF9E1610D72726C01709C14F0937(L_4, L_5, 1, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:221>
+		RuntimeObject* L_6;
+		L_6 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(11, __this);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_7;
+		L_7 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_6, NULL);
+		__this->____resetCoroutine = L_7;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____resetCoroutine), (void*)L_7);
+	}
+
+IL_0044:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:223>
+		return;
+	}
+}
+// Method Definition Index: 32289
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_OnTriggerEnter_m82005DF1E8F3238B1F78AF797046A8DF0B573604 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* ___0_other, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObjectExtensions_MMGetComponentNoAlloc_TisStrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF_m776B32E07B91F918321304F16901FB879DD4E314_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObjectExtensions_t39A9481ED8A703CD214AC70247DB6A7F8938B7E5_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:231>
+		Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_0 = ___0_other;
+		NullCheck(L_0);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1;
+		L_1 = Component_get_gameObject_m57AEFBB14DB39EC476F740BA000E170355DE691B(L_0, NULL);
+		il2cpp_codegen_runtime_class_init_inline(GameObjectExtensions_t39A9481ED8A703CD214AC70247DB6A7F8938B7E5_il2cpp_TypeInfo_var);
+		StrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF* L_2;
+		L_2 = GameObjectExtensions_MMGetComponentNoAlloc_TisStrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF_m776B32E07B91F918321304F16901FB879DD4E314(L_1, GameObjectExtensions_MMGetComponentNoAlloc_TisStrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF_m776B32E07B91F918321304F16901FB879DD4E314_RuntimeMethod_var);
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		bool L_3;
+		L_3 = Object_op_Inequality_mD0BE578448EAA61948F25C32F8DD55AB1F778602(L_2, (Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C*)NULL, NULL);
+		if (!L_3)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:233>
+		RuntimeObject* L_4;
+		L_4 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(12, __this);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_5;
+		L_5 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_4, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:234>
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_6 = __this->____resetCoroutine;
+		if (!L_6)
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:236>
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_7 = __this->____resetCoroutine;
+		MonoBehaviour_StopCoroutine_mB0FC91BE84203BD8E360B3FBAE5B958B4C5ED22A(__this, L_7, NULL);
+	}
+
+IL_0034:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:239>
+		return;
+	}
+}
+// Method Definition Index: 32290
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Strike_ResetCountdown_m6EFA81C9420D352F32261311AA05F71437CB2A74 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* L_0 = (U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A*)il2cpp_codegen_object_new(U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A_il2cpp_TypeInfo_var);
+		U3CResetCountdownU3Ed__36__ctor_m787137A944E0DD4AD9FC75D243B34B9FBBD9CAD5(L_0, 0, NULL);
+		U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 32291
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* Strike_ResetSceneCo_m0ABD5C9CAE937A2A1A2AA3BBB0B09AEAAF6C9176 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* L_0 = (U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1*)il2cpp_codegen_object_new(U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1_il2cpp_TypeInfo_var);
+		U3CResetSceneCoU3Ed__37__ctor_m1ACDC52D914E25EEC24FCDDFBFC217F03E96F6BE(L_0, 0, NULL);
+		U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* L_1 = L_0;
+		NullCheck(L_1);
+		L_1->___U3CU3E4__this = __this;
+		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this), (void*)__this);
+		return L_1;
+	}
+}
+// Method Definition Index: 32292
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike_CountPoints_mF1548D022FF5FB360CF396CC30FE9BA207771704 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mAF70E9B39A0AD39183DE4B5A7789CE0B0D28BE2D_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m6561DC83C402739651BBB6140E6FCC142CA315E1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m9822B326FC4E04A23C53BBB2A7E1F1D89C2E9245_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m1D5E48528014F2A36980D68EC7CDB6FF03B83420_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* G_B9_0 = NULL;
+	Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* G_B8_0 = NULL;
+	int32_t G_B10_0 = 0;
+	Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* G_B10_1 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B13_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B12_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B17_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B16_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:291>
+		V_0 = ((int32_t)10);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:292>
+		List_1_t58F89DEDCD7DABB0CFB009AAD9C0CFE061592252* L_0 = __this->____pinColliders;
+		NullCheck(L_0);
+		Enumerator_t3411ABDBCC75D9A3CF54484CC49FA3DBF6B2342A L_1;
+		L_1 = List_1_GetEnumerator_m1D5E48528014F2A36980D68EC7CDB6FF03B83420(L_0, List_1_GetEnumerator_m1D5E48528014F2A36980D68EC7CDB6FF03B83420_RuntimeMethod_var);
+		V_1 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0041:
+			{
+				Enumerator_Dispose_mAF70E9B39A0AD39183DE4B5A7789CE0B0D28BE2D((&V_1), Enumerator_Dispose_mAF70E9B39A0AD39183DE4B5A7789CE0B0D28BE2D_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_0036_1;
+			}
+
+IL_0011_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:292>
+				Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_2;
+				L_2 = Enumerator_get_Current_m9822B326FC4E04A23C53BBB2A7E1F1D89C2E9245_inline((&V_1), Enumerator_get_Current_m9822B326FC4E04A23C53BBB2A7E1F1D89C2E9245_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:294>
+				NullCheck(L_2);
+				Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_3;
+				L_3 = Collider_get_bounds_mCC32F749590E9A85C7930E5355661367F78E4CB4(L_2, NULL);
+				V_2 = L_3;
+				Collider_t1CC3163924FCD6C4CC2E816373A929C1E3D55E76* L_4 = __this->___PointsCollider;
+				NullCheck(L_4);
+				Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 L_5;
+				L_5 = Collider_get_bounds_mCC32F749590E9A85C7930E5355661367F78E4CB4(L_4, NULL);
+				bool L_6;
+				L_6 = Bounds_Intersects_m91D6CE48052C56F8519243104C3575738B159531_inline((&V_2), L_5, NULL);
+				if (!L_6)
+				{
+					goto IL_0036_1;
+				}
+			}
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:296>
+				int32_t L_7 = V_0;
+				V_0 = ((int32_t)il2cpp_codegen_subtract(L_7, 1));
+			}
+
+IL_0036_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:292>
+				bool L_8;
+				L_8 = Enumerator_MoveNext_m6561DC83C402739651BBB6140E6FCC142CA315E1((&V_1), Enumerator_MoveNext_m6561DC83C402739651BBB6140E6FCC142CA315E1_RuntimeMethod_var);
+				if (L_8)
+				{
+					goto IL_0011_1;
+				}
+			}
+			{
+				goto IL_004f;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_004f:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:300>
+		int32_t L_9 = V_0;
+		__this->___LastScore = L_9;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:301>
+		int32_t L_10 = V_0;
+		if ((((int32_t)L_10) == ((int32_t)((int32_t)10))))
+		{
+			G_B9_0 = __this;
+			goto IL_005f;
+		}
+		G_B8_0 = __this;
+	}
+	{
+		G_B10_0 = 0;
+		G_B10_1 = G_B8_0;
+		goto IL_0067;
+	}
+
+IL_005f:
+	{
+		int32_t L_11 = __this->___ConsecutiveStrikes;
+		G_B10_0 = ((int32_t)il2cpp_codegen_add(L_11, 1));
+		G_B10_1 = G_B9_0;
+	}
+
+IL_0067:
+	{
+		NullCheck(G_B10_1);
+		G_B10_1->___ConsecutiveStrikes = G_B10_0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:303>
+		int32_t L_12 = V_0;
+		if ((!(((uint32_t)L_12) == ((uint32_t)((int32_t)10)))))
+		{
+			goto IL_008b;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:305>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_13 = __this->___StrikeFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_14 = L_13;
+		if (L_14)
+		{
+			G_B13_0 = L_14;
+			goto IL_007d;
+		}
+		G_B12_0 = L_14;
+	}
+	{
+		goto IL_0082;
+	}
+
+IL_007d:
+	{
+		NullCheck(G_B13_0);
+		VirtualActionInvoker0::Invoke(14, G_B13_0);
+	}
+
+IL_0082:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:306>
+		VirtualActionInvoker1< bool >::Invoke(6, __this, (bool)1);
+		goto IL_00a3;
+	}
+
+IL_008b:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:310>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_15 = __this->___NoStrikeFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_16 = L_15;
+		if (L_16)
+		{
+			G_B17_0 = L_16;
+			goto IL_0097;
+		}
+		G_B16_0 = L_16;
+	}
+	{
+		goto IL_009c;
+	}
+
+IL_0097:
+	{
+		NullCheck(G_B17_0);
+		VirtualActionInvoker0::Invoke(14, G_B17_0);
+	}
+
+IL_009c:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:311>
+		VirtualActionInvoker1< bool >::Invoke(6, __this, (bool)0);
+	}
+
+IL_00a3:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:314>
+		int32_t L_17 = __this->___TotalPoints;
+		int32_t L_18 = V_0;
+		__this->___TotalPoints = ((int32_t)il2cpp_codegen_add(L_17, L_18));
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:316>
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_19 = __this->___ConsecutiveStrikesText;
+		int32_t* L_20 = (int32_t*)(&__this->___ConsecutiveStrikes);
+		String_t* L_21;
+		L_21 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_20, NULL);
+		NullCheck(L_19);
+		VirtualActionInvoker1< String_t* >::Invoke(75, L_19, L_21);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:317>
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_22 = __this->___LastScoreText;
+		int32_t* L_23 = (int32_t*)(&__this->___LastScore);
+		String_t* L_24;
+		L_24 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_23, NULL);
+		NullCheck(L_22);
+		VirtualActionInvoker1< String_t* >::Invoke(75, L_22, L_24);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:318>
+		Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* L_25 = __this->___TotalScoreText;
+		int32_t* L_26 = (int32_t*)(&__this->___TotalPoints);
+		String_t* L_27;
+		L_27 = Int32_ToString_m030E01C24E294D6762FB0B6F37CB541581F55CA5(L_26, NULL);
+		NullCheck(L_25);
+		VirtualActionInvoker1< String_t* >::Invoke(75, L_25, L_27);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:319>
+		return;
+	}
+}
+// Method Definition Index: 32293
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Strike__ctor_mCD3E2B77F8F430654B4E9A6BABCE31683E5AD6E6 (Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:37>
+		__this->___ActionKey = ((int32_t)32);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:41>
+		__this->___ActionKeyAlt = ((int32_t)350);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:71>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		memset((&L_0), 0, sizeof(L_0));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_0), (0.0f), (0.0f), (10.0f), NULL);
+		__this->___ThrowingForce = L_0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:73>
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		memset((&L_1), 0, sizeof(L_1));
+		Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline((&L_1), (0.0f), (-9.81000042f), (0.0f), NULL);
+		__this->___Gravity = L_1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:76>
+		__this->___MaxDurationBeforeReset = (4.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:79>
+		__this->___DelayBeforeReset = (1.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:82>
+		__this->___DelayForPoints = (1.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32294
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetCountdownU3Ed__36__ctor_m787137A944E0DD4AD9FC75D243B34B9FBBD9CAD5 (U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 32295
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetCountdownU3Ed__36_System_IDisposable_Dispose_m55A93DFB743890C18BC8F511F47AC477A348E6BD (U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 32296
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CResetCountdownU3Ed__36_MoveNext_m0674FBE25E30AC61527A2757EE927E147EB0D236 (U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* __this, const RuntimeMethod* method) 
+{
+	int32_t V_0 = 0;
+	Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* V_1 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0017;
+		}
+	}
+	{
+		int32_t L_3 = V_0;
+		if ((((int32_t)L_3) == ((int32_t)1)))
+		{
+			goto IL_0038;
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_0017:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:247>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_4 = V_1;
+		NullCheck(L_4);
+		float L_5 = L_4->___MaxDurationBeforeReset;
+		RuntimeObject* L_6;
+		L_6 = MMCoroutine_WaitFor_mBA1E6ECE59D5887B69FD85B7C560FDD4B72016A5(L_5, NULL);
+		__this->___U3CU3E2__current = L_6;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_6);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_0038:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:248>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_7 = V_1;
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_8 = V_1;
+		NullCheck(L_8);
+		RuntimeObject* L_9;
+		L_9 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(12, L_8);
+		NullCheck(L_7);
+		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_10;
+		L_10 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(L_7, L_9, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:249>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 32297
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CResetCountdownU3Ed__36_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBB0BAABD682F684FBD86414950DD1139BB0C2FD4 (U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 32298
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetCountdownU3Ed__36_System_Collections_IEnumerator_Reset_m2BE10E65F509F517ADFDAE0A24CD2A295F7BEDC7 (U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CResetCountdownU3Ed__36_System_Collections_IEnumerator_Reset_m2BE10E65F509F517ADFDAE0A24CD2A295F7BEDC7_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 32299
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CResetCountdownU3Ed__36_System_Collections_IEnumerator_get_Current_mEB31FE9B0ED08041B31894459D25EDA8D47F20B2 (U3CResetCountdownU3Ed__36_t11D18FA0CD15FF9E43957F70B54E798BB11B280A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32300
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetSceneCoU3Ed__37__ctor_m1ACDC52D914E25EEC24FCDDFBFC217F03E96F6BE (U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		int32_t L_0 = ___0_U3CU3E1__state;
+		__this->___U3CU3E1__state = L_0;
+		return;
+	}
+}
+// Method Definition Index: 32301
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetSceneCoU3Ed__37_System_IDisposable_Dispose_mB5B11C8DF06D9DEBF9D5420BD8043F80DCB5CD29 (U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* __this, const RuntimeMethod* method) 
+{
+	{
+		return;
+	}
+}
+// Method Definition Index: 32302
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CResetSceneCoU3Ed__37_MoveNext_mDCD322DC98899AD2DE002E8CAA70482B83A24307 (U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mBAC15B96B6400AC68E1915F7F59F9EF533D54AAB_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m5EACDBB485FC446D242EA04A0435919E661F3F60_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m6D11CD1F05E476D2B14FE71168C5F0D78497D112_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m6335A92F0CCF8CE5669F4BF8684F5A765C8BE86B_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int32_t V_0 = 0;
+	Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* V_1 = NULL;
+	Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B6_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B5_0 = NULL;
+	{
+		int32_t L_0 = __this->___U3CU3E1__state;
+		V_0 = L_0;
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_1 = __this->___U3CU3E4__this;
+		V_1 = L_1;
+		int32_t L_2 = V_0;
+		switch (L_2)
+		{
+			case 0:
+			{
+				goto IL_002a;
+			}
+			case 1:
+			{
+				goto IL_004b;
+			}
+			case 2:
+			{
+				goto IL_0072;
+			}
+			case 3:
+			{
+				goto IL_00a3;
+			}
+			case 4:
+			{
+				goto IL_0106;
+			}
+		}
+	}
+	{
+		return (bool)0;
+	}
+
+IL_002a:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:257>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_3 = V_1;
+		NullCheck(L_3);
+		float L_4 = L_3->___DelayBeforeReset;
+		RuntimeObject* L_5;
+		L_5 = MMCoroutine_WaitFor_mBA1E6ECE59D5887B69FD85B7C560FDD4B72016A5(L_4, NULL);
+		__this->___U3CU3E2__current = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_5);
+		__this->___U3CU3E1__state = 1;
+		return (bool)1;
+	}
+
+IL_004b:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:260>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_6 = V_1;
+		NullCheck(L_6);
+		VirtualActionInvoker0::Invoke(13, L_6);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:262>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_7 = V_1;
+		NullCheck(L_7);
+		float L_8 = L_7->___DelayForPoints;
+		RuntimeObject* L_9;
+		L_9 = MMCoroutine_WaitFor_mBA1E6ECE59D5887B69FD85B7C560FDD4B72016A5(L_8, NULL);
+		__this->___U3CU3E2__current = L_9;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_9);
+		__this->___U3CU3E1__state = 2;
+		return (bool)1;
+	}
+
+IL_0072:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:264>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_10 = V_1;
+		NullCheck(L_10);
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_11 = L_10->___ResetFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_12 = L_11;
+		if (L_12)
+		{
+			G_B6_0 = L_12;
+			goto IL_0085;
+		}
+		G_B5_0 = L_12;
+	}
+	{
+		goto IL_008a;
+	}
+
+IL_0085:
+	{
+		NullCheck(G_B6_0);
+		VirtualActionInvoker0::Invoke(14, G_B6_0);
+	}
+
+IL_008a:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:266>
+		RuntimeObject* L_13;
+		L_13 = MMCoroutine_WaitFor_mBA1E6ECE59D5887B69FD85B7C560FDD4B72016A5((0.100000001f), NULL);
+		__this->___U3CU3E2__current = L_13;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_13);
+		__this->___U3CU3E1__state = 3;
+		return (bool)1;
+	}
+
+IL_00a3:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:269>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_14 = V_1;
+		NullCheck(L_14);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_15 = L_14->___BowlingBallRb;
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_16 = V_1;
+		NullCheck(L_16);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_17 = L_16->____initialBallPosition;
+		NullCheck(L_15);
+		Rigidbody_MovePosition_mB2CD29ABC8F59AC338C0A3A5A6B75C38FDA92CA9(L_15, L_17, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:270>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_18 = V_1;
+		NullCheck(L_18);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_19 = L_18->___BowlingBallRb;
+		NullCheck(L_19);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_20;
+		L_20 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_19, NULL);
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_21 = V_1;
+		NullCheck(L_21);
+		Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 L_22 = L_21->____initialBallRotation;
+		NullCheck(L_20);
+		Transform_set_localRotation_mAB4A011D134BA58AB780BECC0025CA65F16185FA(L_20, L_22, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:271>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_23 = V_1;
+		NullCheck(L_23);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_24 = L_23->___BowlingBallRb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_25;
+		L_25 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_24);
+		Rigidbody_set_linearVelocity_m29AE03D5FC079EAD4202FCF72E2AEBDC19363985(L_24, L_25, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:272>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_26 = V_1;
+		NullCheck(L_26);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_27 = L_26->___BowlingBallRb;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_28;
+		L_28 = Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline(NULL);
+		NullCheck(L_27);
+		Rigidbody_set_angularVelocity_m23266B4E52BF0D2E65CC984AC73CC40B8D4A27E0(L_27, L_28, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:274>
+		RuntimeObject* L_29;
+		L_29 = MMCoroutine_WaitForFrames_mD9D42BC7264C5927C093B7B87FFDF213E0E1CEC3(1, NULL);
+		__this->___U3CU3E2__current = L_29;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current), (void*)L_29);
+		__this->___U3CU3E1__state = 4;
+		return (bool)1;
+	}
+
+IL_0106:
+	{
+		__this->___U3CU3E1__state = (-1);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:276>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_30 = V_1;
+		NullCheck(L_30);
+		Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* L_31 = L_30->___BowlingBallRb;
+		NullCheck(L_31);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_32;
+		L_32 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_31, NULL);
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_33 = V_1;
+		NullCheck(L_33);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_34 = L_33->____initialBallPosition;
+		NullCheck(L_32);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_32, L_34, NULL);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:279>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_35 = V_1;
+		NullCheck(L_35);
+		MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* L_36 = L_35->___BowlingBallLauncherWiggler;
+		NullCheck(L_36);
+		L_36->___RotationActive = (bool)1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:281>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_37 = V_1;
+		NullCheck(L_37);
+		List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* L_38 = L_37->____strikePins;
+		NullCheck(L_38);
+		Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0 L_39;
+		L_39 = List_1_GetEnumerator_m6335A92F0CCF8CE5669F4BF8684F5A765C8BE86B(L_38, List_1_GetEnumerator_m6335A92F0CCF8CE5669F4BF8684F5A765C8BE86B_RuntimeMethod_var);
+		V_2 = L_39;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0157:
+			{
+				Enumerator_Dispose_mBAC15B96B6400AC68E1915F7F59F9EF533D54AAB((&V_2), Enumerator_Dispose_mBAC15B96B6400AC68E1915F7F59F9EF533D54AAB_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_014c_1;
+			}
+
+IL_013d_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:281>
+				StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 L_40;
+				L_40 = Enumerator_get_Current_m6D11CD1F05E476D2B14FE71168C5F0D78497D112_inline((&V_2), Enumerator_get_Current_m6D11CD1F05E476D2B14FE71168C5F0D78497D112_RuntimeMethod_var);
+				V_3 = L_40;
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:283>
+				StrikePin_ResetPin_mB2D93966048116F6AAE75653F4B16CA8865F7F86((&V_3), NULL);
+			}
+
+IL_014c_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:281>
+				bool L_41;
+				L_41 = Enumerator_MoveNext_m5EACDBB485FC446D242EA04A0435919E661F3F60((&V_2), Enumerator_MoveNext_m5EACDBB485FC446D242EA04A0435919E661F3F60_RuntimeMethod_var);
+				if (L_41)
+				{
+					goto IL_013d_1;
+				}
+			}
+			{
+				goto IL_0165;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0165:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:286>
+		Strike_tBE7D63FEA6F02EA2B955B9407DC2F1F0D64D179C* L_42 = V_1;
+		NullCheck(L_42);
+		L_42->____ballThrown = (bool)0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Strike/Scripts/Strike.cs:287>
+		return (bool)0;
+	}
+}
+// Method Definition Index: 32303
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CResetSceneCoU3Ed__37_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m8AE642886C55483E1E036FC74E811987B73E5049 (U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+// Method Definition Index: 32304
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CResetSceneCoU3Ed__37_System_Collections_IEnumerator_Reset_mB95C021B42F70970936DEBE8FBA1DDA56301E188 (U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* __this, const RuntimeMethod* method) 
+{
+	{
+		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
+		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CResetSceneCoU3Ed__37_System_Collections_IEnumerator_Reset_mB95C021B42F70970936DEBE8FBA1DDA56301E188_RuntimeMethod_var)));
+	}
+}
+// Method Definition Index: 32305
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CResetSceneCoU3Ed__37_System_Collections_IEnumerator_get_Current_mF4371967BDC2695226F6C752666D498000BF7C87 (U3CResetSceneCoU3Ed__37_t86924861E170F2CFF83032C5A30E049B5D46B8B1* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->___U3CU3E2__current;
+		return L_0;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32306
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void StrikeBall__ctor_m5CBFBA5FBF3E5F077552C0869FD64551D74D1B91 (StrikeBall_tD865AD38000FBD7D7C894D340F66DF5BF6EDA8DF* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32307
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tactical_Update_mB1834A7E0A30FC4AF52891182A7DBAA1C8CBC06D (Tactical_tA162DB90B2EDDF237672937A32C783569F3F77F6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:44>
+		VirtualActionInvoker0::Invoke(5, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:45>
+		return;
+	}
+}
+// Method Definition Index: 32308
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tactical_HandleInput_mE80EF06532099817D55353206774BA38DD8BDC71 (Tactical_tA162DB90B2EDDF237672937A32C783569F3F77F6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:52>
+		bool L_0;
+		L_0 = FeelDemosInputHelper_CheckMainActionInputPressed_m65BF03412344A925C72F56846363293E57B02280(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:54>
+		VirtualActionInvoker0::Invoke(6, __this);
+	}
+
+IL_000d:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:56>
+		bool L_1;
+		L_1 = FeelDemosInputHelper_CheckMainActionInputUpThisFrame_mE91072739C751AE5E35CA7743585D66E923180AD(NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:58>
+		VirtualActionInvoker0::Invoke(7, __this);
+	}
+
+IL_001a:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:60>
+		return;
+	}
+}
+// Method Definition Index: 32309
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tactical_Shoot_mE6B975B383518B9E34134649708E701220415A4B (Tactical_tA162DB90B2EDDF237672937A32C783569F3F77F6* __this, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B3_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:67>
+		float L_0;
+		L_0 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		float L_1 = __this->____lastJumpStartedAt;
+		float L_2 = __this->___CooldownDuration;
+		if ((!(((float)((float)il2cpp_codegen_subtract(L_0, L_1))) > ((float)L_2))))
+		{
+			goto IL_0059;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:69>
+		int32_t L_3;
+		L_3 = Random_Range_m6763D9767F033357F88B6637F048F4ACA4123B68(((int32_t)20), ((int32_t)200), NULL);
+		V_0 = ((float)L_3);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:70>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_4 = __this->___ShootFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_5 = L_4;
+		if (L_5)
+		{
+			G_B3_0 = L_5;
+			goto IL_002e;
+		}
+		G_B2_0 = L_5;
+	}
+	{
+		goto IL_0040;
+	}
+
+IL_002e:
+	{
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_6 = __this->___ImpactPosition;
+		NullCheck(L_6);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_7;
+		L_7 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_6, NULL);
+		float L_8 = V_0;
+		NullCheck(G_B3_0);
+		VirtualActionInvoker3< Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2, float, bool >::Invoke(17, G_B3_0, L_7, L_8, (bool)0);
+	}
+
+IL_0040:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:71>
+		float L_9;
+		L_9 = Time_get_time_m3A271BB1B20041144AC5B7863B71AB1F0150374B(NULL);
+		__this->____lastJumpStartedAt = L_9;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:72>
+		int32_t L_10 = __this->____magazine;
+		__this->____magazine = ((int32_t)il2cpp_codegen_subtract(L_10, 1));
+	}
+
+IL_0059:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:74>
+		return;
+	}
+}
+// Method Definition Index: 32310
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tactical_ShootStop_m0E38134AD262954C874E534A23898F746824FD44 (Tactical_tA162DB90B2EDDF237672937A32C783569F3F77F6* __this, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B1_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B6_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B5_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:81>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_0 = __this->___ShootStopFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000c;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		goto IL_0011;
+	}
+
+IL_000c:
+	{
+		NullCheck(G_B2_0);
+		VirtualActionInvoker0::Invoke(14, G_B2_0);
+	}
+
+IL_0011:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:82>
+		int32_t L_2 = __this->____magazine;
+		if ((((int32_t)L_2) >= ((int32_t)0)))
+		{
+			goto IL_0033;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:84>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_3 = __this->___ReloadFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_4 = L_3;
+		if (L_4)
+		{
+			G_B6_0 = L_4;
+			goto IL_0026;
+		}
+		G_B5_0 = L_4;
+	}
+	{
+		goto IL_002b;
+	}
+
+IL_0026:
+	{
+		NullCheck(G_B6_0);
+		VirtualActionInvoker0::Invoke(14, G_B6_0);
+	}
+
+IL_002b:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:85>
+		__this->____magazine = ((int32_t)15);
+	}
+
+IL_0033:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:87>
+		return;
+	}
+}
+// Method Definition Index: 32311
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Tactical__ctor_m2FCDA799EE3E71675D95D9553D74FE66675E77FD (Tactical_tA162DB90B2EDDF237672937A32C783569F3F77F6* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:18>
+		__this->___CooldownDuration = (0.100000001f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:36>
+		__this->____lastJumpStartedAt = (-100.0f);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Tactical/Scripts/Tactical.cs:37>
+		__this->____magazine = ((int32_t)15);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32312
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Wheel_Update_m11DDE304D2E46B1C1C9CDD056C74FA6128286356 (Wheel_t546738B706575F6C4DAC27DA5EE103617298B275* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:37>
+		VirtualActionInvoker0::Invoke(5, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:38>
+		VirtualActionInvoker0::Invoke(6, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:39>
+		return;
+	}
+}
+// Method Definition Index: 32313
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Wheel_HandleInput_m2CC635B6A80FE14614CFC985DF64EAC11CBE8A7A (Wheel_t546738B706575F6C4DAC27DA5EE103617298B275* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:46>
+		bool L_0;
+		L_0 = FeelDemosInputHelper_CheckMainActionInputPressedThisFrame_m837DD0F3A8896F4B0320DEEB307B1CE29065F352(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:48>
+		VirtualActionInvoker0::Invoke(7, __this);
+	}
+
+IL_000d:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:50>
+		bool L_1;
+		L_1 = FeelDemosInputHelper_CheckMainActionInputUpThisFrame_mE91072739C751AE5E35CA7743585D66E923180AD(NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:52>
+		VirtualActionInvoker0::Invoke(8, __this);
+	}
+
+IL_001a:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:54>
+		return;
+	}
+}
+// Method Definition Index: 32314
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Wheel_HandleWheel_m0C5408634E518F54BD8DCF0109477044763D38D9 (Wheel_t546738B706575F6C4DAC27DA5EE103617298B275* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:61>
+		bool L_0 = __this->____turning;
+		if (!L_0)
+		{
+			goto IL_002f;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:63>
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1 = __this->___RotatingPart;
+		NullCheck(L_1);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_2;
+		L_2 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(L_1, NULL);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = Component_get_transform_m2919A1D81931E6932C7F06D4C2F0AB8DDA9A5371(__this, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_right_mC6DC057C23313802E2186A9E0DB760D795A758A4(L_3, NULL);
+		float L_5 = __this->___RotationSpeed;
+		float L_6;
+		L_6 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		NullCheck(L_2);
+		Transform_Rotate_m35B44707FE16FF8015D519D8C162C0B4A85D6D1F(L_2, L_4, ((float)il2cpp_codegen_multiply(L_5, L_6)), NULL);
+	}
+
+IL_002f:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:65>
+		return;
+	}
+}
+// Method Definition Index: 32315
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Wheel_Turn_m7C31A3D5911CB333CEE4C788718A82E32864FBDD (Wheel_t546738B706575F6C4DAC27DA5EE103617298B275* __this, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B3_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:72>
+		bool L_0 = __this->____turning;
+		if (L_0)
+		{
+			goto IL_0019;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:74>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_1 = __this->___TurnFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_2 = L_1;
+		if (L_2)
+		{
+			G_B3_0 = L_2;
+			goto IL_0014;
+		}
+		G_B2_0 = L_2;
+	}
+	{
+		goto IL_0019;
+	}
+
+IL_0014:
+	{
+		NullCheck(G_B3_0);
+		VirtualActionInvoker0::Invoke(14, G_B3_0);
+	}
+
+IL_0019:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:76>
+		__this->____turning = (bool)1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:77>
+		return;
+	}
+}
+// Method Definition Index: 32316
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Wheel_TurnStop_m644524F64151D4C9D113A4FBE8371E297496E804 (Wheel_t546738B706575F6C4DAC27DA5EE103617298B275* __this, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B1_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B5_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B4_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:84>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_0 = __this->___TurnFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000c;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		goto IL_0011;
+	}
+
+IL_000c:
+	{
+		NullCheck(G_B2_0);
+		VirtualActionInvoker0::Invoke(33, G_B2_0);
+	}
+
+IL_0011:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:85>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_2 = __this->___TurnStopFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_3 = L_2;
+		if (L_3)
+		{
+			G_B5_0 = L_3;
+			goto IL_001d;
+		}
+		G_B4_0 = L_3;
+	}
+	{
+		goto IL_0022;
+	}
+
+IL_001d:
+	{
+		NullCheck(G_B5_0);
+		VirtualActionInvoker0::Invoke(14, G_B5_0);
+	}
+
+IL_0022:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:86>
+		__this->____turning = (bool)0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:87>
+		return;
+	}
+}
+// Method Definition Index: 32317
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Wheel__ctor_mCC16D774F2CF313F872F13A56913A07AE8C7EA22 (Wheel_t546738B706575F6C4DAC27DA5EE103617298B275* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Wheel/Scripts/Wheel.cs:20>
+		__this->___RotationSpeed = (20.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// Method Definition Index: 32318
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Falcon_Start_mDA143411C61F066D94521AAB78F193CAACAC42B1 (Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:61>
+		VirtualActionInvoker1< bool >::Invoke(5, __this, (bool)0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:62>
+		return;
+	}
+}
+// Method Definition Index: 32319
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Falcon_SetCar_mFE8DA8DCC8B4CAA83092271EA9DE7FC4E08BC0DD (Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F* __this, bool ___0_status, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_m0AA607BF00E37113CE657A0EF67E82DAAC97FF51_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mEA141407B9C3872C2D88F3752A759F218F401422_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_Dispose_mEDF0AB4DFD56C5EA9E93278AEABA698E8664B961_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m11596AF3E5DFDE8232421AB369156A95E59816EA_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_m7C1900E744F38DB293FFA07A4A8FAAF606638E88_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_MoveNext_mAF3EE83CE5E0C50BBC16CB77B0EFB065C8CF143C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_m2EE19BDB785EF06929DF6AD052451DF0C76A6818_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mDE3367A7C30BE10A1E8DC6194D3262D43DD110B1_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Enumerator_get_Current_mE3F1874DFA39CBF5ED716D234C8C5B08817C7567_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m19808ADC197B0B09F6EA267D908659788EFDBB5C_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_m68A24B12D9737E67067D68E2268495B48541CEDE_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&List_1_GetEnumerator_mF3A7124A5AFF8C2D0E9121108038AF1E978E0093_RuntimeMethod_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* V_2 = NULL;
+	ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* V_3 = NULL;
+	Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A V_4;
+	memset((&V_4), 0, sizeof(V_4));
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:70>
+		List_1_t5886A301D8FC2A3907E3C39AA5FB041D3CF1FD95* L_0 = __this->___Wigglers;
+		NullCheck(L_0);
+		Enumerator_t41671F2E422C455EB8A7C255F4C30381293C2C2D L_1;
+		L_1 = List_1_GetEnumerator_m68A24B12D9737E67067D68E2268495B48541CEDE(L_0, List_1_GetEnumerator_m68A24B12D9737E67067D68E2268495B48541CEDE_RuntimeMethod_var);
+		V_0 = L_1;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0026:
+			{
+				Enumerator_Dispose_mEDF0AB4DFD56C5EA9E93278AEABA698E8664B961((&V_0), Enumerator_Dispose_mEDF0AB4DFD56C5EA9E93278AEABA698E8664B961_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_001b_1;
+			}
+
+IL_000e_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:70>
+				MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* L_2;
+				L_2 = Enumerator_get_Current_mDE3367A7C30BE10A1E8DC6194D3262D43DD110B1_inline((&V_0), Enumerator_get_Current_mDE3367A7C30BE10A1E8DC6194D3262D43DD110B1_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:72>
+				bool L_3 = ___0_status;
+				NullCheck(L_2);
+				L_2->___PositionActive = L_3;
+			}
+
+IL_001b_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:70>
+				bool L_4;
+				L_4 = Enumerator_MoveNext_m7C1900E744F38DB293FFA07A4A8FAAF606638E88((&V_0), Enumerator_MoveNext_m7C1900E744F38DB293FFA07A4A8FAAF606638E88_RuntimeMethod_var);
+				if (L_4)
+				{
+					goto IL_000e_1;
+				}
+			}
+			{
+				goto IL_0034;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0034:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:74>
+		List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D* L_5 = __this->___ParticleEmitters;
+		NullCheck(L_5);
+		Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F L_6;
+		L_6 = List_1_GetEnumerator_m19808ADC197B0B09F6EA267D908659788EFDBB5C(L_5, List_1_GetEnumerator_m19808ADC197B0B09F6EA267D908659788EFDBB5C_RuntimeMethod_var);
+		V_1 = L_6;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_0066:
+			{
+				Enumerator_Dispose_mEA141407B9C3872C2D88F3752A759F218F401422((&V_1), Enumerator_Dispose_mEA141407B9C3872C2D88F3752A759F218F401422_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_005b_1;
+			}
+
+IL_0042_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:74>
+				ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_7;
+				L_7 = Enumerator_get_Current_m2EE19BDB785EF06929DF6AD052451DF0C76A6818_inline((&V_1), Enumerator_get_Current_m2EE19BDB785EF06929DF6AD052451DF0C76A6818_RuntimeMethod_var);
+				V_2 = L_7;
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:76>
+				bool L_8 = ___0_status;
+				if (!L_8)
+				{
+					goto IL_0055_1;
+				}
+			}
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:78>
+				ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_9 = V_2;
+				NullCheck(L_9);
+				ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_9, NULL);
+				goto IL_005b_1;
+			}
+
+IL_0055_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:82>
+				ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_10 = V_2;
+				NullCheck(L_10);
+				ParticleSystem_Stop_m2D8D4967496EF0F5BFEF679C49A9E65A9646C423(L_10, NULL);
+			}
+
+IL_005b_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:74>
+				bool L_11;
+				L_11 = Enumerator_MoveNext_m11596AF3E5DFDE8232421AB369156A95E59816EA((&V_1), Enumerator_MoveNext_m11596AF3E5DFDE8232421AB369156A95E59816EA_RuntimeMethod_var);
+				if (L_11)
+				{
+					goto IL_0042_1;
+				}
+			}
+			{
+				goto IL_0074;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_0074:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:85>
+		List_1_t5934636E608A709528BA5BBDEA6C2462B01D3B7D* L_12 = __this->___ParticleLoops;
+		NullCheck(L_12);
+		Enumerator_t53C9ABCF49214576DFC434E32E4CDBA95E06F46F L_13;
+		L_13 = List_1_GetEnumerator_m19808ADC197B0B09F6EA267D908659788EFDBB5C(L_12, List_1_GetEnumerator_m19808ADC197B0B09F6EA267D908659788EFDBB5C_RuntimeMethod_var);
+		V_1 = L_13;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00a6:
+			{
+				Enumerator_Dispose_mEA141407B9C3872C2D88F3752A759F218F401422((&V_1), Enumerator_Dispose_mEA141407B9C3872C2D88F3752A759F218F401422_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_009b_1;
+			}
+
+IL_0082_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:85>
+				ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_14;
+				L_14 = Enumerator_get_Current_m2EE19BDB785EF06929DF6AD052451DF0C76A6818_inline((&V_1), Enumerator_get_Current_m2EE19BDB785EF06929DF6AD052451DF0C76A6818_RuntimeMethod_var);
+				V_3 = L_14;
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:87>
+				bool L_15 = ___0_status;
+				if (!L_15)
+				{
+					goto IL_0095_1;
+				}
+			}
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:89>
+				ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_16 = V_3;
+				NullCheck(L_16);
+				ParticleSystem_Play_mD943E601BFE16CB9BB5D1F5E6AED5C36F5F11EF5(L_16, NULL);
+				goto IL_009b_1;
+			}
+
+IL_0095_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:93>
+				ParticleSystem_tB19986EE308BD63D36FB6025EEEAFBEDB97C67C1* L_17 = V_3;
+				NullCheck(L_17);
+				ParticleSystem_Pause_m2A5CE9D753E6E58FB9BC62C6A548B01E9FA63009(L_17, NULL);
+			}
+
+IL_009b_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:85>
+				bool L_18;
+				L_18 = Enumerator_MoveNext_m11596AF3E5DFDE8232421AB369156A95E59816EA((&V_1), Enumerator_MoveNext_m11596AF3E5DFDE8232421AB369156A95E59816EA_RuntimeMethod_var);
+				if (L_18)
+				{
+					goto IL_0082_1;
+				}
+			}
+			{
+				goto IL_00b4;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00b4:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:96>
+		List_1_t708480FA8595226274F2A92C5B3A650BAEB6A1BD* L_19 = __this->___AutoRotaters;
+		NullCheck(L_19);
+		Enumerator_t674CFB1B679D5D8C5289D10A3DD576E91DC6E73A L_20;
+		L_20 = List_1_GetEnumerator_mF3A7124A5AFF8C2D0E9121108038AF1E978E0093(L_19, List_1_GetEnumerator_mF3A7124A5AFF8C2D0E9121108038AF1E978E0093_RuntimeMethod_var);
+		V_4 = L_20;
+	}
+	{
+		auto __finallyBlock = il2cpp::utils::Finally([&]
+		{
+
+FINALLY_00db:
+			{
+				Enumerator_Dispose_m0AA607BF00E37113CE657A0EF67E82DAAC97FF51((&V_4), Enumerator_Dispose_m0AA607BF00E37113CE657A0EF67E82DAAC97FF51_RuntimeMethod_var);
+				return;
+			}
+		});
+		try
+		{
+			{
+				goto IL_00d0_1;
+			}
+
+IL_00c3_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:96>
+				MMAutoRotate_t31F9725CC7249FF7F64A3A71771C9E83D4F20AB1* L_21;
+				L_21 = Enumerator_get_Current_mE3F1874DFA39CBF5ED716D234C8C5B08817C7567_inline((&V_4), Enumerator_get_Current_mE3F1874DFA39CBF5ED716D234C8C5B08817C7567_RuntimeMethod_var);
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:98>
+				bool L_22 = ___0_status;
+				NullCheck(L_21);
+				L_21->___Rotating = L_22;
+			}
+
+IL_00d0_1:
+			{
+				//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:96>
+				bool L_23;
+				L_23 = Enumerator_MoveNext_mAF3EE83CE5E0C50BBC16CB77B0EFB065C8CF143C((&V_4), Enumerator_MoveNext_mAF3EE83CE5E0C50BBC16CB77B0EFB065C8CF143C_RuntimeMethod_var);
+				if (L_23)
+				{
+					goto IL_00c3_1;
+				}
+			}
+			{
+				goto IL_00e9;
+			}
+		}
+		catch(Il2CppExceptionWrapper& e)
+		{
+			__finallyBlock.StoreException(e.ex);
+		}
+	}
+
+IL_00e9:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:101>
+		MMPanningTexture_t5D8D3857894363337711619730EDC1DA6A9C3E59* L_24 = __this->___Offsetter;
+		bool L_25 = ___0_status;
+		NullCheck(L_24);
+		L_24->___TextureShouldPan = L_25;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:103>
+		MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* L_26 = __this->___CameraWiggler;
+		bool L_27 = ___0_status;
+		NullCheck(L_26);
+		L_26->___PositionActive = L_27;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:104>
+		MMWiggle_t6BB4D86FED6FB1EE13F2749FDCF9FA6F660463A3* L_28 = __this->___CameraWiggler;
+		bool L_29 = ___0_status;
+		NullCheck(L_28);
+		L_28->___RotationActive = L_29;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:105>
+		return;
+	}
+}
+// Method Definition Index: 32320
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Falcon_Update_mBA08AD4E32FDEEABD7450C1B3435564A196F7480 (Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:112>
+		VirtualActionInvoker0::Invoke(7, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:113>
+		VirtualActionInvoker0::Invoke(8, __this);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:114>
+		return;
+	}
+}
+// Method Definition Index: 32321
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Falcon_HandleInput_m4A84DAD57F81D0B34FE967EFE328AC76F6677FEA (Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:121>
+		bool L_0;
+		L_0 = FeelDemosInputHelper_CheckMainActionInputPressed_m65BF03412344A925C72F56846363293E57B02280(NULL);
+		if (!L_0)
+		{
+			goto IL_000d;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:123>
+		VirtualActionInvoker0::Invoke(9, __this);
+	}
+
+IL_000d:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:125>
+		bool L_1;
+		L_1 = FeelDemosInputHelper_CheckMainActionInputUpThisFrame_mE91072739C751AE5E35CA7743585D66E923180AD(NULL);
+		if (!L_1)
+		{
+			goto IL_001a;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:127>
+		VirtualActionInvoker0::Invoke(10, __this);
+	}
+
+IL_001a:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:129>
+		return;
+	}
+}
+// Method Definition Index: 32322
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Falcon_HandleCar_mC64B4AAE43847BF8AA4EB8E964B26CF9D542EA52 (Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:136>
+		bool L_0 = __this->____turning;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:140>
+		return;
+	}
+}
+// Method Definition Index: 32323
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Falcon_Drive_m3270837D49815086C1EB9B029A37252BBAB6B1D5 (Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F* __this, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B3_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:147>
+		bool L_0 = __this->____turning;
+		if (L_0)
+		{
+			goto IL_0020;
+		}
+	}
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:149>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_1 = __this->___DriveFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_2 = L_1;
+		if (L_2)
+		{
+			G_B3_0 = L_2;
+			goto IL_0014;
+		}
+		G_B2_0 = L_2;
+	}
+	{
+		goto IL_0019;
+	}
+
+IL_0014:
+	{
+		NullCheck(G_B3_0);
+		VirtualActionInvoker0::Invoke(14, G_B3_0);
+	}
+
+IL_0019:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:150>
+		VirtualActionInvoker1< bool >::Invoke(5, __this, (bool)1);
+	}
+
+IL_0020:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:152>
+		__this->____turning = (bool)1;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:153>
+		return;
+	}
+}
+// Method Definition Index: 32324
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Falcon_TurnStop_m731DB7CCB8294C26AF5F0291B10459C290703FBE (Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F* __this, const RuntimeMethod* method) 
+{
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B2_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B1_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B5_0 = NULL;
+	MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* G_B4_0 = NULL;
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:160>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_0 = __this->___DriveFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_1 = L_0;
+		if (L_1)
+		{
+			G_B2_0 = L_1;
+			goto IL_000c;
+		}
+		G_B1_0 = L_1;
+	}
+	{
+		goto IL_0011;
+	}
+
+IL_000c:
+	{
+		NullCheck(G_B2_0);
+		VirtualActionInvoker0::Invoke(33, G_B2_0);
+	}
+
+IL_0011:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:161>
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_2 = __this->___StopFeedback;
+		MMFeedbacks_t63DEA0288AD137439ADC37FD3B1AF56416DE47BC* L_3 = L_2;
+		if (L_3)
+		{
+			G_B5_0 = L_3;
+			goto IL_001d;
+		}
+		G_B4_0 = L_3;
+	}
+	{
+		goto IL_0022;
+	}
+
+IL_001d:
+	{
+		NullCheck(G_B5_0);
+		VirtualActionInvoker0::Invoke(14, G_B5_0);
+	}
+
+IL_0022:
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:162>
+		VirtualActionInvoker1< bool >::Invoke(5, __this, (bool)0);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:163>
+		__this->____turning = (bool)0;
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:164>
+		return;
+	}
+}
+// Method Definition Index: 32325
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Falcon__ctor_m7702F5364A8F5807B709B55263C14084A6AD27D8 (Falcon_t84E7CCE90643428ECF699D07E493737F39431C0F* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:16>
+		__this->___ActionKey = ((int32_t)32);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:19>
+		__this->___ActionKeyAlt = ((int32_t)350);
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemosHDRP/Falcon/Scripts/Falcon.cs:44>
+		__this->___RotationSpeed = (20.0f);
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+// Method Definition Index: 32213
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* SnakeFood_get_Spawner_m6DC7C185272E43DBFA32DE30862B9EB754BBFA1B_inline (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:25>
+		SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* L_0 = __this->___U3CSpawnerU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 32214
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void SnakeFood_set_Spawner_m655A8A2B093067F6F7C371D342BC6324C4CCE5F7_inline (SnakeFood_tBBF9B703CDEAA41BB7B36DAFDC9C279D303372FA* __this, SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* ___0_value, const RuntimeMethod* method) 
+{
+	{
+		//<source_info:C:/Users/kille/OneDrive/Documents/GitHub/JumpingGame/Assets/DownloadedAsset/Feel/FeelDemos/Snake/Scripts/SnakeFood.cs:25>
+		SnakeFoodSpawner_t9260FEB76235BB7BC19834C83607108183D2B6BB* L_0 = ___0_value;
+		__this->___U3CSpawnerU3Ek__BackingField = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CSpawnerU3Ek__BackingField), (void*)L_0);
+		return;
+	}
+}
+// Method Definition Index: 53162
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector2_op_Implicit_m6D9CABB2C791A192867D7A4559D132BE86DD3EB7_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 ___0_v, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_0 = ___0_v;
+		float L_1 = L_0.___x;
+		(&V_0)->___x = L_1;
+		Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7 L_2 = ___0_v;
+		float L_3 = L_2.___y;
+		(&V_0)->___y = L_3;
+		(&V_0)->___z = (0.0f);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = V_0;
+		return L_4;
+	}
+}
+// Method Definition Index: 53124
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector2__ctor_m9525B79969AFFE3254B303A40997A56DEEB6F548_inline (Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7* __this, float ___0_x, float ___1_y, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		return;
+	}
+}
+// Method Definition Index: 52986
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_one_mC9B289F1E15C42C597180C9FE6FB492495B51D02_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___oneVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 52998
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m7F3B0FA9256CE368D7636558EFEFC4AB0E1A0F41_inline (float ___0_d, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_a, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___1_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___0_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___1_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___0_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___0_d;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 52985
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_zero_m0C1249C3F25B1C70EAD3CC8B31259975A457AE39_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___zeroVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 52954
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Vector3__ctor_m376936E6B999EF1ECBE57D990A386303E2283DE0_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* __this, float ___0_x, float ___1_y, float ___2_z, const RuntimeMethod* method) 
+{
+	{
+		float L_0 = ___0_x;
+		__this->___x = L_0;
+		float L_1 = ___1_y;
+		__this->___y = L_1;
+		float L_2 = ___2_z;
+		__this->___z = L_2;
+		return;
+	}
+}
+// Method Definition Index: 39592
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* Keyboard_get_current_mDE773B54C9975CEFEAA469AD091C49E150A3FEC3_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		//<source_info:./Library/PackageCache/com.unity.inputsystem@02433b2481ab/InputSystem/Devices/Keyboard.cs:2389>
+		Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43* L_0 = ((Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43_StaticFields*)il2cpp_codegen_static_fields_for(Keyboard_t015BD1A6508137D20B4395295F6E002773FAAF43_il2cpp_TypeInfo_var))->___U3CcurrentU3Ek__BackingField;
+		return L_0;
+	}
+}
+// Method Definition Index: 52997
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_op_Multiply_m87BA7C578F96C8E49BB07088DAAC4649F83B0353_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_a, float ___1_d, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_a;
+		float L_1 = L_0.___x;
+		float L_2 = ___1_d;
+		(&V_0)->___x = ((float)il2cpp_codegen_multiply(L_1, L_2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3 = ___0_a;
+		float L_4 = L_3.___y;
+		float L_5 = ___1_d;
+		(&V_0)->___y = ((float)il2cpp_codegen_multiply(L_4, L_5));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___0_a;
+		float L_7 = L_6.___z;
+		float L_8 = ___1_d;
+		(&V_0)->___z = ((float)il2cpp_codegen_multiply(L_7, L_8));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_9 = V_0;
+		return L_9;
+	}
+}
+// Method Definition Index: 51150
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Center);
+		float L_1 = L_0->___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_3 = L_2->___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_subtract(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Center);
+		float L_5 = L_4->___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_6 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_7 = L_6->___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_subtract(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_8 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Center);
+		float L_9 = L_8->___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_10 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_11 = L_10->___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_subtract(L_9, L_11));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		return L_12;
+	}
+}
+// Method Definition Index: 51152
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	{
+		il2cpp_codegen_initobj((&V_0), sizeof(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_0 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Center);
+		float L_1 = L_0->___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_2 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_3 = L_2->___x;
+		(&V_0)->___x = ((float)il2cpp_codegen_add(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_4 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Center);
+		float L_5 = L_4->___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_6 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_7 = L_6->___y;
+		(&V_0)->___y = ((float)il2cpp_codegen_add(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_8 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Center);
+		float L_9 = L_8->___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2* L_10 = (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2*)(&__this->___m_Extents);
+		float L_11 = L_10->___z;
+		(&V_0)->___z = ((float)il2cpp_codegen_add(L_9, L_11));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		return L_12;
+	}
+}
+// Method Definition Index: 53001
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_op_Inequality_m9F170CDFBF1E490E559DA5D06D6547501A402BBF_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
+{
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_lhs;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1 = ___1_rhs;
+		bool L_2;
+		L_2 = Vector3_op_Equality_mCDCBB8D2EDC3D3BF20F31A25ACB34705D352B479_inline(L_0, L_1, NULL);
+		return (bool)((((int32_t)L_2) == ((int32_t)0))? 1 : 0);
+	}
+}
+// Method Definition Index: 52989
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 Vector3_get_up_m128AF3FDC820BF59D5DE86D973E7DE3F20C3AEBA_inline (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ((Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields*)il2cpp_codegen_static_fields_for(Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_il2cpp_TypeInfo_var))->___upVector;
+		return L_0;
+	}
+}
+// Method Definition Index: 51163
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Bounds_Intersects_m91D6CE48052C56F8519243104C3575738B159531_inline (Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3* __this, Bounds_t367E830C64BBF235ED8C3B2F8CF6254FDCAD39C3 ___0_bounds, const RuntimeMethod* method) 
+{
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_0;
+	memset((&V_0), 0, sizeof(V_0));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_1;
+	memset((&V_1), 0, sizeof(V_1));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_2;
+	memset((&V_2), 0, sizeof(V_2));
+	Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 V_3;
+	memset((&V_3), 0, sizeof(V_3));
+	bool V_4 = false;
+	int32_t G_B7_0 = 0;
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0;
+		L_0 = Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline(__this, NULL);
+		V_0 = L_0;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_1;
+		L_1 = Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline(__this, NULL);
+		V_1 = L_1;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2;
+		L_2 = Bounds_get_min_m465AC9BBE1DE5D8E8AD95AC19B9899068FEEBB13_inline((&___0_bounds), NULL);
+		V_2 = L_2;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_3;
+		L_3 = Bounds_get_max_m6446F2AB97C1E57CA89467B9DE52D4EB61F1CB09_inline((&___0_bounds), NULL);
+		V_3 = L_3;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = V_0;
+		float L_5 = L_4.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = V_3;
+		float L_7 = L_6.___x;
+		if ((!(((float)L_5) <= ((float)L_7))))
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = V_1;
+		float L_9 = L_8.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = V_2;
+		float L_11 = L_10.___x;
+		if ((!(((float)L_9) >= ((float)L_11))))
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_12 = V_0;
+		float L_13 = L_12.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_14 = V_3;
+		float L_15 = L_14.___y;
+		if ((!(((float)L_13) <= ((float)L_15))))
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_16 = V_1;
+		float L_17 = L_16.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_18 = V_2;
+		float L_19 = L_18.___y;
+		if ((!(((float)L_17) >= ((float)L_19))))
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_20 = V_0;
+		float L_21 = L_20.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_22 = V_3;
+		float L_23 = L_22.___z;
+		if ((!(((float)L_21) <= ((float)L_23))))
+		{
+			goto IL_0078;
+		}
+	}
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_24 = V_1;
+		float L_25 = L_24.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_26 = V_2;
+		float L_27 = L_26.___z;
+		G_B7_0 = ((((int32_t)((!(((float)L_25) >= ((float)L_27)))? 1 : 0)) == ((int32_t)0))? 1 : 0);
+		goto IL_0079;
+	}
+
+IL_0078:
+	{
+		G_B7_0 = 0;
+	}
+
+IL_0079:
+	{
+		V_4 = (bool)G_B7_0;
+		goto IL_007d;
+	}
+
+IL_007d:
+	{
+		bool L_28 = V_4;
+		return L_28;
+	}
+}
+// Method Definition Index: 11309
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_mEBCF994CC3814631017F46A387B1A192ED6C85C7_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, RuntimeObject* ___0_item, const RuntimeMethod* method) 
+{
+	ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = __this->____items;
+		V_0 = L_1;
+		int32_t L_2 = __this->____size;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_6 = V_0;
+		int32_t L_7 = V_1;
+		RuntimeObject* L_8 = ___0_item;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (RuntimeObject*)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		RuntimeObject* L_9 = ___0_item;
+		List_1_AddWithResize_m79A9BF770BEF9C06BE40D5401E55E375F2726CC4(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return;
+	}
+}
+// Method Definition Index: 11361
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR RuntimeObject* Enumerator_get_Current_m6330F15D18EE4F547C05DF9BF83C5EB710376027_gshared_inline (Enumerator_t9473BAB568A27E2339D48C1F91319E0F6D244D7A* __this, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = __this->____current;
+		return L_0;
+	}
+}
+// Method Definition Index: 11298
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t List_1_get_Count_m4407E4C389F22B8CEC282C15D56516658746C383_gshared_inline (List_1_tA239CB83DE5615F348BB0507E45F490F4F7C9A8D* __this, const RuntimeMethod* method) 
+{
+	{
+		int32_t L_0 = __this->____size;
+		return L_0;
+	}
+}
+// Method Definition Index: 11309
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void List_1_Add_m3133A1BF8C842DB06F39C6EAF5D75A0C581670E7_gshared_inline (List_1_tF2D901C9D77CD9A60ABC527AB2574BA56D575465* __this, StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 ___0_item, const RuntimeMethod* method) 
+{
+	StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987* V_0 = NULL;
+	int32_t V_1 = 0;
+	{
+		int32_t L_0 = __this->____version;
+		__this->____version = ((int32_t)il2cpp_codegen_add(L_0, 1));
+		StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987* L_1 = __this->____items;
+		V_0 = L_1;
+		int32_t L_2 = __this->____size;
+		V_1 = L_2;
+		int32_t L_3 = V_1;
+		StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987* L_4 = V_0;
+		NullCheck(L_4);
+		if ((!(((uint32_t)L_3) < ((uint32_t)((int32_t)(((RuntimeArray*)L_4)->max_length))))))
+		{
+			goto IL_0034;
+		}
+	}
+	{
+		int32_t L_5 = V_1;
+		__this->____size = ((int32_t)il2cpp_codegen_add(L_5, 1));
+		StrikePinU5BU5D_t85BE76D1610BFDCA460267E7FD4EA05F1D1D7987* L_6 = V_0;
+		int32_t L_7 = V_1;
+		StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 L_8 = ___0_item;
+		NullCheck(L_6);
+		(L_6)->SetAt(static_cast<il2cpp_array_size_t>(L_7), (StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61)L_8);
+		return;
+	}
+
+IL_0034:
+	{
+		StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 L_9 = ___0_item;
+		List_1_AddWithResize_m7C28F5AC2A3CC7F6FC55AD60A9B58F85C0EC1A3F(__this, L_9, il2cpp_rgctx_method(method->klass->rgctx_data, 14));
+		return;
+	}
+}
+// Method Definition Index: 11361
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 Enumerator_get_Current_m6D11CD1F05E476D2B14FE71168C5F0D78497D112_gshared_inline (Enumerator_tCB550B72FB91F112F8A69DD7709551BF107DD8D0* __this, const RuntimeMethod* method) 
+{
+	{
+		StrikePin_tE73B4C91F3573CF7BEC9C64828D7F0929DB23B61 L_0 = __this->____current;
+		return L_0;
+	}
+}
+// Method Definition Index: 53000
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR bool Vector3_op_Equality_mCDCBB8D2EDC3D3BF20F31A25ACB34705D352B479_inline (Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___0_lhs, Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 ___1_rhs, const RuntimeMethod* method) 
+{
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	float V_2 = 0.0f;
+	float V_3 = 0.0f;
+	bool V_4 = false;
+	{
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_0 = ___0_lhs;
+		float L_1 = L_0.___x;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_2 = ___1_rhs;
+		float L_3 = L_2.___x;
+		V_0 = ((float)il2cpp_codegen_subtract(L_1, L_3));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4 = ___0_lhs;
+		float L_5 = L_4.___y;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6 = ___1_rhs;
+		float L_7 = L_6.___y;
+		V_1 = ((float)il2cpp_codegen_subtract(L_5, L_7));
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_8 = ___0_lhs;
+		float L_9 = L_8.___z;
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_10 = ___1_rhs;
+		float L_11 = L_10.___z;
+		V_2 = ((float)il2cpp_codegen_subtract(L_9, L_11));
+		float L_12 = V_0;
+		float L_13 = V_0;
+		float L_14 = V_1;
+		float L_15 = V_1;
+		float L_16 = V_2;
+		float L_17 = V_2;
+		V_3 = ((float)il2cpp_codegen_add(((float)il2cpp_codegen_add(((float)il2cpp_codegen_multiply(L_12, L_13)), ((float)il2cpp_codegen_multiply(L_14, L_15)))), ((float)il2cpp_codegen_multiply(L_16, L_17))));
+		float L_18 = V_3;
+		V_4 = (bool)((((float)L_18) < ((float)(9.99999944E-11f)))? 1 : 0);
+		goto IL_0043;
+	}
+
+IL_0043:
+	{
+		bool L_19 = V_4;
+		return L_19;
+	}
+}
